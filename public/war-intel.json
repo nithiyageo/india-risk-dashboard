@@ -1,8 +1,8 @@
 {
-  "_updated": "September 7, 2026 — 8:00 AM IST (pre-market)",
-  "_asOf": "2026-09-07",
+  "_updated": "September 9, 2026 — 4:00 PM IST (post-market)",
+  "_asOf": "2026-09-09",
   "_start": "2026-02-28",
-  "_day": 192,
+  "_day": 194,
   "preWar": {
     "brent": 65,
     "rupee": 91.49,
@@ -11,70 +11,82 @@
     "petrol": 94.72,
     "diesel": 87.62
   },
-  "_phase": "IRAN TO ANNOUNCE A NEW HORMUZ SHIPPING ROUTE 'IN COMING DAYS' — EVEN AS PARLIAMENT SPEAKER WARNS OF A 'HEAVIER' RESPONSE",
-  "_note": "Verified: Al Jazeera live blog (Sept 7, citing Mohsen Rezaei and Ghalibaf statements), USNI News (Sept 4, tanker-throughput analysis via Chris Newton/International Crisis Group), Univest/5paisa (Nifty pre-market outlook, Sept 7)",
+  "_phase": "CENTCOM DESTROYS FIVE MORE IRANIAN TANKERS — IRAN THREATENS TANKER CREWS IN KUWAIT AND BAHRAIN, BRENT HITS $100",
+  "_note": "Verified: CENTCOM official releases, NBC News, CBS News, Al Jazeera (Sept 8-9), RedState, Kuwait Times, Kpler shipping data (via Al Jazeera/UA.News), Business Standard/India TV/TradingEconomics (NSE data, Sept 9 close)",
   "ticker": [
-    "IRAN'S REZAEI: TEHRAN WILL DECLARE A RESTRICTED ZONE AND ANNOUNCE A NEW HORMUZ ROUTE WITH OMAN 'IN COMING DAYS'",
-    "IRAN'S PARLIAMENT SPEAKER GHALIBAF WARNS OF A 'HEAVIER AND MORE PAINFUL RESPONSE' TO NEW US ATTACKS",
-    "INDEPENDENT ANALYST: ACTUAL AUGUST HORMUZ THROUGHPUT WAS LIKELY 5-7M BPD — FAR BELOW THE 10-17M BESSENT CITED",
-    "USNI: IRAN STRUCK AT LEAST 13 COMMERCIAL VESSELS IN AUGUST",
-    "NIFTY JUST POSTED ITS LONGEST WEEKLY LOSING STREAK IN FIVE MONTHS HEADING INTO TODAY'S OPEN",
-    "INDIA'S MARKETS OPEN TODAY FOR THE FIRST TIME SINCE THE WEEKEND'S TANKER-SINKING ESCALATION",
-    "ANALYSTS FLAG THE WEEKEND'S US-IRAN ESCALATION AS THE KEY WILDCARD FOR MONDAY'S SESSION"
+    "CENTCOM DESTROYS FIVE MORE IRANIAN TANKERS AFTER IRGC TWICE TRIED TO HIT A US WARSHIP",
+    "RUBIO: 'EVERY TIME THEY TRY THAT, THEY'RE GOING TO LOSE TANKERS'",
+    "IRGC WARNS ALL TANKER CREWS NEAR KUWAIT AND BAHRAIN TO EVACUATE IMMEDIATELY, THREATENS TO TARGET VESSELS",
+    "IRAN CLAIMS STRIKE ON JORDAN'S AL-AZRAQ BASE; US OFFICIAL CALLS IT 'INEFFECTIVE'",
+    "KPLER DATA: STRAIT TRAFFIC FELL 28% LAST WEEK TO 77 VESSELS — LOWEST SINCE MAY",
+    "QATAR WARNS OF AN 'INDUSTRIAL CATASTROPHE' IF THE HORMUZ CRISIS CONTINUES",
+    "BRENT HITS $100 A BARREL FOR THE FIRST TIME SINCE MAY",
+    "TRUMP: OIL PRICES WILL DROP 'WHEN WE WIN THE WAR'",
+    "REZAEI: IRAN PREPARING A RESTRICTED ZONE, THREATENS A FULL BLOCKADE OVER US SANCTIONS",
+    "SENSEX FALLS FOR A THIRD STRAIGHT SESSION, DOWN 813 POINTS TODAY TO 74,764 AS OIL TOPS $100"
   ],
   "whatChanged": {
-    "label": "What changed — Monday September 7, 8:00 AM IST (Day 192) — pre-market",
+    "label": "What changed — Wednesday September 9, 4:00 PM IST (Day 194) — post-market",
     "items": [
       {
-        "color": "green",
-        "bold": "Iran's own security chief says Tehran will announce a new Hormuz route with Oman",
-        "text": "Iran's top security official Mohsen Rezaei — the same figure who a week ago said the strait 'will not reopen' while US forces remain in the Gulf — said Tehran will declare a restricted zone near Hormuz and announce a new shipping route agreed with Oman \"in the coming days.\" It's a genuine softening from his own earlier maximalist position, even as it arrives alongside harder rhetoric from elsewhere in Iran's government."
+        "color": "red",
+        "bold": "CENTCOM destroys five more Iranian tankers; Rubio makes the deterrent policy explicit",
+        "text": "The IRGC attempted to hit a US Navy warship with ballistic missiles twice over Sunday and Monday; the warship evaded both times, no Americans hurt. CENTCOM retaliated Tuesday by destroying five Iranian crude carriers — M/T Kaviz, M/T Charminar, M/T Horizon 1 and M/T Riesco in the Gulf of Oman, and M/T Derya near Kharg Island — directing crews to abandon ship first. Secretary of State Rubio, visiting Colombia: \"Iran continues to try to hit U.S. naval ships, and for every time they do that or try to do that, they're going to lose tankers.\" This brings the total to eight Iranian tankers destroyed or disabled in under a week."
+      },
+      {
+        "color": "red",
+        "bold": "Iran threatens tanker crews in Kuwait and Bahrain; claims a strike on Jordan",
+        "text": "The IRGC Navy warned all oil tanker crews near the ports of Kuwait and Bahrain to evacuate their vessels immediately, saying ships there would be targeted in retaliation for the US tanker strikes — a direct threat against commercial shipping and crews across two more countries. Iran also claimed it fired at US-related targets in Jordan, including a fighter-jet hangar at the Al-Azraq base; a US official later called the strike 'ineffective.'"
       },
       {
         "color": "orange",
-        "bold": "Parliament Speaker Ghalibaf warns of a 'heavier and more painful response'",
-        "text": "Iran's Parliament Speaker Mohammad Bagher Ghalibaf warned that any new US attacks would draw a \"heavier and more painful response,\" directly referencing Saturday's destruction of the tanker M/T Kylo and disabling of two more vessels. The same day produced both an accommodation signal (Rezaei) and an escalation threat (Ghalibaf) — a pattern that has repeated throughout this war and makes single-day statements an unreliable guide to Iran's actual trajectory."
+        "bold": "Verified data: strait traffic fell 28% last week to its lowest since May",
+        "text": "Kpler shipping data confirms what independent analysts flagged earlier this week: traffic through Hormuz fell 28% last week to 77 vessels — an average of roughly 10-11 commodity ships a day over the past 10 days, the lowest level since May. This directly contradicts the more optimistic 'recovering to two-thirds of pre-war levels' narrative from late August; the tanker strikes of the past week have measurably reduced actual traffic, not just rhetoric."
       },
       {
         "color": "orange",
-        "bold": "Independent analysis: actual Hormuz throughput likely far below US claims",
-        "text": "USNI News reported that Chris Newton, a senior analyst at the International Crisis Group, estimates actual crude flow through Hormuz in August was roughly 5-7 million barrels a day — an improving trend from earlier in the war, but well below the 10 million bpd average (and up to 15-17 million on a single day) that Treasury Secretary Bessent has cited. Iran struck at least 13 commercial vessels in August, the most recent being Monday's fatal attack on tanker MT Sidr. The gap between official and independent throughput estimates is worth remembering whenever either government cites a headline traffic number."
+        "bold": "Qatar warns of an 'industrial catastrophe'; Iran threatens a full blockade",
+        "text": "Qatar's Foreign Ministry spokesperson Mohammed Al-Ansari said reopening the strait remains a priority, warning that prolonged disruption could trigger an \"industrial catastrophe\" with wider consequences for global industry. Separately, Iran's Mohsen Rezaei said Tehran is preparing to impose a restricted zone in the Persian Gulf and threatened a full blockade in and around Hormuz in response to US economic sanctions — a harder line than his 'new shipping route' framing from just two days earlier."
       },
       {
-        "color": "orange",
-        "bold": "India: markets open today for the first time since the tanker-sinking escalation",
-        "text": "Nifty gained 0.10% Friday, briefly reclaiming 24,000 intraday on dovish Fed commentary, but still closed out its longest weekly losing streak in five months. Analysts have flagged the weekend's US strikes on Iranian tankers as the key uncertain variable for today's session, with support at 23,780-23,830 and resistance at 24,000-24,050. As of pre-market, no confirmed opening print is yet available — today's session is the first real-time test of how India's markets price the weekend's escalation."
+        "color": "red",
+        "bold": "Brent hits $100; India's Sensex falls for a third straight session",
+        "text": "Brent crude touched $100 a barrel for the first time since May, driven by the tanker strikes and reports that Iran-backed Houthi attacks have disrupted Saudi energy infrastructure. India's Sensex fell 813.35 points (-1.08%) to 74,764.23 and the Nifty dropped 203.60 points (-0.86%) to 23,431.50 — a third consecutive losing session, with IT and realty stocks (Infosys, HCL Tech, Tech Mahindra) leading the fall. FIIs turned net sellers Tuesday (-₹123 crore) while DIIs kept buying (+₹1,349.64 crore). One bright spot: India's defence stocks, including BEL, gained after the government approved roughly $11 billion in military purchases."
       }
     ]
   },
   "deaths": "7,199+",
   "econ": {
-    "sensex": "Pre-market — Friday's close was 76,645.88 (+493.02, +0.65%); today is the first session since the tanker-sinking escalation",
-    "sensexDelta": "No confirmed open yet; analysts flag support 23,780-23,830, resistance 24,000-24,050 for the Nifty",
-    "sensexSub": "Nifty gained just 0.10% Friday, briefly reclaiming 24,000 intraday on dovish Fed commentary from Governor Waller, but still closed its longest weekly losing streak in five months. Analysts are explicitly watching GIFT Nifty and weekend US-Iran developments before committing to directional calls for today's session — an unusual degree of stated caution.",
-    "vix": "Elevated — tracking the sharpest Asian equity selloff since the war's mid-year escalation",
+    "sensex": "74,764.23 (-813.35, -1.08%) — third straight losing session",
+    "sensexDelta": "Third consecutive down day: Monday and Tuesday's losses now compounded by today's 813-point fall",
+    "sensexSub": "Nifty fell 203.60 points (-0.86%) to 23,431.50. Infosys, HCL Technologies and Tech Mahindra led losses as IT and realty stocks tumbled on rising oil-price volatility; Nifty MidCap and SmallCap fell 0.51% and 0.48% respectively. Tuesday's session saw FIIs turn net sellers (-₹123 crore) while DIIs bought ₹1,349.64 crore; Coforge fell over 5% after its chairman's resignation, unrelated to the war. Defence stocks including BEL bucked the trend, up 1.5% on ~$11bn in newly approved government military purchases.",
+    "vix": "Elevated — tracking a third consecutive day of losses as Brent hit $100",
     "vixDelta": "Held near multi-week lows through Thursday and Friday as Hormuz headlines turned more constructive.",
-    "fpi": "+₹27,186 crore in August so far (as of Aug 25; subsequent daily flows not yet fully reported)",
-    "fpiDelta": "FIIs bought ₹1,593.50 crore and DIIs ₹230.30 crore on Aug 25, the most recent fully reported session",
+    "fpi": "FIIs turned net sellers Tuesday (-₹123 crore), a reversal after weeks of buying",
+    "fpiDelta": "DIIs continued buying (+₹1,349.64 crore Tuesday), partially offsetting FII selling",
     "wealth": "BSE market cap recovering with the Friday rally. US Treasury yields rose Thursday ahead of the Jackson Hole symposium, a mild headwind for emerging-market currencies including the rupee. Global equity funds have now logged eleven consecutive weeks of inflows.",
-    "analysis": "Today is the first genuine market test of the weekend's escalation, and analysts' own caution — explicitly telling investors to watch GIFT Nifty and Iran developments before taking positions — is itself informative. It suggests the market hasn't yet decided whether Saturday's tanker-sinking is a one-off enforcement action or a genuine turning point. Iran's own mixed signal overnight, an accommodation offer from Rezaei alongside a hard threat from Ghalibaf, doesn't resolve that uncertainty either. The independent throughput estimate — 5-7 million bpd against Washington's 10-17 million — matters here too: if actual Hormuz flow is meaningfully lower than officially claimed, the market may be underpricing supply risk regardless of how today's session opens. For India, the transmission from any of this remains the same one this tracker has followed since February: Brent and Dubai crude levels feed into the rupee and import costs faster than any single day's equity move does."
+    "analysis": "This week is the first where the data has caught up to the escalation rather than lagging behind it. Kpler's confirmation that strait traffic fell 28% to its lowest since May validates what independent analysts were already flagging days ago — the optimistic 'recovering to two-thirds of pre-war' narrative from late August has not survived contact with a week of destroyed tankers. India's three-day losing streak is the market's own, unambiguous verdict: unlike Monday's cautious pre-market wait-and-see mood, this is now a sustained repricing, not a single day's jitters. Brent at $100 is the number that transmits everything else — inflation, the rupee, the current account, and corporate margins for any business exposed to fuel costs. The one genuine counter-signal is DII buying holding up even as FIIs turned sellers, suggesting domestic conviction that this repricing is a buying opportunity rather than the start of a deeper rout — but that's a bet on this week being the peak, not a certainty."
   },
   "hormuzStatus": {
-    "status": "The same 24 hours produced both an accommodation signal and an escalation threat, which has become the recurring shape of this war. Mohsen Rezaei — the same Iranian security official who declared a week ago that the strait 'will not reopen' while US forces remain — now says Tehran will declare a restricted zone and announce a new Oman-coordinated shipping route 'in coming days.' At the same time, Parliament Speaker Ghalibaf warned of a 'heavier and more painful response' to any further US strikes, directly invoking Saturday's tanker destruction. Independent analysis is also complicating the throughput picture: an International Crisis Group analyst estimates actual August Hormuz flow at just 5-7 million barrels a day, a real improvement from earlier in the war but far short of the 10-17 million bpd Washington has cited — a reminder that official figures from either side deserve scrutiny. India's markets open today for the first time since Saturday's tanker strikes, the first genuine test of how seriously markets take this weekend's escalation.",
+    "status": "The tanker war escalated sharply this week, and for the first time the throughput data confirms it, rather than just the rhetoric. After the IRGC twice tried and failed to hit a US warship, CENTCOM destroyed five more Iranian tankers Tuesday — Kaviz, Charminar, Horizon 1, Riesco and Derya — bringing the week's total to eight vessels destroyed or disabled. Rubio made the policy explicit: every Iranian attempt on a US ship costs Iran tankers. Iran's response was to threaten tanker crews across two more countries, warning vessels near Kuwait and Bahrain to evacuate immediately. Kpler's verified shipping data confirms the damage: strait traffic fell 28% last week to its lowest level since May, directly contradicting the more optimistic recovery narrative from two weeks ago. Qatar's warning of an 'industrial catastrophe' and Rezaei's threat of a full blockade both point the same direction — this is no longer a war of statements about the strait, but one that is measurably closing it again.",
     "preWarFlow": "~90-140 ships/day",
-    "currentFlow": "Disputed: independent estimate ~5-7m bpd for August (ICG analyst via USNI News); US officials cite 10m bpd average, up to 15-17m on a single day",
-    "reduction": "Dubai crude jumped to near $100 a barrel, the highest since May, as India and China's refiners compete for spot cargoes amid the tanker-strike fallout — about 54% above the pre-war $65 baseline.",
+    "currentFlow": "Confirmed by Kpler: traffic fell 28% last week to ~10-11 ships/day, the lowest since May — down sharply from earlier August estimates of 5-7m bpd and the more optimistic 'two-thirds of pre-war' claims",
+    "reduction": "Brent hit $100 a barrel for the first time since May, driven by the tanker strikes and reported Houthi attacks on Saudi energy infrastructure — about 54% above the pre-war $65 baseline.",
     "indianVesselsNear": 7,
     "indianSeafarers": 148,
     "indianTransited": 1,
     "totalShipsWaiting": "Significantly reduced from the wartime peak of 20,000+. CENTCOM says over 500 ships transited the southern lane in the past 30 days with roughly 2% struck — the US mine-clearance claim, if it holds, would extend that to both lanes. India's stranded-vessel picture is unchanged pending confirmation that the Iran-Oman corridor is operational.",
     "lastTransit": "Ship numbers remain near 20% of the pre-war average. The US says its own clearance of the Traffic Separation Scheme opens a second lane alongside the Omani channel that has carried most liquid cargo; Iran and Oman's own corridor proposal is commercial-only and still under negotiation.",
     "indianNavyEscort": "Op Urja Suraksha: unchanged pending confirmation that either the US-cleared lane or the Iran-Oman corridor is operational for third-country shipping. MT Settebello diplomatic track continues independently.",
-    "headline": "THE US JUST SANK AN IRANIAN OIL TANKER FOR THE FIRST TIME OVER A DIRECT ATTACK ON ITS WARSHIPS. IRAN THREATENS 'MORE SEVERE' STRIKES. DUBAI CRUDE IS BACK NEAR $100 — A LEVEL NOT SEEN SINCE MAY.",
+    "headline": "EIGHT IRANIAN TANKERS DESTROYED OR DISABLED IN UNDER A WEEK. VERIFIED SHIPPING DATA CONFIRMS TRAFFIC IS AT ITS LOWEST SINCE MAY. BRENT IS BACK AT $100.",
     "indianCasualties": 4,
     "indianCasualtyDetail": "4th Indian death of the war: a crew member aboard UAE tanker MOMBASA killed by an Iranian cruise missile in Omani territorial waters (UAE MoD, Jul 14). 8 injured incl. 6 Indians, 4 serious. Earlier: 3 Indian sailors killed on MT Settebello (Jun 8, US Navy strike). No new Indian casualties reported."
   },
   "hormuzEvents": [
+    {
+      "d": "Sep 8-9",
+      "e": "DAY 194 — VERIFIED DATA CATCHES UP TO THE ESCALATION. The IRGC attempted to hit a US Navy warship with ballistic missiles twice over the two days prior; the warship evaded both attempts, no Americans harmed. CENTCOM retaliated Tuesday by destroying five more Iranian crude carriers — M/T Kaviz, M/T Charminar and M/T Horizon 1 (Aframax, oil/chemical and LPG tankers respectively) and M/T Riesco in the Gulf of Oman, plus M/T Derya near Kharg Island — directing crews to abandon ship before the strikes. That brings the week's total to eight Iranian tankers destroyed or disabled. Secretary of State Rubio, in Colombia: \"Iran continues to try to hit U.S. naval ships, and for every time they do that or try to do that, they're going to lose tankers.\" In response, the IRGC Navy warned all oil tanker crews near the ports of Kuwait and Bahrain to evacuate their vessels immediately, threatening to target ships there for hosting US forces. Iran separately claimed a strike on Jordan's Al-Azraq air base, targeting a fighter-jet hangar; a US official called it 'ineffective.' Trump said oil prices will drop \"when we WIN the war.\" Iran's Mohsen Rezaei said Tehran is preparing a restricted zone in the Persian Gulf and threatened a full blockade in and around Hormuz over US sanctions — a harder line than his 'new shipping route' framing from two days earlier. Qatar's Foreign Ministry warned of an 'industrial catastrophe' if the crisis continues, citing Kpler data showing strait traffic fell 28% last week to 77 vessels, roughly 10-11 ships a day — the lowest level since May, confirming independent analysts' earlier, more pessimistic throughput estimates over Washington's own figures. Brent hit $100 a barrel for the first time since May, amid reports that Iran-backed Houthi attacks disrupted Saudi energy infrastructure. India's markets fell for a third consecutive session: Sensex down 813.35 points (-1.08%) to 74,764.23, Nifty down 203.60 points (-0.86%) to 23,431.50, with IT and realty stocks leading losses. FIIs turned net sellers (-₹123 crore Tuesday); DIIs kept buying (+₹1,349.64 crore). India's defence stocks gained after the government approved roughly $11 billion in military purchases."
+    },
     {
       "d": "Sep 7",
       "e": "DAY 192 — A NEW ROUTE OFFERED, A HARDER LINE THREATENED. Iran's top security official Mohsen Rezaei said Tehran will declare a restricted zone near the Strait of Hormuz and announce a new shipping route agreed with Oman \"in the coming days\" — a genuine softening from his own position a week earlier, when he said the strait 'will not reopen' while US forces remain in the Gulf. The same day, Iran's Parliament Speaker Mohammad Bagher Ghalibaf warned of a \"heavier and more painful response\" to any new US attacks, directly referencing Saturday's destruction of the tanker M/T Kylo and disabling of two more vessels. Separately, USNI News reported that Chris Newton, a senior analyst at the International Crisis Group, estimates actual Hormuz crude flow in August was around 5-7 million barrels a day — an improving trend, but well below the 10 million bpd average (up to 15-17 million on a single day) that Treasury Secretary Bessent has cited, a reminder that official throughput figures from either government warrant scrutiny. Iran struck at least 13 commercial vessels in August. India's markets, closed all weekend, open today for the first time since Saturday's tanker-sinking escalation; Nifty enters the session on its longest weekly losing streak in five months, having gained just 0.10% Friday on dovish Fed commentary. Analysts have flagged the weekend's US-Iran escalation as the key uncertain variable for today's trade, with support at 23,780-23,830 and resistance at 24,000-24,050."
@@ -321,22 +333,28 @@
   ],
   "military": [
     {
+      "t": "Sep 8 — CENTCOM destroys five more Iranian tankers; Rubio: 'they're going to lose tankers'",
+      "lv": "BREAKING",
+      "color": "red",
+      "d": "After the IRGC twice tried to hit a US Navy warship with ballistic missiles over the prior two days, CENTCOM destroyed five Iranian crude carriers — M/T Kaviz, M/T Charminar, M/T Horizon 1 and M/T Riesco in the Gulf of Oman, and M/T Derya near Kharg Island — directing crews to abandon ship first. Rubio: \"Iran continues to try to hit U.S. naval ships, and for every time they do that or try to do that, they're going to lose tankers.\" Total tankers destroyed or disabled in the past week: eight."
+    },
+    {
+      "t": "Sep 8-9 — Iran threatens tanker crews near Kuwait and Bahrain; claims a Jordan strike",
+      "lv": "BREAKING",
+      "color": "red",
+      "d": "The IRGC Navy warned all oil tanker crews near the ports of Kuwait and Bahrain to evacuate their vessels immediately, threatening to target ships there for hosting US forces — widening the war's shipping-safety footprint to two more countries. Iran separately claimed a strike on Jordan's Al-Azraq air base targeting a fighter-jet hangar; a US official called it 'ineffective.'"
+    },
+    {
+      "t": "Sep 8 — Kpler confirms strait traffic at its lowest since May; Qatar warns of catastrophe",
+      "lv": "ACTIVE",
+      "color": "orange",
+      "d": "Verified Kpler shipping data shows strait traffic fell 28% last week to 77 vessels, roughly 10-11 ships a day over the past 10 days — the lowest level since May, confirming independent analysts' earlier throughput estimates over Washington's more optimistic figures. Qatar's Foreign Ministry warned of an 'industrial catastrophe' if the crisis continues. Iran's Mohsen Rezaei said Tehran is preparing a restricted zone and threatened a full Hormuz blockade over US sanctions."
+    },
+    {
       "t": "Sep 7 — Rezaei: Iran will announce a new Hormuz route with Oman 'in coming days'",
       "lv": "ACTIVE",
       "color": "green",
       "d": "Iran's top security official Mohsen Rezaei said Tehran will declare a restricted zone near the Strait of Hormuz and announce a new shipping route agreed with Oman 'in the coming days' — a genuine softening from his own position a week earlier, when he said the strait 'will not reopen' while US forces remain in the Gulf."
-    },
-    {
-      "t": "Sep 7 — Ghalibaf warns of a 'heavier and more painful response'",
-      "lv": "ACTIVE",
-      "color": "orange",
-      "d": "Iran's Parliament Speaker Mohammad Bagher Ghalibaf warned that further US attacks would draw a 'heavier and more painful response,' directly referencing Saturday's destruction of the tanker M/T Kylo and disabling of two more vessels."
-    },
-    {
-      "t": "Sep 4-7 — Independent analysis: actual Hormuz throughput well below official US claims",
-      "lv": "ACTIVE",
-      "color": "orange",
-      "d": "USNI News reported International Crisis Group analyst Chris Newton's estimate that actual August Hormuz crude flow was roughly 5-7 million barrels a day — improving from earlier in the war, but well below the 10 million bpd average, and up to 15-17 million on a single day, that Treasury Secretary Bessent has cited. Iran struck at least 13 commercial vessels in August."
     },
     {
       "t": "Sep 5 — Iran fires on US carrier and destroyer; CENTCOM sinks and disables Iranian tankers",
@@ -349,12 +367,6 @@
       "lv": "ACTIVE",
       "color": "orange",
       "d": "Iran's Khatam al-Anbiya central command warned that continued naval blockade and 'harassment' would trigger strikes 'more severe than before' with a 'possibility of their expansion.' Trump called the war 'small potatoes' and 'not a big thing,' saying the US has 'essentially' taken over Iran. Iran's IRGC Navy separately claimed to have targeted three tankers on an 'unauthorized route' and three US-affiliated vessels, unconfirmed by third parties."
-    },
-    {
-      "t": "Sep 5 — ISW/CTP: Iran hasn't achieved its Hormuz goal, may be waiting to escalate",
-      "lv": "ACTIVE",
-      "color": "orange",
-      "d": "The Institute for the Study of War's Critical Threats Project assessed the IRGC faction controlling decision-making is dissatisfied with the war's trajectory and intent on using military force to change it, consistent with a New York Times report that US intelligence assesses Iran 'may be considering a significant escalation.' ISW noted Iran hasn't achieved recognised Hormuz control and is struggling technically to target vessels after radar losses, and may be waiting for a more advantageous moment to drive oil prices up. Qatar separately issued the first Gulf-state rebuttal of Iran's 'defensive-only' framing, citing UN-documented strikes on Qatari civilian sites."
     }
   ],
   "nukes": [
@@ -483,13 +495,13 @@
     {
       "axis": "Oil Shock",
       "w1": 60,
-      "now": 90,
+      "now": 95,
       "w4": 52
     },
     {
       "axis": "Market Crash",
       "w1": 45,
-      "now": 45,
+      "now": 62,
       "w4": 30
     },
     {
@@ -501,7 +513,7 @@
     {
       "axis": "Hormuz Closure",
       "w1": 80,
-      "now": 84,
+      "now": 90,
       "w4": 55
     },
     {
@@ -525,13 +537,13 @@
     {
       "axis": "Mil. Exposure",
       "w1": 35,
-      "now": 98,
+      "now": 99,
       "w4": 58
     }
   ],
   "assessment": {
-    "headline": "Iran offers a new Hormuz shipping route 'in coming days,' while its own Parliament Speaker warns of a 'heavier' response to US strikes — and India's markets open today for the real test of the weekend's tanker-sinking escalation.",
-    "body": "WHAT HAPPENED\nMohsen Rezaei, who a week ago ruled out reopening the strait while US forces remain in the Gulf, now says Tehran will declare a restricted zone and announce a new Oman-coordinated shipping route imminently — a real shift. Parliament Speaker Ghalibaf warned the same day of a 'heavier and more painful response' to further US attacks. Independently, an ICG analyst's estimate of actual Hormuz throughput (5-7m bpd) sits well below Washington's own figures (10-17m), a reminder that official numbers from either side need scrutiny.\n\nWHY IT MATTERS FOR INDIA\nToday's market open is the first genuine pricing test since Saturday's tanker-sinking — everything this tracker has on India's markets predates that escalation. Analysts' own explicit caution, urging investors to watch weekend developments before taking positions, signals real uncertainty about direction. Whichever way today's session moves, it will say more about how markets are actually weighing this war's newest phase than any of last week's data can.\n\nTHE THING TO WATCH\nWhether Rezaei's new-route announcement, once it actually arrives 'in coming days,' represents a genuine operational change or another verbal commitment that doesn't survive contact with the next provocation — a pattern that has repeated multiple times this war. If the route materialises alongside continued restraint from both sides, it would be the first durable de-escalation signal since the Larak Island exchange reopened hostilities. If Ghalibaf's threatened 'heavier response' materialises first, today's market optimism, if any, will prove premature."
+    "headline": "Eight Iranian tankers destroyed or disabled in under a week. Verified shipping data confirms Hormuz traffic is at its lowest since May. Brent hit $100, and India's Sensex just posted its third straight losing session.",
+    "body": "WHAT HAPPENED\nAfter twice failing to hit a US warship, the IRGC saw CENTCOM destroy five more of its tankers Tuesday, bringing the week's total to eight vessels lost. Rubio's warning — Iran loses tankers for every attempt on US ships — is now an explicit, standing policy. Iran retaliated by threatening tanker crews in Kuwait and Bahrain, widening the conflict's shipping-safety footprint to two more countries. Kpler's data confirms the damage: strait traffic down 28% to its lowest since May.\n\nWHY IT MATTERS FOR INDIA\nThis week marks a real shift from a market that was cautiously discounting war rhetoric to one that is actively repricing it. Three straight down sessions, Brent at $100, and FIIs turning net sellers together represent the most serious market reaction this tracker has recorded since the war's earliest weeks. The DII buying that's held up through the selloff is the one thing keeping this from being unambiguously alarming — it suggests domestic institutional money still sees this as temporary, not structural.\n\nTHE THING TO WATCH\nWhether Iran's threat against tanker crews in Kuwait and Bahrain is followed through, which would mark a further widening of the war beyond the Iran-US axis into direct threats on Gulf Arab states hosting US forces — precisely the scenario Qatar's 'industrial catastrophe' warning anticipates. If it stays rhetorical, this week may still mark the moment markets learned to take the tanker war seriously without the underlying conflict itself expanding further. If Kuwait or Bahrain-based vessels are actually hit, that distinction collapses."
   },
   "featured": [
     {
@@ -1365,17 +1377,27 @@
       "rupee": 94.91,
       "tag": "(8AM IST, PRE-MARKET): Iran's Rezaei said Tehran will declare a restricted zone and announce a new Hormuz shipping route with Oman 'in coming days' — a real softening from his position a week earlier. Parliament Speaker Ghalibaf warned the same day of a 'heavier and more painful response' to further US attacks, referencing Saturday's tanker destruction. An independent ICG analyst estimates actual August Hormuz throughput at 5-7m bpd, well below Washington's claimed 10-17m. Iran struck at least 13 commercial vessels in August. INDIA: markets open today for the first time since the weekend's tanker-sinking escalation; Friday's close was Sensex 76,645.88 (+493.02, +0.65%), Nifty 23,937.90 (+64.45, +0.27%), the index's longest weekly losing streak in five months despite the daily gain. Analysts flag the weekend's Iran developments as the key uncertain variable for today's session; no confirmed opening print available as of this update.",
       "sev": 4
+    },
+    {
+      "d": 194,
+      "l": "Sep 9",
+      "deaths": 7199,
+      "brent": 100.0,
+      "nifty": 23431.5,
+      "rupee": 95.0,
+      "tag": "(4PM IST, POST-MARKET): CENTCOM destroyed five more Iranian tankers (M/T Kaviz, M/T Charminar, M/T Horizon 1, M/T Riesco, M/T Derya) after the IRGC twice tried to hit a US warship — 8 tankers destroyed or disabled this week. Rubio: 'every time they try that, they're going to lose tankers.' Iran threatened tanker crews near Kuwait and Bahrain to evacuate immediately; claimed a strike on Jordan's Al-Azraq base, called 'ineffective' by a US official. Kpler confirms strait traffic fell 28% last week to its lowest since May. Qatar warned of an 'industrial catastrophe'; Iran's Rezaei threatened a full blockade over US sanctions. Brent hit $100, first time since May. INDIA: Sensex fell 813.35 (-1.08%) to 74,764.23, Nifty -203.60 (-0.86%) to 23,431.50 — a third straight losing session, IT and realty leading losses. FIIs turned net sellers (-₹123cr); DIIs kept buying (+₹1,349.64cr). Defence stocks (BEL) gained on ~$11bn in new government military purchases.",
+      "sev": 5
     }
   ],
   "exec": {
     "level": "SEVERE",
-    "phase": "Iran offers a new Hormuz route while its Parliament Speaker threatens a 'heavier' response",
-    "oilNote": "An independent analyst estimates actual August Hormuz throughput at 5-7 million bpd, well below the 10-17 million Washington has cited — worth remembering as either side's figures are quoted.",
-    "shipping": "REZAEI: TEHRAN WILL ANNOUNCE A NEW OMAN-COORDINATED SHIPPING ROUTE 'IN COMING DAYS'",
-    "shippingSub": "A genuine softening from Rezaei's own maximalist position a week earlier. Iran struck at least 13 commercial vessels in August, per USNI News.",
-    "military": "GHALIBAF WARNS OF A 'HEAVIER AND MORE PAINFUL RESPONSE'",
-    "militarySub": "Directly invoking Saturday's tanker destruction. The same day's mixed signals — accommodation and threat together — are the recurring pattern of this war.",
-    "indiaSub": "Markets open today for the first time since the weekend's tanker-sinking escalation. Nifty enters on its longest weekly losing streak in five months; analysts flag the weekend's news as the key wildcard."
+    "phase": "Eight Iranian tankers destroyed or disabled in under a week; verified data confirms Hormuz traffic at its lowest since May",
+    "oilNote": "Brent hit $100 a barrel for the first time since May, driven by the tanker strikes and reported Houthi attacks on Saudi energy infrastructure.",
+    "shipping": "KPLER: STRAIT TRAFFIC FELL 28% LAST WEEK TO ITS LOWEST SINCE MAY",
+    "shippingSub": "Verified data now confirms what independent analysts flagged earlier this week. The IRGC has threatened tanker crews near Kuwait and Bahrain to evacuate immediately.",
+    "military": "CENTCOM DESTROYS FIVE MORE TANKERS; RUBIO MAKES THE DETERRENT POLICY EXPLICIT",
+    "militarySub": "\"Every time they try that, they're going to lose tankers,\" Rubio says. Iran's Rezaei threatens a full Hormuz blockade over US sanctions — a harder line than two days ago.",
+    "indiaSub": "Sensex fell 813 points today, a third straight losing session, as Brent hit $100. FIIs turned net sellers; DIIs kept buying. Defence stocks gained on new government military purchases."
   },
   "hormuzPhases": [
     {
@@ -1424,7 +1446,7 @@
       "days": "Aug 26-"
     }
   ],
-  "_phaseBadge": "Iran's top security official Mohsen Rezaei says Tehran will declare a restricted zone near Hormuz and announce a new shipping route agreed with Oman \"in the coming days\" · Iran's Parliament Speaker warned of a \"heavier and more painful response\" to any new US attacks after Saturday's tanker strikes · An independent analyst tells USNI News actual August Hormuz throughput was likely just 5-7 million bpd — well below the 10-17 million bpd Washington has cited · Iran struck at least 13 commercial vessels in August · India's markets, closed all weekend, open today for the first time since the tanker-sinking escalation",
+  "_phaseBadge": "CENTCOM destroyed five more Iranian oil tankers Tuesday after the IRGC twice tried to hit a US warship · Rubio: \"every time they try that, they're going to lose tankers\" · The IRGC warned all tanker crews near Kuwait and Bahrain to evacuate immediately, threatening to target vessels there · Verified Kpler data shows strait traffic fell 28% last week to its lowest since May · Qatar warns of an \"industrial catastrophe\" if the crisis continues · Brent hit $100 for the first time since May · India's Sensex fell for a third straight session, down 813 points today alone",
   "budget": {
     "petrolPre": 94.72,
     "petrolNow": 111.21,
@@ -1434,12 +1456,12 @@
     "lpgNow": 942.0
   },
   "brief": [
-    "Iran sent two different signals overnight. Top security official Mohsen Rezaei — who a week ago said the strait 'will not reopen' while US forces remain — now says Tehran will declare a restricted zone and announce a new shipping route agreed with Oman 'in coming days,' a genuine softening. But Parliament Speaker Ghalibaf warned the same day of a 'heavier and more painful response' to any new US attacks, directly invoking Saturday's destruction of the tanker M/T Kylo.",
-    "An independent check on the throughput numbers both sides cite: an International Crisis Group analyst estimates actual August Hormuz flow at 5-7 million barrels a day — an improving trend, but well below the 10-17 million bpd Washington has claimed. Iran struck at least 13 commercial vessels in August. The gap between official and independent figures is a reason for caution whenever either government quotes a headline traffic number.",
-    "India's markets open today for the first time since Saturday's tanker-sinking escalation. Nifty enters the session on its longest weekly losing streak in five months, having gained just 0.10% Friday on dovish Fed commentary. Analysts are explicitly telling investors to watch GIFT Nifty and weekend Iran developments before taking positions — an unusual degree of stated caution that itself signals how unresolved today's direction is.",
-    "At the pump, prices remain unchanged: petrol ₹111.21 a litre in Delhi, diesel ₹97.83, a cylinder ₹942. Today's session is the real test of whether markets treat the weekend's tanker strikes as a genuine turning point or another episode to look past — the same question this tracker flagged on Sunday."
+    "This week is the first where verified data has confirmed the escalation rather than lagged behind it. After the IRGC twice tried and failed to hit a US warship, CENTCOM destroyed five more Iranian tankers Tuesday, bringing the week's total to eight vessels destroyed or disabled. Rubio made the policy explicit: 'every time they try that, they're going to lose tankers.' Iran responded by threatening tanker crews near Kuwait and Bahrain to evacuate immediately.",
+    "Kpler's shipping data confirms what independent analysts were already flagging: strait traffic fell 28% last week to its lowest level since May, directly contradicting the more optimistic 'recovering to two-thirds of pre-war' narrative from late August. Qatar has warned of an 'industrial catastrophe' if the crisis continues; Iran's Rezaei has hardened from offering a new shipping route two days ago to threatening a full Hormuz blockade over US sanctions.",
+    "Brent hit $100 a barrel for the first time since May, and India's markets are registering it directly: the Sensex fell 813 points today alone, its third consecutive losing session, with IT and realty stocks leading the fall. FIIs turned net sellers for the first time in weeks, though DIIs kept buying — a signal of domestic conviction this is a dip, not the start of something worse, though that remains unproven.",
+    "India's defence stocks were the one clear beneficiary, gaining on approximately $11 billion in newly approved government military purchases. At the pump, prices remain unchanged for now: petrol ₹111.21 a litre in Delhi, diesel ₹97.83, a cylinder ₹942 — though a sustained $100 Brent makes that harder to hold."
   ],
-  "shareLine": "Iran offers a new Hormuz shipping route 'in coming days' — while its own Parliament Speaker warns of a 'heavier' response to US strikes. India's markets open today for the first real test of the weekend's tanker-sinking escalation.",
+  "shareLine": "Eight Iranian tankers destroyed or disabled in under a week. Verified shipping data confirms Hormuz traffic is at its lowest since May. Brent hit $100, and India's Sensex fell 813 points today — its third straight losing session.",
   "author": {
     "name": "Nithiyanandam Yogeswaran",
     "twitter": "https://x.com/prof_nithiya",
