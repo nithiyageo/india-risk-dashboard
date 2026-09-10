@@ -2,7 +2,7 @@
   "_updated": "2026-09-10 — 07:16: IST",
   "_utc": "2026-09-10T01:46:54.951Z",
   "_source": "Yahoo Finance + ExchangeRate API",
-  "_note": "Auto-updated via GitHub Action every 4 hours. War content updated manually.",
+  "_note": "Auto-updated via GitHub Action every 4 hours. War content updated manually. [MANUALLY CORRECTED 2026-09-10]: this pull ran at 07:16 IST, before NSE/BSE opened, and Yahoo's regularMarketPrice/chartPreviousClose pair was mismatched — price matched the verified Sept 9 close but change/changePct did not (sensex showed -1368.57 instead of the verified -813.35; nifty showed -347.7 instead of -203.60). Corrected here to match the confirmed Sept 9 close (India TV, Business Standard, war-intel.json). scripts/fetch-market-data.mjs has been patched to stop this recurring — see the reconcile() guard added there.",
   "brent": {
     "price": 101.63,
     "change": 0.42,
@@ -10,13 +10,13 @@
   },
   "nifty": {
     "price": 23431.5,
-    "change": -347.7,
-    "changePct": -1.46
+    "change": -203.60,
+    "changePct": -0.86
   },
   "sensex": {
     "price": 74764.23,
-    "change": -1368.57,
-    "changePct": -1.8
+    "change": -813.35,
+    "changePct": -1.08
   },
   "rupee": {
     "price": 95.09,
