@@ -32,12 +32,50 @@ async function fetchYahoo(symbol) {
       prevClose: parseFloat(meta.chartPreviousClose?.toFixed(2)),
       change: parseFloat((meta.regularMarketPrice - meta.chartPreviousClose).toFixed(2)),
       changePct: parseFloat(((meta.regularMarketPrice - meta.chartPreviousClose) / meta.chartPreviousClose * 100).toFixed(2)),
-      marketState: meta.currentTradingPeriod?.regular ? 'available' : 'unknown',
+      // Yahoo's real session indicator — PRE / REGULAR / POST / CLOSED / PREPRE / POSTPOST.
+      marketState: meta.marketState || 'unknown',
     };
   } catch (err) {
     console.error(`Failed to fetch ${symbol}:`, err.message);
     return null;
   }
+}
+
+// Guards against the specific bug this replaces: NSE/BSE indices (and,
+// less often, Brent/USDINR) can return a `regularMarketPrice` that is
+// still the last completed session's close while `chartPreviousClose`
+// has already rolled forward to a *different* reference session — this
+// happens reliably on runs that land before NSE/BSE open (9:15am IST)
+// or right at Yahoo's daily rollover. The mismatch produces a `change`/
+// `changePct` that doesn't reconcile with the actual last verified
+// close (seen 2026-09-10: price matched Sept 9's close exactly, but
+// change came back as -1368.57 instead of the verified -813.35).
+//
+// Fix: if the fetched price hasn't actually moved from the last run's
+// stored price, there's no new session to compute a delta from — keep
+// the previously stored change/changePct instead of recomputing off a
+// possibly-mismatched prevClose. This is symbol-agnostic and doesn't
+// depend on correctly parsing IST market hours.
+function reconcile(fetched, existingEntry, fallback) {
+  if (!fetched) return existingEntry || fallback;
+
+  const prevStored = existingEntry?.price;
+  const priceUnchanged = prevStored !== undefined && prevStored === fetched.price;
+
+  if (priceUnchanged && existingEntry) {
+    console.log(`  price unchanged (${fetched.price}), keeping stored change/changePct`);
+    return {
+      price: fetched.price,
+      change: existingEntry.change,
+      changePct: existingEntry.changePct,
+    };
+  }
+
+  return {
+    price: fetched.price,
+    change: fetched.change,
+    changePct: fetched.changePct,
+  };
 }
 
 // Fallback: ExchangeRate API for USD/INR (free, no key)
@@ -82,35 +120,22 @@ async function main() {
     rupee = await fetchForexFallback();
   }
 
+  console.log('Reconciling against last stored values...');
   const output = {
     _updated: timestamp,
     _utc: now.toISOString(),
     _source: 'Yahoo Finance + ExchangeRate API',
     _note: 'Auto-updated via GitHub Action every 4 hours. War content updated manually.',
 
-    brent: brent ? {
-      price: brent.price,
-      change: brent.change,
-      changePct: brent.changePct,
-    } : existing.brent || { price: 106, change: 0, changePct: 0 },
+    brent: reconcile(brent, existing.brent, { price: 106, change: 0, changePct: 0 }),
+    nifty: reconcile(nifty, existing.nifty, { price: 23002, change: 0, changePct: 0 }),
+    sensex: reconcile(sensex, existing.sensex, { price: 74207, change: 0, changePct: 0 }),
 
-    nifty: nifty ? {
-      price: nifty.price,
-      change: nifty.change,
-      changePct: nifty.changePct,
-    } : existing.nifty || { price: 23002, change: 0, changePct: 0 },
-
-    sensex: sensex ? {
-      price: sensex.price,
-      change: sensex.change,
-      changePct: sensex.changePct,
-    } : existing.sensex || { price: 74207, change: 0, changePct: 0 },
-
-    rupee: rupee ? {
-      price: rupee,
-      change: usdinr?.change || 0,
-      changePct: usdinr?.changePct || 0,
-    } : existing.rupee || { price: 93.20, change: 0, changePct: 0 },
+    // Rupee keeps its own fallback path (ExchangeRate API has no change/%),
+    // but still needs the same guard against a stale USDINR=X prevClose.
+    rupee: usdinr
+      ? reconcile(usdinr, existing.rupee, { price: 93.20, change: 0, changePct: 0 })
+      : (rupee ? { price: rupee, change: 0, changePct: 0 } : (existing.rupee || { price: 93.20, change: 0, changePct: 0 })),
   };
 
   writeFileSync('public/market-data.json', JSON.stringify(output, null, 2));
