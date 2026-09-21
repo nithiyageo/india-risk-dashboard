@@ -497,6 +497,87 @@ const shareCard = (payload) => {
   }, "image/png");
 };
 
+// ─── Geospatial map ───────────────────────────────────────────────
+// Static basemap (public/geo-base.json, Natural Earth via world-atlas) plus
+// points from intel.geoint. Equirectangular, 20px/degree, 30E-80E / 3N-40N.
+// No map library: one SVG, points positioned arithmetically.
+const GEO_KIND = {
+  chokepoint:{l:"Chokepoint", c:T.wine},
+  incident:  {l:"Incident",   c:C.red},
+  energy:    {l:"Energy",     c:C.orange},
+  base:      {l:"Base",       c:C.purple},
+  india:     {l:"India",      c:C.green},
+  nuclear:   {l:"Nuclear",    c:T.ink},
+};
+const geoXY = p => [(p.lon-30)*20, (40-p.lat)*20];
+
+const GeoMap = ({geo, nukes}) => {
+  const [base, setBase] = useState(null);
+  const [kind, setKind] = useState("all");
+  const [sel,  setSel]  = useState(null);
+  useEffect(() => {
+    fetch("./geo-base.json").then(r=>r.ok?r.json():null).then(setBase).catch(()=>{});
+  }, []);
+  const pts = [
+    ...(geo?.points ?? []),
+    ...(nukes ?? []).filter(n=>n.lat!=null && n.lon!=null)
+      .map(n=>({n:noEmoji(n.name), t:"nuclear", lat:n.lat, lon:n.lon, d:"", i:noEmoji(n.status||"")})),
+  ];
+  const shown = pts.filter(p => kind==="all" || p.t===kind);
+  const cur = sel!=null ? pts[sel] : null;
+  return (
+    <div>
+      <div style={{display:"flex", gap:8, flexWrap:"wrap", marginBottom:14}}>
+        {["all",...Object.keys(GEO_KIND)].map(k=>(
+          <button key={k} onClick={()=>{setKind(k); setSel(null);}}
+            style={{cursor:"pointer", background:kind===k?T.wine:"transparent",
+              color:kind===k?"#fff":T.ink70, border:`1px solid ${kind===k?T.wine:T.ink20}`,
+              padding:"4px 10px", fontFamily:MONO, fontSize:10, letterSpacing:"0.1em",
+              textTransform:"uppercase"}}>
+            {k==="all"?"All":GEO_KIND[k].l}
+          </button>
+        ))}
+      </div>
+      <div style={{border:HAIR, background:"#fff"}}>
+        <svg viewBox="0 0 1000 740" role="img" aria-label="Map of the Gulf, Red Sea and India with tracked incidents"
+          style={{width:"100%", height:"auto", display:"block"}}>
+          <rect width="1000" height="740" fill="#f4f7f9"/>
+          {base && <path d={base.L} fill="#ebe7e0" stroke="none"/>}
+          {base && <path d={base.B} fill="none" stroke={T.ink20} strokeWidth="0.6"/>}
+          {shown.map(p=>{
+            const i = pts.indexOf(p); const [x,y] = geoXY(p);
+            const on = sel===i; const col = GEO_KIND[p.t]?.c || T.ink;
+            return (
+              <g key={i} onClick={()=>setSel(on?null:i)} style={{cursor:"pointer"}}>
+                <circle cx={x} cy={y} r={on?9:6} fill={col} stroke="#fff" strokeWidth="1.5"/>
+                {(on || p.t==="chokepoint") && (
+                  <text x={x+10} y={y+4} fontSize="12" fontFamily={MONO} fill={T.ink}
+                    stroke="#fff" strokeWidth="3" paintOrder="stroke">{p.n}</text>
+                )}
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+      <div style={{display:"flex", gap:16, flexWrap:"wrap", margin:"10px 0 18px",
+        fontFamily:MONO, fontSize:10, letterSpacing:"0.08em", color:T.ink50, textTransform:"uppercase"}}>
+        {Object.entries(GEO_KIND).map(([k,v])=>(
+          <span key={k}><span style={{display:"inline-block", width:8, height:8, borderRadius:"50%",
+            background:v.c, marginRight:6}}/>{v.l}</span>
+        ))}
+      </div>
+      {cur && (
+        <div style={{borderTop:`2px solid ${T.ink}`, marginBottom:18}}>
+          <Def label={cur.n}>{cur.i}{cur.d ? ` (${cur.d})` : ""}</Def>
+        </div>
+      )}
+      <div style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.06em", color:T.ink50}}>
+        {geo?._note}
+      </div>
+    </div>
+  );
+};
+
 // ─── Hormuz timeline ──────────────────────────────────────────────
 // Entries are written with a shouted "DAY 104-105 —" lead, which was all a
 // one-sentence preview ever showed. The lead is stripped for the preview and
@@ -557,6 +638,7 @@ const NAV = [
   {id:"kitchen",   l:"Household"},
   {id:"economic",  l:"Markets"},
   {id:"military",  l:"Military"},
+  {id:"geoint",   l:"Geospatial"},
   {id:"nuclear",   l:"Nuclear"},
   {id:"radar",     l:"Risk Index"},
   {id:"warlog",    l:"Archive"},
@@ -1140,8 +1222,25 @@ export default function App() {
         )}
       </Band>
 
+      {/* ══ GEOSPATIAL ══ */}
+      {intel?.geoint && (
+        <Band id="geoint" deep>
+          <Head eyebrow="Geospatial" title="Where it is" em="happening"
+            lede="Chokepoints, incidents, energy nodes, bases and Indian exposure on one map. Select a point for detail."/>
+          <GeoMap geo={intel.geoint} nukes={iNukes}/>
+          <Eyebrow style={{margin:"28px 0 8px"}}>Free sources for verification</Eyebrow>
+          <div style={{borderTop:`2px solid ${T.ink}`}}>
+            {(intel.geoint.sources ?? []).map((s,i)=>(
+              <Def key={i} label={s.n}>
+                {s.use} <a href={s.u} target="_blank" rel="noopener noreferrer" style={{whiteSpace:"nowrap"}}>Open ↗</a>
+              </Def>
+            ))}
+          </div>
+        </Band>
+      )}
+
       {/* ══ NUCLEAR ══ */}
-      <Band id="nuclear" deep>
+      <Band id="nuclear">
         <Head eyebrow="Nuclear" title="Nuclear" em="exposure"
           lede="Iranian site status and India's downwind position. Scores here are analytical estimates, not measurements."/>
 
@@ -1242,7 +1341,7 @@ export default function App() {
       </Band>
 
       {/* ══ RISK INDEX ══ */}
-      <Band id="radar">
+      <Band id="radar" deep>
         <Head eyebrow="Risk index" title="Where the risk" em="sits"
           lede="Six axes scored 0–100. Week 1 is the war's opening reading, the outlook is a twelve-week extrapolation rather than a forecast."/>
         {!iRadar.length && <Empty label="Risk index"/>}
@@ -1287,7 +1386,7 @@ export default function App() {
       </Band>
 
       {/* ══ ARCHIVE ══ */}
-      <Band id="warlog" deep>
+      <Band id="warlog">
         <Head eyebrow="Archive" title="The war" em="log"
           lede="Every logged session since Day 1, newest first."/>
         <WarInNumbers timeline={intel?.timeline}/>
@@ -1335,7 +1434,7 @@ export default function App() {
       </Band>
 
       {/* ══ ASSESSMENT ══ */}
-      <Band id="assessment">
+      <Band id="assessment" deep>
         <Head eyebrow="Assessment" title="Strategic" em="assessment"
           lede="The tracker's reading of where this is going, and what would change it."/>
         {!iAssess && <Empty label="Strategic assessment"/>}
@@ -1470,7 +1569,7 @@ export default function App() {
 
           <div style={{borderTop:"1px solid rgba(255,255,255,0.18)", paddingTop:28}}>
             {[
-              {h:"Sources", t:"Al Jazeera, AP, Reuters, Bloomberg, CNN, CBS, NBC, ABC, NPR, CNBC, Iran International, Times of Israel, ACLED, Atlantic Council, Amnesty International, Business Standard, Business Today, Goodreturns, Trading Economics, IAEA, Human Rights Watch, CSIS, IEA, EIA, Kpler, MarineTraffic, MUFG, ORF, Ministry of External Affairs, Nomura, Elara, UBS, HSBC, Kotak, SBI Securities, Choice Broking."},
+              {h:"Sources", t:"Al Jazeera, AP, Reuters, NASA FIRMS, Copernicus Sentinel, IMF PortWatch, UKMTO, GDELT, Bloomberg, CNN, CBS, NBC, ABC, NPR, CNBC, Iran International, Times of Israel, ACLED, Atlantic Council, Amnesty International, Business Standard, Business Today, Goodreturns, Trading Economics, IAEA, Human Rights Watch, CSIS, IEA, EIA, Kpler, MarineTraffic, MUFG, ORF, Ministry of External Affairs, Nomura, Elara, UBS, HSBC, Kotak, SBI Securities, Choice Broking."},
               {h:"Methodology", t:"Nuclear and contamination scores are analytical estimates, not confirmed measurements. Projections are trend extrapolations rather than forecasts. All timestamps are IST (UTC+5:30). Hormuz shipping figures draw on Kpler, MarineTraffic, Windward and news reporting. Market series come from Yahoo Finance and an exchange-rate API, synced every four hours."},
               {h:"Citation", t:`${(iAuthor?.name||"Nithiyanandam Yogeswaran").split(" ").slice(-1)[0]}, ${(iAuthor?.name||"Nithiyanandam Yogeswaran").split(" ").slice(0,-1).join(" ")} (2026) West Asia War: India Risk Dashboard. Takshashila Institution. Available at: https://nithiyageo.github.io/india-risk-dashboard/ (Accessed: ${citedOn}).`},
               {h:"Contact", t:`Queries and media enquiries: ${iAuthor?.contact || "geospatial@takshashila.org.in"}`},
