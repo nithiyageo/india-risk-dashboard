@@ -1,6 +1,6 @@
 {
-  "_updated": "September 21, 2026 — 12:30 PM IST (Monday)",
-  "_asOf": "2026-09-21",
+  "_updated": "September 22, 2026 — 9:50 PM IST (Tuesday)",
+  "_asOf": "2026-09-22",
   "_start": "2026-02-28",
   "_day": 206,
   "preWar": {
@@ -11,82 +11,82 @@
     "petrol": 94.72,
     "diesel": 87.62
   },
-  "_phase": "TRUMP SIGNS THE RUSSIA/IRAN SANCTIONS ACT — 100% TARIFF POWER OVER INDIA NOW LAW, NOT YET USED; HOUTHIS FIRE ON RIYADH; IRAN SENDS SEVEN CONDITIONS VIA QATAR WHILE WARNING OF US STRIKES; BRENT SLIPS BELOW $102, SENSEX OPENS +420",
-  "_note": "Verified across multiple outlets: Al Jazeera live blogs and explainers (Sept 19-21: Iran's conditions via Qatar, Khatam al-Anbiya warning), Al Jazeera (Sept 19: Houthi missile at Riyadh), GlobalSecurity Day-203/204 sitreps (Hormuz transit datasets, CENTCOM tally, Brent settle), Business Standard (FPI flows to Sept 18), Kotak Neo (Sept 18 close), Zerodha weekly metrics, HDFC Sky (Sept 21 open), Equitybrew (week-ahead). Covers Sept 18 9:40 AM to Sept 21 12:30 PM IST, including the weekend. Day numbering corrected: Sept 21 = Day 206 (the Sept 18 entries were labelled Day 202; the correct count from Feb 28 is Day 203).",
-  "_todo": "1) Sanctions Act signing (Sept 18, H.R. 5334) is sourced to india.com and Eastern Herald; confirm against whitehouse.gov / congress.gov. Treasury/State have 180 days to name the top-5 Russian-energy buyers, then a 60-day window — no tariff is imminent. 2) No 12:30 PM Sensex/Nifty print is sourced; the 9:15 AM open (Sensex 74,714.90, Nifty 23,386.15) is carried. [VERIFY] midday. 3) Brent conflict: HDFC Sky has $101.56 (-2.22%) at the open, GlobalSecurity has a $102.41 Sept 18 settle, but the auto-updated market-data.json (Yahoo, 07:30 IST) shows $97.34 — likely a different contract month/timestamp. Reconcile before treating either as the dashboard headline. 4) Sept 18 FII/DII daily print not found; only September month-to-date (FPI -₹20,974cr to Sept 18) is carried. 5) Saudi two-week ceasefire proposal via Oman is single-sourced (Yemen briefing note) — not in the headline. 6) A Manila Times report of an Iranian strike on a tanker (Sept 18-20) is unattributed and uncorroborated — not carried as an event. 7) Riyadh Sept 19: Saudi says intercepted, no damage; residents reported smoke near King Khalid airport and one outlet claims a fuel-depot fire — unresolved. 8) Open from earlier: El Gaia casualty reconciliation, Bab el-Mandeb withdrawal-vs-control conflict, Indian vessel/seafarer counts (7 / 148 / 1) not re-sourced this cycle, retail fuel prices not re-verified. 9) Timeline (war log) has no rows for Sept 10-17; only Sept 18 and Sept 21 added.",
+  "_phase": "TRUMP AT THE UN: A 'BIG DECISION' TO MAKE A DEAL WITH IRAN OR 'ANNIHILATE' IT — EVEN AS THE US PULLS BACK FROM STRIKING THE HOUTHIS, WHO HAVE OPENED A NEW GROUND OFFENSIVE IN YEMEN'S HIGHLANDS; OIL FALLS BELOW $101 ON RECORD SAUDI REROUTING THROUGH HORMUZ",
+  "_note": "Verified: globalsecurity.org Iran War Day 204 sitrep (data cutoff 0500 ET Sept 19 — covers through Sept 19 only; nothing from this source for Sept 20-22), Wikipedia's 'September 2026 United States strikes on Iran' summary page, FDD's Long War Journal (Sept 21, Houthi highland campaign detail), NBC/AP/Al Jazeera/The Defense Post (Sept 21-22, UK aerial-refueling offer to Saudi Arabia), ABC News/CBS News/CNN (Sept 22, Trump's UN General Assembly remarks), HDFC Sky (Sept 22 market open, 'US calls off airstrikes'), Business Standard and Kotak Neo (Sept 18, 21, 22 NSE closes). Covers roughly 4.5 days since the last update (Sept 18 9:40 AM to Sept 22 9:50 PM) — markets traded Friday Sept 18 and Monday-Tuesday Sept 21-22 (weekend in between); this is a wide catch-up cycle with a genuine mix of escalation (Trump's UN threat, a new Houthi ground offensive, a Houthi drone fatality near Mecca reported previously) and de-escalation (a called-off US strike on the Houthis, falling oil, a market recovery).",
+  "_todo": "1) Trump's UN 'annihilate' remarks are corroborated across ABC/CBS/CNN, but a claim that he expects 'a deal after the US midterm elections' appeared in only one lower-confidence source (aninews.in) and is not carried into the main text pending better sourcing. 2) The Houthi highland-offensive casualty claim ('80+ Houthi casualties' in Marib, per a Yemeni military brigadier general) is single-sourced and unverified, as is the Houthi claim of '917 Saudi airstrikes in Yemen as of Sept 21' — both flagged, not endorsed. 3) globalsecurity.org's Day 204 sitrep cites 'Oman crude above $130' and 'Shanghai INE crude at a record $138.50' alongside conventional Brent prices in the $100-103 range in the same window — these physical-market/regional-benchmark figures don't visibly reconcile with the headline Brent number and are flagged rather than merged into it, consistent with prior updates. 4) El Gaia's disputed casualty figures (23 evacuated/2 missing per Oman vs. '14 Indian crew, 1 missing' per Indian press, three updates ago) remain unresolved — no new reporting found this cycle. 5) The Russia/Iran sanctions bill still has no confirmed signing or enforcement action sourced. 6) No Sept 19-22 update found on Houthi control of Bab el-Mandeb (withdrawal-vs-no-withdrawal dispute), the IAEA uranium-estimate discrepancy, or the Dubai mariner's nationality (Sept 9) — all remain open from prior updates. 7) UN fact-finding mission's war-crimes finding against the US (Sept 17, Minab strike) is carried with the White House's on-the-record rejection alongside it, per this page's practice of not adjudicating between the two.",
   "ticker": [
-    "TRUMP SIGNED THE LINDSEY O. GRAHAM SANCTIONING RUSSIA AND IRAN ACT SEPT 18 — UP TO 100% TARIFFS ON TOP RUSSIAN-ENERGY BUYERS, INCL. INDIA; TREASURY/STATE HAVE 180 DAYS TO NAME THEM, NO TARIFF YET",
-    "MEA: INDIA 'MONITORING THE BILL CLOSELY', WILL TAKE 'NECESSARY MEASURES TO SAFEGUARD ITS TRADE INTERESTS'",
-    "HOUTHI BALLISTIC MISSILE FIRED AT RIYADH SEPT 19 — INTERCEPTED PER SAUDI-LED COALITION; ATTEMPTED STRIKES ON BISHA, TAIF, FARASAN, YANBU AND AN ARAMCO SITE",
-    "IRAN SENDS SEVEN CONDITIONS TO THE US VIA QATAR (END WAR ON ALL FRONTS, RELEASE FROZEN FUNDS, END NAVAL BLOCKADE) — REZAEI, AL JAZEERA, SEPT 20; NO US RESPONSE YET",
-    "IRAN WARNS IT HAS LEARNED OF A POSSIBLE NEW US STRIKE ROUND — WILL RETALIATE 'WITHOUT LIMITATIONS'; TRUMP: OBLITERATE, LET IRAN ROT ECONOMICALLY, OR DEAL — 'VERY BIG THINGS' COMING",
-    "PEZESHKIAN ADDRESSES THE UN GENERAL ASSEMBLY SEPT 23; TRUMP 'PROBABLY OPEN' TO MEETING HIM",
-    "HORMUZ: 12 TRANSITS SEPT 16 (WINDWARD) VS 4 ON SEPT 15 (REUTERS); CENTCOM BLOCKADE TALLY UNCHANGED AT 103 SINCE SEPT 15; NO ANNOUNCED US STRIKES ASHORE SEPT 18-19",
-    "BRENT DOWN 2.2% TO ~$101.6 AT MONDAY'S OPEN, AFTER A $102.41 SETTLE FRIDAY (THIRD SESSION LOWER) ON SAUDI PIPELINE-RECOVERY NEWS; WEEK +2.7%",
-    "INDIA: FRIDAY CLOSE SENSEX 74,294.96 (-0.03%), NIFTY 23,346.40 (+0.33%); SIXTH STRAIGHT WEEKLY NIFTY DECLINE. MONDAY OPEN SENSEX 74,714.90 (+420), NIFTY 23,386.15 (+40). RUPEE ~95.9-96, NEAR RECORD LOW",
-    "FPIs HAVE PULLED ₹20,974 CR FROM EQUITIES IN SEPTEMBER TO SEPT 18; YTD OUTFLOW ~₹2.45 TRILLION"
+    "TRUMP AT THE UN: FACES A 'BIG DECISION' — MAKE A DEAL WITH IRAN OR 'ANNIHILATE' IT, 'DRIVE THEM INTO HELL WITH NO CHANCE OF SURVIVAL'",
+    "US CALLS OFF PLANNED AIRSTRIKES ON THE HOUTHIS AT THE LAST MINUTE — SECOND SUCH WITHDRAWAL FROM DIRECT ACTION SINCE EARLY 2025",
+    "HOUTHIS OPEN A NEW GROUND OFFENSIVE FOR YEMEN'S TAIZ HIGHLANDS TO ISOLATE THE CITY; IRGC ADVISORS SEEN BUILDING TUNNELS/RADAR ON SEIZED BAB EL-MANDEB TERRITORY",
+    "UK TO SEND A SINGLE RAF TANKER TO REFUEL SAUDI JETS INTERCEPTING HOUTHI ATTACKS — MODEST BUT FIRST DIRECT UK MILITARY SUPPORT OF THE WAR",
+    "UN FACT-FINDING MISSION: 'REASONABLE GROUNDS' US COMMITTED WAR CRIMES IN 2 STRIKES INCL. ONE HITTING ~120 SCHOOLCHILDREN AT MINAB; WHITE HOUSE REJECTS FINDING",
+    "BRENT FALLS BELOW $101 — DOWN FROM $108.75 A WEEK AGO — AS SATELLITE IMAGERY SHOWS SAUDI REROUTED 2.8M BPD THROUGH HORMUZ (VS 700K BPD IN AUGUST)",
+    "IRAN'S ECONOMY BUCKLING: RIAL DOWN ~44% IN 6 MONTHS, FOOD INFLATION 127.5% Y/Y, CRUDE LOADINGS DOWN ~85%; MAHAN AIR SUSPENDS IRAN-TURKEY FLIGHTS",
+    "INDIA: SENSEX SNAPPED A 4-DAY WIN STREAK TODAY (-329.91, -0.44%, TO 74,529.08) AFTER FRIDAY'S RALLY THAT ENDED A 6-WEEK LOSING RUN (+564.03, +0.76%)",
+    "FED'S WARSH CITES 'TENSION IN THE MIDDLE EAST' AS A FACTOR IN SEPT 16'S RATE HIKE — FIRST FORMAL FED ACKNOWLEDGMENT OF THE WAR'S ECONOMIC IMPACT",
+    "HORMUZ TRANSIT DATA STILL IRRECONCILABLE ACROSS SOURCES: REUTERS 4/DAY VS WINDWARD 12/DAY FOR THE SAME DATES; WASHINGTON'S OWN FIGURES MATCH NEITHER"
   ],
   "whatChanged": {
-    "label": "What changed — Monday September 21, 12:30 PM IST (Day 206)",
+    "label": "What changed — Tuesday September 22, 9:50 PM IST (Day 206)",
     "items": [
       {
         "color": "red",
-        "bold": "The Russia/Iran sanctions bill is now law",
-        "text": "Trump signed the Lindsey O. Graham Sanctioning Russia and Iran Act on Sept 18 (secondary-source confirmation). It authorises tariffs of up to 100% on the five largest buyers of Russian energy; India is the third-largest. Treasury and State have 180 days to name the countries, then a 60-day window to certify cuts or tariff. MEA says it is monitoring closely. No tariff is imminent."
-      },
-      {
-        "color": "red",
-        "bold": "Houthis fire a ballistic missile at Riyadh",
-        "text": "The Saudi-led coalition says a missile fired at dawn on Sept 19 was intercepted; residents reported smoke near King Khalid airport. The Houthis also claim strikes on Bisha, Taif, Farasan, Yanbu and an Aramco site. Ground fighting continues: government forces report local gains near Taiz and Marib but have not retaken Mocha or Dhubab. Bab el-Mandeb traffic remains broadly functional."
+        "bold": "Trump's UN ultimatum: a deal, or 'annihilate' Iran",
+        "text": "At the UN General Assembly Sept 22, Trump framed a 'big decision' ahead as binary: make a deal with Iran to end the war, or 'annihilate the Islamic Republic' and 'drive them into hell with no chance of survival and no hope of future greatness.' Iran's President Pezeshkian addressed the same Assembly to lay out 'the grievances of the Iranian people, the crimes that have taken place, and the mistrust created.' Separately, the IRGC said the US and Israel 'must accept the region's freedom from their vile and criminal presence.'"
       },
       {
         "color": "orange",
-        "bold": "Iran sends conditions to the US; both sides warn of escalation",
-        "text": "Rezaei says seven conditions went to Washington via Qatar: end the war on all fronts, release frozen funds, lift the naval blockade, stop attacks on Iran. Iran also says it has learned of a possible new US strike round and will retaliate 'without limitations'. Trump lists three options — obliterate, economic strangulation, or a deal — and says he is open to meeting Pezeshkian."
+        "bold": "The US pulls back from striking the Houthis even as they open a new ground offensive",
+        "text": "Trump reportedly called off planned US airstrikes on the Houthis at the last minute, even as troops were said to be loading bombs onto aircraft — the second such withdrawal from direct action against the group since an early-2025 campaign ended in ceasefire. At the same time, Houthi forces launched what CNN describes as the 'next phase' of their campaign: a ground offensive for Yemen's Taiz Governorate highlands aimed at isolating Taiz city, against Yemeni government forces (a Yemeni military source claims 80+ Houthi casualties in related Marib fighting, unverified). IRGC advisors have reportedly been seen on newly seized Bab el-Mandeb territory overseeing tunnel construction and coastal-radar installation — a sign of permanent military entrenchment, not just a raid."
+      },
+      {
+        "color": "orange",
+        "bold": "The UK steps in, modestly, and a UN mission finds 'reasonable grounds' of US war crimes",
+        "text": "The UK will send a single RAF Voyager tanker to provide aerial refueling — not strikes — for Saudi jets intercepting Houthi attacks, operating from Cyprus; a modest but symbolically significant first direct UK military commitment to the war. Separately, a UN Independent International Fact-Finding Mission found 'reasonable grounds to believe' the US committed war crimes in two strikes, including one that killed roughly 120 schoolchildren at Minab; the White House dismissed the finding, saying 'the only party committing war crimes in the conflict has been the Iranian regime.'"
       },
       {
         "color": "amber",
-        "bold": "Oil eases; Hormuz remains constrained",
-        "text": "Brent settled at $102.41 Friday (third lower session) after Saudi announced pipeline recovery, and fell a further ~2% at Monday's open. Tracked Hormuz transits remain a fraction of normal (4 on Sept 15, 12 on Sept 16). CENTCOM's blockade tally is unchanged at 103 and no US strikes on Iranian territory were announced Sept 18-19."
+        "bold": "Oil keeps falling as Saudi reroutes record volumes through Hormuz — and Iran's economy is buckling",
+        "text": "Brent has fallen below $101, down from $108.75 a week earlier, as satellite imagery confirmed Saudi Arabia moved 2.8 million bpd through the Strait of Hormuz over six days (vs. just 700,000 bpd in August) — a striking, verifiable sign that the 'crisis' rhetoric and actual oil flows have diverged. Inside Iran, the rial has fallen roughly 44% over six months, food inflation is running at 127.5% year-on-year, crude loadings are down about 85%, and Mahan Air suspended Iran-Turkey flights Sept 21."
       },
       {
         "color": "amber",
-        "bold": "India: a flat Friday, a firmer Monday open, still heavy FPI selling",
-        "text": "Sensex closed Friday at 74,294.96 (-0.03%), Nifty at 23,346.40 (+0.33%); Nifty fell for a sixth straight week (-0.2%). Both opened higher today (Sensex +420, Nifty +40) on softer crude. FPIs have sold ₹20,974 crore in September; the rupee fell 1.1% last week to a record low near 96."
+        "bold": "India: a volatile few days, and the Fed names the war explicitly",
+        "text": "Sensex closed essentially flat Sept 18 (-0.03%, 74,294.96), then rallied 564.03 points (+0.76%) Sept 21 — its first weekly gain after six straight losing weeks — before snapping that momentum today with a 329.91-point (-0.44%) fall to 74,529.08 as IT, FMCG and PSU banks weakened amid F&O expiry. Separately, Fed Chair Kevin Warsh cited 'tension in the Middle East' as a factor in the Sept 16 rate hike — the first time the Fed has formally invoked the war in a policy decision."
       }
     ]
   },
   "deaths": "7,199+",
   "econ": {
-    "sensex": "74,714.90, +419.94 (+0.57%) at Monday's open. Friday Sept 18 close: 74,294.96 (-0.03%). Midday print [VERIFY].",
-    "sensexDelta": "Crude relief drives the open; Friday closed flat with Nifty up and IT the drag (-1.0%).",
-    "sensexSub": "Nifty: 23,386.15, +39.75 (+0.17%) at open; Friday close 23,346.40 (+0.33%). Nifty -0.2% on the week, a sixth straight weekly fall, -10.7% year to date. Midcap +1.2%, smallcap +1.7% Friday; realty and banks led. Support 23,000-23,100; resistance 23,570-23,620.",
-    "vix": "India VIX 11.39 on Friday, down 7.3% — a low reading despite the war headlines.",
-    "vixDelta": "Volatility has fallen for four sessions; markets price the war as contained.",
-    "fpi": "September to Sept 18: FPIs net sold ₹20,974cr after two months of inflows. Year-to-date outflow ~₹2.45 trillion, above all of 2025. Friday's daily print not sourced.",
-    "fpiDelta": "Drivers: the Fed's 3.75-4.00% rate, Brent above $100, a weaker rupee. DIIs continue to absorb the selling.",
-    "wealth": "Brent ~$101.6 at Monday's open (-2.2%) after a $102.41 Friday settle; WTI ~$100. Oman crude physical premiums remain above $130. Rupee ~95.9-96, a record low; it fell 1.1% last week.",
-    "analysis": "Two things moved this cycle. First, the sanctions bill became law: a 100% tariff on Indian purchases of Russian oil is now legally possible but procedurally distant (180 days to name buyers, then 60 to act), so it is a slow-burn risk to India's crude sourcing rather than a market event. Second, diplomacy and escalation moved in parallel: Iran's conditions went to Washington via Qatar while both sides warned of new strikes. Markets are reading the oil decline as the signal; the risk is a tape that has stopped pricing escalation."
+    "sensex": "74,529.08, -329.91 (-0.44%) — Sept 22 confirmed close, snapping a 4-day winning streak.",
+    "sensexDelta": "A volatile few sessions: flat Sept 18 (-0.03%), then +564.03 (+0.76%) Sept 21 — the first weekly gain after six straight losing weeks — before today's pullback on IT/FMCG/PSU-bank weakness amid monthly F&O expiry.",
+    "sensexSub": "Nifty: 23,329, -85.30 (-0.36%) today, below 23,350. Today's decliners: IT, FMCG, PSU banks; gainers: media, realty, metals. Breadth roughly flat (2,171 advances vs 2,181 declines on the BSE). Friday's (Sept 18) close: Sensex 74,294.96 (-0.03%), Nifty 23,346.40 (+0.33%), with Nifty IT -1.03% even then. Monday's (Sept 21) rally was broad, led by pharma, FMCG and realty on falling oil and bond yields.",
+    "vix": "[VERIFY] No exact print sourced since Sept 17's ~8% intraday fall; direction has likely continued easing given the market's overall calmer tone, but not confirmed.",
+    "vixDelta": "[VERIFY] See above.",
+    "fpi": "[VERIFY] No FPI/DII flows sourced since Sept 17 (FIIs -₹3.2K cr, DIIs +₹3.6-3.9K cr that day; YTD FII outflows ₹2,42,251cr as of then).",
+    "fpiDelta": "[VERIFY] See above.",
+    "wealth": "Brent has fallen below $101 — roughly $100.22-100.34 as of Sept 21-22, down sharply from $108.75 a week earlier — as satellite imagery confirmed Saudi Arabia rerouted 2.8 million bpd through the Strait of Hormuz over six days (vs. just 700,000 bpd in August), a concrete sign that actual oil flows have improved even as the news cycle stayed tense. US diesel last sourced at a record $6.27/gallon (AAA); no update this cycle.",
+    "analysis": "The headline war news this stretch pulled in two directions — Trump's UN 'annihilate' ultimatum and a new Houthi ground offensive on one side, a called-off US strike on the Houthis and sharply lower oil on the other — and Indian equities largely tracked the calmer half of that story. Monday's 564-point rally broke a six-week losing streak as oil and bond yields eased; today's pullback looks more like routine F&O-expiry positioning (IT and banks led the retreat) than a reaction to any specific war headline. The more structurally important data point of the week may be the satellite-confirmed jump in Saudi crude moving through Hormuz — a rare piece of hard evidence that the physical oil market is coping better than the rhetoric suggests, even as Iran's own economy (rial, food inflation, crude exports) continues to visibly deteriorate."
   },
   "hormuzStatus": {
-    "status": "Constrained, not closed. Tracked transits are a fraction of pre-war levels: Reuters counted 4 commodity transits on Sept 15, Windward 12 on Sept 16, and IMF PortWatch 8 on Sept 13 (PortWatch lags 3-5 days). About 410 AIS-visible vessels are holding position inside the Gulf watch box. Iran's Ghalibaf says the strait will not reopen until US-Iran talks meet Tehran's demands. No US strikes on Iranian territory were announced Sept 18-19 — the twelfth consecutive quiet reporting window.",
+    "status": "The tanker war escalated sharply this week, and for the first time the throughput data confirms it, rather than just the rhetoric. After the IRGC twice tried and failed to hit a US warship, CENTCOM destroyed five more Iranian tankers Tuesday — Kaviz, Charminar, Horizon 1, Riesco and Derya — bringing the week's total to eight vessels destroyed or disabled. Rubio made the policy explicit: every Iranian attempt on a US ship costs Iran tankers. Iran's response was to threaten tanker crews across two more countries, warning vessels near Kuwait and Bahrain to evacuate immediately. Kpler's verified shipping data confirms the damage: strait traffic fell 28% last week to its lowest level since May, directly contradicting the more optimistic recovery narrative from two weeks ago. Qatar's warning of an 'industrial catastrophe' and Rezaei's threat of a full blockade both point the same direction — this is no longer a war of statements about the strait, but one that is measurably closing it again.",
     "preWarFlow": "~90-140 ships/day",
-    "currentFlow": "Sept 15-16: 4 to 12 tracked transits a day against a 10-day average near 18. US Energy Secretary Wright says ~11M barrels a day moved under US protection (7-day average); this cannot be reconciled with AIS or satellite data, and CENTCOM's claim of 1bn+ barrels escorted is dismissed by Iran. CENTCOM blockade tally: 103 vessels redirected, unchanged since Sept 15. Iran's Non-Compliant Vessels List: 77-78 entries. Bab el-Mandeb: broadly functional; Houthis hold Mocha, Dhubab and the islands.",
-    "reduction": "Brent settled $102.41 Friday (-2.3%, third lower session) after Saudi Arabia announced East-West pipeline recovery, then fell ~2% further to ~$101.6 at Monday's open. It remains ~56% above the pre-war $65. Physical premiums stay high (Oman crude above $130). Goldman: $120 if attacks intensify, $80 if Gulf exports normalise. The Houthis attempted a strike on Yanbu on Sept 19.",
+    "currentFlow": "Hormuz transit data remains genuinely irreconcilable across sources for the same dates: Reuters recorded 4 commodity transits Sept 15 against Windward's count of 12 for Sept 16; Energy Secretary Wright separately claimed 18 million barrels moved in a single day with a seven-day average of 11 million bpd — a figure that matches neither dataset. Against that confusion, the one hard, satellite-confirmed data point is unambiguous: Saudi Arabia moved 2.8 million bpd through the strait over six days prior to Sept 18, versus just 700,000 bpd in August — a four-fold increase suggesting the physical market has adapted faster than the headline risk narrative. Bab el-Mandeb: Houthi forces have opened a new ground offensive for Yemen's Taiz highlands, aiming to isolate Taiz city, while IRGC advisors have reportedly been seen building tunnels and installing coastal radar on newly seized Bab el-Mandeb territory — signs of permanent entrenchment. No update sourced on the earlier withdrawal-vs-no-withdrawal dispute over coastal control itself.",
+    "reduction": "Brent has fallen below $101 (roughly $100.22-100.34 as of Sept 21-22), down sharply from $108.75 just a week earlier, as Saudi Arabia's satellite-confirmed rerouting through Hormuz and progress on the East-West pipeline repair both point toward easing supply risk. Goldman pegs Gulf oil exports at ~16M bpd, down from a pre-war ~23M bpd (a figure not yet updated against the new Saudi rerouting data). Goldman's Struyven: $120/barrel if attacks intensify, $80 if exports normalize — the market currently sits closer to the latter case. US diesel last sourced at a record $6.27/gallon (AAA).",
     "indianVesselsNear": 7,
     "indianSeafarers": 148,
     "indianTransited": 1,
     "totalShipsWaiting": "42 tankers were waiting at Hormuz as of Sept 7, of which 18 were carrying oil — roughly 11.1 million barrels, about 11% of world daily demand (CENTCOM/wire-sourced sitrep). Significantly reduced from the wartime peak of 20,000+. CENTCOM separately says it has redirected 100+ commercial vessels since April, disabled 4, and permitted 26 humanitarian-cargo vessels through, sustained by 15,000+ US personnel and 200+ aircraft/warships. India's stranded-vessel picture is unchanged pending confirmation that the Iran-Oman corridor is operational.",
-    "lastTransit": "Tracked traffic remains near 10-20% of the pre-war average; datasets conflict and the 'dark fleet' explains part of the gap.",
+    "lastTransit": "Ship numbers remain near 20% of the pre-war average. The US says its own clearance of the Traffic Separation Scheme opens a second lane alongside the Omani channel that has carried most liquid cargo; Iran and Oman's own corridor proposal is commercial-only and still under negotiation.",
     "indianNavyEscort": "Op Urja Suraksha: unchanged pending confirmation that either the US-cleared lane or the Iran-Oman corridor is operational for third-country shipping. MT Settebello diplomatic track continues independently.",
-    "headline": "SANCTIONS ACT SIGNED — 100% TARIFF POWER OVER INDIA IS NOW LAW BUT NOT YET USED. HOUTHIS FIRE ON RIYADH. IRAN SENDS SEVEN CONDITIONS VIA QATAR AND WARNS OF US STRIKES. BRENT BELOW $102.",
+    "headline": "TRUMP AT THE UN: DEAL WITH IRAN OR 'ANNIHILATE' IT. US CALLS OFF A STRIKE ON THE HOUTHIS, WHO OPEN A NEW GROUND OFFENSIVE. OIL FALLS BELOW $101 ON RECORD SAUDI REROUTING THROUGH HORMUZ.",
     "indianCasualties": 4,
-    "indianCasualtyDetail": "4th confirmed Indian death of the war: a crew member aboard UAE tanker MOMBASA killed by an Iranian cruise missile in Omani territorial waters (UAE MoD, Jul 14). 8 injured incl. 6 Indians, 4 serious. Earlier: 3 Indian sailors killed on MT Settebello (Jun 8, US Navy strike). ACTIVE, UNRESOLVED: the Panama-flagged tanker El Gaia — CENTCOM says it was hit by an Iranian missile last month, then droned again 'over the weekend' (~Sept 13); Oman's Maritime Security Center puts the evacuation at 23 crew evacuated, 2 missing (vessel under tow), which does not reconcile with the '14 Indian crew, 13 rescued, 1 missing' figure reported by Indian outlets three updates ago; no nationality breakdown of the 23 has been given and no new reporting has surfaced to resolve this. Not yet added to this page's confirmed death count pending clarification. Separately, [VERIFY] a mariner was killed aboard a tanker off Dubai Sept 9 — nationality still not confirmed. For scale: the war's total merchant-marine toll (last sourced Sept 11) stood at 21+ seafarers killed across 75 attacked vessels; a Houthi drone shot down over Taif, Mecca Province (Sept 17) killed at least 1 and injured 2 — the first fatality from that campaign's reach toward Saudi Arabia's holy cities."
+    "indianCasualtyDetail": "4th confirmed Indian death of the war: a crew member aboard UAE tanker MOMBASA killed by an Iranian cruise missile in Omani territorial waters (UAE MoD, Jul 14). 8 injured incl. 6 Indians, 4 serious. Earlier: 3 Indian sailors killed on MT Settebello (Jun 8, US Navy strike). ACTIVE, STILL UNRESOLVED: the Panama-flagged tanker El Gaia — CENTCOM says it was hit by an Iranian missile last month, then droned again 'over the weekend' (~Sept 13); Oman's Maritime Security Center puts the evacuation at 23 crew evacuated, 2 missing (vessel under tow), which does not reconcile with the '14 Indian crew, 13 rescued, 1 missing' figure reported by Indian outlets from three updates ago; no new reporting this cycle to resolve it. Not yet added to this page's confirmed death count. Separately, [VERIFY] a mariner was killed aboard a tanker off Dubai Sept 9 — nationality still not confirmed. For scale: the war's total merchant-marine toll (last sourced Sept 11) stood at 21+ seafarers killed across 75 attacked vessels; a Houthi drone shot down over Taif, Mecca Province (Sept 17) killed at least 1 and injured 2 — the first fatality from that campaign's reach toward Saudi Arabia's holy cities, reported previously and unchanged this cycle."
   },
   "hormuzEvents": [
     {
-      "d": "Sep 18-21",
-      "e": "DAY 206 (updated 12:30 PM IST Monday) — A SANCTIONS LAW FOR INDIA, A MISSILE AT RIYADH, AND CONDITIONS FROM TEHRAN. On Sept 18 Trump signed the Lindsey O. Graham Sanctioning Russia and Iran Act (H.R. 5334), which authorises tariffs of up to 100% on the five largest buyers of Russian energy. Treasury and State have 180 days to name them, followed by a 60-day window for the President to certify reductions or impose tariffs. India, the third-largest buyer, says it is 'monitoring the bill closely' and will take 'necessary measures to safeguard its trade interests'. On Sept 19 the Houthis fired a ballistic missile at Riyadh at dawn; the coalition says it was intercepted, while residents reported smoke near King Khalid airport. The Houthis also claimed strikes on Bisha, Taif, Farasan, Yanbu and an Aramco site. Yemeni government forces report local gains near Kahbub, Marib and Taiz-Lahj but have not retaken Mocha, Dhubab or the islands. Iran's Rezaei told Al Jazeera (Sept 20) that seven conditions had been sent to Washington via Qatar — an end to the war on all fronts including Lebanon, release of frozen funds, an end to the naval blockade and to attacks on Iranian territory. Iran's Khatam al-Anbiya command warned it has learned of a possible new US strike round and would respond with 'continuous, effective and painful' attacks on US bases, treating aligned regional states as participants. Speaker Ghalibaf said there would be no talks or Hormuz reopening until demands are met. Trump set out three options — obliterate Iran, let it 'rot economically', or reach a deal — said 'very big things' are coming and that he would 'probably be open' to meeting Pezeshkian, who addresses the UN General Assembly on Sept 23. The State Department renewed its Middle East travel warning; the number of countries covered is reported inconsistently (nine to eleven). Hormuz: Reuters counted 4 commodity transits on Sept 15 and Windward 12 on Sept 16; CENTCOM's tally of redirected vessels is unchanged at 103. UN investigators documented ~120 schoolchildren killed at Minab and 22 civilians at Lamerd. Markets: Brent settled $102.41 Friday (third lower session) and fell ~2% at Monday's open. Sensex closed Friday at 74,294.96 (-0.03%), Nifty 23,346.40 (+0.33%), a sixth weekly Nifty decline; Monday's open was Sensex 74,714.90 (+419.94), Nifty 23,386.15 (+39.75). FPIs have sold ₹20,974 crore in September; the rupee touched a record low near 96. Midday index prints are not independently sourced."
+      "d": "Sep 18-22",
+      "e": "DAY 206 (updated 9:50 PM IST Tuesday) — TRUMP'S UN ULTIMATUM, A CALLED-OFF STRIKE, A NEW GROUND OFFENSIVE, AND OIL BELOW $101. Four and a half days of developments compressed into one update. At the UN General Assembly Sept 22, Trump framed the war as a binary choice ahead: make a deal with Iran, or 'annihilate the Islamic Republic' and 'drive them into hell with no chance of survival and no hope of future greatness.' Iran's President Pezeshkian used the same platform to lay out Iranian grievances and 'the crimes that have taken place'; separately the IRGC said the US and Israel 'must accept the region's freedom from their vile and criminal presence.' Even as that rhetoric escalated, Trump reportedly called off planned US airstrikes on the Houthis at the last minute — troops were said to be loading bombs onto aircraft — the second time direct US action against the group has been pulled back since an early-2025 campaign ended in ceasefire. The Houthis used the space to open what CNN calls the 'next phase' of their campaign: a ground offensive into Yemen's Taiz Governorate highlands aimed at isolating Taiz city, fighting Yemeni government forces (a Yemeni military source's claim of 80+ Houthi casualties in related Marib fighting is unverified). IRGC advisors have reportedly been seen on newly captured Bab el-Mandeb coastal territory overseeing tunnel construction and coastal-radar installation, suggesting the Houthi position there is being built out for the long term rather than held as a temporary gain. The UK announced it will send a single RAF Voyager tanker to provide aerial refueling — explicitly not strikes — for Saudi jets intercepting Houthi attacks, its first direct military commitment to the war. Separately, a UN Independent International Fact-Finding Mission found 'reasonable grounds to believe' the US committed war crimes in two strikes, including one that killed roughly 120 schoolchildren at Minab; the White House rejected the finding outright, saying 'the only party committing war crimes in the conflict has been the Iranian regime.' On the economic side, the picture diverged sharply by direction: Brent fell below $101 (from $108.75 a week earlier) after satellite imagery confirmed Saudi Arabia moved 2.8 million bpd through the Strait of Hormuz over six days — up four-fold from 700,000 bpd in August — a concrete sign that the physical oil market has adapted faster than the news cycle suggests. Inside Iran, the economic collapse continues to deepen: the rial is down roughly 44% over six months, food inflation runs at 127.5% year-on-year, crude loadings are down about 85%, and Mahan Air suspended its Iran-Turkey flights Sept 21. The Fed's Kevin Warsh, explaining the Sept 16 rate hike, cited 'tension in the Middle East' as a factor — the first time the Fed has formally invoked the war in a policy decision. India: Sensex closed essentially flat Sept 18 (-0.03%, 74,294.96), then rallied 564.03 points (+0.76%) Sept 21 to end a six-week losing streak, before falling 329.91 points (-0.44%) today to 74,529.08 as IT, FMCG and PSU banks weakened amid monthly F&O expiry — a move that looks more like routine positioning than a reaction to any single war headline. No new reporting this cycle resolved the El Gaia casualty discrepancy, the Russia/Iran sanctions bill's status, or the earlier Bab el-Mandeb withdrawal-vs-no-withdrawal dispute."
     },
     {
       "d": "Sep 17-18",
@@ -321,20 +321,20 @@
     {
       "item": "Petrol (Delhi)",
       "status": "red",
-      "statusText": "₹111.21/L — HIKE RISK PERSISTS: BRENT ~$102, RUPEE NEAR 96 (PRICE NOT RE-VERIFIED)",
+      "statusText": "₹111.21/L — REVISION RISK RISING: BRENT ~$90, 3RD SESSION ABOVE $85",
       "pre": "Rs 94.72/L",
       "now": "Rs 111.21/L (HIKED)",
-      "twoWeek": "Brent above $100 plus a record-low rupee keep OMC under-recoveries wide; watch for any revision",
-      "detail": "Brent near $102 and the rupee near 96 make imported crude costlier in rupee terms, keeping OMC margins under pressure. Pump price shown is the last verified figure. Every Rs 1/L = Rs 12,000 Cr annual consumer burden."
+      "twoWeek": "Under-recovery widening at Brent $86; next hike risk if $85+ sustains 2 weeks",
+      "detail": "Brent's climb from $73 to ~$86 in ten days has re-opened OMC under-recovery. No hike announced yet, but a sustained $85+ Brent plus rupee at 96+ (imported-cost double hit) makes an August revision increasingly likely. Every Rs 1/L = Rs 12,000 Cr annual consumer burden."
     },
     {
       "item": "Diesel (Delhi)",
       "status": "red",
-      "statusText": "₹97.83/L — TRUCKING AND FOOD LOGISTICS COSTS TRACK CRUDE (PRICE NOT RE-VERIFIED)",
+      "statusText": "₹97.83/L — TRUCKING AND FOOD LOGISTICS COSTS RISING WITH CRUDE",
       "pre": "Rs 87.62/L",
       "now": "Rs 97.83/L (HIKED)",
-      "twoWeek": "Watch Brent and the rupee ahead of the festive season; a diesel revision would hit food logistics",
-      "detail": "Diesel at ₹97.83 after the July revision (last verified). Brent above $100 keeps freight costs elevated. Every ₹1/L = ₹2,500 Cr annual trucking cost."
+      "twoWeek": "Watch Brent $85+ persistence — diesel hike would hit food logistics into festive season",
+      "detail": "Diesel at ₹97.83 after the July revision. June WPI at 9.87% already shows food and non-food transmission; sustained Brent above $85 would compound it. Every ₹1/L = ₹2,500 Cr annual trucking cost."
     },
     {
       "item": "Gold (22K, Delhi)",
@@ -360,22 +360,16 @@
       "statusText": "CRITICAL — Modi urged 50% reduction, switch to natural farming",
       "pre": "Normal Gulf sourcing",
       "now": "Emergency alternate sourcing",
-      "twoWeek": "Food-price transmission is the pressure point; watch Hormuz throughput and alternate sourcing",
-      "detail": "Modi urged farmers to reduce chemical fertiliser use by 50%. Gulf-sourced supply remains exposed to Hormuz disruption; alternate sourcing is in place."
+      "twoWeek": "WPI 9.87% confirms food-price transmission; kharif top-dressing window is the pressure point",
+      "detail": "Modi urged farmers to reduce chemical fertiliser by 50%. Araghchi BRICS Delhi Thursday = Jaishankar can negotiate coordinated Gulf fertiliser import corridor directly with Iranian FM."
     }
   ],
   "military": [
     {
-      "t": "Sep 18-21 — Sanctions Act signed; Houthi missile fired at Riyadh; Iran sends conditions via Qatar and warns of US strikes",
+      "t": "Sep 18-22 — Trump's UN ultimatum: deal with Iran or 'annihilate' it; US pulls back from a Houthi strike as they open a new ground offensive; oil falls below $101",
       "lv": "BREAKING",
       "color": "red",
-      "d": "Trump signs the Graham Sanctioning Russia and Iran Act (Sept 18): up to 100% tariffs on top Russian-energy buyers, India included; 180 days to name them. Houthis fire a ballistic missile at Riyadh (Sept 19), intercepted per the coalition, and claim strikes on Bisha, Taif, Farasan, Yanbu and an Aramco site. Iran sends seven conditions to Washington via Qatar and warns it will retaliate 'without limitations' against a possible new US strike round; Trump offers three options and 'very big things'. Pezeshkian addresses the UN Sept 23. No US strikes ashore announced Sept 18-19."
-    },
-    {
-      "t": "Sep 17-18 — Houthi drone kills near Mecca for the first time; US base damage revealed; Trump strikes optimistic note",
-      "lv": "BREAKING",
-      "color": "red",
-      "d": "Shrapnel from a Houthi drone shot down over Taif, Mecca Province, kills at least 1 and injures 2 (Sept 17) — the first fatality from the campaign's reach toward Saudi Arabia's holy cities, escalating from a casualty-free intercept near Mecca two days earlier. ABC News reports photos showing extensive damage to US bases including Prince Sultan Air Base, repair timelines 'estimated at decades' (single-source, not yet corroborated). Trump, Sept 16: \"Hopefully we're toward the end of the war\" — an optimistic note that contrasts with Iran's own split internal signals (Araghchi's claimed reopening plan vs. Rezaei's 'no talks' stance). Markets quieter: Sensex flat Thursday (-0.03%), Nifty +0.23%; Brent eased a fourth straight session to ~$103.55 as Saudi arranges alternative Oman shipments; Wall Street rallied overnight. No movement sourced on the pending sanctions bill or the El Gaia casualty reconciliation."
+      "d": "Trump, addressing the UN General Assembly (Sept 22), says he faces a 'big decision' on Iran — cut a deal, or 'annihilate' it and 'drive them into hell with no chance of survival.' The US called off planned airstrikes on the Houthis at the last minute (Sept 21-22) — the second such withdrawal from direct action since early 2025 — even as the Houthis opened a new ground offensive for Yemen's Taiz highlands aimed at isolating the city, with IRGC advisors reported building tunnels and radar installations on Houthi-held Bab el-Mandeb territory (single-source, Long War Journal, [VERIFY]). The UK committed a single RAF tanker to refuel Saudi jets intercepting Houthi attacks — modest but the first direct UK military support of the war. A UN fact-finding mission found 'reasonable grounds' the US committed war crimes in two strikes, including one that hit roughly 120 schoolchildren at Minab; the White House rejected the finding on the record. Brent fell below $101 — down from $108.75 a week earlier — as satellite imagery showed Saudi Arabia rerouting 2.8M bpd through Hormuz, up sharply from ~700K bpd in August. Iran's economy showed further strain: the rial down roughly 44% over six months, food inflation at 127.5% y/y, crude loadings down about 85%, and Mahan Air suspending Iran-Turkey flights. India: Sensex was flat Friday (-0.03%), then rallied +564.03 (+0.76%) Monday to end a six-week losing streak, before snapping that streak today with a -329.91 (-0.44%) close to 74,529.08 on F&O expiry. Fed governor Kevin Warsh cited 'tension in the Middle East' as a factor in the Sept 16 rate hike — the first formal Fed acknowledgment of the war's economic impact. Hormuz transit data remains irreconcilable across sources (Reuters ~4/day vs. Windward ~12/day for the same dates); the El Gaia casualty reconciliation and the Russia/Iran sanctions bill's status remain open with no new reporting this cycle."
     },
     {
       "t": "Sep 15-17 — Sanctions bill threatens 100% tariffs on India; CENTCOM rewrites El Gaia's account; Houthi drone nears Mecca",
@@ -424,6 +418,30 @@
       "lv": "BREAKING",
       "color": "red",
       "d": "The IRGC Navy warned all oil tanker crews near the ports of Kuwait and Bahrain to evacuate their vessels immediately, threatening to target ships there for hosting US forces — widening the war's shipping-safety footprint to two more countries. Iran separately claimed a strike on Jordan's Al-Azraq air base targeting a fighter-jet hangar; a US official called it 'ineffective.'"
+    },
+    {
+      "t": "Sep 8 — Kpler confirms strait traffic at its lowest since May; Qatar warns of catastrophe",
+      "lv": "ACTIVE",
+      "color": "orange",
+      "d": "Verified Kpler shipping data shows strait traffic fell 28% last week to 77 vessels, roughly 10-11 ships a day over the past 10 days — the lowest level since May, confirming independent analysts' earlier throughput estimates over Washington's more optimistic figures. Qatar's Foreign Ministry warned of an 'industrial catastrophe' if the crisis continues. Iran's Mohsen Rezaei said Tehran is preparing a restricted zone and threatened a full Hormuz blockade over US sanctions."
+    },
+    {
+      "t": "Sep 7 — Rezaei: Iran will announce a new Hormuz route with Oman 'in coming days'",
+      "lv": "ACTIVE",
+      "color": "green",
+      "d": "Iran's top security official Mohsen Rezaei said Tehran will declare a restricted zone near the Strait of Hormuz and announce a new shipping route agreed with Oman 'in the coming days' — a genuine softening from his own position a week earlier, when he said the strait 'will not reopen' while US forces remain in the Gulf."
+    },
+    {
+      "t": "Sep 5 — Iran fires on US carrier and destroyer; CENTCOM sinks and disables Iranian tankers",
+      "lv": "BREAKING",
+      "color": "red",
+      "d": "The IRGC launched ballistic missiles at a US aircraft carrier and guided-missile destroyer; both evaded the attacks and no American personnel were harmed. CENTCOM retaliated under a 'tanker for tanker' policy Trump approved earlier this month: US forces permanently disabled the crude carriers M/T Downy (off Kharg Island) and M/T Stark 1 (near Jask), and completely destroyed the unladen M/T Kylo ('Noxen') in the Gulf of Oman after directing its crew to abandon ship. Adm. Brad Cooper: \"If you shoot at two of our ships, we will impose an even higher economic cost — taking out three of yours.\""
+    },
+    {
+      "t": "Sep 5-6 — Iran threatens 'more severe' attacks; Trump calls the war 'small potatoes'",
+      "lv": "ACTIVE",
+      "color": "orange",
+      "d": "Iran's Khatam al-Anbiya central command warned that continued naval blockade and 'harassment' would trigger strikes 'more severe than before' with a 'possibility of their expansion.' Trump called the war 'small potatoes' and 'not a big thing,' saying the US has 'essentially' taken over Iran. Iran's IRGC Navy separately claimed to have targeted three tankers on an 'unauthorized route' and three US-affiliated vessels, unconfirmed by third parties."
     }
   ],
   "nukes": [
@@ -432,7 +450,7 @@
       "type": "Reactor",
       "status": "ACTIVE WAR ZONE — IAEA WARNED",
       "risk": 88,
-      "info": "Operating reactor. IAEA warned of strikes ~250 ft away; Rosatom evacuated 200 staff. IAEA has no on-site access. Watch: any strike near the plant.",
+      "info": "IAEA: strikes 250ft from operating reactor. Rosatom evacuated 200 staff. Reactor operational. IAEA cannot access. Minor explosions in Tehran suggest continuing instability. Ceasefire holding but Iran reconstituting missile bases — escalation risk if Apr 21 ceasefire lapses.",
       "lat": 28.83,
       "lon": 50.88
     },
@@ -441,7 +459,7 @@
       "type": "Enrichment + HEU Storage",
       "status": "75% DAMAGED — 6,000+ CENTRIFUGES DESTROYED",
       "risk": 90,
-      "info": "Main enrichment plant ~75% damaged; R&D ~95% destroyed. IAEA Board referred Iran to the UN Security Council (Sept 10, 23-3-8). IAEA: ~440kg of 60% HEU, verification continuity lost for 12+ months. Trump has issued five warnings over the nearby 'Pickaxe Mountain' site.",
+      "info": "MAIN enrichment plant 75% damaged. R&D 95% destroyed. Nuclear sticking point — Vance offered 20-yr moratorium, Iran said 3-5 yrs, both rejected. IAEA: Iran has ~1,000 lbs (440kg+) HEU = enough for ~11 nuclear weapons. Fox News: 'all ingredients of a deal' — suggests nuclear gap may be bridgeable.",
       "lat": 33.72,
       "lon": 51.73
     },
@@ -459,7 +477,7 @@
       "type": "Underground Enrichment — DEEP BUNKER",
       "status": "ONLY 30% DAMAGED — GREATEST PROLIFERATION RISK",
       "risk": 88,
-      "info": "Built into a mountain near Qom; only ~30% damaged despite GBU-57 strikes. Core enrichment capability potentially intact. US demanded full dismantlement; Iran refused. Greatest long-term proliferation risk.",
+      "info": "Fordow built into mountain near Qom. Only 30% damaged despite GBU-57 MOPs. Core enrichment capability potentially intact. US demanded full dismantlement; Iran refused at Islamabad. Greatest long-term proliferation risk. Iran reconstituting missile cities during ceasefire — same pattern expected here.",
       "lat": 34.88,
       "lon": 51.73
     },
@@ -468,7 +486,7 @@
       "type": "Heavy Water Reactor",
       "status": "STRUCK — PLUTONIUM PATH CONCERN",
       "risk": 75,
-      "info": "Heavy-water reactor capable of producing weapons-grade plutonium. Struck in early war waves. A second potential weapons path alongside uranium enrichment.",
+      "info": "Heavy water reactor capable of producing weapons-grade plutonium. Struck in early war waves. Satellite imagery showing Iran reconstituting missile cities during ceasefire — Arak likely same pattern. Second potential weapons path alongside uranium enrichment.",
       "lat": 34.1,
       "lon": 49.2
     }
@@ -481,7 +499,7 @@
       "sea": 15,
       "nuke": 55,
       "tot": 64,
-      "info": "1,800km downwind from Iran. No iodine prophylaxis programme. Fuel-price revision risk persists with Brent above $100 and the rupee near 96."
+      "info": "1,800km downwind from Iran. NO iodine prophylaxis program. OMC petrol hike Rs 4-8/L imminent at Brent $112. Iran missile base reconstitution ongoing during ceasefire."
     },
     {
       "city": "Mumbai",
@@ -490,7 +508,7 @@
       "sea": 78,
       "nuke": 42,
       "tot": 58,
-      "info": "900km from Hormuz. Reliance Jamnagar supply chain. Brent near $102 keeps import costs high; Sensex ~74,300 (Sept 18 close)."
+      "info": "900km from Hormuz. Reliance Jamnagar refinery. Sensex 76,887. Brent $112 raising import costs. OMC hike imminent. Idemitsu toll precedent critical for India crude imports."
     },
     {
       "city": "Ahmedabad",
@@ -499,7 +517,7 @@
       "sea": 55,
       "nuke": 46,
       "tot": 57,
-      "info": "Closest Indian metro to Iran; Jamnagar refinery nearby. Oil import-cost pressure and Gulf shipping exposure."
+      "info": "Closest Indian metro to Iran. Jamnagar refinery nearby. Brent $112 = oil import cost pressure. Idemitsu passage could signal selective Hormuz opening."
     },
     {
       "city": "Jaipur",
@@ -508,7 +526,7 @@
       "sea": 10,
       "nuke": 44,
       "tot": 47,
-      "info": "Rajasthan wind funnel. Kharif fertiliser supply exposed to Hormuz disruption; diesel freight costs elevated with Brent above $100."
+      "info": "Rajasthan wind funnel. Kharif fertiliser at risk if Hormuz closed through May. Diesel freight costs elevated at Brent $112. OMC hike imminent."
     },
     {
       "city": "Kochi",
@@ -517,7 +535,7 @@
       "sea": 70,
       "nuke": 24,
       "tot": 44,
-      "info": "Southern Naval Command and Op Urja Suraksha base. Red Sea and Hormuz risk raises shipping insurance costs on western-coast routes; fishing economy (₹4,000 cr) exposed."
+      "info": "Southern Naval Command + Op Urja Suraksha base. Oil spill risk 15-25 days. Fishing economy ₹4,000 cr exposed. Iran Red Sea threat hits western coast shipping routes near Kochi. Insurance 10x pre-war."
     },
     {
       "city": "Goa",
@@ -526,7 +544,7 @@
       "sea": 72,
       "nuke": 22,
       "tot": 42,
-      "info": "Konkan coast. Fishing economy (₹4,000 cr) exposed; tourism and aviation face fuel surcharges with Brent above $100."
+      "info": "Konkan coast. Fishing economy Rs 4,000 Cr exposed. Tourism under pressure with Brent $112+. ATF surcharges active on all airline routes."
     },
     {
       "city": "Lucknow",
@@ -535,7 +553,7 @@
       "sea": 5,
       "nuke": 39,
       "tot": 40,
-      "info": "Indo-Gangetic plain trap. Food-inflation risk from fertiliser disruption is structural even after a deal."
+      "info": "Indo-Gangetic plain trap. Food inflation risk from fertilizer disruption — structural even post-deal. CNG vehicle users benefiting from rupee strengthening. IMF recession risk warning dampens consumption outlook."
     },
     {
       "city": "Chennai",
@@ -544,7 +562,7 @@
       "sea": 55,
       "nuke": 18,
       "tot": 36,
-      "info": "East-coast currents provide a nuclear buffer. IT sector fell 1.0% Friday. Port active for alternative routes."
+      "info": "East coast currents provide nuclear buffer. IT sector led today's rally — Infosys, HCLTech major gainers. Wipro Q4 results tomorrow Apr 16. Auto sector (Maruti/Hyundai) also recovering. Port active for alternative routes."
     }
   ],
   "milTop": [],
@@ -552,13 +570,13 @@
     {
       "axis": "Oil Shock",
       "w1": 60,
-      "now": 92,
+      "now": 95,
       "w4": 52
     },
     {
       "axis": "Market Crash",
       "w1": 45,
-      "now": 58,
+      "now": 62,
       "w4": 30
     },
     {
@@ -582,7 +600,7 @@
     {
       "axis": "Currency",
       "w1": 40,
-      "now": 70,
+      "now": 62,
       "w4": 42
     },
     {
@@ -599,8 +617,8 @@
     }
   ],
   "assessment": {
-    "headline": "The sanctions bill is now law, giving Washington a tariff lever over India's Russian oil. Iran has put seven conditions to the US through Qatar while warning of new strikes. Oil is easing, and Indian markets are treating it as good news.",
-    "body": "WHAT HAPPENED\nTrump signed the Graham Sanctioning Russia and Iran Act on Sept 18. Iran sent conditions to Washington via Qatar and, in the same breath, said it expects new US strikes. The Houthis fired a ballistic missile at Riyadh, intercepted, and attempted strikes on Yanbu and an Aramco site. Hormuz throughput remains a fraction of normal.\n\nWHY IT MATTERS FOR INDIA\nThe Act is the largest India-specific policy risk on this page, but it is slow: 180 days to identify buyers and a further 60 to act. The near-term channels remain oil and the rupee. Brent near $102 is 56% above pre-war, the rupee is at a record low near 96, and FPIs have sold ₹20,974 crore this month. Indian equities are holding on DII support and softer crude.\n\nTHE THING TO WATCH\nThe US reply to Iran's conditions, Pezeshkian's UN speech (Sept 23) and the Trump-Xi summit (Sept 24). A deal path would drive Brent toward $80; a US strike round, which Iran says it expects, would send it toward Goldman's $120 scenario. Confidence: moderate; the Hormuz throughput data conflict."
+    "headline": "Eight Iranian tankers destroyed or disabled in under a week. Verified shipping data confirms Hormuz traffic is at its lowest since May. Brent hit $100, and India's Sensex just posted its third straight losing session.",
+    "body": "WHAT HAPPENED\nAfter twice failing to hit a US warship, the IRGC saw CENTCOM destroy five more of its tankers Tuesday, bringing the week's total to eight vessels lost. Rubio's warning — Iran loses tankers for every attempt on US ships — is now an explicit, standing policy. Iran retaliated by threatening tanker crews in Kuwait and Bahrain, widening the conflict's shipping-safety footprint to two more countries. Kpler's data confirms the damage: strait traffic down 28% to its lowest since May.\n\nWHY IT MATTERS FOR INDIA\nThis week marks a real shift from a market that was cautiously discounting war rhetoric to one that is actively repricing it. Three straight down sessions, Brent at $100, and FIIs turning net sellers together represent the most serious market reaction this tracker has recorded since the war's earliest weeks. The DII buying that's held up through the selloff is the one thing keeping this from being unambiguously alarming — it suggests domestic institutional money still sees this as temporary, not structural.\n\nTHE THING TO WATCH\nWhether Iran's threat against tanker crews in Kuwait and Bahrain is followed through, which would mark a further widening of the war beyond the Iran-US axis into direct threats on Gulf Arab states hosting US forces — precisely the scenario Qatar's 'industrial catastrophe' warning anticipates. If it stays rhetorical, this week may still mark the moment markets learned to take the tanker war seriously without the underlying conflict itself expanding further. If Kuwait or Bahrain-based vessels are actually hit, that distinction collapses."
   },
   "featured": [
     {
@@ -1444,37 +1462,17 @@
       "rupee": 95.0,
       "tag": "(4PM IST, POST-MARKET): CENTCOM destroyed five more Iranian tankers (M/T Kaviz, M/T Charminar, M/T Horizon 1, M/T Riesco, M/T Derya) after the IRGC twice tried to hit a US warship — 8 tankers destroyed or disabled this week. Rubio: 'every time they try that, they're going to lose tankers.' Iran threatened tanker crews near Kuwait and Bahrain to evacuate immediately; claimed a strike on Jordan's Al-Azraq base, called 'ineffective' by a US official. Kpler confirms strait traffic fell 28% last week to its lowest since May. Qatar warned of an 'industrial catastrophe'; Iran's Rezaei threatened a full blockade over US sanctions. Brent hit $100, first time since May. INDIA: Sensex fell 813.35 (-1.08%) to 74,764.23, Nifty -203.60 (-0.86%) to 23,431.50 — a third straight losing session, IT and realty leading losses. FIIs turned net sellers (-₹123cr); DIIs kept buying (+₹1,349.64cr). Defence stocks (BEL) gained on ~$11bn in new government military purchases.",
       "sev": 5
-    },
-    {
-      "d": 203,
-      "l": "Sep 18",
-      "deaths": 7199,
-      "brent": 102.41,
-      "nifty": 23346.4,
-      "rupee": 95.92,
-      "tag": "(CLOSE): Trump signed the Graham Sanctioning Russia and Iran Act (up to 100% tariffs on top Russian-energy buyers, India included; 180 days to name them). Brent settled $102.41, third lower session, after Saudi pipeline-recovery news. INDIA: Sensex 74,294.96 (-0.03%), Nifty 23,346.40 (+0.33%); smallcap +1.7%, midcap +1.2%; IT -1.0%. Nifty -0.2% on the week, sixth straight weekly fall; VIX 11.39. FPIs sold ₹20,974cr in September to date.",
-      "sev": 3
-    },
-    {
-      "d": 206,
-      "l": "Sep 21",
-      "deaths": 7199,
-      "brent": 101.56,
-      "nifty": 23386.15,
-      "rupee": 95.86,
-      "tag": "(12:30PM IST, MIDDAY): Iran sent seven conditions to the US via Qatar (Sept 19-20) and warned of a possible new US strike round; Trump offered three options — obliterate, strangle economically, or deal. Houthis fired a ballistic missile at Riyadh Sept 19 (intercepted). Hormuz tracked transits 4-12/day; CENTCOM tally unchanged at 103. Brent ~$101.6 (-2.2%) at open. INDIA: Sensex opened 74,714.90 (+419.94), Nifty 23,386.15 (+39.75); midday print not sourced [VERIFY]. Rupee ~95.9-96, near a record low.",
-      "sev": 4
     }
   ],
   "exec": {
     "level": "SEVERE",
-    "phase": "Sanctions Act signed with 100% tariff power over India; Houthi missile fired at Riyadh; Iran sends conditions via Qatar while warning of US strikes; oil eases below $102",
-    "oilNote": "Brent settled $102.41 Friday and fell ~2% at Monday's open to ~$101.6, still ~56% above pre-war. Physical Oman crude premiums exceed $130. Goldman: $120 if attacks intensify, $80 if exports normalise.",
-    "shipping": "HORMUZ CONSTRAINED: 4-12 TRACKED TRANSITS A DAY; ~410 VESSELS HOLDING IN THE GULF",
-    "shippingSub": "CENTCOM blockade tally unchanged at 103. Iran's non-compliant list at 77-78. Bab el-Mandeb broadly functional; Houthis hold Mocha and the islands.",
-    "military": "IRAN SENDS SEVEN CONDITIONS VIA QATAR AND WARNS OF A NEW US STRIKE ROUND — TRUMP: OBLITERATE, STRANGLE, OR DEAL",
-    "militarySub": "Houthi missile fired at Riyadh (intercepted, Sept 19). No US strikes on Iranian territory announced Sept 18-19. Pezeshkian addresses the UN Sept 23; Trump-Xi summit Sept 24.",
-    "indiaSub": "Sensex opened +420 to 74,714.90; Nifty +40 to 23,386.15 (Friday: 74,294.96 / 23,346.40). Sanctions Act allows 100% tariffs on Russian-oil buyers — 180 days to name them. FPI Sept outflow ₹20,974cr; rupee near 96."
+    "phase": "Trump tells the UN he faces a 'big decision' — a deal with Iran or annihilation — even as the US pulls back from striking the Houthis, who open a new ground offensive in Yemen's highlands; oil falls below $101 on record satellite-confirmed Saudi rerouting through Hormuz, while Indian markets close a volatile week lower",
+    "oilNote": "Brent has fallen below $101, down from $108.75 a week earlier, as satellite imagery confirms Saudi Arabia rerouting roughly 2.8M bpd through Hormuz — up sharply from ~700K bpd in August. Goldman's Struyven framing ($120 if attacks intensify, $80 if exports normalize) now sits closer to the lower case. US diesel last sourced at a record $6.27/gallon, unchanged this cycle [VERIFY].",
+    "shipping": "TRUMP AT THE UN: A 'BIG DECISION' — DEAL WITH IRAN OR 'ANNIHILATE' IT, 'DRIVE THEM INTO HELL WITH NO CHANCE OF SURVIVAL'",
+    "shippingSub": "US calls off planned Houthi airstrikes at the last minute, a second such pullback since early 2025, as Houthis open a new ground offensive for Yemen's Taiz highlands; UK commits a single RAF tanker to refuel Saudi jets — its first direct military support of the war.",
+    "military": "UN FACT-FINDING MISSION: 'REASONABLE GROUNDS' US COMMITTED WAR CRIMES IN 2 STRIKES INCL. ONE HITTING ~120 SCHOOLCHILDREN AT MINAB; WHITE HOUSE REJECTS FINDING",
+    "militarySub": "IRGC advisors reported building tunnels/radar on Houthi-held Bab el-Mandeb territory [VERIFY, single-source]. Iran's economy under further strain: rial down ~44% in 6 months, food inflation 127.5% y/y, crude loadings down ~85%. Sanctions-bill status and El Gaia reconciliation remain open, no new reporting this cycle.",
+    "indiaSub": "Sensex snapped a 4-day win streak today (-329.91, -0.44%, to 74,529.08) on F&O expiry, after Monday's +564.03 (+0.76%) rally ended a 6-week losing run, and Friday's essentially flat close (-0.03%). Fed's Warsh cited 'Middle East tension' as a factor in the Sept 16 rate hike — the first formal Fed acknowledgment of the war's impact. VIX/FII-DII flows [VERIFY], no fresh prints since Sept 17."
   },
   "hormuzPhases": [
     {
@@ -1523,7 +1521,7 @@
       "days": "Aug 26-"
     }
   ],
-  "_phaseBadge": "Sanctions Act signed — 100% tariff power over India, 180 days to name buyers · Houthi missile fired at Riyadh (intercepted) · Iran sends seven conditions via Qatar, warns of new US strikes · Trump: obliterate, strangle or deal · Brent ~$101.6, below $102 · Sensex opens +420, Nifty +40 (Friday flat; sixth weekly Nifty fall)",
+  "_phaseBadge": "Trump at the UN: a 'big decision' — deal with Iran or \"annihilate\" it, \"drive them into hell with no chance of survival\" · US calls off planned Houthi airstrikes at the last minute; Houthis open a new ground offensive for Yemen's Taiz highlands · IRGC advisors reported building tunnels/radar on Bab el-Mandeb [VERIFY] · UK commits a single RAF tanker to refuel Saudi jets, its first direct military support · UN fact-finding mission: 'reasonable grounds' US committed war crimes incl. a strike hitting ~120 schoolchildren at Minab; White House rejects finding · Brent below $101, down from $108.75 a week earlier, as satellite imagery confirms Saudi rerouted 2.8M bpd through Hormuz (vs 700K bpd in August) · Iran's economy buckling: rial down ~44% in 6 months, food inflation 127.5% y/y · India: Sensex snapped a 4-day win streak today (-0.44%) after Monday's rally (+0.76%) ended a 6-week losing run · Fed's Warsh cites Middle East tension as a factor in the Sept 16 rate hike",
   "budget": {
     "petrolPre": 94.72,
     "petrolNow": 111.21,
@@ -1533,12 +1531,12 @@
     "lpgNow": 942.0
   },
   "brief": [
-    "Sanctions law: Trump signed the Graham Sanctioning Russia and Iran Act on Sept 18. It allows tariffs of up to 100% on the top buyers of Russian energy, and India is the third-largest. Treasury and State have 180 days to name the countries, so nothing is imminent. MEA says India is monitoring closely.",
-    "Diplomacy and escalation: Iran says it sent seven conditions to the US via Qatar — an end to the war on all fronts, release of frozen funds and lifting of the blockade. It also warns of a new US strike round. Trump lists three options: obliterate, economic squeeze or a deal.",
-    "Oil and shipping: Brent fell to about $101.6 at Monday's open after a $102.41 Friday settle. Tracked Hormuz transits remain a fraction of normal. The Houthis fired a ballistic missile at Riyadh, intercepted, and attempted a strike on Yanbu.",
-    "India: Sensex and Nifty opened up 0.6% and 0.2% today after a flat Friday. The rupee is near a record low of 96 and FPIs have sold ₹20,974 crore this month. Key dates: Pezeshkian at the UN Sept 23; Trump-Xi summit and the NSE listing Sept 24."
+    "Trump used his UN General Assembly address Sept 22 to frame the war in stark terms: a 'big decision' now lies ahead on Iran — either a negotiated deal, or, in his words, to 'annihilate' the country and 'drive them into hell with no chance of survival.' A single lower-confidence claim that a deal is expected only after the US midterm elections appeared in one weaker outlet and is not carried here pending corroboration. Pezeshkian's and the IRGC's responses to the UN remarks were not independently confirmed by publication time.",
+    "Alongside that rhetoric, the US quietly pulled back from direct action: planned airstrikes on the Houthis were called off at the last minute Sept 21-22, the second such withdrawal since early 2025. The Houthis used the opening to launch a new ground offensive aimed at isolating Taiz in Yemen's highlands, and Long War Journal reported — on a single source, not yet corroborated — that IRGC advisors are building tunnels and radar installations on Houthi-held territory near Bab el-Mandeb. The UK's commitment of one RAF tanker to refuel Saudi intercept jets is modest in scale but notable as the first direct UK military support of the war. Separately, a UN fact-finding mission concluded there are 'reasonable grounds' the US committed war crimes in two strikes, including one that hit roughly 120 schoolchildren at Minab; the White House has rejected the finding on the record, and this dashboard presents both without adjudicating between them.",
+    "Oil told a calmer story. Brent fell below $101 — down from $108.75 just a week earlier — after satellite imagery confirmed Saudi Arabia has rerouted roughly 2.8 million barrels a day through Hormuz, up sharply from about 700,000 bpd in August. That hard data point helps explain the apparent contradiction between escalatory headlines and falling crude. Iran's own economy showed further strain: the rial down about 44% over six months, food inflation running at 127.5% year-on-year, crude loadings down roughly 85%, and Mahan Air suspending its Iran-Turkey route. Hormuz transit counts remain irreconcilable across sources — Reuters puts daily transits at about 4, Windward at about 12, for the same dates.",
+    "India closed out a volatile week lower. After a flat Friday (-0.03%), Sensex rallied +564.03 (+0.76%) Monday to snap a six-week losing streak, then gave much of that back today, falling -329.91 (-0.44%) to 74,529.08 amid F&O expiry. Fed governor Kevin Warsh explicitly cited 'tension in the Middle East' as a factor behind the Sept 16 rate hike — the first time a Fed official has formally acknowledged the war's economic impact in this way. VIX and FII/DII flow data have not been updated since Sept 17 and are flagged [VERIFY]."
   ],
-  "shareLine": "Trump signs the Russia/Iran sanctions Act with 100% tariff power over India; Iran sends seven conditions via Qatar while warning of US strikes; Brent slips below $102 and Sensex opens +420. [As of 12:30 PM IST, Sept 21.]",
+  "shareLine": "Trump tells the UN he faces a 'big decision' — deal with Iran or annihilate it — as the US pulls back from a Houthi strike and the Houthis open a new ground offensive; oil falls below $101 on record satellite-confirmed Saudi rerouting through Hormuz; and Indian markets close a volatile week lower. [As of 9:50 PM IST Tuesday, Day 206; today's close was Sensex -0.44%, Nifty -0.36%.]",
   "author": {
     "name": "Nithiyanandam Yogeswaran",
     "twitter": "https://x.com/prof_nithiya",
@@ -1587,234 +1585,5 @@
       "type": "Op-ed / opinion article",
       "url": "https://www.moneycontrol.com/news/opinion/hormuz-dilemma-it-s-neither-fully-open-nor-closed-which-is-driving-economic-uncertainty-14008050.html"
     }
-  ],
-  "geoint": {
-    "_updated": "2026-09-21",
-    "_note": "Analyst-curated from public reporting; coordinates approximate to the named location. Not a live AIS/satellite feed — use the linked free sources to verify.",
-    "points": [
-      {
-        "n": "Strait of Hormuz",
-        "t": "chokepoint",
-        "lat": 26.57,
-        "lon": 56.25,
-        "d": "Sep 15-16",
-        "i": "4-12 tracked transits/day vs ~90-140 pre-war; ~410 vessels holding in Gulf watch box."
-      },
-      {
-        "n": "Bab el-Mandeb",
-        "t": "chokepoint",
-        "lat": 12.58,
-        "lon": 43.33,
-        "d": "Sep 20",
-        "i": "Broadly functional; Houthis hold Perim, Mocha, Dhubab."
-      },
-      {
-        "n": "Perim Island",
-        "t": "chokepoint",
-        "lat": 12.65,
-        "lon": 43.41,
-        "d": "Sep 10-11",
-        "i": "Captured by Houthis; splits the strait's narrow channel."
-      },
-      {
-        "n": "Mocha",
-        "t": "incident",
-        "lat": 13.32,
-        "lon": 43.25,
-        "d": "Sep 10",
-        "i": "Port captured by Houthis; government counter-attacks have not retaken it."
-      },
-      {
-        "n": "Riyadh",
-        "t": "incident",
-        "lat": 24.71,
-        "lon": 46.68,
-        "d": "Sep 19",
-        "i": "Houthi ballistic missile, intercepted; smoke reported near King Khalid airport."
-      },
-      {
-        "n": "Taif",
-        "t": "incident",
-        "lat": 21.27,
-        "lon": 40.42,
-        "d": "Sep 17",
-        "i": "Drone shot down; debris killed 1. First fatality from the campaign near the holy cities."
-      },
-      {
-        "n": "Mecca (approx.)",
-        "t": "incident",
-        "lat": 21.39,
-        "lon": 39.86,
-        "d": "Sep 15",
-        "i": "Coalition intercepted a Houthi drone south of the city; first Mecca alert of the war."
-      },
-      {
-        "n": "Khamis Mushait",
-        "t": "incident",
-        "lat": 18.3,
-        "lon": 42.73,
-        "d": "Sep 14-15",
-        "i": "Houthi missiles and drones hit the airbase; 13 civilians wounded."
-      },
-      {
-        "n": "Yanbu",
-        "t": "energy",
-        "lat": 24.09,
-        "lon": 38.06,
-        "d": "Sep 19",
-        "i": "East-West pipeline terminal; loadings suspended since Sep 11, recovery announced Sep 18; Houthi strike attempted Sep 19."
-      },
-      {
-        "n": "Ras Tanura",
-        "t": "energy",
-        "lat": 26.64,
-        "lon": 50.16,
-        "d": "",
-        "i": "Saudi Gulf export terminal exposed to Hormuz closure."
-      },
-      {
-        "n": "Kharg Island",
-        "t": "energy",
-        "lat": 29.23,
-        "lon": 50.31,
-        "d": "Sep 8",
-        "i": "Iran's main crude terminal; tanker Derya destroyed nearby by CENTCOM."
-      },
-      {
-        "n": "Al-Faw",
-        "t": "energy",
-        "lat": 29.98,
-        "lon": 48.47,
-        "d": "Sep 9",
-        "i": "Tankers New Andros and Andros attacked off Iraq's coast."
-      },
-      {
-        "n": "Khasab",
-        "t": "incident",
-        "lat": 26.18,
-        "lon": 56.25,
-        "d": "Sep 11",
-        "i": "Four projectiles hit two merchant vessels off the Omani coast."
-      },
-      {
-        "n": "Qeshm Island",
-        "t": "incident",
-        "lat": 26.95,
-        "lon": 56.27,
-        "d": "Sep 13",
-        "i": "Iranian cargo vessel struck; 1 killed, 4 wounded."
-      },
-      {
-        "n": "NSA Bahrain",
-        "t": "base",
-        "lat": 26.21,
-        "lon": 50.61,
-        "d": "Sep 11",
-        "i": "US Fifth Fleet HQ; Navy says Iran 'blew the hell out of' it."
-      },
-      {
-        "n": "Prince Sultan AB",
-        "t": "base",
-        "lat": 24.06,
-        "lon": 47.58,
-        "d": "Sep 17",
-        "i": "ABC News: extensive damage; repair timelines 'decades' (single-source)."
-      },
-      {
-        "n": "Muwaffaq Salti AB",
-        "t": "base",
-        "lat": 31.83,
-        "lon": 36.78,
-        "d": "Sep 8-9",
-        "i": "Iranian salvo damaged an A-10 and ~8 F-15Es."
-      },
-      {
-        "n": "Jamnagar",
-        "t": "india",
-        "lat": 22.35,
-        "lon": 69.87,
-        "d": "",
-        "i": "Reliance refinery complex; largest Indian Gulf-crude node."
-      },
-      {
-        "n": "Mundra",
-        "t": "india",
-        "lat": 22.74,
-        "lon": 69.7,
-        "d": "",
-        "i": "Major western-coast port; Hormuz-dependent cargo."
-      },
-      {
-        "n": "Mumbai",
-        "t": "india",
-        "lat": 18.95,
-        "lon": 72.84,
-        "d": "",
-        "i": "Western naval command; port and financial centre."
-      },
-      {
-        "n": "Kochi",
-        "t": "india",
-        "lat": 9.96,
-        "lon": 76.27,
-        "d": "",
-        "i": "Southern Naval Command; Op Urja Suraksha base."
-      },
-      {
-        "n": "Chabahar",
-        "t": "india",
-        "lat": 25.29,
-        "lon": 60.64,
-        "d": "Sep 2",
-        "i": "India-linked port in Iran; explosions reported Sep 2."
-      }
-    ],
-    "sources": [
-      {
-        "n": "NASA FIRMS",
-        "u": "https://firms.modaps.eosdis.nasa.gov/map/",
-        "use": "Thermal anomalies from VIIRS/MODIS — flags fires at terminals, depots and strike sites within hours. Free; API needs a free key."
-      },
-      {
-        "n": "Copernicus Browser (Sentinel-1/2)",
-        "u": "https://browser.dataspace.copernicus.eu/",
-        "use": "Free satellite imagery; Sentinel-1 radar sees vessels and damage through cloud and at night."
-      },
-      {
-        "n": "IMF PortWatch — Hormuz",
-        "u": "https://portwatch.imf.org/pages/chokepoint6",
-        "use": "Daily chokepoint transit counts from satellite AIS. Free; 3-5 day lag."
-      },
-      {
-        "n": "UKMTO advisories",
-        "u": "https://www.ukmto.org/",
-        "use": "Official incident and threat warnings for Hormuz, Gulf of Oman and Red Sea."
-      },
-      {
-        "n": "Global Fishing Watch",
-        "u": "https://globalfishingwatch.org/map/",
-        "use": "AIS-gap ('going dark') and vessel-behaviour layers; useful for the dark-fleet gap in transit counts. Free for non-commercial use."
-      },
-      {
-        "n": "GDELT GEO API",
-        "u": "https://api.gdeltproject.org/api/v2/geo/geo?query=hormuz&format=GeoJSON",
-        "use": "Free geocoded news mentions as GeoJSON — a proxy for where reporting is concentrating."
-      },
-      {
-        "n": "ACLED",
-        "u": "https://acleddata.com/",
-        "use": "Curated conflict-event data for Yemen and the Gulf. Free registration."
-      },
-      {
-        "n": "Liveuamap — Iran",
-        "u": "https://iran.liveuamap.com/",
-        "use": "Crowd-sourced conflict map for cross-checking incident locations."
-      },
-      {
-        "n": "ISW / Critical Threats",
-        "u": "https://www.criticalthreats.org/",
-        "use": "Free Iran update maps and daily assessments."
-      }
-    ]
-  }
+  ]
 }
