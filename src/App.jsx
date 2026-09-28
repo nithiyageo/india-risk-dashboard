@@ -84,54 +84,6 @@ const CITY_LL = {
   "Lucknow":[26.85,80.95], "Chennai":[13.08,80.27],
 };
 
-// State-level population (2026 est., millions, StatisticsTimes) and coastal
-// exposure, for the state-population map layer. Coordinates are each
-// state's capital/largest city, used as a single representative point.
-// Not in war-intel.json: this is background reference data, not daily news.
-const STATE_DATA = {
-  "Uttar Pradesh":  {lat:26.85, lon:80.95, pop:243.5, coastal:false},
-  "Bihar":          {lat:25.61, lon:85.14, pop:132.9, coastal:false},
-  "Maharashtra":    {lat:19.08, lon:72.88, pop:129.3, coastal:true},
-  "West Bengal":    {lat:22.57, lon:88.36, pop:100.5, coastal:true},
-  "Madhya Pradesh": {lat:23.26, lon:77.41, pop:90.0,  coastal:false},
-  "Rajasthan":      {lat:26.91, lon:75.79, pop:83.9,  coastal:false},
-  "Tamil Nadu":     {lat:13.08, lon:80.27, pop:79.0,  coastal:true},
-  "Gujarat":        {lat:23.03, lon:72.58, pop:74.3,  coastal:true},
-  "Karnataka":      {lat:12.97, lon:77.59, pop:70.8,  coastal:true},
-  "Andhra Pradesh": {lat:16.51, lon:80.62, pop:53.7,  coastal:true},
-  "Telangana":      {lat:17.39, lon:78.49, pop:38.7,  coastal:false},
-  "Kerala":         {lat:9.93,  lon:76.27, pop:36.2,  coastal:true},
-  "Punjab":         {lat:30.73, lon:76.78, pop:31.4,  coastal:false},
-  "Haryana":        {lat:28.46, lon:77.03, pop:31.4,  coastal:false},
-  "Delhi NCT":      {lat:28.61, lon:77.21, pop:22.3,  coastal:false},
-  "Goa":            {lat:15.30, lon:74.12, pop:1.6,   coastal:true},
-};
-
-// Rough centroid of Iran's five tracked nuclear sites — used only as a
-// proxy origin for "closer to Iran" in the indicative state-risk score
-// below, the same way the app already reasons about downwind exposure.
-const IRAN_CENTER = [32.8, 51.1];
-
-// Indicative composite: proximity to Iran (an analyst's stand-in for wind/
-// missile exposure), coastal exposure (oil-shock/shipping channel) and
-// population (people exposed, not hazard intensity). Computed client-side
-// from the table above, not sourced per-state — labelled as such in the UI.
-const deriveStateRisk = () => {
-  const rows = Object.entries(STATE_DATA).map(([name,s]) => ({
-    name, ...s,
-    dist: Math.hypot(s.lat-IRAN_CENTER[0], s.lon-IRAN_CENTER[1]),
-  }));
-  const dists = rows.map(r=>r.dist), dMin=Math.min(...dists), dMax=Math.max(...dists);
-  const pops = rows.map(r=>Math.sqrt(r.pop)), pMin=Math.min(...pops), pMax=Math.max(...pops);
-  return rows.map(r => {
-    const proximity = dMax>dMin ? 1-((r.dist-dMin)/(dMax-dMin)) : 0.5;
-    const popScale = pMax>pMin ? (Math.sqrt(r.pop)-pMin)/(pMax-pMin) : 0.5;
-    const coastalScale = r.coastal ? 1 : 0.35;
-    const risk = Math.round(100 * (0.55*proximity + 0.30*coastalScale + 0.15*popScale));
-    return {...r, risk};
-  });
-};
-
 // Pre-war baselines — overridable via intel.preWar.
 const PRE_FB = {brent:65, rupee:91.49, nifty:22124, lpg:853, petrol:94.72, diesel:87.62};
 
@@ -931,86 +883,40 @@ const NukeRiskBars = ({sites}) => {
 
 // City exposure as a small India inset -- reuses the same basemap and
 // coordinate system as GeoMap, just cropped to India's bounding box.
+// Small, static India outline with the 8 tracked cities as plain, always-
+// labelled dots. Deliberately simple after three rounds of a fancier,
+// interactive version (state population layer, full-width crop, click-to-
+// select) didn't read well -- no toggle, no selection, nothing to get wrong.
 const CityMap = ({cities}) => {
   const [base, setBase] = useState(null);
-  const [layer, setLayer] = useState("cities");
-  const [sel, setSel] = useState(null);
   useEffect(() => {
     fetch("./geo-base.json").then(r=>r.ok?r.json():null).then(setBase).catch(()=>{});
   }, []);
-  const cityPts = (cities||[]).map(c => CITY_LL[c.city] ? {...c, lat:CITY_LL[c.city][0], lon:CITY_LL[c.city][1]} : null)
+  const pts = (cities||[]).map(c => CITY_LL[c.city] ? {...c, lat:CITY_LL[c.city][0], lon:CITY_LL[c.city][1]} : null)
     .filter(Boolean);
-  const statePts = deriveStateRisk();
-  if (!cityPts.length) return null;
-  const pts = layer==="cities" ? cityPts : statePts;
-  const popMin = Math.sqrt(Math.min(...statePts.map(s=>s.pop)));
-  const popMax = Math.sqrt(Math.max(...statePts.map(s=>s.pop)));
-  const cur = sel!=null ? pts[sel] : null;
-  // Wider crop than a tight India-only box, so the panel can run the full
-  // page width without India itself being stretched into a distorted,
-  // oversized shape. Extended west into the Gulf/Arabia rather than east,
-  // since the shared basemap has no coastline detail drawn past ~80E.
-  const x0=(45-30)*20, y0=(40-32)*20, x1=(83-30)*20, y1=(40-6)*20;
+  if (!pts.length) return null;
+  const x0=(68-30)*20, y0=(40-31)*20, x1=(84-30)*20, y1=(40-8)*20;
   const vw = x1-x0, vh = y1-y0;
   return (
-    <div style={{marginBottom:20}}>
-      <div style={{display:"flex", gap:8, marginBottom:10, flexWrap:"wrap", alignItems:"baseline"}}>
-        {[["cities","Cities \u00b7 today's exposure"],["states","States \u00b7 population & risk"]].map(([k,l])=>(
-          <button key={k} onClick={()=>{setLayer(k); setSel(null);}}
-            style={{cursor:"pointer", background:layer===k?T.wine:"transparent",
-              color:layer===k?"#fff":T.ink70, border:`1px solid ${layer===k?T.wine:T.ink20}`,
-              padding:"4px 10px", fontFamily:MONO, fontSize:10, letterSpacing:"0.08em",
-              textTransform:"uppercase"}}>{l}</button>
-        ))}
-        <span style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.04em", color:T.ink50}}>
-          {layer==="states" ? "Tap a state for its name and figures" : "Tap a city for its name and figures"}
-        </span>
-      </div>
-      <div style={{border:HAIR, background:"#fff"}}>
-        <svg viewBox={`${x0} ${y0} ${vw} ${vh}`} role="img" aria-label="Map of Indian city and state exposure scores"
-          style={{width:"100%", height:"auto", display:"block", aspectRatio:`${vw} / ${vh}`}}>
-          <rect x={x0} y={y0} width={vw} height={vh} fill="#f4f7f9"/>
-          {base && <path d={base.L} fill="#ebe7e0" stroke="none"/>}
-          {base && <path d={base.B} fill="none" stroke={T.ink20} strokeWidth="0.6"/>}
-          {pts.map((c,i)=>{
-            const [x,y] = geoXY(c);
-            const on = sel===i;
-            const r = layer==="cities"
-              ? 8 + (Math.min(c.tot,100)/100)*11
-              : 7 + (popMax>popMin ? (Math.sqrt(c.pop)-popMin)/(popMax-popMin) : 0.5)*17;
-            const risk = layer==="cities" ? c.tot : c.risk;
-            const col = risk>55?C.red:risk>40?C.orange:T.wine;
-            // Both layers crowd at this zoom (Delhi/Haryana/Punjab and
-            // Jaipur/Delhi/Lucknow especially) -- label on select only.
-            const showLabel = on;
-            return (
-              <g key={i} onClick={()=>setSel(on?null:i)} style={{cursor:"pointer"}}>
-                <circle cx={x} cy={y} r={r} fill={col} opacity={on?0.92:0.62} stroke="#fff" strokeWidth="2"/>
-                {showLabel && (
-                  <text x={x} y={y-r-8} fontSize="14" fontFamily={MONO} fill={T.ink} textAnchor="middle"
-                    stroke="#fff" strokeWidth="4" paintOrder="stroke">
-                    {c.name||c.city}{" \u00b7 "}{layer==="cities" ? risk : `${c.pop}M`}
-                  </text>
-                )}
-              </g>
-            );
-          })}
-        </svg>
-      </div>
-      {layer==="states" && (
-        <div style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.04em", color:T.ink50, margin:"8px 0"}}>
-          Bubble size = 2026 est. population. Colour = an indicative composite of proximity to
-          Iran, coastal/shipping exposure and population, computed here rather than sourced \u2014
-          not the tracker's editorial city scores above.
-        </div>
-      )}
-      {cur && (
-        <div style={{borderTop:`2px solid ${T.ink}`, marginTop:8}}>
-          {layer==="cities"
-            ? <Def label={cur.city}>{noEmoji(cur.info)}</Def>
-            : <Def label={cur.name}>{`Pop. ${cur.pop}M \u00b7 ${cur.coastal?"coastal":"landlocked"} \u00b7 indicative risk ${cur.risk}/100`}</Def>}
-        </div>
-      )}
+    <div style={{border:HAIR, background:"#fff", marginBottom:20, maxWidth:420}}>
+      <svg viewBox={`${x0} ${y0} ${vw} ${vh}`} role="img" aria-label="Map of the 8 tracked Indian cities"
+        style={{width:"100%", height:"auto", display:"block", aspectRatio:`${vw} / ${vh}`}}>
+        <rect x={x0} y={y0} width={vw} height={vh} fill="#f4f7f9"/>
+        {base && <path d={base.L} fill="#ebe7e0" stroke="none"/>}
+        {base && <path d={base.B} fill="none" stroke={T.ink20} strokeWidth="0.6"/>}
+        {pts.map((c,i)=>{
+          const [x,y] = geoXY(c);
+          const r = 6 + (Math.min(c.tot,100)/100)*8;
+          const col = c.tot>55?C.red:c.tot>40?C.orange:T.wine;
+          return (
+            <g key={i}>
+              <circle cx={x} cy={y} r={r} fill={col} opacity="0.75" stroke="#fff" strokeWidth="1.5"/>
+              <text x={x} y={y-r-6} fontSize="11.5" fontFamily={MONO} fill={T.ink} textAnchor="middle"
+                stroke="#fff" strokeWidth="3" paintOrder="stroke">{c.city}{" \u00b7 "}{c.tot}</text>
+            </g>
+          );
+        })}
+      </svg>
     </div>
   );
 };
