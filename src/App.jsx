@@ -84,6 +84,54 @@ const CITY_LL = {
   "Lucknow":[26.85,80.95], "Chennai":[13.08,80.27],
 };
 
+// State-level population (2026 est., millions, StatisticsTimes) and coastal
+// exposure, for the state-population map layer. Coordinates are each
+// state's capital/largest city, used as a single representative point.
+// Not in war-intel.json: this is background reference data, not daily news.
+const STATE_DATA = {
+  "Uttar Pradesh":  {lat:26.85, lon:80.95, pop:243.5, coastal:false},
+  "Bihar":          {lat:25.61, lon:85.14, pop:132.9, coastal:false},
+  "Maharashtra":    {lat:19.08, lon:72.88, pop:129.3, coastal:true},
+  "West Bengal":    {lat:22.57, lon:88.36, pop:100.5, coastal:true},
+  "Madhya Pradesh": {lat:23.26, lon:77.41, pop:90.0,  coastal:false},
+  "Rajasthan":      {lat:26.91, lon:75.79, pop:83.9,  coastal:false},
+  "Tamil Nadu":     {lat:13.08, lon:80.27, pop:79.0,  coastal:true},
+  "Gujarat":        {lat:23.03, lon:72.58, pop:74.3,  coastal:true},
+  "Karnataka":      {lat:12.97, lon:77.59, pop:70.8,  coastal:true},
+  "Andhra Pradesh": {lat:16.51, lon:80.62, pop:53.7,  coastal:true},
+  "Telangana":      {lat:17.39, lon:78.49, pop:38.7,  coastal:false},
+  "Kerala":         {lat:9.93,  lon:76.27, pop:36.2,  coastal:true},
+  "Punjab":         {lat:30.73, lon:76.78, pop:31.4,  coastal:false},
+  "Haryana":        {lat:28.46, lon:77.03, pop:31.4,  coastal:false},
+  "Delhi NCT":      {lat:28.61, lon:77.21, pop:22.3,  coastal:false},
+  "Goa":            {lat:15.30, lon:74.12, pop:1.6,   coastal:true},
+};
+
+// Rough centroid of Iran's five tracked nuclear sites — used only as a
+// proxy origin for "closer to Iran" in the indicative state-risk score
+// below, the same way the app already reasons about downwind exposure.
+const IRAN_CENTER = [32.8, 51.1];
+
+// Indicative composite: proximity to Iran (an analyst's stand-in for wind/
+// missile exposure), coastal exposure (oil-shock/shipping channel) and
+// population (people exposed, not hazard intensity). Computed client-side
+// from the table above, not sourced per-state — labelled as such in the UI.
+const deriveStateRisk = () => {
+  const rows = Object.entries(STATE_DATA).map(([name,s]) => ({
+    name, ...s,
+    dist: Math.hypot(s.lat-IRAN_CENTER[0], s.lon-IRAN_CENTER[1]),
+  }));
+  const dists = rows.map(r=>r.dist), dMin=Math.min(...dists), dMax=Math.max(...dists);
+  const pops = rows.map(r=>Math.sqrt(r.pop)), pMin=Math.min(...pops), pMax=Math.max(...pops);
+  return rows.map(r => {
+    const proximity = dMax>dMin ? 1-((r.dist-dMin)/(dMax-dMin)) : 0.5;
+    const popScale = pMax>pMin ? (Math.sqrt(r.pop)-pMin)/(pMax-pMin) : 0.5;
+    const coastalScale = r.coastal ? 1 : 0.35;
+    const risk = Math.round(100 * (0.55*proximity + 0.30*coastalScale + 0.15*popScale));
+    return {...r, risk};
+  });
+};
+
 // Pre-war baselines — overridable via intel.preWar.
 const PRE_FB = {brent:65, rupee:91.49, nifty:22124, lpg:853, petrol:94.72, diesel:87.62};
 
@@ -647,10 +695,20 @@ const GEO_KIND = {
 };
 const geoXY = p => [(p.lon-30)*20, (40-p.lat)*20];
 
+// Illustrative Gulf-to-India tanker/cargo lanes, Hormuz to three major
+// west-coast ports. Not tracked vessel data -- a schematic of the route,
+// labelled as such, to show what the blockade actually threatens.
+const SHIP_ROUTES = [
+  {to:"Mundra",  from:[26.57,56.25], end:[22.84,69.72]},
+  {to:"Mumbai",  from:[26.57,56.25], end:[19.08,72.88]},
+  {to:"Kochi",   from:[26.57,56.25], end:[9.93,76.27]},
+];
+
 const GeoMap = ({geo, nukes, today}) => {
   const [base, setBase] = useState(null);
   const [kind, setKind] = useState("all");
   const [sel,  setSel]  = useState(null);
+  const [showRoutes, setShowRoutes] = useState(false);
   useEffect(() => {
     fetch("./geo-base.json").then(r=>r.ok?r.json():null).then(setBase).catch(()=>{});
   }, []);
@@ -689,6 +747,13 @@ const GeoMap = ({geo, nukes, today}) => {
             {k==="all"?"All":GEO_KIND[k].l}
           </button>
         ))}
+        <button onClick={()=>setShowRoutes(!showRoutes)} aria-pressed={showRoutes}
+          style={{cursor:"pointer", background:showRoutes?T.ink:"transparent",
+            color:showRoutes?"#fff":T.ink70, border:`1px solid ${showRoutes?T.ink:T.ink20}`,
+            padding:"4px 10px", fontFamily:MONO, fontSize:10, letterSpacing:"0.1em",
+            textTransform:"uppercase"}}>
+          {showRoutes?"Hide":"Show"} shipping lanes
+        </button>
       </div>
       <div style={{border:HAIR, background:"#fff"}}>
         <svg viewBox="0 0 1000 740" role="img" aria-label="Map of the Gulf, Red Sea and India with tracked incidents"
@@ -696,6 +761,21 @@ const GeoMap = ({geo, nukes, today}) => {
           <rect width="1000" height="740" fill="#f4f7f9"/>
           {base && <path d={base.L} fill="#ebe7e0" stroke="none"/>}
           {base && <path d={base.B} fill="none" stroke={T.ink20} strokeWidth="0.6"/>}
+          {showRoutes && SHIP_ROUTES.map((r,i) => {
+            const [x1,y1] = geoXY({lat:r.from[0], lon:r.from[1]});
+            const [x2,y2] = geoXY({lat:r.end[0],  lon:r.end[1]});
+            const mx = (x1+x2)/2, my = (y1+y2)/2 + 45;
+            return (
+              <g key={i}>
+                <path d={`M${x1},${y1} Q${mx},${my} ${x2},${y2}`} fill="none"
+                  stroke={T.wine} strokeWidth="1" opacity="0.3"/>
+                <path d={`M${x1},${y1} Q${mx},${my} ${x2},${y2}`} fill="none"
+                  stroke={T.wine} strokeWidth="2" strokeLinecap="round" strokeDasharray="1 10" opacity="0.85">
+                  <animate attributeName="stroke-dashoffset" from="0" to="-44" dur="2.2s" repeatCount="indefinite"/>
+                </path>
+              </g>
+            );
+          })}
           {shown.map(p=>{
             const i = pts.indexOf(p); const [x,y] = geoXY(p);
             const on = sel===i; const col = GEO_KIND[p.t]?.c || T.ink;
@@ -737,13 +817,19 @@ const GeoMap = ({geo, nukes, today}) => {
         </div>
       )}
 
-      <div style={{display:"flex", gap:16, flexWrap:"wrap", margin:"10px 0 18px",
+      <div style={{display:"flex", gap:16, flexWrap:"wrap", margin:"10px 0 4px",
         fontFamily:MONO, fontSize:10, letterSpacing:"0.08em", color:T.ink50, textTransform:"uppercase"}}>
         {Object.entries(GEO_KIND).map(([k,v])=>(
           <span key={k}><span style={{display:"inline-block", width:8, height:8, borderRadius:"50%",
             background:v.c, marginRight:6}}/>{v.l}</span>
         ))}
       </div>
+      {showRoutes && (
+        <div style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.04em", color:T.ink50, margin:"0 0 14px"}}>
+          Shipping lanes are schematic (Hormuz to Mundra, Mumbai and Kochi) — illustrative of the
+          route the blockade threatens, not tracked vessel positions.
+        </div>
+      )}
       {cur && (
         <div style={{borderTop:`2px solid ${T.ink}`, marginBottom:18}}>
           <Def label={cur.n}>{cur.i}{cur.d ? ` (${cur.d})` : ""}</Def>
@@ -788,36 +874,84 @@ const NukeRiskBars = ({sites}) => {
 // coordinate system as GeoMap, just cropped to India's bounding box.
 const CityMap = ({cities}) => {
   const [base, setBase] = useState(null);
+  const [layer, setLayer] = useState("cities");
+  const [sel, setSel] = useState(null);
   useEffect(() => {
     fetch("./geo-base.json").then(r=>r.ok?r.json():null).then(setBase).catch(()=>{});
   }, []);
-  const pts = (cities||[]).map(c => CITY_LL[c.city] ? {...c, lat:CITY_LL[c.city][0], lon:CITY_LL[c.city][1]} : null)
+  const cityPts = (cities||[]).map(c => CITY_LL[c.city] ? {...c, lat:CITY_LL[c.city][0], lon:CITY_LL[c.city][1]} : null)
     .filter(Boolean);
-  if (!pts.length) return null;
+  const statePts = deriveStateRisk();
+  if (!cityPts.length) return null;
+  const pts = layer==="cities" ? cityPts : statePts;
+  const popMin = Math.sqrt(Math.min(...statePts.map(s=>s.pop)));
+  const popMax = Math.sqrt(Math.max(...statePts.map(s=>s.pop)));
+  const cur = sel!=null ? pts[sel] : null;
   // India is a tall, narrow shape -- cropped tight to the city spread rather
   // than reusing the wide Gulf-map bounds, which left most of the box empty.
   const x0=(68-30)*20, y0=(40-31)*20, x1=(84-30)*20, y1=(40-8)*20;
   const vw = x1-x0, vh = y1-y0;
   return (
-    <div style={{border:HAIR, background:"#fff", marginBottom:20, maxWidth:380}}>
-      <svg viewBox={`${x0} ${y0} ${vw} ${vh}`} role="img" aria-label="Map of Indian city exposure scores"
-        style={{width:"100%", height:"auto", display:"block", aspectRatio:`${vw} / ${vh}`}}>
-        <rect x={x0} y={y0} width={vw} height={vh} fill="#f4f7f9"/>
-        {base && <path d={base.L} fill="#ebe7e0" stroke="none"/>}
-        {base && <path d={base.B} fill="none" stroke={T.ink20} strokeWidth="0.6"/>}
-        {pts.map((c,i)=>{
-          const [x,y] = geoXY(c);
-          const r = 6 + (Math.min(c.tot,100)/100)*9;
-          const col = c.tot>55?C.red:c.tot>40?C.orange:T.wine;
-          return (
-            <g key={i}>
-              <circle cx={x} cy={y} r={r} fill={col} opacity="0.72" stroke="#fff" strokeWidth="1.5"/>
-              <text x={x} y={y-r-6} fontSize="12" fontFamily={MONO} fill={T.ink} textAnchor="middle"
-                stroke="#fff" strokeWidth="3" paintOrder="stroke">{c.city}{" \u00b7 "}{c.tot}</text>
-            </g>
-          );
-        })}
-      </svg>
+    <div style={{marginBottom:20, maxWidth:460}}>
+      <div style={{display:"flex", gap:8, marginBottom:10, flexWrap:"wrap", alignItems:"baseline"}}>
+        {[["cities","Cities \u00b7 today's exposure"],["states","States \u00b7 population & risk"]].map(([k,l])=>(
+          <button key={k} onClick={()=>{setLayer(k); setSel(null);}}
+            style={{cursor:"pointer", background:layer===k?T.wine:"transparent",
+              color:layer===k?"#fff":T.ink70, border:`1px solid ${layer===k?T.wine:T.ink20}`,
+              padding:"4px 10px", fontFamily:MONO, fontSize:10, letterSpacing:"0.08em",
+              textTransform:"uppercase"}}>{l}</button>
+        ))}
+        {layer==="states" && (
+          <span style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.04em", color:T.ink50}}>
+            Tap a state for its name and figures
+          </span>
+        )}
+      </div>
+      <div style={{border:HAIR, background:"#fff"}}>
+        <svg viewBox={`${x0} ${y0} ${vw} ${vh}`} role="img" aria-label="Map of Indian city and state exposure scores"
+          style={{width:"100%", height:"auto", display:"block", aspectRatio:`${vw} / ${vh}`}}>
+          <rect x={x0} y={y0} width={vw} height={vh} fill="#f4f7f9"/>
+          {base && <path d={base.L} fill="#ebe7e0" stroke="none"/>}
+          {base && <path d={base.B} fill="none" stroke={T.ink20} strokeWidth="0.6"/>}
+          {pts.map((c,i)=>{
+            const [x,y] = geoXY(c);
+            const on = sel===i;
+            const r = layer==="cities"
+              ? 6 + (Math.min(c.tot,100)/100)*9
+              : 5 + (popMax>popMin ? (Math.sqrt(c.pop)-popMin)/(popMax-popMin) : 0.5)*13;
+            const risk = layer==="cities" ? c.tot : c.risk;
+            const col = risk>55?C.red:risk>40?C.orange:T.wine;
+            // States crowd together (Delhi/Haryana/Punjab especially), so
+            // only label on select there; the 8 cities have room to spare.
+            const showLabel = layer==="cities" || on;
+            return (
+              <g key={i} onClick={()=>setSel(on?null:i)} style={{cursor:"pointer"}}>
+                <circle cx={x} cy={y} r={r} fill={col} opacity={on?0.92:0.62} stroke="#fff" strokeWidth="1.5"/>
+                {showLabel && (
+                  <text x={x} y={y-r-6} fontSize="11.5" fontFamily={MONO} fill={T.ink} textAnchor="middle"
+                    stroke="#fff" strokeWidth="3" paintOrder="stroke">
+                    {c.name||c.city}{" \u00b7 "}{layer==="cities" ? risk : `${c.pop}M`}
+                  </text>
+                )}
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+      {layer==="states" && (
+        <div style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.04em", color:T.ink50, margin:"8px 0"}}>
+          Bubble size = 2026 est. population. Colour = an indicative composite of proximity to
+          Iran, coastal/shipping exposure and population, computed here rather than sourced \u2014
+          not the tracker's editorial city scores above.
+        </div>
+      )}
+      {cur && (
+        <div style={{borderTop:`2px solid ${T.ink}`, marginTop:8}}>
+          {layer==="cities"
+            ? <Def label={cur.city}>{noEmoji(cur.info)}</Def>
+            : <Def label={cur.name}>{`Pop. ${cur.pop}M \u00b7 ${cur.coastal?"coastal":"landlocked"} \u00b7 indicative risk ${cur.risk}/100`}</Def>}
+        </div>
+      )}
     </div>
   );
 };
