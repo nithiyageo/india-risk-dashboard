@@ -946,12 +946,14 @@ const CityMap = ({cities}) => {
   const popMin = Math.sqrt(Math.min(...statePts.map(s=>s.pop)));
   const popMax = Math.sqrt(Math.max(...statePts.map(s=>s.pop)));
   const cur = sel!=null ? pts[sel] : null;
-  // India is a tall, narrow shape -- cropped tight to the city spread rather
-  // than reusing the wide Gulf-map bounds, which left most of the box empty.
-  const x0=(68-30)*20, y0=(40-31)*20, x1=(84-30)*20, y1=(40-8)*20;
+  // Wider crop than a tight India-only box, so the panel can run the full
+  // page width without India itself being stretched into a distorted,
+  // oversized shape. Extended west into the Gulf/Arabia rather than east,
+  // since the shared basemap has no coastline detail drawn past ~80E.
+  const x0=(45-30)*20, y0=(40-32)*20, x1=(83-30)*20, y1=(40-6)*20;
   const vw = x1-x0, vh = y1-y0;
   return (
-    <div style={{marginBottom:20, maxWidth:460}}>
+    <div style={{marginBottom:20}}>
       <div style={{display:"flex", gap:8, marginBottom:10, flexWrap:"wrap", alignItems:"baseline"}}>
         {[["cities","Cities \u00b7 today's exposure"],["states","States \u00b7 population & risk"]].map(([k,l])=>(
           <button key={k} onClick={()=>{setLayer(k); setSel(null);}}
@@ -960,11 +962,9 @@ const CityMap = ({cities}) => {
               padding:"4px 10px", fontFamily:MONO, fontSize:10, letterSpacing:"0.08em",
               textTransform:"uppercase"}}>{l}</button>
         ))}
-        {layer==="states" && (
-          <span style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.04em", color:T.ink50}}>
-            Tap a state for its name and figures
-          </span>
-        )}
+        <span style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.04em", color:T.ink50}}>
+          {layer==="states" ? "Tap a state for its name and figures" : "Tap a city for its name and figures"}
+        </span>
       </div>
       <div style={{border:HAIR, background:"#fff"}}>
         <svg viewBox={`${x0} ${y0} ${vw} ${vh}`} role="img" aria-label="Map of Indian city and state exposure scores"
@@ -976,19 +976,19 @@ const CityMap = ({cities}) => {
             const [x,y] = geoXY(c);
             const on = sel===i;
             const r = layer==="cities"
-              ? 6 + (Math.min(c.tot,100)/100)*9
-              : 5 + (popMax>popMin ? (Math.sqrt(c.pop)-popMin)/(popMax-popMin) : 0.5)*13;
+              ? 8 + (Math.min(c.tot,100)/100)*11
+              : 7 + (popMax>popMin ? (Math.sqrt(c.pop)-popMin)/(popMax-popMin) : 0.5)*17;
             const risk = layer==="cities" ? c.tot : c.risk;
             const col = risk>55?C.red:risk>40?C.orange:T.wine;
-            // States crowd together (Delhi/Haryana/Punjab especially), so
-            // only label on select there; the 8 cities have room to spare.
-            const showLabel = layer==="cities" || on;
+            // Both layers crowd at this zoom (Delhi/Haryana/Punjab and
+            // Jaipur/Delhi/Lucknow especially) -- label on select only.
+            const showLabel = on;
             return (
               <g key={i} onClick={()=>setSel(on?null:i)} style={{cursor:"pointer"}}>
-                <circle cx={x} cy={y} r={r} fill={col} opacity={on?0.92:0.62} stroke="#fff" strokeWidth="1.5"/>
+                <circle cx={x} cy={y} r={r} fill={col} opacity={on?0.92:0.62} stroke="#fff" strokeWidth="2"/>
                 {showLabel && (
-                  <text x={x} y={y-r-6} fontSize="11.5" fontFamily={MONO} fill={T.ink} textAnchor="middle"
-                    stroke="#fff" strokeWidth="3" paintOrder="stroke">
+                  <text x={x} y={y-r-8} fontSize="14" fontFamily={MONO} fill={T.ink} textAnchor="middle"
+                    stroke="#fff" strokeWidth="4" paintOrder="stroke">
                     {c.name||c.city}{" \u00b7 "}{layer==="cities" ? risk : `${c.pop}M`}
                   </text>
                 )}
