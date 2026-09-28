@@ -1,8 +1,8 @@
 {
-  "_updated": "September 24, 2026 — 7:45 AM IST (Thursday)",
-  "_asOf": "2026-09-24",
+  "_updated": "September 28, 2026 — 9:30 AM IST (Monday)",
+  "_asOf": "2026-09-28",
   "_start": "2026-02-28",
-  "_day": 208,
+  "_day": 213,
   "preWar": {
     "brent": 65,
     "rupee": 91.49,
@@ -11,79 +11,83 @@
     "petrol": 94.72,
     "diesel": 87.62
   },
-  "_phase": "PEZESHKIAN, IN A DEFIANT UN ADDRESS, SAYS IRAN 'DID NOT BEND THE KNEE' AND WON'T SURRENDER HORMUZ NAVIGATION RIGHTS — THE US DELEGATION WALKS OUT — EVEN AS ANALYSTS CALL A QUICK BREAKTHROUGH UNLIKELY; INDIA RALLIED ON DIPLOMATIC HOPE BUT GIFT NIFTY SIGNALS A SOFTER OPEN TODAY",
-  "_note": "Verified: Al Jazeera, Israel Hayom, Jerusalem Post, ANI (Sept 22-23, clarifying the UN meeting was at envoy level — Witkoff and Kushner for the US, Araghchi for Iran — see correction in _todo), CNBC/WSLS/Foreign Policy/Washington Times/Euronews/US News (Sept 23, Pezeshkian's defiant UN General Assembly address and the US delegation walkout), CFR's Sanam Vakil via Al Jazeera (Sept 23, analyst skepticism on a quick breakthrough), Business Standard (Sept 23 close, Sensex/Nifty), Charles Schwab market update and Vantage Markets (Sept 23, Wall Street close — Dow, S&P, Nasdaq), internationalnewsandviews.com (Sept 24 pre-market, GIFT Nifty signal — single-source, flagged), HDFC Sky/India TV/Business Standard (Sept 23-24, NSE IPO listing today). Covers roughly 23 hours since the last update (Sept 23 8:40 AM to Sept 24 7:45 AM IST) — a full trading day dominated by UN diplomacy and its market reception, with no new Hormuz/Houthi military reporting found.",
-  "_todo": "1) CORRECTION: last cycle characterized the Sept 22 UN meeting as involving Trump and Rubio directly with Araghchi; multi-source reporting (Al Jazeera, Israel Hayom, Jerusalem Post, ANI) clarifies it was at envoy level — Special Envoy Witkoff and Jared Kushner for the US, FM Araghchi for Iran — with Trump characterizing the outcome ('very good, very productive') afterward rather than attending himself. Corrected in this update. 2) Iran's Hormuz-reopening offer (reported last cycle) has not been confirmed as accepted or rejected by Washington this cycle; Pezeshkian's UN speech reaffirmed Iran 'will not surrender' Hormuz navigation rights, which sits in tension with — but does not necessarily contradict — the conditional reopening offer. 3) Analyst skepticism duly flagged: Chatham House's Sanam Vakil says a breakthrough this week is unlikely; sticking points include Hormuz as Iran's primary leverage, both governments needing domestic political cover, and Iranian negotiators requiring IRGC/hardliner sign-off. 4) GIFT Nifty's reported ~138-point drop for today's open is single-sourced (one outlet's headline; full article inaccessible) — treated as a directional signal only, not a confirmed level. 5) A 'Geneva talks Thursday' story surfaced in search results but is dated to February 2026, not this week — discarded as stale, noted so it isn't mistakenly reused. 6) No new Houthi/Bab el-Mandeb reporting found this cycle — the Taiz ground-offensive and IRGC-entrenchment claims from Day 206 remain [VERIFY] and unresolved, as do the UK PM Houthi-support commitment and CENTCOM's Operation Epic Fury ship count from Day 207. 7) El Gaia's disputed casualties, the Russia/Iran sanctions bill, the IAEA uranium discrepancy, and the Dubai mariner's nationality all remain open, no new reporting. 8) Sept 23 India VIX and FII/DII flows not sourced this cycle — flagged [VERIFY], carrying forward Sept 21/22 figures.",
+  "_phase": "TRUMP REJECTS IRAN'S SEVEN-DAY HORMUZ REOPENING PLAN (SEPT 26); EXPLOSIONS FOLLOW NEAR QESHM ISLAND (SEPT 27); INDIAN SEAFARER KILLED ON MV CAPE DAO (SEPT 23) — 5TH CONFIRMED INDIAN DEATH; HORMUZ SITREP PUTS TRANSITS AT ~3% OF PRE-WAR LEVELS; BRENT TOPS $106, SENSEX AND NIFTY SLUMP AT MONDAY'S OPEN",
+  "_note": "Verified across multiple outlets: Al Jazeera live blogs (Sept 25-28: Iran's seven-day plan, Trump's rejection, Qeshm Island explosions), CBS News, CNBC and The Hill (Sept 26: Trump confirms the rejection and tells aides he expects to resume bombing after the midterms), ABC News (Sept 27-28: IRGC claim of a seized US Remus 600 UUV, Ghalibaf's 'proportionate responses' remark, the ~3% transit sitrep and Trump's separate 20M-barrel claim), gCaptain, Gulf News, The Wire and Tribune India (Sept 23: Suraj Yadav killed on MV Cape Dao), Deccan Chronicle/Gulf Business (the standing DGMA advisory against deploying Indian seafarers on Hormuz-transiting voyages), Business Standard, BusinessToday and Upstox (Sept 25-28: index closes and Monday's opening slide, retail fuel prices), Steptoe and Clyde & Co (the Sanctions Act's separate 30-day compliance deadline of Oct 18), Angel One/Business Standard/multibagg (diverging September FPI prints). This cycle also restores the Geospatial map data (geoint), which was dropped from the file in the intervening manual edits covering Sept 22-24, and refreshes stale April/July-era price references in the city-risk cards and extends the timeline chart, which had not been carried past Sept 9. Covers Sept 24 7:45 AM to Sept 28 9:30 AM IST. Day count continues from the corrected Feb 28 baseline: Sept 28 = Day 213.",
+  "_todo": "1) Hormuz throughput conflict: a Sept 28 sitrep puts transits at ~3% of pre-war levels (7-day average 3.1%, ~1% for tankers), while Trump separately claimed 20M+ barrels moved over the weekend, calling it the largest since the war began — the two figures cannot be reconciled and neither has a published methodology. This is on top of the already-unresolved Reuters/Windward/Wright transit-count conflict carried since Sept 18. 2) FPI figures for September diverge sharply: ₹20,974cr to Sept 18 (carried two cycles ago), ₹17,131cr month-to-date per a Sept 27 depository print (narrower, equity-only), and a separate wire figure of ₹23,676cr — not reconciled; YTD outflow of ~₹2.45 lakh crore (already above all of 2025) is the one figure that holds across sources. 3) The DGMA advisory barring Indian seafarers from Hormuz-transiting voyages is dated to July 16 in most sourcing; recent reports (Sept 25-26) cite the same circular number (36 of 2026) in connection with this week's deaths — unclear whether it was reissued or whether reporting is reusing the original reference. Treated here as a standing, reaffirmed advisory, not a new circular. 4) Monday's (Sept 28) closing Sensex/Nifty prints and rupee level are not yet sourced; only the ~9:15-9:30 AM opening slide is carried [VERIFY]. 5) Friday Sept 25's Sensex close has two slightly different figures in circulation (73,895.74 vs 73,881) — carried as 73,895.74. 6) Brent's Monday level also has a spread ($105.76 TradingEconomics vs $106.70 Goodreturns) — carried as ~$106.7. 7) The Act's near-term 30-day compliance deadline (Oct 18) is separate from the 180-day buyer-naming/60-day tariff clock already tracked here for the Russian-oil tariff provision specifically — both are now carried. 8) Retail petrol/diesel prices are unchanged despite Brent above $106; ICRA estimates retailers are losing ~₹530cr/day holding the pump price — not yet a hike signal. 9) Indian vessel/seafarer counts near Hormuz (7/148/1) still not re-sourced. 10) War log (timeline) still has gaps: Sept 10-17, Sept 19-20, Sept 22, Sept 24-27 have no rows; this cycle adds Sept 18, 21, 23 and 28 to partially close the gap left when the timeline was not carried forward past Sept 9 in the intervening edits. 11) The El Gaia casualty discrepancy (23 evacuated/2 missing per Oman vs. 14 Indian crew/1 missing per Indian outlets) remains unresolved and is not added to the confirmed Indian death count.",
   "ticker": [
-    "PEZESHKIAN, IN A DEFIANT UN ADDRESS: IRAN 'DID NOT BEND THE KNEE,' READY FOR DIALOGUE BUT WON'T ACCEPT 'THE LANGUAGE OF FORCE' OR SURRENDER HORMUZ NAVIGATION RIGHTS",
-    "US DELEGATION WALKS OUT DURING PEZESHKIAN'S SPEECH; RUBIO DISMISSES IRAN'S CLAIMS, CALLS RECENT TALKS 'A CONTINUATION OF CONVERSATIONS,' NOT A BREAKTHROUGH",
-    "CORRECTION: SEPT 22 UN MEETING WAS AT ENVOY LEVEL — WITKOFF & KUSHNER FOR THE US, ARAGHCHI FOR IRAN — NOT TRUMP DIRECTLY, PER MULTI-SOURCE REPORTING",
-    "ANALYSTS SKEPTICAL OF A QUICK BREAKTHROUGH: CHATHAM HOUSE'S VAKIL CITES HORMUZ AS IRAN'S TOP LEVERAGE, AND THE NEED FOR IRGC/HARDLINER SIGN-OFF ON ANY DEAL",
-    "INDIA: SENSEX ROSE 299.17 (+0.40%) TO 74,828.25, NIFTY +117.80 (+0.50%) TO 23,446.80 WEDNESDAY ON DIPLOMATIC HOPE; METAL +2%, IT THE WORST PERFORMER",
-    "WALL STREET MIXED: DOW -185 (-0.36%) TO 51,864, S&P FLAT (-0.04%), NASDAQ A RECORD CLOSE (+0.5%, 27,244) ON AI DEMAND AND CHEAPER CRUDE",
-    "OIL NEAR $100/BBL; FUTURES ROSE OVERNIGHT AFTER INITIALLY FALLING AS TRADERS WEIGHED UN DIPLOMACY AGAINST STILL-UNRESOLVED HORMUZ TERMS",
-    "GIFT NIFTY SIGNALS A SOFTER OPEN TODAY, DOWN ~138 PTS PER ONE SOURCE [VERIFY, SINGLE-SOURCE FIGURE], AMID MIXED GLOBAL CUES",
-    "NSE (NATIONAL STOCK EXCHANGE) MAKES ITS OWN STOCK-MARKET DEBUT TODAY — ONE OF 2026'S BIGGEST LISTINGS, GMP SIGNALS A MODEST ~2% LISTING GAIN",
-    "NO NEW HOUTHI/BAB EL-MANDEB REPORTING THIS CYCLE; DAY 206-207'S GROUND-OFFENSIVE, IRGC-ENTRENCHMENT AND UK-COMMITMENT CLAIMS REMAIN UNRESOLVED [VERIFY]"
+    "TRUMP REJECTS IRAN'S SEVEN-DAY PLAN TO REOPEN THE STRAIT OF HORMUZ AND RESTART NUCLEAR TALKS (SEPT 26) — TELLS AIDES HE EXPECTS BOMBING TO RESUME AFTER THE NOVEMBER MIDTERMS",
+    "HOURS LATER, EXPLOSIONS REPORTED NEAR QESHM ISLAND IN THE STRAIT — REPORTS OF ANTI-SHIP MISSILES/DRONES FIRED AT TRANSITING VESSELS AGAINST TEHRAN'S WISHES (SEPT 27, ATTRIBUTION UNCONFIRMED)",
+    "IRAN'S GHALIBAF: 'THE ERA OF PROPORTIONATE RESPONSES IS OVER' — IRGC NAVY CLAIMS IT SEIZED A US REMUS 600 UNDERWATER DRONE IN THE STRAIT; US DISPUTES THE CLAIM",
+    "INDIAN SEAFARER SURAJ YADAV, 26, KILLED WHEN MV CAPE DAO WAS STRUCK BY TWO PROJECTILES NEAR HORMUZ (SEPT 23) — 5TH CONFIRMED INDIAN DEATH OF THE WAR; DGMA'S HORMUZ DEPLOYMENT BAN FOR INDIAN SEAFARERS REMAINS IN FORCE",
+    "HORMUZ SITREP (SEPT 28): TRACKED TRANSITS ~3% OF PRE-WAR LEVELS, 7-DAY AVERAGE 3.1% — TRUMP SEPARATELY CLAIMS 20M+ BARRELS MOVED OVER THE WEEKEND, THE TWO FIGURES UNRECONCILED",
+    "BRENT TOPS $106 AT MONDAY'S OPEN (FROM A ~$104.5 FRIDAY SETTLE) ON THE REJECTED-DEAL NEWS; RETAIL PETROL/DIESEL UNCHANGED, RETAILERS LOSING AN EST. ₹530CR/DAY (ICRA)",
+    "INDIA: SENSEX AND NIFTY OPEN SHARPLY LOWER MONDAY (SENSEX -530 TO -800PTS, NIFTY BELOW 22,900) AS OIL JUMPS; VIX SURGES ~15%. FRIDAY CLOSE: SENSEX 73,895.74 (+0.43%), NIFTY 23,140.50 — A SEVENTH STRAIGHT WEEKLY DECLINE, NIFTY DOWN ~5.8% OVER THE STRETCH",
+    "SEPTEMBER FPI OUTFLOW FIGURES DIVERGE ACROSS SOURCES (₹17,131CR TO ₹23,676CR MONTH-TO-DATE); YTD OUTFLOW ~₹2.45 LAKH CRORE, ALREADY ABOVE ALL OF 2025",
+    "RUPEE TRADED 95.54-96.07 LAST WEEK, STILL NEAR ITS RECORD LOW; MONDAY'S LEVEL NOT YET SOURCED",
+    "SANCTIONS ACT UPDATE: MOST OF ITS MEASURES TAKE EFFECT WITHIN 30 DAYS OF SIGNING — BY OCT 18 — SEPARATE FROM THE 180-DAY/60-DAY CLOCK ON THE RUSSIAN-OIL TARIFF PROVISION ITSELF"
   ],
   "whatChanged": {
-    "label": "What changed — Thursday September 24, 7:45 AM IST (Day 208)",
+    "label": "What changed — Monday September 28, 9:30 AM IST (Day 213)",
     "items": [
       {
         "color": "red",
-        "bold": "Pezeshkian, in a defiant UN address, says Iran 'did not bend the knee'",
-        "text": "Iran's president arrived in New York Sept 23 — the first time a wartime leader has addressed the UN while in active conflict with the US — and told the Assembly: 'Yes they did hit us, but we did not bend the knee.' He said Iran is 'ready for dialogue and diplomacy and negotiations without accepting the language of force,' accused the US and Israel of illegal attacks on civilians, and set out red lines: no restriction of nuclear knowledge to select nations, no surrender of Hormuz navigation rights, and only self-defensive military capability. The US delegation walked out during the speech; Secretary of State Rubio dismissed Iran's claims as hypocritical and characterized recent talks as 'a continuation of conversations' rather than a breakthrough."
+        "bold": "Trump rejects Iran's reopening plan; explosions follow in the Strait",
+        "text": "Trump confirmed Sept 26 he turned down Iran's seven-day proposal to reopen Hormuz and restart nuclear talks, and told aides he expects to resume bombing after the November midterms. Hours after the rejection became public, explosions were reported near Qeshm Island — reports describe multiple anti-ship missiles or drones fired at vessels transiting against Tehran's wishes; attribution is unconfirmed. Iran's Ghalibaf said 'the era of proportionate responses is over'; the IRGC Navy claims it seized a US Remus 600 underwater drone in the Strait, which the US disputes."
       },
       {
-        "color": "orange",
-        "bold": "Correction: the Sept 22 UN meeting was at envoy level, and analysts are skeptical of a quick deal",
-        "text": "Multi-source reporting (Al Jazeera, Israel Hayom, Jerusalem Post, ANI) clarifies that Tuesday's roughly three-hour UN-sidelines meeting was between US Special Envoy Witkoff and Jared Kushner on one side and Iran's FM Araghchi on the other — not Trump directly, as last cycle's update characterized it; Trump characterized the outcome ('very good, very productive') afterward. Chatham House's Sanam Vakil said a breakthrough this week is unlikely, though 'a series of understandings can build confidence for renewed diplomacy'; she named Hormuz as Iran's primary leverage, the need for both governments to sell any deal domestically as compromise rather than capitulation, and the requirement that Iranian negotiators secure IRGC and hardliner sign-off."
-      },
-      {
-        "color": "amber",
-        "bold": "India rallies on diplomatic hope; Wall Street mixed on crude and AI demand",
-        "text": "Sensex rose 299.17 points (+0.40%) to 74,828.25 Wednesday, Nifty gained 117.80 (+0.50%) to 23,446.80, with metals up over 2% and IT the weakest sector; commentary attributed the move to hopes around US-Iran diplomacy as oil held near $100/barrel. On Wall Street, the Dow fell 185 points (-0.36%) to 51,864 as yields firmed and financials lagged, the S&P 500 closed essentially flat (-0.04%), and the Nasdaq hit a record close (+0.5%, 27,244) as cheaper crude and an AI demand signal supported technology stocks. Oil futures rose overnight after initially falling, as traders weighed diplomatic progress against still-unresolved Hormuz terms."
+        "color": "red",
+        "bold": "Indian seafarer killed on MV Cape Dao; Hormuz deployment ban reaffirmed",
+        "text": "Suraj Yadav, 26, a wiper from Deoria, Uttar Pradesh, died of head injuries after MV Cape Dao was struck by two projectiles near the Strait of Hormuz on Sept 23 — the war's fifth confirmed Indian death. DGMA's standing advisory against deploying Indian seafarers on Hormuz-transiting voyages remains in force; government sources cite at least 13 Indian nationals killed in the Gulf region since February."
       },
       {
         "color": "amber",
-        "bold": "A softer open signaled today, and a major domestic listing",
-        "text": "GIFT Nifty points to a weaker start this morning, down roughly 138 points per one source [VERIFY, single-source figure, full article inaccessible] amid mixed global cues. Separately, the National Stock Exchange of India (NSE) itself lists on the bourses today in one of 2026's largest IPOs, with grey-market pricing signalling a modest ~2% listing gain — a domestic event likely to draw trading attention alongside the war-related headlines."
+        "bold": "Hormuz throughput and Trump's barrel claim don't reconcile",
+        "text": "A Sept 28 sitrep puts tracked transits at roughly 3% of pre-war levels (7-day average 3.1%, about 1% for tankers) — effectively closed. Trump separately claimed more than 20 million barrels moved through the Strait over the weekend, calling it the largest flow since the war began. The two figures are not reconciled and neither side has published a methodology."
       },
       {
         "color": "amber",
-        "bold": "No new Hormuz or Houthi military reporting this cycle",
-        "text": "Nothing new was found on the Taiz ground offensive, the IRGC tunnel/radar entrenchment claim near Bab el-Mandeb, the new UK PM's reported Houthi-related military commitment, or CENTCOM's Operation Epic Fury ship-redirection figure — all carried forward from Days 206-207 as open, [VERIFY] items. El Gaia's casualty discrepancy, the Russia/Iran sanctions bill, the IAEA uranium discrepancy and the Dubai mariner's nationality also remain unresolved."
+        "bold": "Oil jumps past $106; Indian markets slide at Monday's open",
+        "text": "Brent rose from a ~$104.5 Friday settle to above $106 at Monday's open on the rejected-deal news. Sensex and Nifty, which closed Friday at 73,895.74 (+0.43%) and 23,140.50 for a seventh straight weekly decline, opened sharply lower Monday — Sensex down 530-800 points, Nifty below 22,900 — with India VIX up roughly 15%. Retail petrol and diesel prices are unchanged; ICRA estimates retailers are losing about ₹530 crore a day holding the pump price."
+      },
+      {
+        "color": "amber",
+        "bold": "Sanctions Act's near-term deadline: Oct 18",
+        "text": "Separate from the 180-day buyer-naming and 60-day tariff clock already tracked here, legal analysis (Steptoe, Clyde & Co) says most of the Act's other measures take effect within 30 days of signing — by Oct 18. September FPI figures diverge across sources (₹17,131cr to ₹23,676cr month-to-date); the year-to-date outflow of ~₹2.45 lakh crore, above all of 2025, is the one number that holds across reports."
       }
     ]
   },
   "deaths": "7,199+",
   "econ": {
-    "sensex": "74,828.25, +299.17 (+0.40%) — Sept 23 confirmed close; GIFT Nifty signals a softer open today, down ~138 pts per one source [VERIFY], market not yet open as of 7:45 AM IST.",
-    "sensexDelta": "Sensex extended its recovery Wednesday, rising for a session on hopes around US-Iran diplomacy even as Pezeshkian's UN speech struck a defiant note. Today's cash open is not yet confirmed; GIFT Nifty points to a pullback after Wednesday's gain.",
-    "sensexSub": "Nifty: 23,446.80, +117.80 (+0.50%) Wednesday. Sector leaders: metals (+2%); laggard: IT, the worst-performing sector. Oil holding near $100/barrel supported the move. A major domestic event today: the National Stock Exchange (NSE) itself lists on the bourses, one of 2026's largest IPOs, GMP signalling a modest ~2% listing gain.",
-    "vix": "10.93 (Sept 22 close, last sourced) — Sept 23 print not yet available [VERIFY].",
-    "vixDelta": "[VERIFY] No fresher print sourced this cycle; carried forward from Sept 22.",
-    "fpi": "FIIs net sold ₹576.20 cr, DIIs net bought ₹2,797.27 cr (Sept 21 data, last sourced). Sept 22-23 flows not yet available [VERIFY].",
-    "fpiDelta": "[VERIFY] No fresher flow data sourced this cycle; carried forward from Sept 21.",
-    "wealth": "Oil held near $100/barrel through Wednesday's session; futures rose overnight after initially falling, per Schwab's market update, as traders weighed UN diplomatic developments against still-unresolved Hormuz terms. Exact Sept 23 Brent/WTI closing prints not independently sourced this cycle [VERIFY] — Tuesday's readings ($99.09-101.69 depending on source) are the last confirmed figures. US diesel last sourced at a record $6.27/gallon (AAA); no update this cycle.",
-    "analysis": "The dominant story of the past day was diplomatic theatre rather than new de-escalation: Pezeshkian's defiant UN address — 'we did not bend the knee,' no surrender of Hormuz navigation rights — sits in visible tension with Tuesday's more conciliatory Hormuz-reopening offer, and the US delegation's walkout during his speech underscores how far apart the two sides remain in public posture even as envoy-level talks continue privately. Analysts (Chatham House's Vakil) are explicitly skeptical of a near-term breakthrough, citing Hormuz as Iran's key leverage and the domestic political and IRGC hurdles either side would need to clear. Indian equities nonetheless extended their recovery Wednesday on hope rather than resolution, with oil's stability near $100 doing more work than any single headline; Thursday's GIFT Nifty softness suggests that optimism is not one-directional, and today's NSE listing will likely compete for market attention with the war narrative."
+    "sensex": "Opened down 530-800 points Monday (to roughly 73,100-73,365) as Brent jumped past $106. Friday Sept 25 close: 73,895.74 (+0.43%/+315pts). Monday's closing print not yet sourced.",
+    "sensexDelta": "The oil spike on Trump's rejection of Iran's Hormuz plan reversed the prior week's crude-relief rally within a single session.",
+    "sensexSub": "Nifty: fell below 22,900 in early Monday trade. Friday close 23,140.50 — a seventh straight weekly decline, Nifty down ~5.8% over that stretch, the longest losing streak since the Covid crash. India VIX surged roughly 15% Monday.",
+    "vix": "India VIX surged approximately 15% at Monday's open, reversing its prior retreat toward 11 (last confirmed 10.93, Sept 22).",
+    "vixDelta": "The war's oil and Hormuz risk are being repriced after last week's brief de-escalation optimism around Iran's reopening plan.",
+    "fpi": "September figures diverge across sources: ₹17,131cr (Sept 27 depository print, equity-only) to ₹23,676cr (wire figure) month-to-date, against ₹20,974cr carried two cycles ago (to Sept 18). Year-to-date outflow ~₹2.45 lakh crore, already above all of 2025's ₹1.66 lakh crore.",
+    "fpiDelta": "Drivers unchanged: the Fed's 3.75-4.00% rate, Brent above $100 (now above $106), a weak rupee. DIIs continue to absorb the selling.",
+    "wealth": "Brent above $106 at Monday's open, up from a ~$104.5 Friday settle. Rupee traded 95.54-96.07 last week, still near its record low; Monday's level not yet sourced. Retail petrol (₹111.21) and diesel (₹97.83) unchanged; ICRA estimates retailers are losing ~₹530cr/day holding the pump price.",
+    "analysis": "The diplomatic track that briefly lifted Indian markets last week — Pezeshkian's UN speech notwithstanding, Iran's seven-day reopening offer — collapsed within days. Trump's rejection removes the near-term de-escalation path markets had started to price, and the explosions near Qeshm Island the same week suggest Iran is signalling it will not wait indefinitely. For India, the immediate channels remain oil and the rupee: Brent above $106 and a currency still near its record low both raise the import bill, while a fifth confirmed Indian death and the standing Hormuz deployment ban keep the human cost of the shipping channel live. The Sanctions Act's nearer 30-day compliance deadline (Oct 18) is now a date to watch alongside the slower 180/60-day tariff clock."
   },
   "hormuzStatus": {
-    "status": "The tanker war escalated sharply this week, and for the first time the throughput data confirms it, rather than just the rhetoric. After the IRGC twice tried and failed to hit a US warship, CENTCOM destroyed five more Iranian tankers Tuesday — Kaviz, Charminar, Horizon 1, Riesco and Derya — bringing the week's total to eight vessels destroyed or disabled. Rubio made the policy explicit: every Iranian attempt on a US ship costs Iran tankers. Iran's response was to threaten tanker crews across two more countries, warning vessels near Kuwait and Bahrain to evacuate immediately. Kpler's verified shipping data confirms the damage: strait traffic fell 28% last week to its lowest level since May, directly contradicting the more optimistic recovery narrative from two weeks ago. Qatar's warning of an 'industrial catastrophe' and Rezaei's threat of a full blockade both point the same direction — this is no longer a war of statements about the strait, but one that is measurably closing it again.",
+    "status": "Near total closure. A Sept 28 sitrep puts tracked transits at roughly 3% of pre-war levels (7-day average 3.1% overall, about 1% for tankers) — the tightest reading of the war. Trump separately claims more than 20 million barrels moved through the Strait over the weekend, calling it the largest flow since the war began; this is not reconciled with the sitrep figure and neither side has published a counting methodology. Explosions were reported near Qeshm Island on Sept 27, hours after Trump's rejection of Iran's reopening plan became public, with reports of multiple anti-ship missiles or drones fired at transiting vessels against Tehran's wishes (attribution unconfirmed).",
     "preWarFlow": "~90-140 ships/day",
-    "currentFlow": "Tuesday's Hormuz-reopening offer sits in visible tension with Pezeshkian's defiant UN address Sept 23, where he said Iran will not surrender Hormuz navigation rights — the two statements are not necessarily contradictory (an offer to reopen transit is not the same as surrendering navigation rights) but reflect Iran presenting a harder public line even as quieter envoy-level talks (Witkoff, Kushner, Araghchi) continue. No confirmation this cycle of Washington accepting or rejecting Iran's seven-day reopening offer. Underlying transit data remains genuinely irreconcilable across sources for the same dates: Reuters recorded 4 commodity transits Sept 15 against Windward's count of 12 for Sept 16; Energy Secretary Wright separately claimed 18 million barrels moved in a single day — a figure matching neither dataset. The satellite-confirmed hard data point stands: Saudi Arabia moved 2.8 million bpd through the strait over six days prior to Sept 18, versus 700,000 bpd in August. Bab el-Mandeb: no update sourced this cycle on the Taiz ground offensive, IRGC entrenchment claims, CENTCOM's Operation Epic Fury ship count, or the earlier withdrawal-vs-no-withdrawal dispute over coastal control.",
-    "reduction": "Oil held near $100/barrel through Wednesday, with futures rising overnight after initially falling as traders weighed UN diplomatic developments against still-unresolved Hormuz terms (per Schwab's market update). Exact Sept 23 Brent/WTI closing prints are not independently sourced this cycle [VERIFY]; Tuesday's last-confirmed readings ranged $99.09-101.69 depending on source. Goldman pegs Gulf oil exports at ~16M bpd, down from a pre-war ~23M bpd (not yet updated against Saudi's rerouting data). Goldman's Struyven: $120/barrel if attacks intensify, $80 if exports normalize. US diesel last sourced at a record $6.27/gallon (AAA), unchanged this cycle.",
+    "currentFlow": "Sept 28 sitrep: ~3% of pre-war transits, 7-day average 3.1% (about 1% tankers). Trump's competing claim of 20M+ barrels moved over the weekend is carried separately, unreconciled. This sits on top of the already-unresolved Reuters/Windward/Wright transit-count conflicts carried since Sept 18. Bab el-Mandeb: no update sourced this cycle.",
+    "reduction": "Brent settled around $104.5 Friday (on Iran's call for the US to return to the summer's failed interim deal) before rising above $106 at Monday's open following Trump's rejection of Iran's seven-day plan. It remains roughly 63% above the pre-war $65. Goldman: $120 if attacks intensify, $80 if Gulf exports normalise.",
     "indianVesselsNear": 7,
     "indianSeafarers": 148,
     "indianTransited": 1,
-    "totalShipsWaiting": "42 tankers were waiting at Hormuz as of Sept 7, of which 18 were carrying oil — roughly 11.1 million barrels, about 11% of world daily demand (CENTCOM/wire-sourced sitrep). Significantly reduced from the wartime peak of 20,000+. CENTCOM separately says it has redirected 100+ commercial vessels since April, disabled 4, and permitted 26 humanitarian-cargo vessels through, sustained by 15,000+ US personnel and 200+ aircraft/warships. India's stranded-vessel picture is unchanged pending confirmation that the Iran-Oman corridor is operational.",
-    "lastTransit": "Ship numbers remain near 20% of the pre-war average. The US says its own clearance of the Traffic Separation Scheme opens a second lane alongside the Omani channel that has carried most liquid cargo; Iran and Oman's own corridor proposal is commercial-only and still under negotiation.",
-    "indianNavyEscort": "Op Urja Suraksha: unchanged pending confirmation that either the US-cleared lane or the Iran-Oman corridor is operational for third-country shipping. MT Settebello diplomatic track continues independently.",
-    "headline": "PEZESHKIAN TELLS THE UN IRAN 'DID NOT BEND THE KNEE' AND WON'T SURRENDER HORMUZ NAVIGATION RIGHTS; US DELEGATION WALKS OUT. ANALYSTS SEE NO QUICK BREAKTHROUGH. INDIA RALLIED WEDNESDAY BUT GIFT NIFTY SIGNALS A SOFTER OPEN TODAY.",
-    "indianCasualties": 4,
-    "indianCasualtyDetail": "4th confirmed Indian death of the war: a crew member aboard UAE tanker MOMBASA killed by an Iranian cruise missile in Omani territorial waters (UAE MoD, Jul 14). 8 injured incl. 6 Indians, 4 serious. Earlier: 3 Indian sailors killed on MT Settebello (Jun 8, US Navy strike). ACTIVE, STILL UNRESOLVED: the Panama-flagged tanker El Gaia — CENTCOM says it was hit by an Iranian missile last month, then droned again 'over the weekend' (~Sept 13); Oman's Maritime Security Center puts the evacuation at 23 crew evacuated, 2 missing (vessel under tow), which does not reconcile with the '14 Indian crew, 13 rescued, 1 missing' figure reported by Indian outlets from three updates ago; no new reporting this cycle to resolve it. Not yet added to this page's confirmed death count. Separately, [VERIFY] a mariner was killed aboard a tanker off Dubai Sept 9 — nationality still not confirmed. For scale: the war's total merchant-marine toll (last sourced Sept 11) stood at 21+ seafarers killed across 75 attacked vessels; a Houthi drone shot down over Taif, Mecca Province (Sept 17) killed at least 1 and injured 2 — the first fatality from that campaign's reach toward Saudi Arabia's holy cities, reported previously and unchanged this cycle."
+    "totalShipsWaiting": "42 tankers were waiting at Hormuz as of Sept 7, of which 18 were carrying oil — roughly 11.1 million barrels, about 11% of world daily demand (CENTCOM/wire-sourced sitrep). No update to this count sourced this cycle. CENTCOM separately says it has redirected 100+ commercial vessels since April, disabled 4, and permitted 26 humanitarian-cargo vessels through.",
+    "lastTransit": "Tracked traffic is now reported at roughly 3% of the pre-war average, the lowest reading of the war; datasets conflict sharply, including with Trump's own barrel-volume claim.",
+    "indianNavyEscort": "Op Urja Suraksha: unchanged pending confirmation that either the US-cleared lane or the Iran-Oman corridor is operational for third-country shipping. DGMA's standing advisory against deploying Indian seafarers on Hormuz-transiting voyages remains in force following this week's death.",
+    "headline": "TRUMP REJECTS IRAN'S REOPENING PLAN. EXPLOSIONS NEAR QESHM ISLAND FOLLOW. HORMUZ TRANSITS AT ~3% OF PRE-WAR LEVELS — TRUMP DISPUTES WITH A SEPARATE 20M+ BARREL CLAIM. AN INDIAN SEAFARER IS KILLED ON MV CAPE DAO.",
+    "indianCasualties": 5,
+    "indianCasualtyDetail": "5th confirmed Indian death of the war: Suraj Yadav, 26, a wiper from Deoria, Uttar Pradesh, died of head injuries after MV Cape Dao was struck by two projectiles near the Strait of Hormuz on Sept 23 (Forward Seamen's Union of India; Shipping Minister Sarbananda Sonowal). Government sources cite at least 13 Indian nationals killed in the Gulf region since February, a broader figure than this page's confirmed-death count. Earlier: a crew member aboard UAE tanker MOMBASA killed by an Iranian cruise missile in Omani waters (Jul 14); 3 Indian sailors killed on MT Settebello (Jun 8, US Navy strike). DGMA's standing advisory against deploying Indian seafarers on Hormuz-transiting voyages remains in force. ACTIVE, UNRESOLVED: the Panama-flagged tanker El Gaia discrepancy (23 crew evacuated/2 missing per Oman vs. '14 Indian crew, 1 missing' reported by Indian outlets) remains unreconciled and is not added to this page's confirmed count. For scale: the war's total merchant-marine toll (last sourced Sept 11) stood at 21+ seafarers killed across 75 attacked vessels."
   },
   "hormuzEvents": [
+    {
+      "d": "Sep 26-28",
+      "e": "DAY 213 (updated 9:30 AM IST Monday) — A CEASEFIRE OFFER REJECTED, EXPLOSIONS FOLLOW, AND INDIA LOSES A FIFTH SEAFARER. Iran's seven-day plan — proposed by FM Araghchi at the UN, offering to reopen the Strait of Hormuz and restart nuclear talks if the US lifted its naval blockade, waived oil-sanctions restrictions and observed a full ceasefire including Lebanon, with $12bn+ of frozen assets released — was rejected by President Trump on Sept 26. Trump told reporters 'they made a proposal, but I rejected it' and told aides separately he expects to resume bombing Iran once the November midterms pass; UN Ambassador Mike Waltz said 'politics have nothing to do with this' while confirming all options remain on the table. Days after the rejection became public, explosions were reported near Qeshm Island in the Strait on Sept 27, with reports describing multiple anti-ship missiles or drones fired at vessels transiting against Tehran's wishes; attribution is unconfirmed. Iran's chief negotiator Ghalibaf said 'the era of proportionate responses is over', calling recent strikes on US bases 'only the beginning'. The IRGC Navy separately claims it seized a US Remus 600 unmanned underwater vehicle operating in the Strait; the US disputes the claim. A Sept 28 sitrep puts tracked Hormuz transits at roughly 3% of pre-war levels (7-day average 3.1%, about 1% for tankers) — the tightest reading of the war — while Trump separately claimed more than 20 million barrels moved through the Strait over the weekend, the largest since the war began; the two figures are not reconciled and neither has a published methodology. Separately, on Sept 23, the same day as Pezeshkian's defiant UN address, Indian seafarer Suraj Yadav, 26, a wiper from Deoria, Uttar Pradesh, died of head injuries after MV Cape Dao was struck by two projectiles near the Strait — the war's fifth confirmed Indian death. DGMA's standing guidance barring Indian seafarers from Hormuz-transiting voyages remains in force; government sources cite at least 13 Indian nationals killed in the Gulf region since February. Markets: Brent settled around $104.5 Friday, easing on Iran's call for the US to return to the summer's failed interim deal, then rose above $106 at Monday's open on the rejection news. Sensex closed Friday at 73,895.74 (+0.43%), Nifty at 23,140.50, a seventh straight weekly decline (Nifty down ~5.8% over the stretch, its longest losing run since the Covid crash); both opened sharply lower Monday (Sensex down 530-800 points, Nifty below 22,900) with India VIX up roughly 15%. Retail petrol (₹111.21) and diesel (₹97.83) are unchanged; ICRA estimates retailers are losing ~₹530 crore a day holding the pump price. September FPI outflow figures diverge across sources (₹17,131cr to ₹23,676cr month-to-date); year-to-date outflow stands at ~₹2.45 lakh crore, above all of 2025. Separately, legal analysis of the Sanctions Act notes most of its measures — apart from the 180-day/60-day clock on the Russian-oil tariff provision — take effect within 30 days of signing, i.e. by Oct 18."
+    },
     {
       "d": "Sep 23-24",
       "e": "DAY 208 (updated 7:45 AM IST Thursday) — PEZESHKIAN'S DEFIANT UN ADDRESS: 'WE DID NOT BEND THE KNEE.' A day dominated by UN diplomacy's public theatre rather than new battlefield developments or confirmed de-escalation. Iran's President Pezeshkian arrived in New York Sept 23 — the first time a wartime leader has addressed the UN General Assembly while in active conflict with the US — and told the chamber Iran is 'ready for dialogue and diplomacy and negotiations without accepting the language of force,' while declaring: 'Yes they did hit us, but we did not bend the knee.' He accused the US and Israel of illegal attacks on civilians and noted the disparity in nuclear accountability (Israel undeclared and uninspected, Iran inspected despite no weapons program), and set out red lines: no restriction of nuclear knowledge to select nations, no surrender of Hormuz navigation rights, and military capability limited to self-defence, within a collective rather than unilateral regional security framework. The US delegation walked out during the speech. Secretary of State Rubio dismissed Iran's claims as hypocritical and characterized the recent UN-sidelines contacts as 'a continuation of conversations' rather than a breakthrough. Multi-source reporting (Al Jazeera, Israel Hayom, Jerusalem Post, ANI) also clarifies — correcting last cycle's characterization — that Tuesday's roughly three-hour meeting was at envoy level: US Special Envoy Steve Witkoff and Jared Kushner met Iran's FM Araghchi, with Trump characterizing the outcome afterward rather than attending himself. Chatham House's Sanam Vakil said a breakthrough this week is unlikely, citing Hormuz as Iran's primary leverage, the need for both governments to sell any deal domestically as compromise rather than capitulation, and the requirement that Iranian negotiators secure IRGC and hardliner buy-in. Markets: Sensex rose 299.17 points (+0.40%) to 74,828.25 Wednesday, Nifty gained 117.80 (+0.50%) to 23,446.80, led by metals (+2%) with IT the weakest sector, as oil held near $100/barrel and hopes around the diplomacy supported sentiment. On Wall Street, the Dow fell 185 points (-0.36%) to 51,864, the S&P 500 closed essentially flat (-0.04%), and the Nasdaq hit a record close (+0.5%, 27,244) on cheaper crude and an AI demand signal. GIFT Nifty signals a softer open today, down roughly 138 points per one source [VERIFY, single-sourced, full article inaccessible]. Separately, the National Stock Exchange of India (NSE) itself lists on the bourses today in one of 2026's largest IPOs, grey-market pricing signalling a modest ~2% listing gain. No new reporting this cycle on the Taiz ground offensive, IRGC entrenchment near Bab el-Mandeb, the new UK PM's reported Houthi-support commitment, CENTCOM's Operation Epic Fury ship count, the El Gaia casualty discrepancy, the Russia/Iran sanctions bill, the IAEA uranium discrepancy, or the Dubai mariner's nationality — all carried forward as open, unresolved items."
@@ -374,6 +378,12 @@
   ],
   "military": [
     {
+      "t": "Sep 26-28 — Iran's reopening plan rejected; explosions near Qeshm Island; Indian seafarer killed on MV Cape Dao",
+      "lv": "BREAKING",
+      "color": "red",
+      "d": "Trump rejects Iran's seven-day plan to reopen Hormuz and restart nuclear talks (Sept 26), telling aides he expects renewed bombing after the midterms. Explosions follow near Qeshm Island (Sept 27) — unconfirmed reports of missiles/drones fired at transiting vessels. Ghalibaf: 'the era of proportionate responses is over'; IRGC Navy claims it seized a US Remus 600 underwater drone, disputed by the US. Indian seafarer Suraj Yadav killed when MV Cape Dao was struck near Hormuz (Sept 23) — the war's fifth confirmed Indian death; DGMA's Hormuz deployment ban for Indian seafarers remains in force. Hormuz sitrep (Sept 28): transits at ~3% of pre-war levels, versus Trump's separate, unreconciled claim of 20M+ barrels moved over the weekend."
+    },
+    {
       "t": "Sep 23-24 — Pezeshkian, in a defiant UN address, says Iran 'did not bend the knee'; US delegation walks out; analysts see no quick breakthrough",
       "lv": "BREAKING",
       "color": "red",
@@ -519,7 +529,7 @@
       "sea": 15,
       "nuke": 55,
       "tot": 64,
-      "info": "1,800km downwind from Iran. NO iodine prophylaxis program. OMC petrol hike Rs 4-8/L imminent at Brent $112. Iran missile base reconstitution ongoing during ceasefire."
+      "info": "1,800km downwind from Iran. No iodine prophylaxis programme. Retail fuel prices unchanged despite Brent above $106; ICRA estimates retailers losing ~₹530cr/day holding the pump price."
     },
     {
       "city": "Mumbai",
@@ -528,7 +538,7 @@
       "sea": 78,
       "nuke": 42,
       "tot": 58,
-      "info": "900km from Hormuz. Reliance Jamnagar refinery. Sensex 76,887. Brent $112 raising import costs. OMC hike imminent. Idemitsu toll precedent critical for India crude imports."
+      "info": "900km from Hormuz. Reliance Jamnagar supply chain. Brent above $106 keeps import costs high; Sensex 73,895.74 (Sept 25 close), down sharply at Monday's open."
     },
     {
       "city": "Ahmedabad",
@@ -537,7 +547,7 @@
       "sea": 55,
       "nuke": 46,
       "tot": 57,
-      "info": "Closest Indian metro to Iran. Jamnagar refinery nearby. Brent $112 = oil import cost pressure. Idemitsu passage could signal selective Hormuz opening."
+      "info": "Closest Indian metro to Iran; Jamnagar refinery nearby. Oil import-cost pressure persists with Brent above $106 and Hormuz at ~3% of pre-war transits."
     },
     {
       "city": "Jaipur",
@@ -546,7 +556,7 @@
       "sea": 10,
       "nuke": 44,
       "tot": 47,
-      "info": "Rajasthan wind funnel. Kharif fertiliser at risk if Hormuz closed through May. Diesel freight costs elevated at Brent $112. OMC hike imminent."
+      "info": "Rajasthan wind funnel. Kharif fertiliser supply remains exposed to Hormuz disruption; diesel freight costs elevated with Brent above $106."
     },
     {
       "city": "Kochi",
@@ -555,7 +565,7 @@
       "sea": 70,
       "nuke": 24,
       "tot": 44,
-      "info": "Southern Naval Command + Op Urja Suraksha base. Oil spill risk 15-25 days. Fishing economy ₹4,000 cr exposed. Iran Red Sea threat hits western coast shipping routes near Kochi. Insurance 10x pre-war."
+      "info": "Southern Naval Command and Op Urja Suraksha base. Hormuz near-total closure keeps shipping insurance costs elevated on western-coast routes; fishing economy (₹4,000 cr) exposed."
     },
     {
       "city": "Goa",
@@ -564,7 +574,7 @@
       "sea": 72,
       "nuke": 22,
       "tot": 42,
-      "info": "Konkan coast. Fishing economy Rs 4,000 Cr exposed. Tourism under pressure with Brent $112+. ATF surcharges active on all airline routes."
+      "info": "Konkan coast. Fishing economy (₹4,000 cr) exposed; tourism and aviation face fuel surcharges with Brent above $106."
     },
     {
       "city": "Lucknow",
@@ -573,7 +583,7 @@
       "sea": 5,
       "nuke": 39,
       "tot": 40,
-      "info": "Indo-Gangetic plain trap. Food inflation risk from fertilizer disruption — structural even post-deal. CNG vehicle users benefiting from rupee strengthening. IMF recession risk warning dampens consumption outlook."
+      "info": "Indo-Gangetic plain trap. Food-inflation risk from fertiliser disruption is structural even after a deal."
     },
     {
       "city": "Chennai",
@@ -582,63 +592,63 @@
       "sea": 55,
       "nuke": 18,
       "tot": 36,
-      "info": "East coast currents provide nuclear buffer. IT sector led today's rally — Infosys, HCLTech major gainers. Wipro Q4 results tomorrow Apr 16. Auto sector (Maruti/Hyundai) also recovering. Port active for alternative routes."
+      "info": "East-coast currents provide a nuclear buffer. Markets fell sharply at Monday's open on the oil spike. Port active for alternative routes."
     }
   ],
   "milTop": [],
   "radar": [
     {
       "axis": "Oil Shock",
-      "w1": 60,
-      "now": 95,
-      "w4": 52
+      "w1": 95,
+      "now": 97,
+      "w4": 60
     },
     {
       "axis": "Market Crash",
-      "w1": 45,
-      "now": 62,
-      "w4": 30
+      "w1": 62,
+      "now": 68,
+      "w4": 45
     },
     {
       "axis": "Nuclear Risk",
-      "w1": 20,
+      "w1": 92,
       "now": 92,
-      "w4": 75
+      "w4": 20
     },
     {
       "axis": "Hormuz Closure",
-      "w1": 80,
-      "now": 90,
-      "w4": 55
+      "w1": 90,
+      "now": 96,
+      "w4": 80
     },
     {
       "axis": "Household",
-      "w1": 15,
+      "w1": 75,
       "now": 75,
-      "w4": 52
+      "w4": 15
     },
     {
       "axis": "Currency",
-      "w1": 40,
-      "now": 62,
-      "w4": 42
+      "w1": 62,
+      "now": 68,
+      "w4": 40
     },
     {
       "axis": "Social Unrest",
-      "w1": 25,
+      "w1": 68,
       "now": 68,
-      "w4": 42
+      "w4": 25
     },
     {
       "axis": "Mil. Exposure",
-      "w1": 35,
+      "w1": 99,
       "now": 99,
-      "w4": 58
+      "w4": 35
     }
   ],
   "assessment": {
-    "headline": "Eight Iranian tankers destroyed or disabled in under a week. Verified shipping data confirms Hormuz traffic is at its lowest since May. Brent hit $100, and India's Sensex just posted its third straight losing session.",
-    "body": "WHAT HAPPENED\nAfter twice failing to hit a US warship, the IRGC saw CENTCOM destroy five more of its tankers Tuesday, bringing the week's total to eight vessels lost. Rubio's warning — Iran loses tankers for every attempt on US ships — is now an explicit, standing policy. Iran retaliated by threatening tanker crews in Kuwait and Bahrain, widening the conflict's shipping-safety footprint to two more countries. Kpler's data confirms the damage: strait traffic down 28% to its lowest since May.\n\nWHY IT MATTERS FOR INDIA\nThis week marks a real shift from a market that was cautiously discounting war rhetoric to one that is actively repricing it. Three straight down sessions, Brent at $100, and FIIs turning net sellers together represent the most serious market reaction this tracker has recorded since the war's earliest weeks. The DII buying that's held up through the selloff is the one thing keeping this from being unambiguously alarming — it suggests domestic institutional money still sees this as temporary, not structural.\n\nTHE THING TO WATCH\nWhether Iran's threat against tanker crews in Kuwait and Bahrain is followed through, which would mark a further widening of the war beyond the Iran-US axis into direct threats on Gulf Arab states hosting US forces — precisely the scenario Qatar's 'industrial catastrophe' warning anticipates. If it stays rhetorical, this week may still mark the moment markets learned to take the tanker war seriously without the underlying conflict itself expanding further. If Kuwait or Bahrain-based vessels are actually hit, that distinction collapses."
+    "headline": "Trump has rejected Iran's plan to reopen Hormuz and expects to resume bombing after the midterms. Explosions followed near Qeshm Island within days. An Indian seafarer has been killed, and Hormuz throughput is now reported at its lowest of the war.",
+    "body": "WHAT HAPPENED\nIran's seven-day proposal — reopen Hormuz, restart nuclear talks, in exchange for an end to the naval blockade and sanctions relief — was rejected by Trump on Sept 26. He told aides he expects renewed strikes once the November midterms pass. Days later, explosions were reported near Qeshm Island (Sept 27), with unconfirmed reports of missiles or drones fired at transiting vessels. Iran's Ghalibaf declared the 'era of proportionate responses' over. Separately, an Indian seafarer, Suraj Yadav, was killed when MV Cape Dao was struck near Hormuz on Sept 23 — the war's fifth confirmed Indian death, days after Pezeshkian's defiant UN address in which he said Iran would not surrender Hormuz navigation rights.\n\nWHY IT MATTERS FOR INDIA\nHormuz throughput is now reported at roughly 3% of pre-war levels, the tightest reading of the war, though Trump's own competing claim of 20M+ barrels moved over the weekend muddies the picture. Either way, Brent above $106 and a rupee still near its record low both raise India's import bill, while the standing ban on deploying Indian seafarers through Hormuz — now reaffirmed after a fifth death — keeps the human cost of the shipping channel directly in view. The Sanctions Act adds a nearer date to watch: most of its measures take effect by Oct 18, separate from the slower 180/60-day clock on the Russian-oil tariff provision.\n\nTHE THING TO WATCH\nWhether the Qeshm Island incident escalates into a broader exchange, and whether Trump's post-midterm strike plan firms up. A verified reconciliation of the Hormuz throughput figures would also change the picture materially either way. Confidence: moderate; Hormuz data and September FPI figures both conflict across sources."
   },
   "featured": [
     {
@@ -1482,6 +1492,46 @@
       "rupee": 95.0,
       "tag": "(4PM IST, POST-MARKET): CENTCOM destroyed five more Iranian tankers (M/T Kaviz, M/T Charminar, M/T Horizon 1, M/T Riesco, M/T Derya) after the IRGC twice tried to hit a US warship — 8 tankers destroyed or disabled this week. Rubio: 'every time they try that, they're going to lose tankers.' Iran threatened tanker crews near Kuwait and Bahrain to evacuate immediately; claimed a strike on Jordan's Al-Azraq base, called 'ineffective' by a US official. Kpler confirms strait traffic fell 28% last week to its lowest since May. Qatar warned of an 'industrial catastrophe'; Iran's Rezaei threatened a full blockade over US sanctions. Brent hit $100, first time since May. INDIA: Sensex fell 813.35 (-1.08%) to 74,764.23, Nifty -203.60 (-0.86%) to 23,431.50 — a third straight losing session, IT and realty leading losses. FIIs turned net sellers (-₹123cr); DIIs kept buying (+₹1,349.64cr). Defence stocks (BEL) gained on ~$11bn in new government military purchases.",
       "sev": 5
+    },
+    {
+      "d": 203,
+      "l": "Sep 18",
+      "deaths": 7199,
+      "brent": 102.41,
+      "nifty": 23346.4,
+      "rupee": 95.92,
+      "tag": "(CLOSE): Trump signed the Graham Sanctioning Russia and Iran Act (up to 100% tariffs on top Russian-energy buyers, India included; 180 days to name them). Brent settled $102.41, third lower session, after Saudi pipeline-recovery news. INDIA: Sensex 74,294.96 (-0.03%), Nifty 23,346.40 (+0.33%); smallcap +1.7%, midcap +1.2%; IT -1.0%. Nifty -0.2% on the week, sixth straight weekly fall; VIX 11.39. FPIs sold ₹20,974cr in September to date.",
+      "sev": 3
+    },
+    {
+      "d": 206,
+      "l": "Sep 21",
+      "deaths": 7199,
+      "brent": 101.56,
+      "nifty": 23386.15,
+      "rupee": 95.86,
+      "tag": "(MIDDAY): Iran sent seven conditions to the US via Qatar (Sept 19-20) and warned of a possible new US strike round; Trump offered three options — obliterate, strangle economically, or deal. Houthis fired a ballistic missile at Riyadh Sept 19 (intercepted). Hormuz tracked transits 4-12/day; CENTCOM tally unchanged at 103. Brent ~$101.6 (-2.2%) at open. INDIA: Sensex opened 74,714.90 (+419.94), Nifty 23,386.15 (+39.75). Rupee ~95.9-96, near a record low.",
+      "sev": 4
+    },
+    {
+      "d": 208,
+      "l": "Sep 23",
+      "deaths": 7199,
+      "brent": 100.5,
+      "nifty": 23446.8,
+      "rupee": 95.99,
+      "tag": "Pezeshkian addressed the UN General Assembly, saying Iran 'did not bend the knee' and would not surrender Hormuz navigation rights; the US delegation walked out. The same day, Indian seafarer Suraj Yadav, 26, was killed when MV Cape Dao was struck by two projectiles near the Strait of Hormuz — the war's 5th confirmed Indian death. INDIA: Sensex rose 299.17 (+0.40%) to 74,828.25, Nifty +117.80 (+0.50%) to 23,446.80 on diplomatic hope; metals led, IT lagged.",
+      "sev": 5
+    },
+    {
+      "d": 213,
+      "l": "Sep 28",
+      "deaths": 7199,
+      "brent": 106.7,
+      "nifty": 22900.0,
+      "rupee": 95.99,
+      "tag": "(9:30AM IST, OPEN): Trump rejected Iran's seven-day Hormuz reopening plan (Sept 26); explosions followed near Qeshm Island (Sept 27). Hormuz transits ~3% of pre-war levels per a Sept 28 sitrep, vs. Trump's separate claim of 20M+ barrels moved over the weekend. Brent above $106. INDIA: Sensex and Nifty opened sharply lower (Sensex -530 to -800pts, Nifty below 22,900); Friday close Sensex 73,895.74 (+0.43%), Nifty 23,140.50, a seventh straight weekly decline. Rupee last confirmed at 95.99 (Sept 24); Monday's level [VERIFY].",
+      "sev": 5
     }
   ],
   "exec": {
@@ -1538,10 +1588,15 @@
     {
       "label": "MINES CLEARED / TEMP CORRIDOR",
       "color": "cyan",
-      "days": "Aug 26-"
+      "days": "Aug 26-Sep 25"
+    },
+    {
+      "label": "NEAR-TOTAL CLOSURE",
+      "color": "red",
+      "days": "Sep 26-"
     }
   ],
-  "_phaseBadge": "Pezeshkian, in a defiant UN address, says Iran \"did not bend the knee\" and won't surrender Hormuz navigation rights · US delegation walks out during the speech; Rubio calls recent contacts \"a continuation of conversations,\" not a breakthrough · Correction: Tuesday's ~3-hour UN meeting was at envoy level (Witkoff, Kushner — Araghchi), not Trump directly · Analysts (Chatham House's Vakil) see no quick breakthrough — Hormuz is Iran's key leverage, IRGC/hardliner buy-in required · No new reporting on Bab el-Mandeb, the UK PM's Houthi commitment, or Operation Epic Fury's ship count [VERIFY] · India: Sensex +299.17 (+0.40%) to 74,828.25, Nifty +117.80 (+0.50%) Wednesday on diplomatic hope, metals led, IT lagged · Oil held near $100/barrel · GIFT Nifty signals a softer open today (~-138 pts, single-source); NSE itself lists on the bourses today",
+  "_phaseBadge": "Trump rejects Iran's Hormuz reopening plan; explosions near Qeshm Island · Indian seafarer killed on MV Cape Dao (5th death); DGMA's Hormuz deployment ban reaffirmed · Hormuz sitrep: ~3% of pre-war transits, vs. Trump's separate, unreconciled claim of 20M+ barrels moved over the weekend · Brent tops $106; Sensex/Nifty slide at Monday's open on a seventh straight weekly decline · Sanctions Act's other measures take effect by Oct 18, separate from the 180/60-day tariff clock",
   "budget": {
     "petrolPre": 94.72,
     "petrolNow": 111.21,
@@ -1551,12 +1606,12 @@
     "lpgNow": 942.0
   },
   "brief": [
-    "Iran's President Pezeshkian struck a defiant note at the UN General Assembly Sept 23, in the first address by a wartime leader to the body while still in active conflict with the US. 'Yes they did hit us, but we did not bend the knee,' he said, describing Iran as 'ready for dialogue and diplomacy and negotiations without accepting the language of force.' He accused the US and Israel of illegal attacks on civilians, contrasted Israel's undeclared and uninspected nuclear arsenal with Iran's own inspected, weapons-free program, and set out red lines: no restriction of nuclear knowledge to select nations, no surrender of Hormuz navigation rights, and military capability limited to self-defence within a collective regional security framework. The US delegation walked out during the speech.",
-    "Secretary of State Rubio dismissed Iran's claims as hypocritical and characterized recent contacts as 'a continuation of conversations' rather than a breakthrough. Multi-source reporting also corrects how this dashboard characterized Tuesday's roughly three-hour UN-sidelines meeting last cycle: it was at envoy level, between US Special Envoy Steve Witkoff and Jared Kushner and Iran's Foreign Minister Araghchi, with Trump commenting on the outcome afterward rather than attending himself. Chatham House's Sanam Vakil said a breakthrough this week is unlikely, though 'a series of understandings can build confidence for renewed diplomacy'; she named the Strait of Hormuz as Iran's primary leverage and noted both governments need to present any deal domestically as compromise rather than capitulation, with Iranian negotiators additionally requiring sign-off from the IRGC and hardliners.",
-    "Indian equities extended their recovery regardless. Sensex rose 299.17 points (+0.40%) to 74,828.25 Wednesday and Nifty gained 117.80 (+0.50%) to 23,446.80, with metals up more than 2% and IT the weakest sector, as oil held near $100 a barrel and hopes around the diplomacy supported sentiment. Wall Street was more mixed: the Dow fell 185 points (-0.36%) to 51,864 as yields firmed, the S&P 500 closed essentially flat, and the Nasdaq reached a record close (+0.5%, to 27,244) on cheaper crude and an AI demand signal. Oil futures rose overnight after an initial fall, as traders weighed the diplomatic exchanges against still-unresolved Hormuz terms.",
-    "This morning, GIFT Nifty points to a softer open — down roughly 138 points per a single source not independently corroborated — and India's National Stock Exchange itself lists on the bourses today in one of 2026's largest IPOs, a domestic event likely to share attention with the war headlines. Nothing new was found this cycle on the Taiz ground offensive, IRGC entrenchment near Bab el-Mandeb, the new UK prime minister's reported Houthi-related military commitment, or CENTCOM's blockade-ship figures; the El Gaia casualty discrepancy, the Russia/Iran sanctions bill, the IAEA uranium discrepancy and India's VIX/FII-DII flows since Sept 21-22 all remain open and unconfirmed."
+    "Diplomacy collapses, then explosions: Trump rejected Iran's seven-day plan to reopen Hormuz and restart nuclear talks (Sept 26), telling aides he expects to resume bombing after the midterms. Explosions followed near Qeshm Island (Sept 27) — unconfirmed reports describe missiles or drones fired at transiting vessels. Iran's Ghalibaf says the era of 'proportionate responses' is over.",
+    "India loses a fifth seafarer: Suraj Yadav, 26, died after MV Cape Dao was struck near Hormuz on Sept 23. DGMA's standing ban on deploying Indian seafarers through the Strait remains in force. Government sources cite 13+ Indian deaths in the Gulf region since February.",
+    "Hormuz reporting conflicts sharply: a Sept 28 sitrep puts transits at ~3% of pre-war levels, while Trump separately claims 20M+ barrels moved over the weekend, calling it the war's largest flow. The two are not reconciled.",
+    "Markets reverse: Brent rose from a ~$104.5 Friday settle to above $106 Monday. Sensex and Nifty, which closed Friday at 73,895.74 and 23,140.50 for a seventh straight weekly decline, opened sharply lower — Sensex down 530-800 points, Nifty below 22,900 — with VIX up roughly 15%. The rupee remains near its record low; September FPI outflow figures diverge across sources (₹17,131-23,676cr)."
   ],
-  "shareLine": "Iran's Pezeshkian tells a defiant UN Assembly 'we did not bend the knee' and won't surrender Hormuz navigation rights, prompting a US walkout, even as quieter envoy-level talks continue and analysts see no quick breakthrough; Indian markets rallied Wednesday on diplomatic hope but point to a softer open today. [As of 7:45 AM IST Thursday, Day 208; Wednesday's close was Sensex +0.40%, Nifty +0.50%; GIFT Nifty signals a pullback this morning.]",
+  "shareLine": "Trump rejects Iran's plan to reopen Hormuz; explosions follow near Qeshm Island. An Indian seafarer is killed on MV Cape Dao. Hormuz throughput falls to ~3% of pre-war levels as Brent tops $106 and Indian markets slide at Monday's open. #IranWar #Hormuz #IndiaRiskDashboard",
   "author": {
     "name": "Nithiyanandam Yogeswaran",
     "twitter": "https://x.com/prof_nithiya",
@@ -1605,5 +1660,242 @@
       "type": "Op-ed / opinion article",
       "url": "https://www.moneycontrol.com/news/opinion/hormuz-dilemma-it-s-neither-fully-open-nor-closed-which-is-driving-economic-uncertainty-14008050.html"
     }
-  ]
+  ],
+  "geoint": {
+    "_updated": "2026-09-28",
+    "_note": "Analyst-curated from public reporting; coordinates approximate to the named location. Not a live AIS/satellite feed — use the linked free sources to verify. Restored this cycle after being dropped from the file during Sept 22-24 manual edits.",
+    "points": [
+      {
+        "n": "Strait of Hormuz",
+        "t": "chokepoint",
+        "lat": 26.57,
+        "lon": 56.25,
+        "d": "Sep 28",
+        "i": "~3% of pre-war transits (7-day avg 3.1%), lowest of the war; Trump separately claims 20M+ barrels moved over the weekend, unreconciled."
+      },
+      {
+        "n": "Bab el-Mandeb",
+        "t": "chokepoint",
+        "lat": 12.58,
+        "lon": 43.33,
+        "d": "Sep 20",
+        "i": "Broadly functional; Houthis hold Perim, Mocha, Dhubab."
+      },
+      {
+        "n": "Perim Island",
+        "t": "chokepoint",
+        "lat": 12.65,
+        "lon": 43.41,
+        "d": "Sep 10-11",
+        "i": "Captured by Houthis; splits the strait's narrow channel."
+      },
+      {
+        "n": "Mocha",
+        "t": "incident",
+        "lat": 13.32,
+        "lon": 43.25,
+        "d": "Sep 10",
+        "i": "Held by Houthi forces; government troops report local gains nearby but have not retaken the port."
+      },
+      {
+        "n": "Riyadh",
+        "t": "incident",
+        "lat": 24.71,
+        "lon": 46.68,
+        "d": "Sep 19",
+        "i": "Houthi ballistic missile fired at dawn; coalition says intercepted, residents reported smoke near King Khalid airport."
+      },
+      {
+        "n": "Taif",
+        "t": "incident",
+        "lat": 21.27,
+        "lon": 40.42,
+        "d": "Sep 17",
+        "i": "Shrapnel from a downed Houthi drone killed at least 1, injured 2 — first fatality from the campaign's reach toward Mecca Province."
+      },
+      {
+        "n": "Mecca (approx.)",
+        "t": "incident",
+        "lat": 21.39,
+        "lon": 39.86,
+        "d": "Sep 15",
+        "i": "Coalition intercepted a Houthi drone south of the city — first such attempt since 2017; no casualties reported."
+      },
+      {
+        "n": "Khamis Mushait",
+        "t": "incident",
+        "lat": 18.31,
+        "lon": 42.73,
+        "d": "Sep 14-15",
+        "i": "Houthi missiles/drones struck the airbase, wounding 13 civilians."
+      },
+      {
+        "n": "Yanbu",
+        "t": "energy",
+        "lat": 24.09,
+        "lon": 38.06,
+        "d": "Sep 19",
+        "i": "Attempted Houthi strike on the export terminal; loadings suspended since Sept 11 pending pipeline repair."
+      },
+      {
+        "n": "Ras Tanura",
+        "t": "energy",
+        "lat": 26.64,
+        "lon": 50.16,
+        "d": "",
+        "i": "Saudi Arabia's largest oil export terminal; no reported incident this war."
+      },
+      {
+        "n": "Kharg Island",
+        "t": "energy",
+        "lat": 29.25,
+        "lon": 50.32,
+        "d": "Sep 8",
+        "i": "Iran's main oil export terminal; under naval blockade since July, halting new export loadings."
+      },
+      {
+        "n": "Al-Faw",
+        "t": "energy",
+        "lat": 29.95,
+        "lon": 48.47,
+        "d": "Sep 9",
+        "i": "Iraqi export terminal near the head of the Gulf; monitored for blockade spillover effects."
+      },
+      {
+        "n": "Khasab",
+        "t": "incident",
+        "lat": 26.18,
+        "lon": 56.25,
+        "d": "Sep 11",
+        "i": "Omani port near the Strait's narrowest point; used for third-country shipping diversions."
+      },
+      {
+        "n": "Qeshm Island",
+        "t": "incident",
+        "lat": 26.8,
+        "lon": 55.9,
+        "d": "Sep 27",
+        "i": "Explosions reported after Trump's rejection of Iran's reopening plan; reports of missiles/drones fired at transiting vessels, attribution unconfirmed."
+      },
+      {
+        "n": "NSA Bahrain",
+        "t": "base",
+        "lat": 26.21,
+        "lon": 50.61,
+        "d": "Sep 11",
+        "i": "US Fifth Fleet headquarters; central node for Hormuz naval operations."
+      },
+      {
+        "n": "Prince Sultan AB",
+        "t": "base",
+        "lat": 24.06,
+        "lon": 47.58,
+        "d": "Sep 17",
+        "i": "Single-source reporting of extensive damage from earlier strikes, repair timelines 'estimated at decades' — not independently corroborated."
+      },
+      {
+        "n": "Muwaffaq Salti AB",
+        "t": "base",
+        "lat": 32.36,
+        "lon": 36.26,
+        "d": "Sep 8-9",
+        "i": "Jordanian airbase; Iran claimed a strike here, called 'ineffective' by a US official."
+      },
+      {
+        "n": "Jamnagar",
+        "t": "india",
+        "lat": 22.47,
+        "lon": 70.06,
+        "d": "",
+        "i": "Reliance's Jamnagar refinery — India's single largest crude-processing exposure to Gulf disruption."
+      },
+      {
+        "n": "Mundra",
+        "t": "india",
+        "lat": 22.84,
+        "lon": 69.72,
+        "d": "",
+        "i": "Adani's Mundra port — major container and crude-handling gateway on India's west coast."
+      },
+      {
+        "n": "Mumbai",
+        "t": "india",
+        "lat": 19.08,
+        "lon": 72.88,
+        "d": "",
+        "i": "900km from Hormuz; financial capital, Sensex/Nifty exposure to oil and rupee shocks."
+      },
+      {
+        "n": "Kochi",
+        "t": "india",
+        "lat": 9.93,
+        "lon": 76.27,
+        "d": "",
+        "i": "Southern Naval Command and Op Urja Suraksha base; western-coast shipping insurance exposure."
+      },
+      {
+        "n": "Chabahar",
+        "t": "india",
+        "lat": 25.29,
+        "lon": 60.64,
+        "d": "Sep 2",
+        "i": "India-developed Iranian port; strategic alternative-corridor asset, status monitored amid the blockade."
+      },
+      {
+        "n": "MV Cape Dao (Hormuz approach)",
+        "t": "india",
+        "lat": 26.2,
+        "lon": 56.5,
+        "d": "Sep 23",
+        "i": "Vessel struck by two projectiles; Indian seafarer Suraj Yadav killed. 5th confirmed Indian death of the war."
+      }
+    ],
+    "sources": [
+      {
+        "n": "NASA FIRMS",
+        "u": "https://firms.modaps.eosdis.nasa.gov/map/",
+        "use": "Thermal anomalies from VIIRS/MODIS — flags fires at terminals, depots and strike sites within hours. Free; API needs a free key."
+      },
+      {
+        "n": "Copernicus Browser (Sentinel-1/2)",
+        "u": "https://browser.dataspace.copernicus.eu/",
+        "use": "Free satellite imagery; Sentinel-1 radar sees vessels and damage through cloud and at night."
+      },
+      {
+        "n": "IMF PortWatch — Hormuz",
+        "u": "https://portwatch.imf.org/pages/chokepoint6",
+        "use": "Daily chokepoint transit counts from satellite AIS. Free; 3-5 day lag."
+      },
+      {
+        "n": "UKMTO advisories",
+        "u": "https://www.ukmto.org/",
+        "use": "Official incident and threat warnings for Hormuz, Gulf of Oman and Red Sea."
+      },
+      {
+        "n": "Global Fishing Watch",
+        "u": "https://globalfishingwatch.org/map/",
+        "use": "AIS-gap ('going dark') and vessel-behaviour layers; useful for the dark-fleet gap in transit counts. Free for non-commercial use."
+      },
+      {
+        "n": "GDELT GEO API",
+        "u": "https://api.gdeltproject.org/api/v2/geo/geo?query=hormuz&format=GeoJSON",
+        "use": "Free geocoded news mentions as GeoJSON — a proxy for where reporting is concentrating."
+      },
+      {
+        "n": "ACLED",
+        "u": "https://acleddata.com/",
+        "use": "Curated conflict-event data for Yemen and the Gulf. Free registration."
+      },
+      {
+        "n": "Liveuamap — Iran",
+        "u": "https://iran.liveuamap.com/",
+        "use": "Crowd-sourced conflict map for cross-checking incident locations."
+      },
+      {
+        "n": "ISW / Critical Threats",
+        "u": "https://www.criticalthreats.org/",
+        "use": "Free Iran update maps and daily assessments."
+      }
+    ]
+  }
 }
