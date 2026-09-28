@@ -148,6 +148,18 @@ const Eyebrow = ({children, color=T.ink50, style}) => (
     textTransform:"uppercase", color, ...style}}>{children}</div>
 );
 
+// Subsection heading — a tick of wine over darker, larger mono text. For the
+// handful of headings that introduce a real content block on their own,
+// with nothing bigger underneath to anchor it (unlike Head's h2, or a
+// bordered callout's own accent) -- plain Eyebrow reads too quiet there.
+const SubHead = ({children, style}) => (
+  <div style={{marginBottom:14, ...style}}>
+    <div style={{width:28, height:2, background:T.wine, marginBottom:8}}/>
+    <div style={{fontFamily:MONO, fontSize:12.5, fontWeight:500, letterSpacing:"0.1em",
+      textTransform:"uppercase", color:T.ink}}>{children}</div>
+  </div>
+);
+
 const Empty = ({label}) => (
   <div style={{border:HAIR, padding:"18px 16px", fontSize:13,
     color:T.ink50, fontFamily:MONO}}>
@@ -1483,7 +1495,7 @@ export default function App() {
           </div>
         )}
 
-        <Eyebrow style={{marginBottom:12}}>India's Hormuz exposure</Eyebrow>
+        <SubHead style={{marginBottom:12}}>India's Hormuz exposure</SubHead>
         <div className="ruled c3" style={{marginBottom:24}}>
           {[
             {l:"Ships in Gulf", v:iHormuz?.indianVesselsNear ?? "—",
@@ -1501,7 +1513,7 @@ export default function App() {
           ))}
         </div>
 
-        <Eyebrow style={{marginBottom:12}}>Timeline · latest first · select a row to expand</Eyebrow>
+        <SubHead style={{marginBottom:12}}>Timeline · latest first · select a row to expand</SubHead>
         <HormuzTimeline events={iHEvents.length ? iHEvents : iHLatest} phaseData={intel?.hormuzPhases}/>
         <div style={{borderTop:HAIR, marginTop:20}}>
           <Def label="Latest transit">{noEmoji(iHormuz?.lastTransit || "Status pending.")}</Def>
@@ -1649,7 +1661,7 @@ export default function App() {
             lede="Chokepoints, incidents, energy nodes, bases and Indian exposure on one map. Select a point for detail."/>
           <GeoMap geo={intel.geoint} nukes={iNukes} today={iDay}
             phaseText={`${iPhase} ${intel?._phaseBadge||""} ${iT.join(" ")}`}/>
-          <Eyebrow style={{margin:"28px 0 8px"}}>Free sources for verification</Eyebrow>
+          <SubHead style={{margin:"28px 0 8px"}}>Free sources for verification</SubHead>
           <div style={{borderTop:`2px solid ${T.ink}`}}>
             {(intel.geoint.sources ?? []).map((s,i)=>(
               <Def key={i} label={s.n}>
@@ -1676,14 +1688,14 @@ export default function App() {
           </p>
         </div>
 
-        <Eyebrow style={{marginBottom:10}}>Atmospheric transport — assessment</Eyebrow>
+        <SubHead style={{marginBottom:10}}>Atmospheric transport — assessment</SubHead>
         <div style={{borderTop:HAIR, marginBottom:28, maxWidth:900}}>
           <Def label="Key insight">Prevailing westerlies at 500 hPa place north-west India four to seven days downwind of Iranian nuclear sites.</Def>
           <Def label="Watchlist">Bushehr reactor integrity; the Isfahan HEU tunnel complex; IAEA site access.</Def>
           <Def label="Confidence">Analytical estimate. No radiological release has been confirmed to date. Fallout modelling: <a href="https://www.ready.noaa.gov/HYSPLIT.php" target="_blank" rel="noopener noreferrer" style={{whiteSpace:"nowrap"}}>NOAA HYSPLIT ↗</a></Def>
         </div>
 
-        <Eyebrow style={{marginBottom:12}}>Iranian nuclear sites — status</Eyebrow>
+        <SubHead style={{marginBottom:12}}>Iranian nuclear sites — status</SubHead>
         {!iNukes.length && <Empty label="Nuclear site status"/>}
         {iNukes.length > 0 && <NukeRiskBars sites={iNukes}/>}
         {iNukes.length > 0 && (
@@ -1733,7 +1745,7 @@ export default function App() {
 
         {iCities.length > 0 && (
           <>
-            <Eyebrow style={{marginBottom:8}}>Indian city exposure</Eyebrow>
+            <SubHead style={{marginBottom:8}}>Indian city exposure</SubHead>
             <p style={{margin:"0 0 16px", fontSize:14, color:T.ink70, maxWidth:760}}>
               A composite of wind trajectory (nuclear), sea proximity (oil shock) and distance
               to nuclear facilities. Weights are the tracker's own; treat the ranking as
