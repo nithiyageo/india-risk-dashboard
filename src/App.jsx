@@ -704,7 +704,33 @@ const SHIP_ROUTES = [
   {to:"Kochi",   from:[26.57,56.25], end:[9.93,76.27]},
 ];
 
-const GeoMap = ({geo, nukes, today}) => {
+// Country name labels for the region shown -- background chart labels, not
+// data points, so they carry no click/select behaviour.
+const COUNTRY_LABELS = [
+  {n:"IRAN",          lat:32.0, lon:54.0},
+  {n:"SAUDI ARABIA",  lat:24.5, lon:45.0},
+  {n:"PAKISTAN",      lat:29.5, lon:69.0},
+  {n:"INDIA",         lat:22.5, lon:78.5},
+  {n:"OMAN",          lat:20.5, lon:56.5},
+  {n:"YEMEN",         lat:15.5, lon:47.5},
+  {n:"UAE",           lat:23.9, lon:54.3},
+  {n:"IRAQ",          lat:33.0, lon:43.5},
+];
+
+// Known nuclear-capable/nuclear-armed facilities elsewhere in the region --
+// static reference context (undisputed public facts, not war-tracked), so
+// the nuclear picture doesn't read as Iran-only. Rendered as hollow rings
+// to stay visually distinct from Iran's war-status sites.
+const REGIONAL_NUCLEAR = [
+  {n:"Kahuta (Pakistan)", lat:33.6, lon:73.4,
+    i:"Khan Research Laboratories -- Pakistan's main uranium-enrichment site. Regional context only; not part of this war."},
+  {n:"Khushab (Pakistan)", lat:32.0, lon:72.3,
+    i:"Plutonium-production reactor complex. Regional context only; not part of this war."},
+  {n:"Dimona (Israel)", lat:31.0, lon:35.15,
+    i:"Negev Nuclear Research Center -- Israel's undeclared weapons programme. Regional context only; not part of this war."},
+];
+
+const GeoMap = ({geo, nukes, today, phaseText}) => {
   const [base, setBase] = useState(null);
   const [kind, setKind] = useState("all");
   const [sel,  setSel]  = useState(null);
@@ -716,7 +742,14 @@ const GeoMap = ({geo, nukes, today}) => {
     ...(geo?.points ?? []),
     ...(nukes ?? []).filter(n=>n.lat!=null && n.lon!=null)
       .map(n=>({n:noEmoji(n.name), t:"nuclear", lat:n.lat, lon:n.lon, d:"", i:noEmoji(n.status||"")})),
+    ...REGIONAL_NUCLEAR.map(n=>({...n, t:"nuclear", d:"", regional:true})),
   ];
+  // A point is today's "flashpoint" if its name is named in the day's own
+  // headline text (_phase / _phaseBadge / ticker) -- a simple, transparent
+  // stand-in for "what's actually being talked about today" rather than
+  // just the most recently dated point.
+  const hot = (phaseText||"").toLowerCase();
+  const isFlashpoint = p => p.n && p.n.length>3 && hot.includes(p.n.toLowerCase());
 
   // Time slider — points carrying a parseable "Mon D" date can be scrubbed
   // through; undated points (bases, refineries, nuclear sites) are treated
@@ -761,6 +794,14 @@ const GeoMap = ({geo, nukes, today}) => {
           <rect width="1000" height="740" fill="#f4f7f9"/>
           {base && <path d={base.L} fill="#ebe7e0" stroke="none"/>}
           {base && <path d={base.B} fill="none" stroke={T.ink20} strokeWidth="0.6"/>}
+          {COUNTRY_LABELS.map((c,i) => {
+            const [x,y] = geoXY(c);
+            return (
+              <text key={i} x={x} y={y} fontSize="15" fontFamily={MONO} fontWeight="500"
+                letterSpacing="0.14em" fill={T.ink} opacity="0.28" textAnchor="middle"
+                style={{pointerEvents:"none", userSelect:"none"}}>{c.n}</text>
+            );
+          })}
           {showRoutes && SHIP_ROUTES.map((r,i) => {
             const [x1,y1] = geoXY({lat:r.from[0], lon:r.from[1]});
             const [x2,y2] = geoXY({lat:r.end[0],  lon:r.end[1]});
@@ -781,19 +822,28 @@ const GeoMap = ({geo, nukes, today}) => {
             const on = sel===i; const col = GEO_KIND[p.t]?.c || T.ink;
             const pDay = parseWarDay(p.d);
             const isLatest = hasSlider && pDay!=null && maxDay!=null && pDay===maxDay && activeDay===maxDay;
+            const flash = isFlashpoint(p);
             return (
               <g key={i} onClick={()=>setSel(on?null:i)} style={{cursor:"pointer"}}>
-                {isLatest && <circle cx={x} cy={y} r={11} fill="none" stroke={col} strokeWidth="1.5" opacity="0.55">
+                {flash && <circle cx={x} cy={y} r={12} fill="none" stroke={T.gold} strokeWidth="2" opacity="0.7">
+                  <animate attributeName="r" values="8;17;8" dur="1.3s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" values="0.8;0;0.8" dur="1.3s" repeatCount="indefinite"/>
+                </circle>}
+                {!flash && isLatest && <circle cx={x} cy={y} r={11} fill="none" stroke={col} strokeWidth="1.5" opacity="0.55">
                   <animate attributeName="r" values="7;15;7" dur="2.4s" repeatCount="indefinite"/>
                   <animate attributeName="opacity" values="0.6;0;0.6" dur="2.4s" repeatCount="indefinite"/>
                 </circle>}
                 {/* Enlarged, invisible hit area — keeps the visible dot small
                     while still giving mobile touch a real target. */}
                 <circle cx={x} cy={y} r={16} fill="transparent"/>
-                <circle cx={x} cy={y} r={on?9:6} fill={col} stroke="#fff" strokeWidth="1.5"/>
+                {p.regional
+                  ? <circle cx={x} cy={y} r={on?9:6} fill="#fff" stroke={col} strokeWidth="2"/>
+                  : <circle cx={x} cy={y} r={on?9:6} fill={col} stroke="#fff" strokeWidth="1.5"/>}
                 {(on || p.t==="chokepoint") && (
                   <text x={x+10} y={y+4} fontSize="12" fontFamily={MONO} fill={T.ink}
-                    stroke="#fff" strokeWidth="3" paintOrder="stroke">{p.n}</text>
+                    stroke="#fff" strokeWidth="3" paintOrder="stroke">
+                    {p.n}{flash ? " — FLASHPOINT" : ""}
+                  </text>
                 )}
               </g>
             );
@@ -823,13 +873,22 @@ const GeoMap = ({geo, nukes, today}) => {
           <span key={k}><span style={{display:"inline-block", width:8, height:8, borderRadius:"50%",
             background:v.c, marginRight:6}}/>{v.l}</span>
         ))}
+        <span><span style={{display:"inline-block", width:8, height:8, borderRadius:"50%",
+          background:"#fff", border:`2px solid ${T.ink}`, marginRight:6}}/>Regional nuclear (context)</span>
+        <span><span style={{display:"inline-block", width:8, height:8, borderRadius:"50%",
+          border:`2px solid ${T.gold}`, marginRight:6}}/>Today's flashpoint</span>
       </div>
       {showRoutes && (
-        <div style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.04em", color:T.ink50, margin:"0 0 14px"}}>
+        <div style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.04em", color:T.ink50, margin:"0 0 8px"}}>
           Shipping lanes are schematic (Hormuz to Mundra, Mumbai and Kochi) — illustrative of the
           route the blockade threatens, not tracked vessel positions.
         </div>
       )}
+      <div style={{fontFamily:MONO, fontSize:10, letterSpacing:"0.04em", color:T.ink50, margin:"0 0 14px"}}>
+        Hollow rings (Kahuta, Khushab, Dimona) are known regional nuclear sites shown for context —
+        not part of the Iran war and not war-status tracked. The gold ring flags points named in
+        today's own headline; it moves day to day with the news, not with any fixed list.
+      </div>
       {cur && (
         <div style={{borderTop:`2px solid ${T.ink}`, marginBottom:18}}>
           <Def label={cur.n}>{cur.i}{cur.d ? ` (${cur.d})` : ""}</Def>
@@ -1730,7 +1789,8 @@ export default function App() {
         <Band id="geoint" deep>
           <Head eyebrow="Geospatial" title="Where it is" em="happening"
             lede="Chokepoints, incidents, energy nodes, bases and Indian exposure on one map. Select a point for detail."/>
-          <GeoMap geo={intel.geoint} nukes={iNukes} today={iDay}/>
+          <GeoMap geo={intel.geoint} nukes={iNukes} today={iDay}
+            phaseText={`${iPhase} ${intel?._phaseBadge||""} ${iT.join(" ")}`}/>
           <Eyebrow style={{margin:"28px 0 8px"}}>Free sources for verification</Eyebrow>
           <div style={{borderTop:`2px solid ${T.ink}`}}>
             {(intel.geoint.sources ?? []).map((s,i)=>(
