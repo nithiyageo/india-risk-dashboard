@@ -76,14 +76,6 @@ const parseWarDay = (s) => {
   return dayOf(iso);
 };
 
-// Approximate coordinates for the fixed set of Indian cities war-intel.json
-// tracks — not in the JSON since the city list itself rarely changes.
-const CITY_LL = {
-  "Delhi NCR":[28.61,77.21], "Mumbai":[19.08,72.88], "Ahmedabad":[23.03,72.58],
-  "Jaipur":[26.91,75.79], "Kochi":[9.93,76.27], "Goa":[15.30,74.12],
-  "Lucknow":[26.85,80.95], "Chennai":[13.08,80.27],
-};
-
 // Pre-war baselines — overridable via intel.preWar.
 const PRE_FB = {brent:65, rupee:91.49, nifty:22124, lpg:853, petrol:94.72, diesel:87.62};
 
@@ -877,46 +869,6 @@ const NukeRiskBars = ({sites}) => {
             textAlign:"right", ...NUM}}>{n.risk}</span>
         </div>
       ))}
-    </div>
-  );
-};
-
-// City exposure as a small India inset -- reuses the same basemap and
-// coordinate system as GeoMap, just cropped to India's bounding box.
-// Small, static India outline with the 8 tracked cities as plain, always-
-// labelled dots. Deliberately simple after three rounds of a fancier,
-// interactive version (state population layer, full-width crop, click-to-
-// select) didn't read well -- no toggle, no selection, nothing to get wrong.
-const CityMap = ({cities}) => {
-  const [base, setBase] = useState(null);
-  useEffect(() => {
-    fetch("./geo-base.json").then(r=>r.ok?r.json():null).then(setBase).catch(()=>{});
-  }, []);
-  const pts = (cities||[]).map(c => CITY_LL[c.city] ? {...c, lat:CITY_LL[c.city][0], lon:CITY_LL[c.city][1]} : null)
-    .filter(Boolean);
-  if (!pts.length) return null;
-  const x0=(68-30)*20, y0=(40-31)*20, x1=(84-30)*20, y1=(40-8)*20;
-  const vw = x1-x0, vh = y1-y0;
-  return (
-    <div style={{border:HAIR, background:"#fff", marginBottom:20, maxWidth:420}}>
-      <svg viewBox={`${x0} ${y0} ${vw} ${vh}`} role="img" aria-label="Map of the 8 tracked Indian cities"
-        style={{width:"100%", height:"auto", display:"block", aspectRatio:`${vw} / ${vh}`}}>
-        <rect x={x0} y={y0} width={vw} height={vh} fill="#f4f7f9"/>
-        {base && <path d={base.L} fill="#ebe7e0" stroke="none"/>}
-        {base && <path d={base.B} fill="none" stroke={T.ink20} strokeWidth="0.6"/>}
-        {pts.map((c,i)=>{
-          const [x,y] = geoXY(c);
-          const r = 6 + (Math.min(c.tot,100)/100)*8;
-          const col = c.tot>55?C.red:c.tot>40?C.orange:T.wine;
-          return (
-            <g key={i}>
-              <circle cx={x} cy={y} r={r} fill={col} opacity="0.75" stroke="#fff" strokeWidth="1.5"/>
-              <text x={x} y={y-r-6} fontSize="11.5" fontFamily={MONO} fill={T.ink} textAnchor="middle"
-                stroke="#fff" strokeWidth="3" paintOrder="stroke">{c.city}{" \u00b7 "}{c.tot}</text>
-            </g>
-          );
-        })}
-      </svg>
     </div>
   );
 };
@@ -1787,7 +1739,6 @@ export default function App() {
               to nuclear facilities. Weights are the tracker's own; treat the ranking as
               indicative rather than measured.
             </p>
-            <CityMap cities={iCities}/>
             <div className="ruled c2">
               {iCities.map((c,i)=>(
                 <div key={i} style={{padding:"20px 22px"}}>
