@@ -61,6 +61,28 @@ const RADAR_FB  = [];
 const WAR_START = "2026-02-28";
 const dayOf = (iso, start=WAR_START) =>
   Math.floor((Date.parse(iso+"T00:00:00Z") - Date.parse(start+"T00:00:00Z")) / 86400000) + 1;
+const dayToDate = (d, start=WAR_START) => {
+  const ms = Date.parse(start+"T00:00:00Z") + (d-1)*86400000;
+  return new Date(ms).toLocaleDateString("en-US", {month:"short", day:"numeric", timeZone:"UTC"});
+};
+
+// Loose "Mon D" parser for free-text event dates ("Sep 27", "Sep 15-16") —
+// used only to place a point on the map time-slider, not for display.
+const MONTH_IDX = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+const parseWarDay = (s) => {
+  const m = String(s||"").match(/([A-Z][a-z]{2})\s+(\d{1,2})/);
+  if (!m || !(m[1] in MONTH_IDX)) return null;
+  const iso = `2026-${String(MONTH_IDX[m[1]]+1).padStart(2,"0")}-${String(+m[2]).padStart(2,"0")}`;
+  return dayOf(iso);
+};
+
+// Approximate coordinates for the fixed set of Indian cities war-intel.json
+// tracks — not in the JSON since the city list itself rarely changes.
+const CITY_LL = {
+  "Delhi NCR":[28.61,77.21], "Mumbai":[19.08,72.88], "Ahmedabad":[23.03,72.58],
+  "Jaipur":[26.91,75.79], "Kochi":[9.93,76.27], "Goa":[15.30,74.12],
+  "Lucknow":[26.85,80.95], "Chennai":[13.08,80.27],
+};
 
 // Pre-war baselines — overridable via intel.preWar.
 const PRE_FB = {brent:65, rupee:91.49, nifty:22124, lpg:853, petrol:94.72, diesel:87.62};
@@ -215,6 +237,7 @@ const Kpi = ({label, value, delta, deltaColor, sub, tone}) => {
 // Horizontal gridlines only, mono axis labels, series labelled at the
 // right-hand end rather than by legend.
 const MiniLine = ({data, dataKey, color, h=300, unit=""}) => {
+  const [hover, setHover] = useState(null);
   const filtered = data.filter(d => typeof d[dataKey] === "number");
   if (!filtered.length) return null;
   const vals = filtered.map(d => d[dataKey]);
@@ -237,6 +260,19 @@ const MiniLine = ({data, dataKey, color, h=300, unit=""}) => {
   const idx = [];
   for (let k=0; k<want; k++) idx.push(Math.round(k*(pts.length-1)/(want-1||1)));
   const ticks = [...new Set(idx)].filter((v,i,a) => i===0 || pts[v].x - pts[a[i-1]].x > 110);
+  const nearestIdx = px => {
+    let best = 0, bd = Infinity;
+    pts.forEach((p,i) => { const d = Math.abs(p.x-px); if (d<bd) { bd=d; best=i; } });
+    return best;
+  };
+  const onMove = e => {
+    const svg = e.currentTarget.ownerSVGElement || e.currentTarget;
+    const rect = svg.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const px = ((clientX - rect.left) / rect.width) * W;
+    setHover(nearestIdx(px));
+  };
+  const hp = hover!=null ? pts[hover] : null;
   return (
     <svg viewBox={`0 0 ${W} ${h}`} style={{width:"100%", height:"auto", display:"block", overflow:"visible"}}>
       {[0,25,50,75,100].map(pct => {
@@ -260,6 +296,79 @@ const MiniLine = ({data, dataKey, color, h=300, unit=""}) => {
       <rect x={last.x-4} y={last.y-4} width="8" height="8" fill={color}/>
       <text x={last.x+14} y={last.y+5} fill={color} fontSize="15" fontFamily={MONO}
         fontWeight="500" style={NUM}>{unit}{fmt(last.v)}</text>
+
+      {/* Hover/tap layer — invisible hit area plus a guide line and tooltip */}
+      <rect x={pad.l} y={0} width={iw} height={h} fill="transparent"
+        style={{cursor:"crosshair"}}
+        onMouseMove={onMove} onMouseLeave={()=>setHover(null)}
+        onTouchMove={onMove} onTouchEnd={()=>setHover(null)}/>
+      {hp && (
+        <g style={{pointerEvents:"none"}}>
+          <line x1={hp.x} y1={pad.t} x2={hp.x} y2={pad.t+ih} stroke={T.ink50} strokeWidth="1" strokeDasharray="3 3"/>
+          <circle cx={hp.x} cy={hp.y} r="5" fill={T.paper} stroke={color} strokeWidth="2.5"/>
+          {(() => {
+            const boxW = 108, boxX = Math.min(Math.max(hp.x-boxW/2, pad.l), pad.l+iw-boxW);
+            const boxY = hp.y > h/2 ? hp.y-46 : hp.y+14;
+            return (
+              <g>
+                <rect x={boxX} y={boxY} width={boxW} height={32} fill={T.ink} opacity="0.94"/>
+                <text x={boxX+boxW/2} y={boxY+13} fill="#fff" fontSize="10.5" fontFamily={MONO}
+                  textAnchor="middle" letterSpacing="0.04em">{hp.l}</text>
+                <text x={boxX+boxW/2} y={boxY+26} fill="#fff" fontSize="13" fontFamily={MONO}
+                  fontWeight="500" textAnchor="middle" style={NUM}>{unit}{fmt(hp.v)}</text>
+              </g>
+            );
+          })()}
+        </g>
+      )}
+    </svg>
+  );
+};
+
+// Normalised multi-series comparison — % change since the first logged
+// session for each series, direct-labelled at the line end rather than a
+// legend. Used to show how correlated oil/equities/currency have been.
+const CompareLines = ({data, series, h=220}) => {
+  const base = {};
+  series.forEach(s => {
+    const first = data.find(d => typeof d[s.key]==="number" && d[s.key]);
+    base[s.key] = first ? first[s.key] : null;
+  });
+  const W = 1100, pad = {l:38, r:112, t:16, b:28};
+  const iw = W-pad.l-pad.r, ih = h-pad.t-pad.b;
+  const lines = series.map(s => {
+    const rows = data.filter(d=>typeof d[s.key]==="number");
+    const pts = rows.map((d,i)=>({
+      x: pad.l+(i/Math.max(rows.length-1,1))*iw,
+      v: base[s.key] ? ((d[s.key]/base[s.key])-1)*100 : 0,
+      l: d.l||"",
+    }));
+    return {...s, pts};
+  }).filter(l=>l.pts.length>1);
+  if (!lines.length) return null;
+  const allV = lines.flatMap(l=>l.pts.map(p=>p.v));
+  const mn = Math.min(0,...allV), mx = Math.max(0,...allV), rng = (mx-mn)||1;
+  const y = v => pad.t + (1-(v-mn)/rng)*ih;
+  const zeroY = y(0);
+  return (
+    <svg viewBox={`0 0 ${W} ${h}`} style={{width:"100%", height:"auto", display:"block", overflow:"visible"}}>
+      <line x1={pad.l} y1={zeroY} x2={pad.l+iw} y2={zeroY} stroke={T.ink20} strokeWidth="1.5"/>
+      <text x={pad.l-8} y={zeroY+4} fill={T.ink50} fontSize="11" fontFamily={MONO} textAnchor="end">0%</text>
+      <text x={pad.l} y={h-6} fill={T.ink50} fontSize="11" fontFamily={MONO}>
+        {lines[0].pts[0].l} {"→"} {lines[0].pts[lines[0].pts.length-1].l}
+      </text>
+      {lines.map((l,li)=>{
+        const d = l.pts.map((p,i)=>`${i===0?"M":"L"}${p.x.toFixed(1)},${y(p.v).toFixed(1)}`).join(" ");
+        const last = l.pts[l.pts.length-1];
+        return (
+          <g key={li}>
+            <path d={d} fill="none" stroke={l.color} strokeWidth="2" strokeLinecap="square" strokeLinejoin="miter"/>
+            <rect x={l.pts[l.pts.length-1].x-3} y={y(last.v)-3} width="6" height="6" fill={l.color}/>
+            <text x={pad.l+iw+10} y={y(last.v)+4} fill={l.color} fontSize="12.5" fontFamily={MONO}
+              fontWeight="500">{l.label} {last.v>=0?"+":""}{last.v.toFixed(0)}%</text>
+          </g>
+        );
+      })}
     </svg>
   );
 };
@@ -276,9 +385,9 @@ const Figure = ({eyebrow, title, source, children}) => (
 );
 
 // ─── Risk radar ───────────────────────────────────────────────────
-const RadarSVG = ({data, day}) => {
+const RadarSVG = ({data, day, compact=false}) => {
   if (!data?.length) return null;
-  const W=520, H=380, cx=W/2, cy=H/2, r=118, n=data.length;
+  const W=520, H = compact ? 300 : 380, cx=W/2, cy=H/2, r = compact ? 100 : 118, n=data.length;
   const ang = i => (Math.PI*2*i)/n - Math.PI/2;
   const pt = (i, v) => ({x: cx + Math.cos(ang(i)) * (v/100) * r, y: cy + Math.sin(ang(i)) * (v/100) * r});
   const poly = (key, col, dash, w) => (
@@ -295,15 +404,15 @@ const RadarSVG = ({data, day}) => {
         const p = pt(i, 100);
         return <line key={i} x1={cx} y1={cy} x2={p.x.toFixed(1)} y2={p.y.toFixed(1)} stroke={T.ink10} strokeWidth="1"/>;
       })}
-      {poly("w1", C.cyan, null, 1.4)}
-      {poly("w4", C.orange, "4 3", 1.4)}
-      {poly("now", T.wine, null, 2)}
+      {!compact && poly("w1", C.cyan, null, 1.4)}
+      {!compact && poly("w4", C.orange, "4 3", 1.4)}
+      {poly("now", T.wine, null, compact ? 1.6 : 2)}
       {data.map((d, i) => {
         const lp = pt(i, 128);
         return (
           <text key={i} x={lp.x.toFixed(1)} y={lp.y.toFixed(1)} fill={T.ink50}
-            fontSize="13" textAnchor="middle" dominantBaseline="middle"
-            fontFamily={MONO} letterSpacing="0.04em">{d.axis}</text>
+            fontSize={compact ? 10.5 : 13} textAnchor="middle" dominantBaseline="middle"
+            fontFamily={MONO} letterSpacing="0.04em">{compact ? d.axis.split(" ")[0] : d.axis}</text>
         );
       })}
     </svg>
@@ -371,6 +480,33 @@ const BudgetCalc = ({budget}) => {
 };
 
 // ─── War in numbers ───────────────────────────────────────────────
+// Severity heat-strip — one tick per logged session, oldest to newest, so a
+// reader can see when things got worse before reading a word of the log.
+const SeverityStrip = ({timeline, onPick}) => {
+  if (!timeline?.length) return null;
+  const tl = [...timeline].sort((a,b)=>a.d-b.d);
+  const col = sev => sev>=5 ? C.red : sev>=4 ? T.wine : sev>=3 ? C.orange : T.ink20;
+  return (
+    <div style={{marginBottom:20}}>
+      <div style={{display:"flex", alignItems:"flex-end", gap:2, height:36}}>
+        {tl.map((d,i)=>(
+          <div key={i} role="button" tabIndex={0} title={`Day ${d.d} · ${d.l} · severity ${d.sev??"—"}/5`}
+            onClick={()=>onPick?.(d.l)}
+            onKeyDown={e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();onPick?.(d.l);}}}
+            style={{flex:"1 1 0", minWidth:2, cursor:onPick?"pointer":"default",
+              height:`${10+((d.sev??1)/5)*26}px`, background:col(d.sev), alignSelf:"flex-end"}}/>
+        ))}
+      </div>
+      <div style={{display:"flex", justifyContent:"space-between", marginTop:6,
+        fontFamily:MONO, fontSize:10, letterSpacing:"0.06em", color:T.ink50, ...NUM}}>
+        <span>DAY {tl[0].d} · {tl[0].l}</span>
+        <span>SEVERITY, LOW → HIGH</span>
+        <span>DAY {tl[tl.length-1].d} · {tl[tl.length-1].l}</span>
+      </div>
+    </div>
+  );
+};
+
 const WarInNumbers = ({timeline}) => {
   if (!timeline?.length) return null;
   const tl = [...timeline].sort((a,b)=>a.d-b.d);
@@ -511,7 +647,7 @@ const GEO_KIND = {
 };
 const geoXY = p => [(p.lon-30)*20, (40-p.lat)*20];
 
-const GeoMap = ({geo, nukes}) => {
+const GeoMap = ({geo, nukes, today}) => {
   const [base, setBase] = useState(null);
   const [kind, setKind] = useState("all");
   const [sel,  setSel]  = useState(null);
@@ -523,7 +659,23 @@ const GeoMap = ({geo, nukes}) => {
     ...(nukes ?? []).filter(n=>n.lat!=null && n.lon!=null)
       .map(n=>({n:noEmoji(n.name), t:"nuclear", lat:n.lat, lon:n.lon, d:"", i:noEmoji(n.status||"")})),
   ];
-  const shown = pts.filter(p => kind==="all" || p.t===kind);
+
+  // Time slider — points carrying a parseable "Mon D" date can be scrubbed
+  // through; undated points (bases, refineries, nuclear sites) are treated
+  // as persistent infrastructure and always shown.
+  const dated = pts.map(p=>parseWarDay(p.d)).filter(d=>d!=null);
+  const minDay = dated.length ? Math.min(...dated) : null;
+  const maxDay = dated.length ? Math.max(...dated, today||0) : null;
+  const [sliderDay, setSliderDay] = useState(null);
+  const activeDay = sliderDay ?? maxDay;
+  const hasSlider = minDay!=null && maxDay!=null && minDay < maxDay;
+
+  const shown = pts.filter(p => {
+    if (kind!=="all" && p.t!==kind) return false;
+    if (!hasSlider) return true;
+    const d = parseWarDay(p.d);
+    return d==null || d<=activeDay;
+  });
   const cur = sel!=null ? pts[sel] : null;
   return (
     <div>
@@ -547,8 +699,17 @@ const GeoMap = ({geo, nukes}) => {
           {shown.map(p=>{
             const i = pts.indexOf(p); const [x,y] = geoXY(p);
             const on = sel===i; const col = GEO_KIND[p.t]?.c || T.ink;
+            const pDay = parseWarDay(p.d);
+            const isLatest = hasSlider && pDay!=null && maxDay!=null && pDay===maxDay && activeDay===maxDay;
             return (
               <g key={i} onClick={()=>setSel(on?null:i)} style={{cursor:"pointer"}}>
+                {isLatest && <circle cx={x} cy={y} r={11} fill="none" stroke={col} strokeWidth="1.5" opacity="0.55">
+                  <animate attributeName="r" values="7;15;7" dur="2.4s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" values="0.6;0;0.6" dur="2.4s" repeatCount="indefinite"/>
+                </circle>}
+                {/* Enlarged, invisible hit area — keeps the visible dot small
+                    while still giving mobile touch a real target. */}
+                <circle cx={x} cy={y} r={16} fill="transparent"/>
                 <circle cx={x} cy={y} r={on?9:6} fill={col} stroke="#fff" strokeWidth="1.5"/>
                 {(on || p.t==="chokepoint") && (
                   <text x={x+10} y={y+4} fontSize="12" fontFamily={MONO} fill={T.ink}
@@ -559,6 +720,23 @@ const GeoMap = ({geo, nukes}) => {
           })}
         </svg>
       </div>
+
+      {hasSlider && (
+        <div style={{display:"flex", alignItems:"center", gap:14, margin:"14px 0 2px", flexWrap:"wrap"}}>
+          <Eyebrow style={{whiteSpace:"nowrap"}}>Show as of</Eyebrow>
+          <input type="range" min={minDay} max={maxDay} value={activeDay}
+            aria-label="Show map as of a given day"
+            onChange={e=>{setSliderDay(+e.target.value); setSel(null);}}
+            style={{flex:"1 1 160px", minWidth:120, accentColor:T.wine}}/>
+          <span style={{fontFamily:MONO, fontSize:11.5, letterSpacing:"0.04em", color:T.ink, minWidth:74, ...NUM}}>
+            {dayToDate(activeDay)}{activeDay===maxDay ? " · today" : ""}
+          </span>
+          {activeDay!==maxDay && (
+            <button className="btn-plain" onClick={()=>setSliderDay(null)}>Jump to today →</button>
+          )}
+        </div>
+      )}
+
       <div style={{display:"flex", gap:16, flexWrap:"wrap", margin:"10px 0 18px",
         fontFamily:MONO, fontSize:10, letterSpacing:"0.08em", color:T.ink50, textTransform:"uppercase"}}>
         {Object.entries(GEO_KIND).map(([k,v])=>(
@@ -584,6 +762,63 @@ const GeoMap = ({geo, nukes}) => {
 // the list opens at eight rows rather than fifty.
 const stripDayLead = s => String(s||"")
   .replace(/^DAYS?\s+[\d\u2013\u2014-]+(?:\s+[A-Z][A-Za-z.]*)*\s*(?:[\u2014\u2013-]|\.)\s*/, "").trim();
+
+// One combined, sorted bar chart for nuclear-site risk -- replaces five
+// separate inline bars so the comparison happens in one place, not per row.
+const NukeRiskBars = ({sites}) => {
+  if (!sites?.length) return null;
+  const sorted = [...sites].sort((a,b)=>(b.risk||0)-(a.risk||0));
+  return (
+    <div style={{marginBottom:24}}>
+      {sorted.map((n,i)=>(
+        <div key={i} style={{display:"grid", gridTemplateColumns:"128px 1fr 36px", gap:14,
+          alignItems:"center", padding:"7px 0"}}>
+          <span style={{fontSize:12.5, color:T.ink70, whiteSpace:"nowrap",
+            overflow:"hidden", textOverflow:"ellipsis"}}>{noEmoji(n.name)}</span>
+          <Bar value={n.risk} color={n.risk>85?C.red:T.wine} h={9}/>
+          <span style={{fontFamily:MONO, fontSize:11.5, color:T.ink50,
+            textAlign:"right", ...NUM}}>{n.risk}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+// City exposure as a small India inset -- reuses the same basemap and
+// coordinate system as GeoMap, just cropped to India's bounding box.
+const CityMap = ({cities}) => {
+  const [base, setBase] = useState(null);
+  useEffect(() => {
+    fetch("./geo-base.json").then(r=>r.ok?r.json():null).then(setBase).catch(()=>{});
+  }, []);
+  const pts = (cities||[]).map(c => CITY_LL[c.city] ? {...c, lat:CITY_LL[c.city][0], lon:CITY_LL[c.city][1]} : null)
+    .filter(Boolean);
+  if (!pts.length) return null;
+  const x0=(68-30)*20, y0=(40-32)*20, x1=(84-30)*20, y1=(40-6)*20;
+  const vw = x1-x0, vh = y1-y0;
+  return (
+    <div style={{border:HAIR, background:"#fff", marginBottom:20}}>
+      <svg viewBox={`${x0} ${y0} ${vw} ${vh}`} role="img" aria-label="Map of Indian city exposure scores"
+        style={{width:"100%", height:"auto", display:"block", maxHeight:340}}>
+        <rect x={x0} y={y0} width={vw} height={vh} fill="#f4f7f9"/>
+        {base && <path d={base.L} fill="#ebe7e0" stroke="none"/>}
+        {base && <path d={base.B} fill="none" stroke={T.ink20} strokeWidth="0.6"/>}
+        {pts.map((c,i)=>{
+          const [x,y] = geoXY(c);
+          const r = 7 + (Math.min(c.tot,100)/100)*11;
+          const col = c.tot>55?C.red:c.tot>40?C.orange:T.wine;
+          return (
+            <g key={i}>
+              <circle cx={x} cy={y} r={r} fill={col} opacity="0.72" stroke="#fff" strokeWidth="1.5"/>
+              <text x={x} y={y-r-6} fontSize="12" fontFamily={MONO} fill={T.ink} textAnchor="middle"
+                stroke="#fff" strokeWidth="3" paintOrder="stroke">{c.city}{" \u00b7 "}{c.tot}</text>
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+};
 
 const HormuzTimeline = ({events, phaseData}) => {
   const [active, setActive] = useState(null);
@@ -722,6 +957,8 @@ export default function App() {
     : riskLevel==="ELEVATED" ? T.wine : C.green;
 
   const fullTL = [...(intel?.timeline ?? [])].sort((a,b)=>a.d-b.d);
+  const prevTL  = fullTL.length>1 ? fullTL[fullTL.length-2] : null;
+  const todayTL = fullTL.length   ? fullTL[fullTL.length-1] : null;
 
   const brentRaw  = live?.brent?.price     ?? 100;
   const brentChg  = live?.brent?.changePct ?? 0;
@@ -810,6 +1047,9 @@ export default function App() {
         .split { display:grid; grid-template-columns:7fr 5fr; gap:48px; align-items:start; }
         @media(max-width:960px){ .split{ grid-template-columns:1fr; gap:28px; } }
 
+        .overview-grid { display:grid; grid-template-columns:minmax(260px,380px) 1fr; gap:32px; align-items:start; }
+        @media(max-width:720px){ .overview-grid{ grid-template-columns:1fr; gap:24px; } }
+
         .brief-grid { display:grid; grid-template-columns:1fr 1fr; column-gap:48px; }
         @media(max-width:720px){ .brief-grid{ grid-template-columns:1fr; } }
 
@@ -837,6 +1077,11 @@ export default function App() {
         .nav button:hover { color:#fff; }
         .nav button[data-active="true"] { color:#fff; border-bottom-color:${T.gold}; }
 
+        .mini-strip { display:none; position:sticky; top:54px; z-index:99; background:${T.paper};
+               border-bottom:${HAIR}; }
+        @media(max-width:720px){ .mini-strip{ display:block; } }
+        .mini-strip .wrap::-webkit-scrollbar { display:none; }
+
         input[type=number], input[type=text] { border-radius:0; }
         input:focus-visible, button:focus-visible, a:focus-visible, [tabindex]:focus-visible {
           outline:2px solid ${T.wine}; outline-offset:2px; }
@@ -852,8 +1097,10 @@ export default function App() {
           .ticker-track { animation:none !important; transform:none !important; }
         }
         @media print {
-          .nav, .ticker-wrap, .btn, .btn-ghost { display:none !important; }
+          .nav, .mini-strip, .ticker-wrap, .btn, .btn-ghost, .btn-plain,
+          input[type=range] { display:none !important; }
           body { background:#fff !important; }
+          .band { break-inside:avoid; }
         }
       `}</style>
 
@@ -909,6 +1156,8 @@ export default function App() {
                 </span>
                 <button className="btn" onClick={()=>shareCard(sharePayload)}
                   title="Download today's summary as an image">Share today's card →</button>
+                <button className="btn-ghost" onClick={()=>window.print()}
+                  title="Print or save this page as a PDF">Print / Save PDF →</button>
               </div>
               <div style={{borderTop:HAIR}}>
                 <Def label="Intel">{iUpdated}</Def>
@@ -950,6 +1199,26 @@ export default function App() {
           </div>
         </div>
       </nav>
+
+      {/* Mobile-only mini strip — the situation at a glance, visible once the
+          reader has scrolled past the full Overview KPI grid. */}
+      {activeNav && activeNav!=="overview" && (
+        <div className="mini-strip" role="status" aria-label="Current situation summary">
+          <div className="wrap" style={{display:"flex", alignItems:"center", gap:16,
+            padding:"8px 0", overflowX:"auto"}}>
+            <span style={{fontFamily:MONO, fontSize:11, letterSpacing:"0.06em", color:T.wine,
+              whiteSpace:"nowrap", ...NUM}}>DAY {iDay}</span>
+            <span style={{fontFamily:MONO, fontSize:11, letterSpacing:"0.06em", color:riskColor,
+              whiteSpace:"nowrap", ...NUM}}>{riskLevel}</span>
+            <span style={{fontFamily:MONO, fontSize:11, letterSpacing:"0.06em", color:T.ink70,
+              whiteSpace:"nowrap", ...NUM}}>BRENT ${brentRaw}</span>
+            <span style={{fontFamily:MONO, fontSize:11, letterSpacing:"0.06em", color:T.ink70,
+              whiteSpace:"nowrap", ...NUM}}>
+              NIFTY {typeof niftyRaw==="number"?Math.round(niftyRaw).toLocaleString("en-IN"):niftyRaw}
+            </span>
+          </div>
+        </div>
+      )}
 
       {/* ══ OVERVIEW — what changed, then the strip, then the brief ══ */}
       <Band id="overview">
@@ -1016,6 +1285,51 @@ export default function App() {
             value={`₹${typeof rupeeRaw==="number"?rupeeRaw.toFixed(2):rupeeRaw}`}
             delta={`per US dollar · ₹${PRE.rupee} pre-war`}
             sub={iExec.indiaSub ?? `Household pressure ${radarNow("Household") ?? "—"}/100.`}/>
+        </div>
+
+        {/* Risk index preview + since-last-update delta */}
+        <div className="overview-grid" style={{marginBottom:40}}>
+          <div>
+            <div style={{display:"flex", justifyContent:"space-between", alignItems:"baseline",
+              marginBottom:10}}>
+              <Eyebrow>Risk index at a glance</Eyebrow>
+              <button className="btn-plain" onClick={()=>go("radar")}>Full index →</button>
+            </div>
+            <div style={{border:HAIR, padding:"16px 16px 10px"}}>
+              <RadarSVG data={iRadar} day={iDay} compact/>
+            </div>
+          </div>
+          {prevTL && todayTL && (
+            <div>
+              <Eyebrow style={{marginBottom:10}}>
+                {`Since ${prevTL.l} (Day ${prevTL.d})`}
+              </Eyebrow>
+              <div className="ruled c2" style={{border:HAIR}}>
+                {[
+                  {l:"Brent", now:todayTL.brent, was:prevTL.brent, fmt:v=>v!=null?`$${v}`:"—", invert:true},
+                  {l:"Nifty 50", now:todayTL.nifty, was:prevTL.nifty, fmt:v=>v!=null?Math.round(v).toLocaleString("en-IN"):"—"},
+                  {l:"Rupee/USD", now:todayTL.rupee, was:prevTL.rupee, fmt:v=>v!=null?`₹${v.toFixed(2)}`:"—", invert:true},
+                  {l:"War dead", now:todayTL.deaths, was:prevTL.deaths, fmt:v=>v!=null?v.toLocaleString("en-IN"):"—", invert:true},
+                ].map((r,i)=>{
+                  const chg = (r.now!=null && r.was) ? (r.now-r.was) : null;
+                  const pct = (r.now!=null && r.was) ? ((r.now/r.was-1)*100) : null;
+                  const good = chg==null ? null : r.invert ? chg<=0 : chg>=0;
+                  return (
+                    <div key={i} style={{padding:"14px 16px"}}>
+                      <Eyebrow style={{marginBottom:6}}>{r.l}</Eyebrow>
+                      <div style={{fontSize:20, fontWeight:400, letterSpacing:"-0.01em",
+                        color:T.ink, ...NUM}}>{r.fmt(r.now)}</div>
+                      {pct!=null && (
+                        <div style={{fontFamily:MONO, fontSize:11, color:good?C.green:C.red, ...NUM}}>
+                          {chg>=0?"+":""}{pct.toFixed(1)}%
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* 60-second brief */}
@@ -1206,6 +1520,15 @@ export default function App() {
           <MiniLine data={fullTL} dataKey="brent" color={T.wine} h={160} unit="$"/>
         </Figure>
 
+        <Figure eyebrow="Correlation" title="Brent, Nifty and the rupee — % change since Day 1"
+          source={sessionSource}>
+          <CompareLines data={fullTL} h={200} series={[
+            {key:"brent", label:"Brent", color:T.wine},
+            {key:"nifty", label:"Nifty", color:C.cyan},
+            {key:"rupee", label:"Rupee", color:C.orange},
+          ]}/>
+        </Figure>
+
         {iEcon?.analysis && (
           <div style={{borderLeft:`2px solid ${T.wine}`, paddingLeft:24}}>
             <Eyebrow style={{marginBottom:8}}>Market analysis</Eyebrow>
@@ -1271,7 +1594,7 @@ export default function App() {
         <Band id="geoint" deep>
           <Head eyebrow="Geospatial" title="Where it is" em="happening"
             lede="Chokepoints, incidents, energy nodes, bases and Indian exposure on one map. Select a point for detail."/>
-          <GeoMap geo={intel.geoint} nukes={iNukes}/>
+          <GeoMap geo={intel.geoint} nukes={iNukes} today={iDay}/>
           <Eyebrow style={{margin:"28px 0 8px"}}>Free sources for verification</Eyebrow>
           <div style={{borderTop:`2px solid ${T.ink}`}}>
             {(intel.geoint.sources ?? []).map((s,i)=>(
@@ -1308,6 +1631,7 @@ export default function App() {
 
         <Eyebrow style={{marginBottom:12}}>Iranian nuclear sites — status</Eyebrow>
         {!iNukes.length && <Empty label="Nuclear site status"/>}
+        {iNukes.length > 0 && <NukeRiskBars sites={iNukes}/>}
         {iNukes.length > 0 && (
           <div style={{borderTop:`2px solid ${T.ink}`, marginBottom:32}}>
             {iNukes.map((n,i)=>(
@@ -1326,7 +1650,6 @@ export default function App() {
                     {noEmoji(n.status||n.st)}
                   </Chip>
                 </div>
-                <div style={{maxWidth:280}}><Bar value={n.risk} color={n.risk>85?C.red:T.wine} h={4}/></div>
                 <div style={{display:"flex", justifyContent:"space-between", marginTop:6,
                   fontFamily:MONO, fontSize:10, letterSpacing:"0.08em", color:T.ink50, ...NUM}}>
                   <span>{n.risk}/100 RISK</span>
@@ -1351,6 +1674,7 @@ export default function App() {
               to nuclear facilities. Weights are the tracker's own; treat the ranking as
               indicative rather than measured.
             </p>
+            <CityMap cities={iCities}/>
             <div className="ruled c2">
               {iCities.map((c,i)=>(
                 <div key={i} style={{padding:"20px 22px"}}>
@@ -1434,6 +1758,7 @@ export default function App() {
         <Head eyebrow="Archive" title="The war" em="log"
           lede="Every logged session since Day 1, newest first."/>
         <WarInNumbers timeline={intel?.timeline}/>
+        <SeverityStrip timeline={intel?.timeline} onPick={l=>{setLogSearch(l); setLogExpanded(true);}}/>
 
         <div style={{display:"flex", justifyContent:"space-between", alignItems:"center",
           gap:16, flexWrap:"wrap", marginBottom:8}}>
