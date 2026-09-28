@@ -656,6 +656,9 @@ export default function App() {
   const [logSearch,   setLogSearch]   = useState("");
   const [aboutOpen,   setAboutOpen]   = useState(false);
   const [wcExpanded,  setWcExpanded]  = useState({});
+  const [milExpanded, setMilExpanded] = useState({});
+  const [hzExpanded,  setHzExpanded]  = useState({});
+  const [econExpanded,setEconExpanded]= useState(false);
   const [loadErr,     setLoadErr]     = useState(false);
 
   useEffect(() => {
@@ -979,7 +982,7 @@ export default function App() {
                 {isOpen && item.text && (
                   <div style={{padding:"0 8px 18px 64px", fontSize:14.5, lineHeight:1.65,
                     color:T.ink70, animation:"fadein 0.2s ease both", textWrap:"pretty"}}>
-                    {noEmoji(clampSentences(item.text, 3))}
+                    {noEmoji(item.text)}
                   </div>
                 )}
               </div>
@@ -1063,17 +1066,31 @@ export default function App() {
           <div style={{padding:"20px 22px"}}>
             <Eyebrow style={{marginBottom:8}}>Status</Eyebrow>
             <div style={{fontSize:14.5, lineHeight:1.6, color:T.ink70, textWrap:"pretty"}}>
-              {noEmoji(clampSentences(iHormuz?.status || "Status pending.", 3))}
+              {noEmoji(hzExpanded.status ? (iHormuz?.status || "Status pending.") : clampSentences(iHormuz?.status || "Status pending.", 2))}
             </div>
+            {noEmoji(iHormuz?.status||"").length > noEmoji(clampSentences(iHormuz?.status||"", 2)).length && (
+              <button className="btn-plain" style={{marginTop:8, fontSize:11}}
+                aria-expanded={!!hzExpanded.status}
+                onClick={()=>setHzExpanded(p=>({...p, status:!p.status}))}>
+                {hzExpanded.status ? "Less —" : "More detail →"}
+              </button>
+            )}
           </div>
           <div style={{padding:"20px 22px"}}>
             <Eyebrow style={{marginBottom:8}}>Ship traffic</Eyebrow>
             <div style={{fontSize:16, fontWeight:500, color:T.ink, marginBottom:6}}>
-              {deshout(noEmoji(clampSentences(iHormuz?.currentFlow || "Near-zero commercial transit", 2)))}
+              {deshout(noEmoji(hzExpanded.flow ? (iHormuz?.currentFlow || "Near-zero commercial transit") : clampSentences(iHormuz?.currentFlow || "Near-zero commercial transit", 1)))}
             </div>
             <div style={{fontFamily:MONO, fontSize:10.5, letterSpacing:"0.06em", color:T.ink50, ...NUM}}>
               PRE-WAR: {(iHormuz?.preWarFlow || "~90–140 SHIPS/DAY").toUpperCase()}
             </div>
+            {noEmoji(iHormuz?.currentFlow||"").length > noEmoji(clampSentences(iHormuz?.currentFlow||"", 1)).length && (
+              <button className="btn-plain" style={{marginTop:8, fontSize:11}}
+                aria-expanded={!!hzExpanded.flow}
+                onClick={()=>setHzExpanded(p=>({...p, flow:!p.flow}))}>
+                {hzExpanded.flow ? "Less —" : "More detail →"}
+              </button>
+            )}
           </div>
         </div>
 
@@ -1087,8 +1104,15 @@ export default function App() {
               <span style={{fontSize:15, color:T.ink}}>Indian sailors killed</span>
             </div>
             <div style={{fontSize:14, lineHeight:1.6, color:T.ink70}}>
-              {noEmoji(iHormuz?.indianCasualtyDetail || "Details pending.")}
+              {noEmoji(hzExpanded.casualty ? (iHormuz?.indianCasualtyDetail || "Details pending.") : clampSentences(iHormuz?.indianCasualtyDetail || "Details pending.", 1))}
             </div>
+            {noEmoji(iHormuz?.indianCasualtyDetail||"").length > noEmoji(clampSentences(iHormuz?.indianCasualtyDetail||"", 1)).length && (
+              <button className="btn-plain" style={{marginTop:8, fontSize:11}}
+                aria-expanded={!!hzExpanded.casualty}
+                onClick={()=>setHzExpanded(p=>({...p, casualty:!p.casualty}))}>
+                {hzExpanded.casualty ? "Less —" : "Full detail →"}
+              </button>
+            )}
           </div>
         )}
 
@@ -1186,8 +1210,15 @@ export default function App() {
           <div style={{borderLeft:`2px solid ${T.wine}`, paddingLeft:24}}>
             <Eyebrow style={{marginBottom:8}}>Market analysis</Eyebrow>
             <div style={{fontSize:15, lineHeight:1.65, color:T.ink70, maxWidth:900, textWrap:"pretty"}}>
-              {noEmoji(clampSentences(iEcon.analysis, 4))}
+              {noEmoji(econExpanded ? iEcon.analysis : clampSentences(iEcon.analysis, 2))}
             </div>
+            {noEmoji(iEcon.analysis).length > noEmoji(clampSentences(iEcon.analysis, 2)).length && (
+              <button className="btn-plain" style={{marginTop:8, fontSize:11}}
+                aria-expanded={econExpanded}
+                onClick={()=>setEconExpanded(!econExpanded)}>
+                {econExpanded ? "Less —" : "More detail →"}
+              </button>
+            )}
           </div>
         )}
       </Band>
@@ -1199,25 +1230,38 @@ export default function App() {
         {!iMilitary.length && !iMilTop.length && <Empty label="Military updates"/>}
         {(iMilitary.length || iMilTop.length) > 0 && (
           <div style={{borderTop:`2px solid ${T.ink}`}}>
-            {(iMilitary.length ? iMilitary : iMilTop).map((m,i)=>(
-              <div key={i} style={{display:"grid", gridTemplateColumns:"40px 1fr", gap:16,
-                padding:"18px 0", borderBottom:HAIR, alignItems:"baseline"}}>
-                <span style={{fontFamily:MONO, fontSize:11, letterSpacing:"0.08em", color:T.wine}}>
-                  {code(i)}
-                </span>
-                <div>
-                  <div style={{display:"flex", justifyContent:"space-between", alignItems:"baseline",
-                    gap:16, flexWrap:"wrap", marginBottom:8}}>
-                    <span style={{fontSize:17, fontWeight:500, letterSpacing:"-0.005em",
-                      lineHeight:1.3, color:T.ink, textWrap:"balance"}}>{deshout(noEmoji(m.t))}</span>
-                    {m.lv && <Chip color={m.lv==="BREAKING"?C.red:T.ink50}>{m.lv}</Chip>}
-                  </div>
-                  <div style={{fontSize:14.5, lineHeight:1.6, color:T.ink70, maxWidth:900, textWrap:"pretty"}}>
-                    {noEmoji(clampSentences(m.d, 2))}
+            {(iMilitary.length ? iMilitary : iMilTop).map((m,i)=>{
+              const mOpen = !!milExpanded[i];
+              const full = noEmoji(m.d);
+              const short = noEmoji(clampSentences(m.d, 2));
+              const hasMore = full.length > short.length;
+              return (
+                <div key={i} style={{display:"grid", gridTemplateColumns:"40px 1fr", gap:16,
+                  padding:"18px 0", borderBottom:HAIR, alignItems:"baseline"}}>
+                  <span style={{fontFamily:MONO, fontSize:11, letterSpacing:"0.08em", color:T.wine}}>
+                    {code(i)}
+                  </span>
+                  <div>
+                    <div style={{display:"flex", justifyContent:"space-between", alignItems:"baseline",
+                      gap:16, flexWrap:"wrap", marginBottom:8}}>
+                      <span style={{fontSize:17, fontWeight:500, letterSpacing:"-0.005em",
+                        lineHeight:1.3, color:T.ink, textWrap:"balance"}}>{deshout(noEmoji(m.t))}</span>
+                      {m.lv && <Chip color={m.lv==="BREAKING"?C.red:T.ink50}>{m.lv}</Chip>}
+                    </div>
+                    <div style={{fontSize:14.5, lineHeight:1.6, color:T.ink70, maxWidth:900, textWrap:"pretty"}}>
+                      {mOpen ? full : short}
+                    </div>
+                    {hasMore && (
+                      <button className="btn-plain" style={{marginTop:8, fontSize:11}}
+                        aria-expanded={mOpen}
+                        onClick={()=>setMilExpanded(p=>({...p,[i]:!p[i]}))}>
+                        {mOpen ? "Less —" : "More detail →"}
+                      </button>
+                    )}
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </Band>
