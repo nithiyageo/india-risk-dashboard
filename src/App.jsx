@@ -1862,6 +1862,17 @@ export default function App() {
           </div>
         )}
 
+        <Figure eyebrow="Live" title="Wind over the Gulf and the Arabian Sea"
+          source="Source: Windy.com (ECMWF) — live third-party embed, not part of this page's own analysis. Pan/zoom to trace the route from Iran toward India.">
+          <div style={{border:HAIR, aspectRatio:"16 / 9", overflow:"hidden"}}>
+            <iframe
+              title="Live wind map, Gulf to India"
+              src="https://embed.windy.com/embed2.html?lat=23.5&lon=63.0&detailLat=23.5&detailLon=63.0&width=650&height=450&zoom=4&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
+              style={{width:"100%", height:"100%", border:"none", display:"block"}}
+              loading="lazy"/>
+          </div>
+        </Figure>
+
         {iCities.length > 0 && (
           <>
             <Eyebrow style={{marginBottom:8}}>Indian city exposure</Eyebrow>
