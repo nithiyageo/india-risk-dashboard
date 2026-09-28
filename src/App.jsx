@@ -794,18 +794,20 @@ const CityMap = ({cities}) => {
   const pts = (cities||[]).map(c => CITY_LL[c.city] ? {...c, lat:CITY_LL[c.city][0], lon:CITY_LL[c.city][1]} : null)
     .filter(Boolean);
   if (!pts.length) return null;
-  const x0=(68-30)*20, y0=(40-32)*20, x1=(84-30)*20, y1=(40-6)*20;
+  // India is a tall, narrow shape -- cropped tight to the city spread rather
+  // than reusing the wide Gulf-map bounds, which left most of the box empty.
+  const x0=(68-30)*20, y0=(40-31)*20, x1=(84-30)*20, y1=(40-8)*20;
   const vw = x1-x0, vh = y1-y0;
   return (
-    <div style={{border:HAIR, background:"#fff", marginBottom:20}}>
+    <div style={{border:HAIR, background:"#fff", marginBottom:20, maxWidth:380}}>
       <svg viewBox={`${x0} ${y0} ${vw} ${vh}`} role="img" aria-label="Map of Indian city exposure scores"
-        style={{width:"100%", height:"auto", display:"block", maxHeight:340}}>
+        style={{width:"100%", height:"auto", display:"block", aspectRatio:`${vw} / ${vh}`}}>
         <rect x={x0} y={y0} width={vw} height={vh} fill="#f4f7f9"/>
         {base && <path d={base.L} fill="#ebe7e0" stroke="none"/>}
         {base && <path d={base.B} fill="none" stroke={T.ink20} strokeWidth="0.6"/>}
         {pts.map((c,i)=>{
           const [x,y] = geoXY(c);
-          const r = 7 + (Math.min(c.tot,100)/100)*11;
+          const r = 6 + (Math.min(c.tot,100)/100)*9;
           const col = c.tot>55?C.red:c.tot>40?C.orange:T.wine;
           return (
             <g key={i}>
