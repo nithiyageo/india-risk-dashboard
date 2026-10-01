@@ -1,8 +1,8 @@
 {
-  "_updated": "September 30, 2026 — 12:30 PM IST (Wednesday)",
-  "_asOf": "2026-09-30",
+  "_updated": "October 1, 2026 — 11:30 AM IST (Thursday)",
+  "_asOf": "2026-10-01",
   "_start": "2026-02-28",
-  "_day": 215,
+  "_day": 216,
   "preWar": {
     "brent": 65,
     "rupee": 91.49,
@@ -11,63 +11,62 @@
     "petrol": 94.72,
     "diesel": 87.62
   },
-  "_phase": "MEDIATORS PUSH ON DESPITE TRUMP'S REJECTION: IRAN'S ARAGHCHI MEETS MEDIATORS IN NEW YORK, EXPECTS A FORMAL US RESPONSE; TRUMP DENIES OFFERING SANCTIONS RELIEF; IRAN'S REZAEI SAYS TRUMP IS 'TRAPPED IN A QUAGMIRE'; MIDDLE EAST OIL EXPORTS REPORTED NEAR PRE-WAR LEVELS, PRESSURING BRENT LOWER, EVEN AS CNN ANALYSIS SAYS IRAN'S HORMUZ LEVERAGE IS ERODING; A YEMENI GOVERNMENT COUNTEROFFENSIVE AGAINST THE HOUTHIS INTENSIFIES; A DATA CORRECTION FINDS THIS PAGE'S 'DELHI' FUEL PRICES WERE ACTUALLY MUMBAI'S — NO HIKE OCCURRED",
-  "_note": "Verified across multiple outlets: CNBC (Sept 29: separate US and Iranian mediator talks, Iran's revised proposal terms — a 4-5 day US timeline to release frozen funds, lift oil sanctions and end the naval blockade, with nuclear talks starting within 7 days — which Trump called 'unacceptable'; Trump's remark that Iran wants a swift deal 'because of the economic pressure it is under'), Tribune India/ANI (Trump confirms US officials met Iran mediators), CBS News/PBS/Spectrum Local News (mediators continuing to work a deal despite the public rejection; Araghchi expects a formal US response), Fox News Digital (Sept 29: Iran's Rezaei says Trump is 'trapped in a quagmire where he can neither negotiate nor fight'), CNBC/Reuters via Iran International/Euronews/Bloomberg (Sept 25-30: Saudi crude exports at their highest since the war began despite a pipeline outage, Middle East oil and LNG exports through Hormuz picking up, Brent holding losses as exports are seen near pre-war levels), CNN Business analysis (Sept 29: 'Iran has lost considerable leverage in the Strait of Hormuz. It can't go on like this forever'), Al Arabiya (Sept 29: Yemeni government forces report 414 operations against Houthi capabilities in 24 hours) and Al Jazeera (Sept 30: escalating battles, government warnings to civilians to stay clear of Houthi positions; background UN figures of 700+ killed and ~130,000 displaced within Yemen since the government's Sept 3 counteroffensive began), Business Standard/HDFC Sky (Sept 30 morning Sensex/Nifty/rupee prints), Goodreturns/TradingEconomics (Brent). Separately, cross-checking city-wise fuel-price aggregators (DTNext, HDFC Sky, Hans India, Goodreturns) this cycle found that the ₹111.21 petrol / ₹97.83 diesel this page has carried under 'Petrol/Diesel (Delhi)' consistently matches Mumbai's rate, not Delhi's (₹102.12 / ₹95.20) — corrected this cycle; see kitchen-table entries for detail. This also resolves yesterday's flagged, unconfirmed 'OMC hike' item: no fresh hike occurred, the conflict was a city mislabel carried forward in this file. Covers Sept 29 10:15 AM to Sept 30 12:30 PM IST. Day 215.",
-  "_todo": "1) Hormuz's throughput picture is shifting rather than resolving: vessel-count sitreps still read near-total closure, but Saudi crude exports are now reported at their highest since the war began and Bloomberg/CNN describe Middle East exports as 'near pre-war level' — pressuring Brent lower. None of vessel-count, barrel-volume or the export-recovery framing have a single reconciled methodology; treat the direction (easing) as more credible than any specific figure. 2) Iran's Deputy FM Gharibabadi's 'Strait remains closed, coordination required' claim (carried yesterday) has not been repeated or withdrawn this cycle — status unclear. 3) Trump has now denied offering Iran sanctions relief on at least two occasions (Sept 28, Sept 29); the US official's original CBS News claim has not been repeated by a second source — leaning toward Trump's denial but not fully resolved. 4) September FPI figures still not freshened this cycle (last: ₹17,131cr-₹23,676cr month-to-date). 5) The DGMA advisory's July 16 dating vs. its reuse alongside this month's deaths remains unresolved (carried forward). 6) Wednesday's (Sept 30) closing Sensex/Nifty/rupee/Brent prints are not yet available; only the ~11:00 AM IST readings are carried [VERIFY]. 7) The El Gaia casualty discrepancy remains unresolved and is not added to the confirmed Indian death count. 8) War log (timeline) gaps at Sept 10-17, 19-20 and 22 remain open. 9) Indian vessel/seafarer counts near Hormuz (7/148/1) still not re-sourced. 10) The Yemeni government's counteroffensive against the Houthis (414 operations claimed in 24h, Sept 29) is one-sided government reporting with no independent casualty or territorial-control verification yet — watch for corroboration before treating it as a turning point.",
+  "_phase": "IRAN CONFIRMS IT RECEIVED A US COUNTERPROPOSAL VIA QATARI MEDIATORS AND IS 'CONSIDERING' IT; TRUMP SAYS HE HAS 'OFFERED THEM NOTHING', CALLS IRAN 'FAILING VERY BADLY' AND PREDICTS THE WAR ENDS 'VERY, VERY SOON'; TRUMP CLAIMS 'TOTAL CONTROL' OF HORMUZ AND THAT IRAN'S NAVY AND AIR FORCE ARE 'GONE'; IRAN'S RIAL HITS A FRESH RECORD LOW, DOWN ~19% THIS MONTH ALONE; INDIAN MARKETS SET FOR A WEAK OPEN ON ELEVATED CRUDE, HIGH US YIELDS AND FII SELLING",
+  "_note": "Verified across multiple outlets: CBS News live blogs (Sept 30: Iran indicates it received an official US response to its proposal via Qatari mediators, without disclosing contents; Trump says US and Iranian negotiators are talking via mediators but insists he's 'offered them NOTHING'), Arab News/Spectrum Local News/KSAT (Sept 30: same US-response story, corroborated), Fortune (Sept 30: Iran's currency hits a new record low the same day as the US-response news), ABC News (Trump says the war will be over 'very soon' with no details, claims 'total control' of Hormuz and that Iran's Navy/Air Force are 'gone' — unverified claims, carried as Trump's own statement, not confirmed independently), PBS NewsHour/Washington Examiner/CP24/Democracy Now/ProPakistani/SBS (Sept 29-30: Iranian rial at 2.5-2.567 million per US dollar, a fresh record low, down ~19% this month alone and roughly a third of its pre-war value — Feb levels were ~1.5-1.6 million/USD), India TV News/Stockpil/Business Standard (Sept 30 close: Sensex ~72,480, Nifty 22,620.45 (-95.75, -0.42%); exact Sensex point move disputed across sources, 88pts vs ~49pts, [VERIFY]), IndiaIPO/Business Standard (Oct 1: GIFT Nifty signals a weak start on elevated crude, high US yields and FII selling), multiple crude trackers (Oct 1: spot Brent reads ~$97.4-98, while one source cites November Brent futures spiking to $103.50 overnight and another describes WTI easing toward $89-90 on reports Middle East shipments are recovering — these do not reconcile and several aggregators appear to conflate WTI/Brent/futures-month figures; treating ~$97-98 as spot Brent with moderate confidence). Covers Sept 30 12:30 PM to Oct 1 11:30 AM IST. Day 216.",
+  "_todo": "1) Brent/WTI figures for Oct 1 conflict sharply and several outlets appear to conflate contract months/benchmarks: spot Brent reads ~$97.4-98 on the most-corroborated live tracker, but one source cites November Brent futures spiking to $103.50 overnight and another describes WTI easing toward $89-90 on a Middle East shipments-recovering narrative consistent with this page's Sept 29-30 entries. Treated as unreconciled; do not treat any single figure as definitive. 2) Trump's claims of 'total control' of Hormuz and that Iran's Navy/Air Force are 'gone' are his own statements, not independently verified — carried as rhetoric, not fact. 3) Iran's confirmation that it received a US counterproposal has no detail on its contents or Iran's response; status of talks remains genuinely unclear. 4) September FPI figures still not freshened (last: ₹17,131cr-₹23,676cr month-to-date). 5) The DGMA advisory's July 16 dating vs. its reuse alongside recent deaths remains unresolved (carried forward). 6) Thursday's (Oct 1) closing Sensex/Nifty/rupee/Brent prints are not yet available; only GIFT Nifty's pre-open signal is carried [VERIFY]. 7) The El Gaia casualty discrepancy remains unresolved and is not added to the confirmed Indian death count. 8) War log (timeline) gaps at Sept 10-17, 19-20 and 22 remain open. 9) Indian vessel/seafarer counts near Hormuz (7/148/1) still not re-sourced. 10) The Yemeni government's counteroffensive against the Houthis (reported intensifying Sept 29-30) has no fresher, independently-corroborated update this cycle — carried forward as an open, one-sided story rather than restated as new.",
   "ticker": [
-    "MEDIATORS PUSH ON DESPITE TRUMP'S REJECTION: ARAGHCHI MEETS MEDIATORS IN NEW YORK, EXPECTS A FORMAL US RESPONSE TO IRAN'S REVISED PROPOSAL",
-    "IRAN'S REVISED TERMS: A 4-5 DAY US TIMELINE TO RELEASE FROZEN FUNDS, LIFT OIL SANCTIONS AND END THE NAVAL BLOCKADE, WITH NUCLEAR TALKS WITHIN 7 DAYS — TRUMP CALLS IT 'UNACCEPTABLE'",
-    "IRAN'S REZAEI: TRUMP IS 'TRAPPED IN A QUAGMIRE WHERE HE CAN NEITHER NEGOTIATE NOR FIGHT'",
-    "MIDDLE EAST OIL EXPORTS REPORTED NEAR PRE-WAR LEVELS — SAUDI CRUDE EXPORTS AT THEIR HIGHEST SINCE THE WAR BEGAN — PRESSURING BRENT LOWER TO ~$103",
-    "CNN ANALYSIS: 'IRAN HAS LOST CONSIDERABLE LEVERAGE IN THE STRAIT OF HORMUZ — IT CAN'T GO ON LIKE THIS FOREVER'",
-    "YEMENI GOVERNMENT FORCES CLAIM 414 OPERATIONS AGAINST HOUTHI CAPABILITIES IN 24 HOURS; BATTLES ESCALATE, GOVERNMENT WARNS CIVILIANS TO STAY CLEAR",
-    "DATA CORRECTION: THIS PAGE'S 'DELHI' PETROL/DIESEL FIGURES WERE ACTUALLY MUMBAI'S — TRUE DELHI RATE IS LOWER, NO FRESH HIKE OCCURRED",
-    "INDIA: SENSEX +158.70 (+0.22%) TO 72,687.77, NIFTY -19 (-0.08%) TO 22,697.20 AT MID-MORNING; RUPEE OPENED STRONGER BEFORE DRIFTING BACK TOWARD 96"
+    "IRAN CONFIRMS IT RECEIVED A US COUNTERPROPOSAL VIA QATARI MEDIATORS, IS 'CONSIDERING' IT — CONTENTS UNDISCLOSED",
+    "TRUMP: 'I'VE OFFERED THEM NOTHING' — SAYS IRAN IS 'FAILING VERY BADLY, VERY BADLY', PREDICTS THE WAR ENDS 'VERY, VERY SOON'",
+    "TRUMP CLAIMS 'TOTAL CONTROL' OF THE STRAIT OF HORMUZ AND THAT IRAN'S NAVY AND AIR FORCE ARE 'GONE' — UNVERIFIED, HIS OWN STATEMENT",
+    "IRAN'S RIAL HITS A FRESH RECORD LOW (~2.5M/USD), DOWN ~19% THIS MONTH ALONE AND ROUGHLY A THIRD OF ITS PRE-WAR VALUE",
+    "WEDNESDAY'S CLOSE: SENSEX ~72,480, NIFTY 22,620.45 (-95.75/-0.42%) — A SOFT FINISH TO SEPTEMBER",
+    "INDIA: GIFT NIFTY SIGNALS A WEAK THURSDAY OPEN ON ELEVATED CRUDE, HIGH US YIELDS AND CONTINUED FII SELLING",
+    "OIL READINGS CONFLICT SHARPLY FOR OCT 1: SPOT BRENT ~$97-98, BUT ONE SOURCE CITES FUTURES SPIKING TO $103.50 AND ANOTHER WTI EASING TOWARD $89-90 ON A MIDEAST-SHIPMENTS-RECOVERING NARRATIVE"
   ],
   "whatChanged": {
-    "label": "What changed — Wednesday September 30, 12:30 PM IST (Day 215)",
+    "label": "What changed — Thursday October 1, 11:30 AM IST (Day 216)",
     "items": [
       {
         "color": "amber",
-        "bold": "Mediators push on despite the rejection; Iran details revised terms, Trump calls them 'unacceptable'",
-        "text": "Iran's FM Araghchi met mediators separately in New York Monday and said he expects a formal US response to Tehran's revised proposal: a 4-5 day US timeline to release frozen Iranian funds, lift oil sanctions and end the naval blockade of Iranian ports, with nuclear talks beginning within seven days. Trump rejected it as 'unacceptable,' saying Iran wants a swift deal 'because of the economic pressure it is under.' Iran's Rezaei countered that Trump is 'trapped in a quagmire where he can neither negotiate nor fight.'"
+        "bold": "Iran confirms it received a US counterproposal; Trump denies offering anything",
+        "text": "Iranian officials and state media said Wednesday that Tehran received an official US response, transmitted via Qatari mediators, to its seven-day ceasefire proposal — without disclosing what the response contained or whether Iran has decided how to answer. Trump separately said US and Iranian negotiators are talking via mediators but insisted he has 'offered them NOTHING' to reach a deal."
       },
       {
         "color": "amber",
-        "bold": "Middle East oil exports reported near pre-war levels; Brent eases as Iran's chokepoint leverage is questioned",
-        "text": "Saudi Arabia's crude exports are now reported at their highest level since the war began, despite a pipeline outage, and Middle East oil and LNG exports through Hormuz are picking up; Bloomberg describes Brent as holding losses on exports 'seen near pre-war level.' A CNN Business analysis argues 'Iran has lost considerable leverage in the Strait of Hormuz' and 'can't go on like this forever' — in tension with vessel-count sitreps that still read near-total closure."
-      },
-      {
-        "color": "amber",
-        "bold": "Yemeni government counteroffensive against the Houthis intensifies",
-        "text": "Yemeni government forces claimed 414 operations against Houthi capabilities in 24 hours (Sept 29); Al Jazeera reports escalating battles Sept 30 with the government warning civilians to stay clear of Houthi positions. This is one-sided reporting from the government side of an offensive that began Sept 3 and has, per UN figures, killed 700+ and displaced roughly 130,000 within Yemen — not yet independently corroborated as a turning point."
+        "bold": "Trump: Iran is 'failing very badly'; claims 'total control' of Hormuz",
+        "text": "Trump said Iran is 'failing very badly, very badly' and predicted the war will be 'over very, very soon,' without elaborating. He separately claimed the US has 'total control of the Hormuz Strait' and that Iran's Navy and Air Force are 'gone' — his own statements, not independently verified, and carried here as rhetoric rather than confirmed fact."
       },
       {
         "color": "red",
-        "bold": "Data correction: this page's 'Delhi' fuel prices were actually Mumbai's",
-        "text": "Cross-checking city-wise aggregators this cycle found the ₹111.21 petrol / ₹97.83 diesel this page has carried under 'Petrol/Diesel (Delhi)' consistently matches Mumbai's rate, not Delhi's, which multiple sources put at ₹102.12 / ₹95.20. Corrected this cycle. This also resolves yesterday's flagged, unconfirmed 'OMC hike' — no fresh hike occurred; the conflict was a carried-forward city mislabel."
+        "bold": "Iran's rial hits a fresh record low",
+        "text": "The rial traded at roughly 2.5-2.567 million to the US dollar Sept 30 — a new record low, down about 19% this month alone and roughly a third of its pre-war value (it stood near 1.5-1.6 million/USD in February). The currency collapse is a direct indicator of the economic toll seven months of war and sanctions pressure have taken on Iran."
       },
       {
         "color": "amber",
-        "bold": "Markets mixed at mid-morning; rupee drifts back toward 96",
-        "text": "Sensex rose 158.70 points (+0.22%) to 72,687.77 while Nifty slipped 19 points (-0.08%) to 22,697.20 as of roughly 11:00 AM IST — a steadier, more mixed session than Monday and Tuesday's rout. The rupee opened 4 paise stronger at 95.95 (vs Tuesday's 95.99 close) before drifting back toward 96 as the RBI reportedly intervened. Brent eased to roughly $103, down from $105-107 earlier in the week, on the oil-exports-near-pre-war narrative."
+        "bold": "Indian markets: a soft September close, a weak October open signalled",
+        "text": "Wednesday's close: Sensex around 72,480 (a modest decline, exact point move disputed across sources [VERIFY]), Nifty down 95.75 points (-0.42%) to 22,620.45. GIFT Nifty signals a weak start Thursday on elevated crude prices, multi-year-high US bond yields and continued FII selling."
+      },
+      {
+        "color": "amber",
+        "bold": "Oil readings conflict sharply for Oct 1",
+        "text": "The most-corroborated live tracker puts spot Brent around $97.4-98, but one source cites November Brent futures spiking to $103.50 overnight and another describes WTI easing toward $89-90 on reports that Middle East shipments are recovering — consistent with this page's Sept 29-30 export-recovery narrative. These figures do not reconcile; several aggregators appear to conflate WTI, Brent and futures-contract months."
       }
     ]
   },
   "deaths": "7,199+",
   "econ": {
-    "sensex": "Rose 158.70 points (+0.22%) to 72,687.77 as of roughly 11:00 AM IST — a steadier session than Monday and Tuesday's rout. Nifty slipped 19 points (-0.08%) to 22,697.20 over the same window.",
-    "sensexDelta": "A mixed, more stable session after two days of steep falls, as Brent eased on reports of Middle East oil exports nearing pre-war levels.",
-    "sensexSub": "Nifty essentially flat around 22,700. India VIX not freshly sourced this cycle [VERIFY].",
+    "sensex": "Wednesday's close: Sensex around 72,480 (a modest decline, exact point move disputed across sources [VERIFY]), Nifty down 95.75 points (-0.42%) to 22,620.45. GIFT Nifty signals a weak start Thursday on elevated crude, high US yields and continued FII selling.",
+    "sensexDelta": "A soft finish to September rather than a sharp move either way; Thursday's signalled weak open tracks persistent crude and yield pressure rather than any single new war headline.",
+    "sensexSub": "India VIX not freshly sourced this cycle [VERIFY]. FII selling reported continuing into Thursday's pre-open.",
     "vix": "India VIX surged approximately 15% at Monday's open, reversing its prior retreat toward 11 (last confirmed 10.93, Sept 22).",
     "vixDelta": "No fresher VIX print sourced this cycle; carried at Monday's level pending an update.",
     "fpi": "September figures diverge across sources: ₹17,131cr (Sept 27 depository print, equity-only) to ₹23,676cr (wire figure) month-to-date, against ₹20,974cr carried two cycles ago (to Sept 18). Year-to-date outflow ~₹2.45 lakh crore, already above all of 2025's ₹1.66 lakh crore.",
     "fpiDelta": "Drivers unchanged: the Fed's 3.75-4.00% rate, a US 10-year yield near 5.24%, Brent above $105, a rupee that has now crossed 96. DIIs continue to absorb the selling.",
-    "wealth": "Brent eased to roughly $103 Wednesday, down from $105-107 earlier in the week, as Saudi crude exports were reported at their highest since the war began and Bloomberg described exports as 'seen near pre-war level.' The rupee opened 4 paise stronger at 95.95 before drifting back toward 96 on reported RBI intervention. Correction: this page's carried 'Delhi' petrol/diesel figures (₹111.21 / ₹97.83) were actually Mumbai's; Delhi's true rate is ₹102.12 petrol / ₹95.20 diesel, corrected this cycle — no fresh hike occurred.",
-    "analysis": "Today's more consequential story may be the oil-market one rather than the diplomatic one. Mediators are still working a deal Trump has publicly rejected, and Iran's own rhetoric ('trapped in a quagmire') suggests neither side sees an immediate off-ramp. But Middle East exports — Saudi crude at a war-time high, Hormuz LNG picking up — are now reported approaching pre-war levels, and a CNN analysis goes as far as arguing Iran's chokepoint leverage has substantively eroded. That is in direct tension with vessel-count sitreps that still describe near-total closure, and this page cannot yet say which framing is closer to true. For India, the more concrete news this cycle is a correction rather than an escalation: this page's 'Delhi' fuel-price figures turn out to have been Mumbai's, and the actual Delhi rate is meaningfully lower with no fresh hike behind it. Markets read as a pause rather than a reversal — Sensex up modestly, Nifty flat, the rupee giving back an early gain."
+    "wealth": "Oil readings conflict sharply for Oct 1: spot Brent around $97.4-98 on the most-corroborated tracker, against a reported overnight futures spike to $103.50 and a separate WTI easing toward $89-90 on a Middle East shipments-recovering narrative — unreconciled. The rupee remains near 96. Separately, Iran's own currency, the rial, hit a fresh record low (~2.5 million/USD), down ~19% this month alone.",
+    "analysis": "Diplomatically, the war is in a holding pattern that is nonetheless moving: Iran now confirms it has a formal US counterproposal in hand, even as Trump insists he has conceded nothing and predicts an end 'very, very soon' without specifics. The more striking data point today is economic and one-sided — Iran's rial has lost roughly a third of its pre-war value and set a fresh record low overnight, a direct read on how much strain the war and sanctions have put on Iran's own economy, distinct from the oil-and-shipping channels this page tracks for India. For India itself, the picture is more mixed than alarming: a soft September close, a weak October open signalled on crude and yields rather than a new shock, and oil price readings that are genuinely too inconsistent across sources today to draw a confident conclusion from."
   },
   "hormuzStatus": {
-    "status": "Near total closure. A Sept 28 sitrep puts tracked transits at roughly 3% of pre-war levels (7-day average 3.1% overall, about 1% for tankers) — the tightest reading of the war. Trump separately claims more than 20 million barrels moved through the Strait over the weekend, calling it the largest flow since the war began; this is not reconciled with the sitrep figure and neither side has published a counting methodology. Explosions were reported near Qeshm Island on Sept 27, hours after Trump's rejection of Iran's reopening plan became public, with reports of multiple anti-ship missiles or drones fired at transiting vessels against Tehran's wishes (attribution unconfirmed). On Sept 28, US Energy Secretary Chris Wright and Treasury Secretary Bessent separately put Hormuz barrel flow at 13-22 million bpd — approaching the ~20 million bpd pre-war baseline — a figure that sits in tension with vessel-transit data (still near zero) rather than confirming either side's account. Iran's Deputy FM Gharibabadi said the Strait 'remains closed' and that any vessel passing through does so 'in coordination with Iran'; CENTCOM directly disputed this, saying 'Iran does not control the Strait of Hormuz.' Sept 29-30: Saudi Arabia's crude exports are now reported at their highest level since the war began despite a pipeline outage, and Middle East oil/LNG exports through Hormuz are picking up; Bloomberg describes Brent as holding losses on exports 'seen near pre-war level.' A CNN Business analysis argues Iran's Hormuz leverage has substantively eroded — in direct tension with vessel-count sitreps that still read near-total closure.",
+    "status": "Near total closure. A Sept 28 sitrep puts tracked transits at roughly 3% of pre-war levels (7-day average 3.1% overall, about 1% for tankers) — the tightest reading of the war. Trump separately claims more than 20 million barrels moved through the Strait over the weekend, calling it the largest flow since the war began; this is not reconciled with the sitrep figure and neither side has published a counting methodology. Explosions were reported near Qeshm Island on Sept 27, hours after Trump's rejection of Iran's reopening plan became public, with reports of multiple anti-ship missiles or drones fired at transiting vessels against Tehran's wishes (attribution unconfirmed). On Sept 28, US Energy Secretary Chris Wright and Treasury Secretary Bessent separately put Hormuz barrel flow at 13-22 million bpd — approaching the ~20 million bpd pre-war baseline — a figure that sits in tension with vessel-transit data (still near zero) rather than confirming either side's account. Iran's Deputy FM Gharibabadi said the Strait 'remains closed' and that any vessel passing through does so 'in coordination with Iran'; CENTCOM directly disputed this, saying 'Iran does not control the Strait of Hormuz.' Sept 29-30: Saudi Arabia's crude exports are now reported at their highest level since the war began despite a pipeline outage, and Middle East oil/LNG exports through Hormuz are picking up; Bloomberg describes Brent as holding losses on exports 'seen near pre-war level.' A CNN Business analysis argues Iran's Hormuz leverage has substantively eroded — in direct tension with vessel-count sitreps that still read near-total closure. Sept 30-Oct 1: Trump claimed the US has 'total control' of the Strait and that Iran's Navy and Air Force are 'gone' — his own statement, not independently verified. Oil price readings for Oct 1 conflict sharply across sources (spot Brent ~$97-98 vs. a reported futures spike to $103.50 vs. WTI easing toward $89-90), consistent with no single reconciled picture of current throughput or price.",
     "preWarFlow": "~90-140 ships/day",
     "currentFlow": "Sept 28 sitrep: ~3% of pre-war transits, 7-day average 3.1% (about 1% tankers). Trump's competing claim of 20M+ barrels moved over the weekend is carried separately, unreconciled. This sits on top of the already-unresolved Reuters/Windward/Wright transit-count conflicts carried since Sept 18. Bab el-Mandeb: no update sourced this cycle. IMF PortWatch recorded just 1 tracked transit on Sept 20 against an ~85/day pre-crisis baseline. Separately, US officials now cite barrel-volume flow of 13-22M bpd — a figure not reconciled with the vessel-count data above.",
     "reduction": "Brent settled around $104.5 Friday (on Iran's call for the US to return to the summer's failed interim deal) before rising above $106 at Monday's open following Trump's rejection of Iran's seven-day plan. It remains roughly 63% above the pre-war $65. Goldman: $120 if attacks intensify, $80 if Gulf exports normalise.",
@@ -82,6 +81,10 @@
     "indianCasualtyDetail": "5th confirmed Indian death of the war: Suraj Yadav, 26, a wiper from Deoria, Uttar Pradesh, died of head injuries after MV Cape Dao was struck by two projectiles near the Strait of Hormuz on Sept 23 (Forward Seamen's Union of India; Shipping Minister Sarbananda Sonowal). Government sources cite at least 13 Indian nationals killed in the Gulf region since February, a broader figure than this page's confirmed-death count. Earlier: a crew member aboard UAE tanker MOMBASA killed by an Iranian cruise missile in Omani waters (Jul 14); 3 Indian sailors killed on MT Settebello (Jun 8, US Navy strike). DGMA's standing advisory against deploying Indian seafarers on Hormuz-transiting voyages remains in force. ACTIVE, UNRESOLVED: the Panama-flagged tanker El Gaia discrepancy (23 crew evacuated/2 missing per Oman vs. '14 Indian crew, 1 missing' reported by Indian outlets) remains unreconciled and is not added to this page's confirmed count. For scale: the war's total merchant-marine toll (last sourced Sept 11) stood at 21+ seafarers killed across 75 attacked vessels."
   },
   "hormuzEvents": [
+    {
+      "d": "Oct 1",
+      "e": "DAY 216 (updated 11:30 AM IST Thursday) — IRAN CONFIRMS A US RESPONSE IN HAND, TRUMP CLAIMS 'TOTAL CONTROL', AND IRAN'S CURRENCY COLLAPSES FURTHER. Iranian officials and state media said Wednesday that Tehran has received an official US response, transmitted through Qatari mediators, to its seven-day ceasefire and phased-reopening proposal — without disclosing the response's contents or whether Iran has decided how to answer it. Trump, asked about the talks, said US and Iranian negotiators are in contact via mediators but insisted he has 'offered them NOTHING' to secure a deal. He separately said Iran is 'failing very badly, very badly' and predicted the war will be 'over very, very soon' without elaborating, and claimed the US now has 'total control of the Hormuz Strait' with Iran's Navy and Air Force 'gone' — statements from Trump himself, not independently corroborated, and carried here as rhetoric rather than confirmed fact. The more concrete development is economic, and one-sided: Iran's rial traded at roughly 2.5 to 2.567 million to the US dollar on Sept 30, a fresh record low, down about 19% in September alone and roughly a third of its pre-war value — it stood near 1.5 to 1.6 million per dollar in February, before the war began. The currency collapse is among the clearest single indicators yet of the economic toll seven months of war and sanctions pressure have taken on Iran's own population, distinct from the oil-price and shipping-cost channels this page tracks for India's exposure. On the Bab el-Mandeb front, no materially new update was sourced this cycle beyond the intensifying Yemeni government counteroffensive against the Houthis already carried; treated as ongoing rather than restated as new. Markets: Wednesday's close put Sensex around 72,480 (a modest decline, with sources disagreeing on the exact point move) and Nifty down 95.75 points (-0.42%) to 22,620.45, a soft finish to September. GIFT Nifty signals a weak Thursday open on elevated crude prices, multi-year-high US bond yields and continued FII selling. Oil price readings for today conflict sharply across sources: the most-corroborated live tracker puts spot Brent around $97.4-98, one source cites November Brent futures spiking to $103.50 overnight, and another describes WTI easing toward $89-90 on reports that Middle East shipments are recovering — consistent with this page's Sept 29-30 export-recovery narrative, but none of these figures reconcile with each other, and several aggregators appear to conflate WTI, Brent and different futures-contract months."
+    },
     {
       "d": "Sep 30",
       "e": "DAY 215 (updated 12:30 PM IST Wednesday) — EXPORTS NEAR PRE-WAR LEVELS, A YEMEN COUNTEROFFENSIVE INTENSIFIES, AND A FUEL-PRICE CORRECTION. Diplomacy ground on without a breakthrough: Iran's FM Araghchi met mediators separately in New York Monday (Sept 28) and said he expects a formal US response to Tehran's revised proposal — a 4-5 day US timeline to release frozen Iranian funds, lift oil sanctions and end the naval blockade of Iranian ports, with nuclear talks to begin within seven days. Trump rejected the terms as 'unacceptable,' telling reporters Iran wants a swift deal 'because of the economic pressure it is under.' Iran's Supreme National Security Council Secretary Mohsen Rezaei countered that Trump is 'trapped in a quagmire where he can neither negotiate nor fight.' The more consequential shift may be economic: Saudi Arabia's crude exports are now reported at their highest level since the war began, despite an ongoing pipeline outage, and Middle East oil and LNG exports through Hormuz are picking up; Bloomberg described Brent as holding losses on exports 'seen near pre-war level,' and a CNN Business analysis went further, arguing 'Iran has lost considerable leverage in the Strait of Hormuz' and 'can't go on like this forever.' This sits in direct tension with vessel-count sitreps, which still describe near-total closure, and with no single reconciled methodology this page cannot yet say which framing is closer to the truth — only that the export-recovery narrative is now coming from multiple independent outlets rather than US officials alone. On the Bab el-Mandeb front, Yemeni government forces claimed 414 operations against Houthi capabilities in a 24-hour period (Sept 29), and Al Jazeera reported escalating battles Sept 30 with the government warning civilians to stay clear of Houthi positions — one-sided reporting from an offensive that began Sept 3 and has, per UN figures, killed over 700 and displaced roughly 130,000 within Yemen, with 3,000+ fleeing by boat to Africa; not yet independently corroborated as a turning point. Separately, this page corrected a data error: cross-checking city-wise fuel-price aggregators found the ₹111.21 petrol / ₹97.83 diesel carried under 'Petrol/Diesel (Delhi)' for several cycles consistently matches Mumbai's rate, not Delhi's (₹102.12 / ₹95.20) — corrected this cycle, and resolving yesterday's flagged, unconfirmed 'OMC hike' as a city mislabel rather than a real price move. Markets: Sensex rose 158.70 points (+0.22%) to 72,687.77 while Nifty slipped 19 points (-0.08%) to 22,697.20 as of roughly 11:00 AM IST, a steadier session after Monday and Tuesday's rout. The rupee opened 4 paise stronger at 95.95 (vs Tuesday's 95.99 close) before drifting back toward 96 on reported RBI intervention. Brent eased to roughly $103, down from $105-107 earlier in the week."
@@ -384,6 +387,12 @@
   ],
   "military": [
     {
+      "t": "Sep 30-Oct 1 — Iran confirms a US counterproposal in hand; Trump claims 'total control' of Hormuz; Iran's rial hits a fresh record low",
+      "lv": "ACTIVE",
+      "color": "amber",
+      "d": "Iran confirms (Sept 30) it received a formal US response via Qatari mediators to its seven-day proposal; contents undisclosed. Trump: 'I've offered them NOTHING'; says Iran is 'failing very badly' and predicts the war ends 'very, very soon'; separately claims 'total control' of Hormuz and that Iran's Navy/Air Force are 'gone' — his own unverified statements. Iran's rial hit a fresh record low (~2.5M/USD), down ~19% this month and roughly a third of its pre-war value. No materially new update this cycle on the Yemeni government's counteroffensive against the Houthis, carried as ongoing."
+    },
+    {
       "t": "Sep 29-30 — Mediators push on despite Trump's rejection; oil exports reported near pre-war levels; Yemeni government counteroffensive against the Houthis intensifies",
       "lv": "ACTIVE",
       "color": "amber",
@@ -617,14 +626,14 @@
   "radar": [
     {
       "axis": "Oil Shock",
-      "w1": 96,
-      "now": 92,
+      "w1": 92,
+      "now": 90,
       "w4": 60
     },
     {
       "axis": "Market Crash",
-      "w1": 71,
-      "now": 66,
+      "w1": 66,
+      "now": 69,
       "w4": 45
     },
     {
@@ -635,20 +644,20 @@
     },
     {
       "axis": "Hormuz Closure",
-      "w1": 95,
-      "now": 90,
+      "w1": 90,
+      "now": 88,
       "w4": 80
     },
     {
       "axis": "Household",
-      "w1": 78,
+      "w1": 74,
       "now": 74,
       "w4": 15
     },
     {
       "axis": "Currency",
-      "w1": 73,
-      "now": 72,
+      "w1": 72,
+      "now": 73,
       "w4": 40
     },
     {
@@ -665,8 +674,8 @@
     }
   ],
   "assessment": {
-    "headline": "Mediators keep working a deal Trump has publicly rejected, while Middle East oil exports are reported nearing pre-war levels — a CNN analysis says Iran's Hormuz leverage is eroding. A Yemeni government counteroffensive against the Houthis intensifies, and this page corrects a carried fuel-price error.",
-    "body": "WHAT HAPPENED\nIran's Araghchi met mediators in New York Monday and expects a formal US response to Tehran's revised proposal (a 4-5 day fund-release/sanctions/blockade timeline, nuclear talks within seven days); Trump called it 'unacceptable.' Iran's Rezaei says Trump is 'trapped in a quagmire.' Separately, Saudi crude exports are reported at a war-time high and Middle East exports more broadly are described as nearing pre-war levels, with a CNN Business analysis arguing Iran's chokepoint leverage has substantively eroded — a claim in tension with vessel-count sitreps still showing near-total closure. On the Yemen front, government forces claim an intensifying counteroffensive against the Houthis.\n\nWHY IT MATTERS FOR INDIA\nIf the export-recovery narrative holds up, it would ease the oil-price and shipping-cost channels that matter most directly to India — and Brent did ease to roughly $103 today. But this page cannot yet reconcile it with the vessel-count data, so treat it as a developing story rather than a resolved one. More concretely: a cross-check this cycle found this page's carried 'Delhi' fuel prices were actually Mumbai's, and the real Delhi rate is lower with no fresh hike behind it — a correction that matters more for the household-budget picture than yesterday's flagged, unconfirmed hike did.\n\nTHE THING TO WATCH\nWhether the oil-export recovery is corroborated by an actual vessel-count uptick, or remains a barrel-volume story sitting awkwardly next to a near-zero-transit sitrep. Also whether the Yemeni government's claimed 414-operation, 24-hour tempo is independently verified or turns out to be one-sided reporting. Confidence: moderate; Hormuz throughput and the US sanctions-relief claim both remain unreconciled."
+    "headline": "Iran confirms it has a US counterproposal in hand while Trump insists he's conceded nothing and predicts the war ends 'very soon.' Iran's own currency hits a fresh record low. Indian markets close September softly and signal a weak October open on crude and yields.",
+    "body": "WHAT HAPPENED\nIran confirmed Wednesday it received a formal US response, via Qatari mediators, to its seven-day ceasefire proposal — contents undisclosed. Trump says he's 'offered them NOTHING,' calls Iran 'failing very badly,' and predicts the war ends 'very, very soon'; he also claims 'total control' of Hormuz and that Iran's Navy and Air Force are 'gone' — his own statements, unverified. Separately, Iran's rial hit a fresh record low, down roughly a third of its pre-war value.\n\nWHY IT MATTERS FOR INDIA\nThe diplomatic track remains genuinely unresolved — a counterproposal in hand is progress of a kind, but neither side's public rhetoric suggests an imminent deal. Oil price readings for India's own exposure are unusually inconsistent today, with spot, futures and WTI figures all pointing in different directions; this page cannot responsibly draw a single conclusion from today's crude data. Markets reflect that uncertainty — a soft close, a weak open signalled, nothing dramatic either way.\n\nTHE THING TO WATCH\nWhether Iran's response to the US counterproposal becomes public, and whether Trump's 'very soon' prediction is followed by anything concrete or simply repeats a pattern of optimistic rhetoric without a deal. Confidence: moderate-to-low this cycle specifically on oil pricing, given how sharply sources disagree; higher on the diplomatic and currency developments, which are corroborated across multiple outlets."
   },
   "featured": [
     {
@@ -1570,17 +1579,27 @@
       "rupee": 95.98,
       "tag": "(11:00AM IST): Mediators continue working a deal Trump publicly rejected; Iran's Rezaei says Trump is 'trapped in a quagmire.' Saudi crude exports reported at a war-time high; Brent eased to ~$103 on an oil-exports-near-pre-war narrative that CNN says reflects eroding Iranian Hormuz leverage — in tension with vessel-count data still showing near-total closure. Yemeni government forces claim 414 anti-Houthi operations in 24h as Bab el-Mandeb-front fighting escalates. INDIA: Sensex +158.70 (+0.22%) to 72,687.77, Nifty -19 (-0.08%) to 22,697.20; rupee drifted back toward 96 after a stronger open. Correction: this page's 'Delhi' fuel prices were actually Mumbai's; true Delhi rate is lower, no fresh hike occurred.",
       "sev": 3
+    },
+    {
+      "d": 216,
+      "l": "Oct 1",
+      "deaths": 7199,
+      "brent": 97.5,
+      "nifty": 22620.45,
+      "rupee": 96.1,
+      "tag": "(WED CLOSE / THU PRE-OPEN): Iran confirms it received a US counterproposal via Qatari mediators; Trump says he's 'offered them NOTHING', calls Iran 'failing very badly', predicts the war ends 'very soon', and claims 'total control' of Hormuz (unverified). Iran's rial hits a fresh record low, down ~19% this month. INDIA: Wednesday close Sensex ~72,480, Nifty 22,620.45 (-0.42%); GIFT Nifty signals a weak Thursday open on elevated crude and FII selling. Oct 1 oil readings conflict sharply across sources (Brent ~$97-98 vs reported $103.50 futures spike vs WTI ~$89-90).",
+      "sev": 3
     }
   ],
   "exec": {
     "level": "SEVERE",
-    "phase": "Mediators continue working a deal Trump has publicly rejected; Iran's Rezaei says Trump is 'trapped in a quagmire.' Middle East oil exports are reported nearing pre-war levels, easing Brent to roughly $103, even as a Yemeni government counteroffensive against the Houthis intensifies. Indian markets are mixed at mid-morning after two days of steep falls.",
-    "oilNote": "Brent eased to roughly $103 Wednesday from $105-107 earlier in the week, as Saudi crude exports were reported at a war-time high and Bloomberg described Middle East exports as 'seen near pre-war level.' A CNN Business analysis argues this reflects eroding Iranian leverage over the Strait — in tension with vessel-count sitreps still reading near-total closure.",
-    "shipping": "OIL EXPORTS REPORTED NEARING PRE-WAR LEVELS EVEN AS VESSEL-COUNT SITREPS STILL SHOW NEAR-TOTAL CLOSURE",
-    "shippingSub": "CNN Business: 'Iran has lost considerable leverage in the Strait of Hormuz... it can't go on like this forever.' No single methodology reconciles the vessel-count and export-volume readings.",
-    "military": "YEMENI GOVERNMENT FORCES CLAIM 414 ANTI-HOUTHI OPERATIONS IN 24 HOURS AS BAB EL-MANDEB-FRONT FIGHTING ESCALATES",
-    "militarySub": "Part of a Sept 3 government counteroffensive UN figures put at 700+ killed and ~130,000 displaced within Yemen — one-sided government reporting, not yet independently corroborated as a turning point.",
-    "indiaSub": "Sensex +158.70 (+0.22%) to 72,687.77, Nifty -19 (-0.08%) to 22,697.20 as of ~11:00 AM IST, a steadier session after Monday-Tuesday's rout. Rupee opened stronger at 95.95 before drifting back toward 96. Correction: this page's carried 'Delhi' petrol/diesel figures were actually Mumbai's; true Delhi rate (₹102.12/₹95.20) is lower, with no fresh hike behind it."
+    "phase": "Iran confirms it received a US counterproposal via Qatari mediators and is considering it; Trump insists he's 'offered them NOTHING,' calls Iran 'failing very badly,' and predicts the war ends 'very soon.' Iran's rial hits a fresh record low. Indian markets close September softly and signal a weak October open.",
+    "oilNote": "Oil readings for Oct 1 conflict sharply: spot Brent reads ~$97.4-98 on the most-corroborated tracker, against a reported overnight futures spike to $103.50 and a separate WTI reading easing toward $89-90 on a Middle East shipments-recovering narrative. Unreconciled; several aggregators appear to conflate WTI, Brent and futures-contract months.",
+    "shipping": "TRUMP CLAIMS 'TOTAL CONTROL' OF THE STRAIT OF HORMUZ AND THAT IRAN'S NAVY AND AIR FORCE ARE 'GONE' — HIS OWN STATEMENT, NOT INDEPENDENTLY VERIFIED",
+    "shippingSub": "No fresh vessel-count or barrel-volume sitrep sourced this cycle to test the claim against; carried as rhetoric pending verification.",
+    "military": "IRAN'S RIAL HITS A FRESH RECORD LOW (~2.5M/USD), DOWN ~19% THIS MONTH AND ROUGHLY A THIRD OF ITS PRE-WAR VALUE",
+    "militarySub": "A direct economic-toll indicator rather than a battlefield development; no materially new update this cycle on the Yemeni government's counteroffensive against the Houthis, carried as ongoing.",
+    "indiaSub": "Wednesday's close: Sensex ~72,480, Nifty 22,620.45 (-95.75/-0.42%) — a soft finish to September. GIFT Nifty signals a weak Thursday open on elevated crude, high US yields and continued FII selling."
   },
   "hormuzPhases": [
     {
@@ -1634,7 +1653,7 @@
       "days": "Sep 26-"
     }
   ],
-  "_phaseBadge": "Mediators push on despite Trump's rejection; Iran's Rezaei says Trump is 'trapped in a quagmire' · Middle East oil exports reported nearing pre-war levels, easing Brent to ~$103, even as vessel-count sitreps still show near-total Hormuz closure · Yemeni government counteroffensive against the Houthis intensifies · Sensex/Nifty mixed at mid-morning after two days of steep falls · Correction: this page's 'Delhi' fuel prices were actually Mumbai's — no fresh hike occurred",
+  "_phaseBadge": "Iran confirms it received a US counterproposal via Qatari mediators, considering it · Trump: 'I've offered them NOTHING' — calls Iran 'failing very badly', predicts the war ends 'very soon', claims 'total control' of Hormuz (unverified) · Iran's rial hits a fresh record low, down ~19% this month · Indian markets close September softly, signal a weak October open on crude and FII selling · Oct 1 oil readings conflict sharply across sources",
   "budget": {
     "petrolPre": 94.72,
     "petrolNow": 102.12,
@@ -1644,12 +1663,12 @@
     "lpgNow": 942.0
   },
   "brief": [
-    "Mediators push on, Iran hedges harder: Araghchi met mediators in New York, expects a formal US response to Tehran's revised terms. Trump calls them 'unacceptable.' Iran's Rezaei: Trump is 'trapped in a quagmire where he can neither negotiate nor fight.'",
-    "Oil exports reported nearing pre-war levels: Saudi crude exports hit a war-time high; Brent eased to ~$103. CNN Business argues Iran's Hormuz leverage has eroded — in tension with vessel-count sitreps still showing near-total closure.",
-    "A second front heats up: Yemeni government forces claim 414 operations against Houthi capabilities in 24 hours as Bab el-Mandeb-area fighting escalates, part of a Sept 3 counteroffensive UN figures put at 700+ dead and ~130,000 displaced within Yemen.",
-    "A correction, not a hike: this page's carried 'Delhi' petrol/diesel figures turn out to have been Mumbai's. The real Delhi rate is lower, with no fresh price rise behind it — resolving yesterday's flagged, unconfirmed hike."
+    "A counterproposal, but no breakthrough: Iran confirms it received a formal US response via Qatari mediators to its ceasefire plan — contents undisclosed. Trump insists he's 'offered them NOTHING,' calls Iran 'failing very badly,' and predicts the war ends 'very, very soon.'",
+    "Unverified claims of control: Trump says the US has 'total control' of the Strait of Hormuz and that Iran's Navy and Air Force are 'gone' — his own statements, not independently confirmed this cycle.",
+    "Iran's currency keeps collapsing: the rial hit a fresh record low (~2.5 million/USD) on Sept 30, down about 19% this month alone and roughly a third of its pre-war value — a stark read on the war's economic toll on Iran itself.",
+    "Indian markets, a quiet day: Sensex and Nifty closed September softly, and GIFT Nifty signals a weak Thursday open on elevated crude and continued FII selling — no single new shock, more a continuation of recent pressure."
   ],
-  "shareLine": "Mediators keep working a deal Trump has rejected, while Middle East oil exports are reported nearing pre-war levels — CNN says Iran's Hormuz leverage is eroding. A Yemeni government counteroffensive intensifies, and a data correction finds no fresh fuel-price hike after all. #IranWar #Hormuz #IndiaRiskDashboard",
+  "shareLine": "Iran confirms it has a US counterproposal in hand; Trump says he's offered 'NOTHING' and predicts the war ends 'very soon.' Iran's rial collapses to a fresh record low. Indian markets close September softly as oil price readings conflict sharply across sources. #IranWar #Hormuz #IndiaRiskDashboard",
   "author": {
     "name": "Nithiyanandam Yogeswaran",
     "twitter": "https://x.com/prof_nithiya",
@@ -1700,7 +1719,7 @@
     }
   ],
   "geoint": {
-    "_updated": "2026-09-30",
+    "_updated": "2026-10-01",
     "_note": "Analyst-curated from public reporting; coordinates approximate to the named location. Not a live AIS/satellite feed — use the linked free sources to verify. Restored this cycle after being dropped from the file during Sept 22-24 manual edits.",
     "points": [
       {
@@ -1708,8 +1727,8 @@
         "t": "chokepoint",
         "lat": 26.57,
         "lon": 56.25,
-        "d": "Sep 30",
-        "i": "Vessel-count sitreps still show near-total closure, but Saudi crude exports are now reported at a war-time high and Middle East exports more broadly near pre-war levels — an unreconciled split CNN Business attributes to eroding Iranian leverage over the Strait."
+        "d": "Oct 1",
+        "i": "Trump claims 'total control' of the Strait and that Iran's Navy/Air Force are 'gone' — his own unverified statement. No fresh vessel-count or barrel-volume sitrep sourced this cycle to test it against; oil price readings for Oct 1 conflict sharply across sources."
       },
       {
         "n": "Bab el-Mandeb",
