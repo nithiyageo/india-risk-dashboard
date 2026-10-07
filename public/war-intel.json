@@ -1,8 +1,8 @@
 {
-  "_updated": "October 6, 2026 — 8:25 AM IST (Tuesday)",
-  "_asOf": "2026-10-06",
+  "_updated": "October 7, 2026 — 8:20 AM IST (Wednesday)",
+  "_asOf": "2026-10-07",
   "_start": "2026-02-28",
-  "_day": 221,
+  "_day": 222,
   "preWar": {
     "brent": 65,
     "rupee": 91.49,
@@ -11,67 +11,61 @@
     "petrol": 94.72,
     "diesel": 87.62
   },
-  "_phase": "A SAUDI-BACKED YEMENI OFFENSIVE, 'OPERATION DAWN OF YEMEN', LAUNCHED OCT 5 WITH ~100 SAUDI AIRCRAFT AND 324 CLAIMED HOUTHI TARGETS DESTROYED, AIMING TO RETAKE SANAA; HOUTHIS WIDEN THEIR CLAIMED TARGETS TO RIYADH'S KING KHALID AIRPORT; PRESIDENT PEZESHKIAN CALLS US TALKS 'MEANINGLESS', SAYING IRAN HAS BEEN 'ATTACKED THREE TIMES FOLLOWING TALKS'; TRUMP SAYS THE WAR IS 'ESSENTIALLY ALMOST OVER', CALLS HIGHER GAS PRICES 'A SMALL PRICE TO PAY'; INDIAN MARKETS SNAP A 4-DAY LOSING RUN, BRENT EASES TO ~$100",
-  "_note": "Verified across multiple outlets: Haaretz/Fox News/Al Jazeera/oilprice.com (Oct 5: Yemeni government forces, backed by the Saudi-led coalition, launched 'Operation Dawn of Yemen' aiming to retake Sanaa and end Houthi control; coalition spokesperson Maj. Gen. Turki al-Malki said roughly 100 Saudi fighter jets were involved, striking hundreds of Houthi targets and destroying 324 high-value targets; Houthis separately claimed strikes on King Khalid International Airport in Riyadh in addition to the Aramco facility already carried). CBS News (CENTCOM: the US has destroyed 13 commercial ships in the Strait of Hormuz over the past 12 weeks for violating the naval blockade or being part of the IRGC's 'shadow network'; UKMTO separately reports three tankers hit by unknown projectiles over the weekend, consistent with the pattern already carried in recent cycles). Iran International/Gulf News (Oct 5: President Pezeshkian said talks with the US are 'meaningless,' telling Armenia's FM that Iran has been 'attacked three times following talks' and accusing Washington of using diplomacy as cover for pressure and military action — a harder line than FM Araghchi's recent statements, though Tehran continues exchanging messages indirectly with Washington via mediators). CBS News (Trump, speaking in Nebraska: the war is 'essentially almost over,' and higher gasoline prices are 'a small price to pay' to prevent Iran from obtaining a nuclear weapon). Gulf News/Yahoo (Camp David context: another aircraft carrier and thousands more US troops are reported moving toward the Middle East, alongside the already-carried Camp David meeting). Business Standard/Kotak Neo/India TV News (confirmed Oct 5 close: Sensex 72,382.47, +472.77/+0.66%, snapping a four-day losing run; Nifty 22,555.75, +133.8/+0.6%, on easing crude and a firmer rupee) — this is also now confirmed via the site's own auto-synced market-data.json (Brent $100.33, Nifty 22,555.75, Sensex 72,382.47, rupee 96.30), resolving yesterday's [VERIFY] flag. HDFC Sky/Business Recorder (rupee closed 96.2925, barely changed from 96.315 the previous session, anchored by reported RBI intervention). Covers Oct 5 8:25 AM to Oct 6 8:25 AM IST. Day 221.",
-  "_todo": "1) Yesterday's market [VERIFY] is now resolved: Oct 5 closed Sensex 72,382.47 (+0.66%), Nifty 22,555.75 (+0.6%), snapping a four-day losing run — carried with confidence this cycle. 2) 'Operation Dawn of Yemen's' claimed 324 high-value targets destroyed is coalition-sourced and not independently verified; Houthi claims of striking Riyadh's international airport are similarly unconfirmed by Saudi authorities. 3) CENTCOM's '13 commercial ships destroyed in 12 weeks' is a cumulative blockade-enforcement figure distinct from the Houthi/unknown-projectile tanker-strike count this page has been tracking separately — the two should not be conflated. 4) Pezeshkian's 'talks are meaningless' line sits in tension with Iran continuing to exchange indirect messages via mediators — both are carried as true simultaneously rather than resolved into one narrative. 5) September FPI figures still not freshened (last: ₹17,131cr-₹23,676cr month-to-date). 6) The DGMA advisory's July 16 dating vs. its reuse alongside recent deaths remains unresolved (carried forward). 7) The El Gaia casualty discrepancy remains unresolved and is not added to the confirmed Indian death count. 8) War log (timeline) gaps at Sept 10-17, 19-20 and 22 remain open. 9) Indian vessel/seafarer counts near Hormuz (7/148/1) still not re-sourced. 10) Whether 'Operation Dawn of Yemen' actually retakes territory, or stalls like earlier offensives this page has tracked, remains to be seen — treat the operation's stated objective as a claim, not yet an outcome.",
+  "_phase": "YEMENI GOVERNMENT FORCES CLAIM CONCRETE GAINS IN 'OPERATION DAWN OF YEMEN' — DHUBAB DISTRICT AND BAB EL-MANDEB STRAIT CONTROL, ~100 HOUTHI KILLED — BUT THE HOUTHIS DENY LOSING GROUND; THE US IS URGING SHIPS TOWARD AN OMAN-SKIRTING SOUTHERN ROUTE WITH MILITARY ESCORT, WHICH IRAN REJECTS AND HAS BEEN ATTACKING; TRUMP SAYS CONSUMER PRICES WILL 'COME TUMBLING DOWN' WHEN THE WAR ENDS; INDIAN MARKETS RALLY A SECOND STRAIGHT DAY AS BRENT DIPS BELOW $100",
+  "_note": "Verified across multiple outlets: Al Arabiya/Yemen Monitor/The National/FDD (Oct 5-6: Yemeni President Rashad al-Alimi's government forces — the Nation's Shield Forces and Giants Brigades, with popular resistance support — claim to have liberated Dhubab district and taken control of the Bab el-Mandeb Strait and Dhubab Airport as part of Operation Dawn of Yemen; government sources estimate roughly 100 Houthis killed, 150 wounded, 5 drones downed, 6 vehicles/a tank destroyed or disabled — one-sided, coalition-sourced claims). CBS News (the Houthis deny losing ground, even as fighting continues and oil prices ease). CBS News (the US is urging commercial ships toward a southern route hugging Oman's coastline, with US military protection offered; Iran rejects this as a violation of its own blockade terms and has attacked multiple ships attempting to use it — explaining the pattern of recent strikes concentrated in the Strait's southern channel near Oman already carried this week; CENTCOM's '13 commercial ships destroyed in 12 weeks' figure, already carried, was reiterated). Fox News (Trump, Oct 6: war could end soon, consumer prices will 'come tumbling down' once it does; reiterated the war ends 'shortly before or after' the midterms). The Hill (Trump's UN framing, already carried: 'a big decision' between letting Iran rebuild or annihilating the Islamic Republic 'and do it quickly'). Business Standard/Kotak Neo/The Week/India TV News (Oct 6 close, confirmed via the site's own auto-synced market-data.json: Sensex 73,067.81, Nifty 22,776.1 — a second straight day of gains on easing crude, strong Q2 results and positive global cues, banking and metals leading). Note: this cycle found that market-data.json's own self-reported 'change'/'changePct' fields (+1,158.11/+1.61% Sensex, +354.2/+1.58% Nifty) do not match day-over-day arithmetic against yesterday's confirmed close (72,382.47/22,555.75) — the correct change is +685.34 (+0.95%) Sensex and +220.35 (+0.98%) Nifty, which matches external reporting (Business Standard, Kotak Neo: '685 points', '220 points') almost exactly. This page uses the arithmetically- and externally-verified figures rather than the auto-sync's self-reported change, and flags the discrepancy for the maintainer to check the fetch script's reference-close logic. Covers Oct 6 8:25 AM to Oct 7 8:20 AM IST. Day 222.",
+  "_todo": "1) market-data.json's auto-synced 'change'/'changePct' fields do not match day-over-day arithmetic against the previous day's own confirmed close this cycle (a discrepancy of roughly 473 points on Sensex) — this page used the arithmetically-correct, externally-corroborated figures instead, but the underlying fetch script's reference-close logic should be checked; this echoes a similar bug documented and supposedly fixed earlier in this project's history. 2) Yemeni government claims of territorial control (Bab el-Mandeb, Dhubab Airport) and Houthi casualty estimates are one-sided, coalition-sourced, and directly disputed by the Houthis themselves denying losing ground — neither side's account is independently confirmed. 3) Brent's reported dip below $100 intraday Oct 6-7 does not fully reconcile with the site's own auto-synced $101.06 figure (as of Oct 6 23:24 UTC) — treated as a continuation of the easing trend rather than a single resolved number. 4) September FPI figures still not freshened (last: ₹17,131cr-₹23,676cr month-to-date). 5) The DGMA advisory's July 16 dating vs. its reuse alongside recent deaths remains unresolved (carried forward). 6) The El Gaia casualty discrepancy remains unresolved and is not added to the confirmed Indian death count. 7) War log (timeline) gaps at Sept 10-17, 19-20 and 22 remain open. 8) Indian vessel/seafarer counts near Hormuz (7/148/1) still not re-sourced. 9) Whether the US-escorted southern route near Oman becomes a viable, lower-risk corridor or remains a target, given Iran's explicit rejection of it, is worth tracking given it concentrates the strikes this page has followed all week.",
   "ticker": [
-    "'OPERATION DAWN OF YEMEN' LAUNCHED (OCT 5): SAUDI-BACKED YEMENI FORCES, ~100 SAUDI JETS, AIM TO RETAKE SANAA — COALITION CLAIMS 324 HIGH-VALUE HOUTHI TARGETS DESTROYED",
-    "HOUTHIS WIDEN CLAIMED TARGETS TO RIYADH'S KING KHALID INTERNATIONAL AIRPORT, ALONGSIDE THE ARAMCO FACILITY ALREADY STRUCK",
-    "CENTCOM: US HAS DESTROYED 13 COMMERCIAL SHIPS IN THE STRAIT OVER THE PAST 12 WEEKS FOR BLOCKADE VIOLATIONS OR IRGC 'SHADOW NETWORK' TIES",
-    "PRESIDENT PEZESHKIAN: US TALKS ARE 'MEANINGLESS' — IRAN 'ATTACKED THREE TIMES FOLLOWING TALKS'; TEHRAN STILL EXCHANGING INDIRECT MESSAGES VIA MEDIATORS",
-    "TRUMP (NEBRASKA): THE WAR IS 'ESSENTIALLY ALMOST OVER'; HIGHER GAS PRICES ARE 'A SMALL PRICE TO PAY' TO STOP AN IRANIAN NUCLEAR WEAPON",
-    "CONFIRMED: INDIA'S MARKETS SNAP A 4-DAY LOSING RUN — SENSEX +472.77 (+0.66%) TO 72,382.47, NIFTY +133.8 (+0.6%) TO 22,555.75 — ON EASING CRUDE AND A FIRMER RUPEE",
-    "BRENT EASES TO ~$100.33; RUPEE CLOSES NEARLY FLAT AT 96.29"
+    "YEMENI GOVERNMENT FORCES CLAIM CONTROL OF BAB EL-MANDEB STRAIT AND DHUBAB AIRPORT, ~100 HOUTHIS KILLED — HOUTHIS DENY LOSING GROUND",
+    "WHY SHIPS KEEP GETTING HIT NEAR OMAN: US URGES VESSELS TOWARD AN OMAN-SKIRTING SOUTHERN ROUTE WITH MILITARY ESCORT; IRAN REJECTS IT AS A BLOCKADE VIOLATION AND HAS ATTACKED SHIPS USING IT",
+    "TRUMP: CONSUMER PRICES WILL 'COME TUMBLING DOWN' ONCE THE WAR ENDS, 'SHORTLY BEFORE OR AFTER' THE MIDTERMS",
+    "DATA CHECK: THIS SITE'S OWN AUTO-SYNCED MARKET CHANGE FIGURES DON'T MATCH DAY-OVER-DAY ARITHMETIC — CORRECTED TO THE VERIFIED +685/+220-POINT GAINS EXTERNAL SOURCES CONFIRM",
+    "CONFIRMED: INDIA'S MARKETS RALLY A SECOND STRAIGHT DAY — SENSEX +685.34 (+0.95%) TO 73,067.81, NIFTY +220.35 (+0.98%) TO 22,776.10 — ON EASING CRUDE, STRONG Q2 RESULTS",
+    "BRENT DIPS BELOW $100 INTRADAY BEFORE SETTLING NEAR $101 — EASING TREND CONTINUES DESPITE FIERCE YEMEN FIGHTING"
   ],
   "whatChanged": {
-    "label": "What changed — Tuesday October 6, 8:25 AM IST (Day 221)",
+    "label": "What changed — Wednesday October 7, 8:20 AM IST (Day 222)",
     "items": [
       {
+        "color": "amber",
+        "bold": "Yemeni government claims concrete gains; Houthis deny losing ground",
+        "text": "President al-Alimi's forces claim to have liberated Dhubab district and taken control of the Bab el-Mandeb Strait and Dhubab Airport, with roughly 100 Houthis reported killed — one-sided, government-sourced claims. The Houthis directly dispute this, denying they have lost ground even as fighting continues."
+      },
+      {
+        "color": "amber",
+        "bold": "A causal explanation for the week's strikes near Oman emerges",
+        "text": "The US is urging commercial ships toward a southern route hugging Oman's coastline, offering military protection; Iran rejects this route as a violation of its own blockade terms and has attacked multiple ships attempting to use it — explaining the concentration of recent strikes in the Strait's southern channel near Oman already tracked this week."
+      },
+      {
+        "color": "amber",
+        "bold": "Trump: consumer prices will 'come tumbling down' when the war ends",
+        "text": "Trump said the war could end soon and that consumer prices, including gasoline, will 'come tumbling down' once it does, reiterating his timeline of the war ending 'shortly before or after' the November midterms."
+      },
+      {
         "color": "red",
-        "bold": "A named, large-scale offensive launches: 'Operation Dawn of Yemen'",
-        "text": "Yemeni government forces, backed by the Saudi-led coalition, launched a major offensive Oct 5 aimed at retaking Sanaa and ending Houthi control — a direct follow-through on the coalition's weekend pledge of support. Roughly 100 Saudi fighter jets were involved, and coalition spokesperson Maj. Gen. Turki al-Malki said forces destroyed 324 high-value Houthi targets. The operation's objective is a claim at this stage, not yet a confirmed outcome."
-      },
-      {
-        "color": "amber",
-        "bold": "Houthis widen their claimed targets to include Riyadh's international airport",
-        "text": "In addition to the Aramco facility already carried, the Houthis claimed strikes on King Khalid International Airport in Riyadh — a further widening of the campaign's claimed target set, unconfirmed by Saudi authorities."
-      },
-      {
-        "color": "amber",
-        "bold": "CENTCOM: 13 commercial ships destroyed over 12 weeks enforcing the blockade",
-        "text": "US Central Command said it has destroyed 13 commercial ships in the Strait over the past 12 weeks for violating the naval blockade or being tied to the IRGC's 'shadow network' — a cumulative enforcement figure distinct from the separate tanker-strike-by-unknown-projectile pattern this page has tracked this week."
-      },
-      {
-        "color": "red",
-        "bold": "Pezeshkian, not just his FM, calls US talks 'meaningless'",
-        "text": "President Pezeshkian told Armenia's foreign minister that talks with the US are 'meaningless,' saying Iran has been 'attacked three times following talks' and accusing Washington of using diplomacy as cover for pressure and military action — a harder line, from the president himself, than recent statements from FM Araghchi. Tehran nonetheless continues exchanging messages indirectly via mediators."
-      },
-      {
-        "color": "amber",
-        "bold": "Trump: the war is 'essentially almost over'; higher gas prices a 'small price to pay'",
-        "text": "Speaking in Nebraska, Trump said the war with Iran is 'essentially almost over' and called higher gasoline prices 'a small price to pay' to prevent Iran from obtaining a nuclear weapon — a notably blunt acknowledgment of the war's domestic economic cost."
+        "bold": "Data integrity check: this site's own auto-sync figures didn't add up",
+        "text": "This cycle found that market-data.json's self-reported day-over-day change (+1,158.11/+1.61% Sensex) doesn't match simple arithmetic against yesterday's own confirmed close — the correct change is +685.34 (+0.95%), which matches external reporting almost exactly. Corrected here; the underlying fetch script's reference-close logic should be checked separately."
       },
       {
         "color": "green",
-        "bold": "India's markets snap a four-day losing run; Brent eases",
-        "text": "Confirmed: Sensex rose 472.77 points (+0.66%) to 72,382.47 and Nifty gained 133.8 (+0.6%) to 22,555.75 on Oct 5, ending a four-day slide as crude eased and the rupee firmed slightly. Brent settled around $100.33; the rupee closed nearly flat at 96.29."
+        "bold": "India's markets rally a second straight day; Brent dips below $100",
+        "text": "Confirmed: Sensex rose 685.34 points (+0.95%) to 73,067.81 and Nifty gained 220.35 (+0.98%) to 22,776.10, a second consecutive day of gains on easing crude, strong Q2 corporate results and positive global cues, with banking and metals leading. Brent dipped below $100 intraday before settling near $101."
       }
     ]
   },
   "deaths": "7,199+",
   "econ": {
-    "sensex": "Confirmed Oct 5 close: Sensex +472.77 (+0.66%) to 72,382.47, Nifty +133.8 (+0.6%) to 22,555.75 — snapping a four-day losing streak.",
-    "sensexDelta": "Driven by easing crude prices and a steadier rupee rather than any single positive war headline — markets rallied even as the Yemen front escalated sharply, suggesting oil-price direction is weighing more heavily on sentiment than headline risk alone.",
-    "sensexSub": "India VIX not freshly sourced this cycle [VERIFY].",
+    "sensex": "Confirmed Oct 6 close: Sensex +685.34 (+0.95%) to 73,067.81, Nifty +220.35 (+0.98%) to 22,776.10 — a second straight day of gains on easing crude, strong Q2 results and positive global cues, banking and metals leading.",
+    "sensexDelta": "Two consecutive positive sessions now, even as the Yemen front has escalated into a named, large-scale offensive — markets appear to be tracking the oil-price direction more closely than the week's battlefield headlines.",
+    "sensexSub": "India VIX not freshly sourced this cycle [VERIFY]. Nifty Bank +414pts to 55,128; Nifty Midcap +638pts to 59,761, per external reporting.",
     "vix": "India VIX surged approximately 15% at Monday's open, reversing its prior retreat toward 11 (last confirmed 10.93, Sept 22).",
     "vixDelta": "No fresher VIX print sourced this cycle; carried at Monday's level pending an update.",
     "fpi": "September figures diverge across sources: ₹17,131cr (Sept 27 depository print, equity-only) to ₹23,676cr (wire figure) month-to-date, against ₹20,974cr carried two cycles ago (to Sept 18). Year-to-date outflow ~₹2.45 lakh crore, already above all of 2025's ₹1.66 lakh crore.",
     "fpiDelta": "Drivers unchanged: the Fed's 3.75-4.00% rate, a US 10-year yield near 5.24%, Brent above $105, a rupee that has now crossed 96. DIIs continue to absorb the selling.",
-    "wealth": "Brent eased to roughly $100.33, down from $102.31 two days prior. The rupee closed nearly flat at 96.2925 (vs. 96.315 the previous session), anchored by reported RBI intervention amid a firmer dollar and elevated oil.",
-    "analysis": "Markets and the war itself are telling somewhat different stories today. On the ground, a named, large-scale offensive — 'Operation Dawn of Yemen' — has launched with explicit Saudi air support and an explicit goal of retaking Sanaa, while Iran's own president has gone further than his foreign minister in declaring talks with the US meaningless. Yet Brent eased rather than spiked, and Indian equities snapped a four-day losing streak. That divergence may reflect markets pricing in Trump's own 'essentially almost over' framing, or simply a short-term correction after eight weeks of declines unrelated to any single day's headlines. For India, the practical read is that yesterday's session showed resilience despite the week's escalation — worth watching whether that holds if Operation Dawn of Yemen's claims are confirmed or contradicted in the coming days."
+    "wealth": "Brent dipped below $100 a barrel intraday before settling near $101, continuing its easing trend despite fierce fighting in Yemen. The rupee held close to 96.3-96.4. Separately, the US is now directing shipping toward a protected southern route near Oman that Iran explicitly rejects and has attacked — a concrete explanation for this week's pattern of strikes.",
+    "analysis": "A genuinely useful piece of causal context emerged this cycle: the US-escorted southern route near Oman's coast explains why this week's tanker strikes have clustered there — ships using the route Washington is actively promoting are precisely what Iran is targeting to make the point that its own blockade terms, not Washington's, govern passage. On the Yemen front, claimed government gains (Bab el-Mandeb, Dhubab Airport) are directly disputed by the Houthis, so this page treats the operation's actual battlefield outcome as unresolved rather than a government win. For India, the more consequential and better-verified story is market-facing: two straight days of gains and crude easing toward $100, a meaningfully different picture from the single-day rally this page flagged yesterday as worth watching for durability — it has, so far, held."
   },
   "hormuzStatus": {
-    "status": "Near total closure. A Sept 28 sitrep puts tracked transits at roughly 3% of pre-war levels (7-day average 3.1% overall, about 1% for tankers) — the tightest reading of the war. Trump separately claims more than 20 million barrels moved through the Strait over the weekend, calling it the largest flow since the war began; this is not reconciled with the sitrep figure and neither side has published a counting methodology. Explosions were reported near Qeshm Island on Sept 27, hours after Trump's rejection of Iran's reopening plan became public, with reports of multiple anti-ship missiles or drones fired at transiting vessels against Tehran's wishes (attribution unconfirmed). On Sept 28, US Energy Secretary Chris Wright and Treasury Secretary Bessent separately put Hormuz barrel flow at 13-22 million bpd — approaching the ~20 million bpd pre-war baseline — a figure that sits in tension with vessel-transit data (still near zero) rather than confirming either side's account. Iran's Deputy FM Gharibabadi said the Strait 'remains closed' and that any vessel passing through does so 'in coordination with Iran'; CENTCOM directly disputed this, saying 'Iran does not control the Strait of Hormuz.' Sept 29-30: Saudi Arabia's crude exports are now reported at their highest level since the war began despite a pipeline outage, and Middle East oil/LNG exports through Hormuz are picking up; Bloomberg describes Brent as holding losses on exports 'seen near pre-war level.' A CNN Business analysis argues Iran's Hormuz leverage has substantively eroded — in direct tension with vessel-count sitreps that still read near-total closure. Sept 30-Oct 1: Trump claimed the US has 'total control' of the Strait and that Iran's Navy and Air Force are 'gone' — his own statement, not independently verified. Oil price readings for Oct 1 conflict sharply across sources (spot Brent ~$97-98 vs. a reported futures spike to $103.50 vs. WTI easing toward $89-90), consistent with no single reconciled picture of current throughput or price. Oct 1: Brent settled at $96.76, resolving the prior day's conflicting oil-price readings toward the lower figure. No fresh Hormuz-specific vessel-count or barrel-volume sitrep sourced this cycle. Newly surfaced (reporting published Oct 1, describing Sept 29): UKMTO reported three vessels — a crude oil tanker, an LNG tanker and a third ship — struck by unknown projectiles in the Strait, with transponders reportedly off at the time; responsibility not attributed, an unconfirmed social media claim blames Iran. Oct 1-3: six tankers have now been struck in the Strait's southern channel near Oman within a week, the latest being the crude tanker Kazimah III on Oct 1. Defense Secretary Hegseth claimed the blockade is 'ironclad' and traffic is 'nearing pre-war levels,' but a sitrep found this cycle puts transits at just 3.1/day (vs. 97 pre-war) and 1.3 tankers/day (vs. 55 pre-war) — directly contradicting that characterization. Iran's parliament has separately advanced a bill asserting formal Iranian management of the Strait, including transit fees. Oct 4-5: Iran says the Strait will remain closed until the US meets its conditions. Unexplained explosions were heard from the sea near Qeshm Island and Sirik on Oct 4, with no confirmed impact on land; source unattributed. Oct 5-6: CENTCOM says the US has destroyed 13 commercial ships in the Strait over the past 12 weeks for blockade violations or IRGC ties. President Pezeshkian called US talks 'meaningless,' citing three attacks following prior talks.",
+    "status": "Near total closure. A Sept 28 sitrep puts tracked transits at roughly 3% of pre-war levels (7-day average 3.1% overall, about 1% for tankers) — the tightest reading of the war. Trump separately claims more than 20 million barrels moved through the Strait over the weekend, calling it the largest flow since the war began; this is not reconciled with the sitrep figure and neither side has published a counting methodology. Explosions were reported near Qeshm Island on Sept 27, hours after Trump's rejection of Iran's reopening plan became public, with reports of multiple anti-ship missiles or drones fired at transiting vessels against Tehran's wishes (attribution unconfirmed). On Sept 28, US Energy Secretary Chris Wright and Treasury Secretary Bessent separately put Hormuz barrel flow at 13-22 million bpd — approaching the ~20 million bpd pre-war baseline — a figure that sits in tension with vessel-transit data (still near zero) rather than confirming either side's account. Iran's Deputy FM Gharibabadi said the Strait 'remains closed' and that any vessel passing through does so 'in coordination with Iran'; CENTCOM directly disputed this, saying 'Iran does not control the Strait of Hormuz.' Sept 29-30: Saudi Arabia's crude exports are now reported at their highest level since the war began despite a pipeline outage, and Middle East oil/LNG exports through Hormuz are picking up; Bloomberg describes Brent as holding losses on exports 'seen near pre-war level.' A CNN Business analysis argues Iran's Hormuz leverage has substantively eroded — in direct tension with vessel-count sitreps that still read near-total closure. Sept 30-Oct 1: Trump claimed the US has 'total control' of the Strait and that Iran's Navy and Air Force are 'gone' — his own statement, not independently verified. Oil price readings for Oct 1 conflict sharply across sources (spot Brent ~$97-98 vs. a reported futures spike to $103.50 vs. WTI easing toward $89-90), consistent with no single reconciled picture of current throughput or price. Oct 1: Brent settled at $96.76, resolving the prior day's conflicting oil-price readings toward the lower figure. No fresh Hormuz-specific vessel-count or barrel-volume sitrep sourced this cycle. Newly surfaced (reporting published Oct 1, describing Sept 29): UKMTO reported three vessels — a crude oil tanker, an LNG tanker and a third ship — struck by unknown projectiles in the Strait, with transponders reportedly off at the time; responsibility not attributed, an unconfirmed social media claim blames Iran. Oct 1-3: six tankers have now been struck in the Strait's southern channel near Oman within a week, the latest being the crude tanker Kazimah III on Oct 1. Defense Secretary Hegseth claimed the blockade is 'ironclad' and traffic is 'nearing pre-war levels,' but a sitrep found this cycle puts transits at just 3.1/day (vs. 97 pre-war) and 1.3 tankers/day (vs. 55 pre-war) — directly contradicting that characterization. Iran's parliament has separately advanced a bill asserting formal Iranian management of the Strait, including transit fees. Oct 4-5: Iran says the Strait will remain closed until the US meets its conditions. Unexplained explosions were heard from the sea near Qeshm Island and Sirik on Oct 4, with no confirmed impact on land; source unattributed. Oct 5-6: CENTCOM says the US has destroyed 13 commercial ships in the Strait over the past 12 weeks for blockade violations or IRGC ties. President Pezeshkian called US talks 'meaningless,' citing three attacks following prior talks. Oct 6-7: the US is urging commercial shipping toward a protected southern route hugging Oman's coastline; Iran rejects this as a violation of its own blockade terms and has attacked multiple ships attempting to use it — a direct explanation for the concentration of this week's strikes in that channel.",
     "preWarFlow": "~90-140 ships/day",
     "currentFlow": "Sept 28 sitrep: ~3% of pre-war transits, 7-day average 3.1% (about 1% tankers). Trump's competing claim of 20M+ barrels moved over the weekend is carried separately, unreconciled. This sits on top of the already-unresolved Reuters/Windward/Wright transit-count conflicts carried since Sept 18. Bab el-Mandeb: no update sourced this cycle. IMF PortWatch recorded just 1 tracked transit on Sept 20 against an ~85/day pre-crisis baseline. Separately, US officials now cite barrel-volume flow of 13-22M bpd — a figure not reconciled with the vessel-count data above. A sitrep found this cycle gives a more precise reading: 3.1 total transits/day against a 97/day pre-war baseline, and 1.3 tankers/day against 55/day pre-war — roughly 3% on both counts, consistent with earlier percentage-only sitreps and directly contradicting Hegseth's 'nearing pre-war levels' claim.",
     "reduction": "Brent settled around $104.5 Friday (on Iran's call for the US to return to the summer's failed interim deal) before rising above $106 at Monday's open following Trump's rejection of Iran's seven-day plan. It remains roughly 63% above the pre-war $65. Goldman: $120 if attacks intensify, $80 if Gulf exports normalise.",
@@ -81,11 +75,15 @@
     "totalShipsWaiting": "42 tankers were waiting at Hormuz as of Sept 7, of which 18 were carrying oil — roughly 11.1 million barrels, about 11% of world daily demand (CENTCOM/wire-sourced sitrep). No update to this count sourced this cycle. CENTCOM separately says it has redirected 100+ commercial vessels since April, disabled 4, and permitted 26 humanitarian-cargo vessels through.",
     "lastTransit": "Tracked traffic is now reported at roughly 3% of the pre-war average, the lowest reading of the war; datasets conflict sharply, including with Trump's own barrel-volume claim. IMF PortWatch's own count shows just 1 transit on Sept 20 against an ~85/day baseline, consistent with the sitrep's near-total-closure reading even as barrel-volume estimates point the other way.",
     "indianNavyEscort": "Op Urja Suraksha: unchanged pending confirmation that either the US-cleared lane or the Iran-Oman corridor is operational for third-country shipping. DGMA's standing advisory against deploying Indian seafarers on Hormuz-transiting voyages remains in force following this week's death.",
-    "headline": "A NAMED SAUDI-BACKED OFFENSIVE, 'OPERATION DAWN OF YEMEN', LAUNCHES TO RETAKE SANAA. PRESIDENT PEZESHKIAN CALLS US TALKS 'MEANINGLESS'. TRUMP SAYS THE WAR IS 'ESSENTIALLY ALMOST OVER'. INDIAN MARKETS SNAP A FOUR-DAY LOSING RUN.",
+    "headline": "THE US IS DIRECTING SHIPS TOWARD A PROTECTED SOUTHERN ROUTE NEAR OMAN THAT IRAN REJECTS AND HAS BEEN ATTACKING. YEMENI GOVERNMENT FORCES CLAIM CONTROL OF BAB EL-MANDEB AND DHUBAB AIRPORT; THE HOUTHIS DENY LOSING GROUND.",
     "indianCasualties": 5,
     "indianCasualtyDetail": "5th confirmed Indian death of the war: Suraj Yadav, 26, a wiper from Deoria, Uttar Pradesh, died of head injuries after MV Cape Dao was struck by two projectiles near the Strait of Hormuz on Sept 23 (Forward Seamen's Union of India; Shipping Minister Sarbananda Sonowal). Government sources cite at least 13 Indian nationals killed in the Gulf region since February, a broader figure than this page's confirmed-death count. Earlier: a crew member aboard UAE tanker MOMBASA killed by an Iranian cruise missile in Omani waters (Jul 14); 3 Indian sailors killed on MT Settebello (Jun 8, US Navy strike). DGMA's standing advisory against deploying Indian seafarers on Hormuz-transiting voyages remains in force. ACTIVE, UNRESOLVED: the Panama-flagged tanker El Gaia discrepancy (23 crew evacuated/2 missing per Oman vs. '14 Indian crew, 1 missing' reported by Indian outlets) remains unreconciled and is not added to this page's confirmed count. For scale: the war's total merchant-marine toll (last sourced Sept 11) stood at 21+ seafarers killed across 75 attacked vessels."
   },
   "hormuzEvents": [
+    {
+      "d": "Oct 7",
+      "e": "DAY 222 (updated 8:20 AM IST Wednesday) — WHY THE STRIKES CLUSTER NEAR OMAN, CONTESTED CLAIMS FROM YEMEN, AND A DATA-INTEGRITY CATCH ON THIS PAGE'S OWN MARKET FEED. A useful operational detail surfaced this cycle: the US is actively urging commercial ships to use a southern route hugging Oman's coastline, offering military protection to vessels that do — and Iran, rejecting this route as a violation of its own blockade stipulations, has attacked multiple ships attempting to use it. This is a direct explanation for the pattern already tracked this week of strikes clustering in the Strait's southern channel near Oman: it is precisely the US-promoted route that Iran is targeting to assert that its own terms, not Washington's, govern passage. CENTCOM reiterated its figure of 13 commercial ships destroyed over the past 12 weeks for blockade violations or IRGC ties, already carried. On the Yemen front, President al-Alimi's government forces — the Nation's Shield Forces and Giants Brigades, with popular resistance support — claimed to have liberated Dhubab district and taken control of the Bab el-Mandeb Strait and Dhubab Airport as part of Operation Dawn of Yemen, with government sources estimating roughly 100 Houthis killed, 150 wounded, five drones downed and six vehicles or a tank destroyed or disabled. These are one-sided, coalition-sourced claims, and the Houthis directly dispute them, denying they have lost ground even as fighting continues — this page treats the operation's actual outcome as contested and unresolved rather than a confirmed government win. Trump, meanwhile, said the war could end soon and that consumer prices, including gasoline, will 'come tumbling down' once it does, repeating his timeline of the war ending 'shortly before or after' the November midterms. Markets: Oct 6's close is now confirmed — Sensex rose 685.34 points (+0.95%) to 73,067.81 and Nifty gained 220.35 (+0.98%) to 22,776.10, a second consecutive day of gains on easing crude, strong Q2 corporate results and positive global cues, with banking and metals leading. Brent dipped below $100 a barrel intraday before settling near $101, continuing its easing trend despite the fierce fighting in Yemen. Separately, this cycle caught a data-integrity issue in this page's own feed: market-data.json's self-reported day-over-day change figures (+1,158.11/+1.61% Sensex) do not match simple arithmetic against yesterday's confirmed close — the correct change is +685.34 (+0.95%), matching external reporting almost exactly. This page uses the verified figure; the underlying auto-fetch script's reference-close logic should be checked separately, as this echoes a similar bug documented and supposedly fixed earlier in the project's history."
+    },
     {
       "d": "Oct 6",
       "e": "DAY 221 (updated 8:25 AM IST Tuesday) — A NAMED OFFENSIVE LAUNCHES IN YEMEN, IRAN'S PRESIDENT HARDENS HIS LINE, AND INDIAN MARKETS SNAP A LOSING STREAK. Yemeni government forces, backed by the Saudi-led coalition, launched 'Operation Dawn of Yemen' on Oct 5, explicitly aimed at retaking Sanaa and ending Houthi control of the country — the concrete follow-through on the coalition's weekend pledge of support carried in yesterday's cycle. Roughly 100 Saudi fighter jets were reportedly involved, striking hundreds of targets; coalition spokesperson Maj. Gen. Turki al-Malki said forces destroyed 324 high-value Houthi targets, a coalition-sourced claim not yet independently verified. The Houthis, in turn, widened their own claimed target set beyond the Aramco facility already carried, saying they also struck King Khalid International Airport in Riyadh — unconfirmed by Saudi authorities. Separately, US Central Command said the US has destroyed 13 commercial ships in the Strait of Hormuz over the past 12 weeks for violating the naval blockade or being tied to the IRGC's 'shadow network' — a cumulative enforcement figure distinct from the unknown-projectile tanker strikes this page has tracked separately this week; UKMTO separately reported three tankers hit by unknown projectiles over the weekend, consistent with that ongoing pattern. On diplomacy, President Pezeshkian — not just his foreign minister — called talks with the US 'meaningless,' telling Armenia's foreign minister that Iran has been 'attacked three times following talks' and accusing Washington of using diplomacy as cover for pressure and military action; Tehran nonetheless continues exchanging messages indirectly with Washington via mediators, so the harder presidential rhetoric and the continuing contact exist side by side rather than one superseding the other. Trump, speaking in Nebraska, said the war is 'essentially almost over' and called higher gasoline prices 'a small price to pay' to prevent Iran from obtaining a nuclear weapon — a notably direct acknowledgment of the war's domestic cost. Markets: Oct 5's close is now confirmed — Sensex rose 472.77 points (+0.66%) to 72,382.47 and Nifty gained 133.8 (+0.6%) to 22,555.75, snapping a four-day losing streak, on easing crude prices and a firmer rupee, resolving yesterday's flagged uncertainty. Brent eased to roughly $100.33, and the rupee closed nearly flat at 96.2925, anchored by reported RBI intervention."
@@ -412,6 +410,12 @@
   ],
   "military": [
     {
+      "t": "Oct 6-7 — Yemeni government claims Bab el-Mandeb control as Houthis deny losing ground; US promotes a southern Hormuz route Iran rejects and attacks",
+      "lv": "ACTIVE",
+      "color": "amber",
+      "d": "President al-Alimi's forces claim to have liberated Dhubab district and taken control of Bab el-Mandeb Strait and Dhubab Airport (Operation Dawn of Yemen), ~100 Houthis reported killed — one-sided government claims the Houthis directly dispute, denying any loss of ground. Separately, the US is urging ships toward a protected southern Hormuz route near Oman's coast; Iran rejects this as a blockade violation and has attacked ships using it, explaining this week's cluster of strikes there. CENTCOM reiterates 13 ships destroyed in 12 weeks. Trump: consumer prices will 'come tumbling down' once the war ends. Markets: confirmed Oct 6 close Sensex +0.95%/73,067.81, Nifty +0.98%/22,776.10, a second straight day of gains; Brent dipped below $100 intraday before settling near $101. Data note: this page's own auto-synced market change figures were found inconsistent with day-over-day arithmetic and corrected."
+    },
+    {
       "t": "Oct 5-6 — 'Operation Dawn of Yemen' launches to retake Sanaa; Pezeshkian calls US talks 'meaningless'; CENTCOM cites 13 ships destroyed in 12 weeks",
       "lv": "BREAKING",
       "color": "red",
@@ -681,14 +685,14 @@
   "radar": [
     {
       "axis": "Oil Shock",
-      "w1": 93,
-      "now": 89,
+      "w1": 89,
+      "now": 86,
       "w4": 60
     },
     {
       "axis": "Market Crash",
-      "w1": 68,
-      "now": 62,
+      "w1": 62,
+      "now": 54,
       "w4": 45
     },
     {
@@ -700,7 +704,7 @@
     {
       "axis": "Hormuz Closure",
       "w1": 94,
-      "now": 94,
+      "now": 92,
       "w4": 80
     },
     {
@@ -711,7 +715,7 @@
     },
     {
       "axis": "Currency",
-      "w1": 75,
+      "w1": 73,
       "now": 73,
       "w4": 40
     },
@@ -729,8 +733,8 @@
     }
   ],
   "assessment": {
-    "headline": "A named Saudi-backed offensive, 'Operation Dawn of Yemen', launches to retake Sanaa from the Houthis. Iran's president, not just his foreign minister, calls US talks 'meaningless'. Indian markets nonetheless snap a four-day losing run as Brent eases.",
-    "body": "WHAT HAPPENED\nSaudi-backed Yemeni forces launched a named, large-scale offensive aimed at retaking Sanaa, with roughly 100 Saudi jets involved and a coalition claim of 324 Houthi targets destroyed. The Houthis widened their own claimed targets to Riyadh's international airport. President Pezeshkian called US talks 'meaningless,' a harder line than his foreign minister's recent statements, while Tehran continues indirect contact via mediators. Trump said the war is 'essentially almost over' and called higher gas prices 'a small price to pay.'\n\nWHY IT MATTERS FOR INDIA\nDespite the week's escalation, Indian markets actually improved — Sensex and Nifty both rose, snapping a four-day losing streak, as Brent eased to around $100 and the rupee held steady. This divergence between ground escalation and market calm is worth watching rather than assuming it will hold; markets may simply not have caught up to the weekend's news, or may be reading Trump's own 'almost over' framing as more credible than the operational details suggest.\n\nTHE THING TO WATCH\nWhether 'Operation Dawn of Yemen' achieves verifiable territorial gains or stalls, and whether Pezeshkian's harder presidential rhetoric forecloses the indirect-mediator channel Tehran has kept open. Confidence: high on the market figures (multiply confirmed, including via this site's own auto-synced feed); moderate on the coalition's operational claims, which are one-sided and unverified."
+    "headline": "A new detail explains this week's tanker strikes: Iran is targeting ships using a US-promoted southern route near Oman. Yemen's government claims Bab el-Mandeb gains the Houthis deny. Indian markets rally a second straight day as Brent dips below $100.",
+    "body": "WHAT HAPPENED\nThe US is directing commercial shipping toward a protected southern route hugging Oman's coast; Iran rejects it as a blockade violation and has attacked ships using it, explaining this week's strike pattern. Yemen's government claims to have taken Bab el-Mandeb and Dhubab Airport in Operation Dawn of Yemen, which the Houthis directly dispute. Trump said consumer prices will 'come tumbling down' when the war ends. Indian markets extended their rally, and this page caught and corrected a data-integrity issue in its own auto-synced market feed.\n\nWHY IT MATTERS FOR INDIA\nThe causal link between the US-promoted shipping route and this week's strikes is a genuinely clarifying piece of context — it reframes the tanker strikes as a targeted response to a specific US policy, not random escalation. For India's own exposure, two consecutive days of market gains and crude easing toward $100 is the more concrete, better-verified signal: the one-day rally flagged yesterday as worth watching for durability has, so far, held.\n\nTHE THING TO WATCH\nWhether Yemen's government claims of territorial control hold up against Houthi denials, and whether Iran's targeting of the US-escorted route continues or escalates. Confidence: high on the market figures and the shipping-route explanation (multiply sourced); low-to-moderate on the Yemen battlefield claims, which are one-sided and directly disputed."
   },
   "featured": [
     {
@@ -1694,17 +1698,27 @@
       "rupee": 96.29,
       "tag": "(CONFIRMED OCT 5 CLOSE): 'Operation Dawn of Yemen' launches — Saudi-backed Yemeni forces, ~100 jets, coalition claims 324 Houthi targets destroyed, aim to retake Sanaa. Houthis widen claimed targets to Riyadh's King Khalid Airport. CENTCOM: 13 ships destroyed in the Strait over 12 weeks. Pezeshkian: US talks 'meaningless', Iran 'attacked three times following talks.' Trump: war 'essentially almost over', gas prices 'a small price to pay.' INDIA: Sensex +472.77 (+0.66%) to 72,382.47, Nifty +133.8 (+0.6%) to 22,555.75, snapping a 4-day losing run; Brent eased to $100.33, rupee flat at 96.29.",
       "sev": 4
+    },
+    {
+      "d": 222,
+      "l": "Oct 7",
+      "deaths": 7199,
+      "brent": 101.06,
+      "nifty": 22776.1,
+      "rupee": 96.36,
+      "tag": "(CONFIRMED OCT 6 CLOSE): Yemeni government claims control of Bab el-Mandeb/Dhubab Airport, ~100 Houthis killed — Houthis deny losing ground. US promotes a protected southern Hormuz route near Oman; Iran rejects it, attacks ships using it, explaining this week's strike pattern. Trump: consumer prices 'come tumbling down' when war ends. INDIA: Sensex +685.34 (+0.95%) to 73,067.81, Nifty +220.35 (+0.98%) to 22,776.10, 2nd straight gain; Brent dipped below $100 before settling ~$101. Caught and corrected a discrepancy in this site's own auto-synced market change figures.",
+      "sev": 3
     }
   ],
   "exec": {
     "level": "SEVERE",
-    "phase": "A named Saudi-backed offensive, 'Operation Dawn of Yemen', launches to retake Sanaa. Iran's president calls US talks 'meaningless'. Trump says the war is 'essentially almost over'. Indian markets snap a four-day losing run as Brent eases to ~$100.",
-    "oilNote": "Brent eased to roughly $100.33, down from $102.31 two days prior, even as the Yemen front escalated sharply — a divergence worth watching rather than assuming reflects full pricing-in of the week's news.",
-    "shipping": "CENTCOM: US HAS DESTROYED 13 COMMERCIAL SHIPS IN THE STRAIT OVER 12 WEEKS FOR BLOCKADE VIOLATIONS OR IRGC TIES",
-    "shippingSub": "UKMTO separately reports three more tankers hit by unknown projectiles over the weekend, consistent with the pattern already carried this week — a distinct figure from CENTCOM's own enforcement count.",
-    "military": "'OPERATION DAWN OF YEMEN' LAUNCHES: ~100 SAUDI JETS, COALITION CLAIMS 324 HOUTHI TARGETS DESTROYED, AIM TO RETAKE SANAA",
-    "militarySub": "Houthis widen their own claimed targets to Riyadh's King Khalid International Airport. Coalition claims are one-sided and not yet independently verified.",
-    "indiaSub": "Confirmed Oct 5 close: Sensex +472.77 (+0.66%) to 72,382.47, Nifty +133.8 (+0.6%) to 22,555.75, snapping a four-day losing run. Rupee closed nearly flat at 96.29."
+    "phase": "The US promotes a southern Hormuz shipping route near Oman that Iran rejects and attacks, explaining this week's strike pattern. Yemen's government claims Bab el-Mandeb gains the Houthis deny. Indian markets rally a second straight day as Brent dips below $100.",
+    "oilNote": "Brent dipped below $100 a barrel intraday before settling near $101, continuing its easing trend despite fierce fighting in Yemen.",
+    "shipping": "THE US URGES SHIPS TOWARD A PROTECTED SOUTHERN ROUTE NEAR OMAN; IRAN REJECTS IT AND HAS ATTACKED SHIPS USING IT",
+    "shippingSub": "Explains this week's cluster of tanker strikes in the Strait's southern channel near Oman. CENTCOM reiterates 13 ships destroyed over 12 weeks enforcing the blockade.",
+    "military": "YEMEN'S GOVERNMENT CLAIMS BAB EL-MANDEB AND DHUBAB AIRPORT GAINS — THE HOUTHIS DENY LOSING GROUND",
+    "militarySub": "One-sided, government-sourced claims (~100 Houthis killed) directly disputed by the Houthis; treated as contested, not confirmed.",
+    "indiaSub": "Confirmed Oct 6 close: Sensex +685.34 (+0.95%) to 73,067.81, Nifty +220.35 (+0.98%) to 22,776.10 — a second straight day of gains. Note: this page corrected a discrepancy found in its own auto-synced market change figures this cycle."
   },
   "hormuzPhases": [
     {
@@ -1758,7 +1772,7 @@
       "days": "Sep 26-"
     }
   ],
-  "_phaseBadge": "'Operation Dawn of Yemen' launches (Oct 5): ~100 Saudi jets, coalition claims 324 Houthi targets destroyed, aim to retake Sanaa · Houthis widen claimed targets to Riyadh's airport · CENTCOM: 13 ships destroyed in the Strait over 12 weeks · Pezeshkian: US talks 'meaningless' · Trump: war 'essentially almost over', gas prices 'a small price to pay' · India's markets snap a 4-day losing run, Brent eases to ~$100",
+  "_phaseBadge": "US promotes a southern Hormuz route near Oman; Iran rejects it, attacks ships using it — explains this week's strike pattern · Yemen's government claims Bab el-Mandeb/Dhubab Airport gains, Houthis deny losing ground · Trump: consumer prices 'come tumbling down' when war ends · India's markets rally a 2nd straight day, Brent dips below $100 · Data note: corrected a discrepancy in this page's own auto-synced market figures",
   "budget": {
     "petrolPre": 94.72,
     "petrolNow": 102.12,
@@ -1768,12 +1782,12 @@
     "lpgNow": 942.0
   },
   "brief": [
-    "A named offensive launches: Saudi-backed Yemeni forces began 'Operation Dawn of Yemen' to retake Sanaa, with ~100 Saudi jets involved and a coalition claim of 324 Houthi targets destroyed — an unverified, one-sided figure. Houthis widened their own claimed targets to Riyadh's airport.",
-    "Two different numbers on the Strait: CENTCOM says the US destroyed 13 commercial ships over the past 12 weeks enforcing the blockade — a distinct figure from the separate unknown-projectile tanker strikes (UKMTO: three more over the weekend) this page has tracked all week.",
-    "Iran's president hardens his line: Pezeshkian called US talks 'meaningless,' saying Iran has been 'attacked three times following talks' — a harder line than his foreign minister's, even as indirect mediator contact continues.",
-    "Markets defy the headlines: Sensex and Nifty both rose, snapping a four-day losing run, as Brent eased to around $100 and the rupee held steady — a notable divergence from the week's escalation."
+    "Why the strikes cluster near Oman: the US is urging ships toward a protected southern Hormuz route hugging Oman's coast; Iran rejects it as a blockade violation and has attacked ships using it — a direct explanation for this week's pattern.",
+    "Contested claims from Yemen: the government says it has taken Bab el-Mandeb Strait and Dhubab Airport in Operation Dawn of Yemen, with ~100 Houthis reported killed — the Houthis directly deny losing any ground.",
+    "Trump's new line: consumer prices, including gasoline, will 'come tumbling down' once the war ends — reiterating his midterms-adjacent timeline.",
+    "Markets extend the rally: Sensex and Nifty posted a second straight day of gains as Brent dipped below $100. This page also caught and corrected a data-integrity issue in its own auto-synced market feed this cycle."
   ],
-  "shareLine": "A named Saudi-backed offensive, 'Operation Dawn of Yemen', launches to retake Sanaa from the Houthis. Iran's president calls US talks 'meaningless'. Indian markets snap a four-day losing run as Brent eases. #IranWar #Hormuz #IndiaRiskDashboard",
+  "shareLine": "A new detail explains this week's tanker strikes: Iran is targeting ships on a US-promoted southern route near Oman. Yemen's government claims Bab el-Mandeb gains the Houthis deny. Indian markets rally a 2nd day as Brent dips below $100. #IranWar #Hormuz #IndiaRiskDashboard",
   "author": {
     "name": "Nithiyanandam Yogeswaran",
     "twitter": "https://x.com/prof_nithiya",
@@ -1824,7 +1838,7 @@
     }
   ],
   "geoint": {
-    "_updated": "2026-10-06",
+    "_updated": "2026-10-07",
     "_note": "Analyst-curated from public reporting; coordinates approximate to the named location. Not a live AIS/satellite feed — use the linked free sources to verify. Restored this cycle after being dropped from the file during Sept 22-24 manual edits.",
     "points": [
       {
@@ -1832,8 +1846,8 @@
         "t": "chokepoint",
         "lat": 26.57,
         "lon": 56.25,
-        "d": "Oct 5-6",
-        "i": "CENTCOM: 13 commercial ships destroyed in the Strait over 12 weeks for blockade violations/IRGC ties. UKMTO: 3 more tankers hit by unknown projectiles over the weekend. Pezeshkian: US talks 'meaningless'."
+        "d": "Oct 6-7",
+        "i": "The US is urging ships toward a protected southern route near Oman's coast; Iran rejects it as a blockade violation and has attacked ships using it — explaining this week's cluster of strikes in the Strait's southern channel."
       },
       {
         "n": "Bab el-Mandeb",
