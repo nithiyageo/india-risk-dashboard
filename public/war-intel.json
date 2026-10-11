@@ -1,8 +1,8 @@
 {
-  "_updated": "October 10, 2026 — 8:19 AM IST (Saturday)",
-  "_asOf": "2026-10-10",
+  "_updated": "October 11, 2026 — 8:19 AM IST (Sunday)",
+  "_asOf": "2026-10-11",
   "_start": "2026-02-28",
-  "_day": 225,
+  "_day": 226,
   "preWar": {
     "brent": 65,
     "rupee": 91.49,
@@ -11,55 +11,60 @@
     "petrol": 94.72,
     "diesel": 87.62
   },
-  "_phase": "CORRECTION: FRIDAY'S CLOSE SHOWS INDIAN MARKETS ACTUALLY RALLIED ~1.2-1.3%, REVERSING THE SLIDE THIS PAGE REPORTED YESTERDAY FROM A PRE-MARKET SNAPSHOT; SAUDI CIVIL AVIATION CONFIRMS 3 KILLED, 36 WOUNDED IN THE RIYADH/ABHA AIRPORT STRIKES, WITHOUT NAMING WHO IS RESPONSIBLE DESPITE HOUTHI CLAIMS; NO FRESH EQUITY SESSION TODAY (MARKETS CLOSED SATURDAY). SITE'S OWN AUTO-SYNC WRONG FOR A 4TH STRAIGHT DAY.",
-  "_note": "CORRECTION to yesterday's entry: Day 224's update was written from an ~8:20 AM IST pre-market snapshot of market-data.json, which captures the PRIOR trading day's close, not the day just starting — so that entry's 'Sensex -1.44%, Nifty -1.64%, 2nd straight down day' figures actually describe Thursday Oct 8's close, not Friday Oct 9's. This cycle's pre-market snapshot (captured Oct 10, reflecting Friday Oct 9's actual close, since NSE/BSE don't trade on Saturday) shows Sensex at 72,472.33 and Nifty at 22,520.45 — arithmetically, that is Sensex +879.09 (+1.23%) and Nifty +288.65 (+1.30%) from Thursday's close, a real rally that reverses the slide rather than extending it. This page's daily 8:20 AM snapshot method has an inherent one-day lag on same-day moves; flagging this structurally in _todo so future cycles read it correctly. Separately, this is the FOURTH consecutive cycle in which market-data.json's self-reported change fields are wrong — today the feed claims Sensex -0.23%/Nifty -0.37%, the wrong direction entirely versus the real +1.23%/+1.30% move, repeating the same backwards-direction error seen in Friday's Brent figure. With the feed's raw price levels having now held up under arithmetic cross-checks for four straight days while its own change math has been wrong in four straight days too (three of them with the wrong sign), this page treats the structural-bug theory as effectively confirmed rather than merely likely. No new Indian equity session occurs today (Saturday); markets reopen Monday. On Yemen/Saudi Arabia: Saudi Arabia's General Authority of Civil Aviation has now put an official figure on the wave of Houthi-claimed airport strikes this page covered as unconfirmed over the past two cycles — 3 killed (an Egyptian and an Algerian national at Abha, a Sudanese national at Riyadh) and 36 wounded across the two airports (Deccan Chronicle, citing the civil aviation authority). Notably, the Saudi statement did not specify who was responsible, despite the Houthis' own claim of these strikes — this page continues to attribute the claim to the Houthis while treating formal responsibility as not officially confirmed by Riyadh. Brent's level firmed further to $104.43 (real change +0.58% against Friday's confirmed $103.83, not the feed's reported +0.14%). No fresh Hormuz transit sitrep, petrol/diesel/LPG pricing, or Indian seafarer/vessel casualty figures were sourced this cycle.",
-  "_todo": "1) STRUCTURAL note on this page's methodology: the daily ~8:20 AM IST pre-market snapshot of market-data.json captures the PRIOR trading day's close, not a same-day figure — a point this page did not make explicit until today, after Day 224's entry read Thursday's close as describing a 'second straight down day' when Friday itself actually rallied. Future cycles should keep this one-day lag in mind when characterizing 'today's' market move. 2) Data-integrity bug in market-data.json's auto-sync has now recurred for a FOURTH consecutive cycle, three of the four with the wrong sign entirely, not just the wrong magnitude; with price levels independently verified as sound across all four cycles, this page treats the structural fetch-script-bug theory as effectively confirmed and recommends the maintainer prioritize it. 3) Saudi civil aviation's confirmed casualty figures (3 killed, 36 wounded) come from a single source (Deccan Chronicle) citing the authority without a precise date beyond 'Tuesday and Wednesday' — re-verify against a primary SPA statement or wire report next cycle. 4) No independent confirmation was found this cycle for last cycle's unconfirmed detail of a Saudia aircraft being damaged at Riyadh airport; not carried forward as fact. 5) No fresh petrol/diesel/LPG price or Indian seafarer/vessel casualty count sourced this cycle; carried forward. 6) The DGMA advisory's July 16 dating vs. its reuse alongside recent deaths remains unresolved (carried forward). 7) The El Gaia casualty discrepancy remains unresolved and is not added to the confirmed Indian death count. 8) War log (timeline) gaps at Sept 10-17, 19-20 and 22 remain open. 9) Indian vessel/seafarer counts near Hormuz (7/148/1) still not re-sourced. 10) September FPI's ~₹2.70 lakh crore FY27-cumulative figure still doesn't precisely reconcile with the ~₹2.45 lakh crore figure carried earlier [VERIFY].",
+  "_phase": "SAUDI ARABIA REPORTS A RENEWED AIRPORT ATTACK WITH THREE PLANES DAMAGED; JAPAN CONDEMNS THE HOUTHI STRIKES; A RUNNING TALLY NOW PUTS 11 SHIPS ATTACKED SINCE EARLY OCTOBER; TRUMP CONTINUES TO REJECT IRAN'S EARLIER SEVEN-DAY HORMUZ ROADMAP. NO NEW INDIAN EQUITY SESSION (SUNDAY); BRENT TICKS UP MODESTLY TO $104.72.",
+  "_note": "Markets: no new Indian equity session today or yesterday (NSE/BSE closed the weekend); price levels are unchanged from Friday's confirmed close (Sensex 72,472.33, Nifty 22,520.45). Brent ticked up modestly to $104.72 (real change +0.28% against Friday's confirmed $104.43, not the auto-sync's self-reported +0.42% — a smaller, non-sign-flipped discrepancy than the past several cycles, but still inconsistent with simple arithmetic, so the data-integrity flag stays open). On the war: a Japanese embassy advisory (via Arab News Japan/traicy.com, citing Saudi Arabia's General Authority of Civil Aviation) pins down the dates of the airport strikes flagged in the past two cycles — Abha and Riyadh King Khalid airports were targeted specifically on October 6 and 7, with the previously-reported 3 killed/36 wounded tied to those two days, and separate loud explosions heard in Riyadh on the morning of October 8. Separately, Fox News' Oct 10 live coverage reports a renewed attack on a Saudi airport with three planes damaged per officials, and says Japan has condemned the Houthi strikes on Saudi civilian facilities — this page treats the Oct 10 attack as a new, distinct event from the Oct 6-7 strikes already covered, pending further sourcing on which airport and the attribution. A Sunday Guardian live-blog aggregator separately put a running tally of 11 ships attacked since early October — a different count from the '7+ in the first week' figure carried in recent cycles, possibly reflecting a different cutoff or counting method; both figures are carried as approximate, not reconciled. That same aggregator also referenced an IRGC claim that a 'massive supertanker' hit a naval mine in the Strait — but a direct search for that claim surfaced only the already-known El Gaia incident from late August/mid-September (already flagged as an unresolved discrepancy in this file's _todo), with no October-dated version found; this page treats that specific claim as likely a recycled reference rather than a new event, consistent with this page's practice of catching stale or conflated aggregator content. Iran's earlier seven-day roadmap to reopen Hormuz (proposed late September via Qatar, in exchange for a regional ceasefire, $12bn in released assets, sanctions relief and an end to the naval blockade) remains rejected by Trump as 'unacceptable'; no new development on this specific proposal was found this cycle beyond Fox's Oct 10 piece restating it as background. No fresh petrol/diesel/LPG pricing changes were found (Delhi petrol/diesel unchanged at ₹102.12/₹95.20 across multiple early-October reports), nor Indian seafarer/vessel casualty figures.",
+  "_todo": "1) The Oct 10 Saudi airport attack (three planes damaged, per Fox News/officials) needs a second source and a specific airport name next cycle; currently carried as a distinct event from the Oct 6-7 Abha/Riyadh strikes based on a single live-blog line. 2) The 'IRGC supertanker hit a naval mine' claim circulating in aggregator coverage this cycle could not be matched to any October-dated primary report and appears to be a recycled reference to the already-known El Gaia incident (late Aug/mid-Sept) — not added as a new event; worth a direct check next cycle in case a genuinely new mine incident did occur and simply wasn't indexed yet. 3) Two different tanker-strike tallies are now in circulation — '7+ in the first week of October' (carried from earlier cycles) and '11 ships since early October' (today's aggregator figure) — not reconciled; may reflect different cutoffs or counting methods. 4) Brent's auto-synced change field was off again this cycle (+0.42% reported vs. +0.28% actual), a smaller but still real discrepancy; data-integrity concern in market-data.json's fetch script remains open. 5) No fresh petrol/diesel/LPG price or Indian seafarer/vessel casualty count sourced this cycle; carried forward. 6) The DGMA advisory's July 16 dating vs. its reuse alongside recent deaths remains unresolved (carried forward). 7) The El Gaia casualty discrepancy remains unresolved and is not added to the confirmed Indian death count. 8) War log (timeline) gaps at Sept 10-17, 19-20 and 22 remain open. 9) Indian vessel/seafarer counts near Hormuz (7/148/1) still not re-sourced. 10) September FPI's ~₹2.70 lakh crore FY27-cumulative figure still doesn't precisely reconcile with the ~₹2.45 lakh crore figure carried earlier [VERIFY].",
   "ticker": [
-    "CORRECTION: FRIDAY'S CONFIRMED CLOSE SHOWS INDIAN MARKETS ACTUALLY RALLIED ~1.2-1.3%, REVERSING THE SLIDE REPORTED YESTERDAY FROM A PRE-MARKET SNAPSHOT",
-    "SAUDI CIVIL AVIATION CONFIRMS 3 KILLED, 36 WOUNDED IN RIYADH/ABHA AIRPORT STRIKES — DOESN'T NAME WHO'S RESPONSIBLE DESPITE HOUTHI CLAIMS",
-    "DATA CHECK: AUTO-SYNCED MARKET FIGURES WRONG FOR A 4TH STRAIGHT DAY, 3 OF 4 WITH THE WRONG SIGN ENTIRELY — THIS PAGE NOW TREATS THE STRUCTURAL-BUG THEORY AS EFFECTIVELY CONFIRMED",
-    "NO NEW EQUITY SESSION TODAY — NSE/BSE CLOSED SATURDAY, MARKETS REOPEN MONDAY",
-    "BRENT FIRMS FURTHER TO $104.43, A FOURTH STRAIGHT SESSION ABOVE $100"
+    "SAUDI ARABIA REPORTS A RENEWED AIRPORT ATTACK, THREE PLANES DAMAGED PER OFFICIALS — JAPAN CONDEMNS THE HOUTHI STRIKES ON SAUDI CIVILIAN FACILITIES",
+    "JAPANESE EMBASSY ADVISORY PINS DOWN THE EARLIER STRIKES TO OCT 6-7 AT ABHA AND RIYADH AIRPORTS, WITH FURTHER EXPLOSIONS HEARD IN RIYADH ON OCT 8",
+    "RUNNING TALLY: 11 SHIPS NOW REPORTED ATTACKED NEAR HORMUZ SINCE EARLY OCTOBER, PER ONE AGGREGATOR — NOT RECONCILED WITH THE '7+ IN THE FIRST WEEK' FIGURE CARRIED EARLIER",
+    "[VERIFY] A CLAIMED 'SUPERTANKER HIT BY A NAVAL MINE' CIRCULATING THIS CYCLE APPEARS TO BE A RECYCLED REFERENCE TO THE ALREADY-KNOWN EL GAIA INCIDENT, NOT A NEW EVENT",
+    "NO NEW INDIAN EQUITY SESSION — NSE/BSE CLOSED THE WEEKEND; BRENT TICKS UP TO $104.72, A 5TH STRAIGHT SESSION ABOVE $100"
   ],
   "whatChanged": {
-    "label": "What changed — Saturday October 10, 8:19 AM IST (Day 225)",
+    "label": "What changed — Sunday October 11, 8:19 AM IST (Day 226)",
     "items": [
       {
-        "color": "green",
-        "bold": "Correction: Friday's close shows a rally, not a slide",
-        "text": "Yesterday's entry, written from an 8:20 AM pre-market snapshot, actually described Thursday's close, not Friday's. Friday's confirmed close shows Sensex +879.09 (+1.23%) to 72,472.33 and Nifty +288.65 (+1.30%) to 22,520.45 — a real rally, reversing the two-day slide rather than extending it."
-      },
-      {
-        "color": "amber",
-        "bold": "Saudi Arabia confirms casualties from the airport strikes",
-        "text": "Saudi Arabia's civil aviation authority says 3 people were killed (an Egyptian and an Algerian national at Abha, a Sudanese national at Riyadh) and 36 wounded in the wave of airport strikes this page covered as unconfirmed over the past two cycles. Notably, the official statement did not specify who was responsible, despite the Houthis' own claim."
-      },
-      {
         "color": "red",
-        "bold": "Data integrity: the auto-sync bug recurs a 4th straight day",
-        "text": "Three of the last four cycles have now shown the feed's change field getting the direction backwards entirely, not just the magnitude. With price levels independently verified as sound across all four cycles, this page treats the structural-bug theory as effectively confirmed."
+        "bold": "Saudi Arabia reports another airport attack",
+        "text": "Officials report a renewed attack with three planes damaged, per Fox News' Oct 10 coverage; Japan has condemned the Houthi strikes on Saudi civilian facilities. Treated as a distinct event from the Oct 6-7 strikes pending a second source and the specific airport name."
       },
       {
         "color": "amber",
-        "bold": "Markets closed today",
-        "text": "NSE and BSE do not trade on Saturdays; no new equity session to report. Markets reopen Monday."
+        "bold": "Earlier strikes now dated precisely: Oct 6-7, plus Oct 8 explosions",
+        "text": "A Japanese embassy advisory, citing Saudi civil aviation, confirms the Abha/Riyadh airport strikes covered in recent cycles occurred specifically on October 6 and 7, with separate loud explosions heard in Riyadh on the morning of October 8."
+      },
+      {
+        "color": "amber",
+        "bold": "Tanker-strike tallies diverge",
+        "text": "A running count of 11 ships attacked since early October has surfaced from one aggregator, distinct from the '7+ in the first week' figure carried in recent cycles. Not reconciled — may reflect different cutoffs or counting methods."
+      },
+      {
+        "color": "amber",
+        "bold": "[VERIFY] A circulating mine-strike claim looks recycled",
+        "text": "Coverage this cycle referenced an IRGC claim of a supertanker hit by a naval mine, but direct searching found only the already-known El Gaia incident from late August/mid-September, with no October-dated version. Not added as a new event."
+      },
+      {
+        "color": "green",
+        "bold": "Markets closed; Brent firms modestly",
+        "text": "No new Indian equity session — NSE/BSE are closed on weekends. Brent ticked up to $104.72, a fifth straight session above $100."
       }
     ]
   },
   "deaths": "7,199+",
   "econ": {
-    "sensex": "CORRECTED: Friday Oct 9's confirmed close was Sensex +879.09 (+1.23%) to 72,472.33, Nifty +288.65 (+1.30%) to 22,520.45 — a rally that reverses, rather than extends, the two-day slide reported in yesterday's entry (which was based on a pre-market snapshot reflecting Thursday's close, not Friday's).",
-    "sensexDelta": "No single confirmed external attribution found this cycle for Friday's rally; plausibly some retracement after two down sessions. No new equity session today (Saturday); markets reopen Monday.",
+    "sensex": "No new equity session since Friday's confirmed close (NSE/BSE closed the weekend): Sensex 72,472.33, Nifty 22,520.45, unchanged.",
+    "sensexDelta": "Markets reopen Monday.",
     "sensexSub": "India VIX not freshly sourced this cycle [VERIFY].",
     "vix": "India VIX surged approximately 15% at Monday's open, reversing its prior retreat toward 11 (last confirmed 10.93, Sept 22).",
     "vixDelta": "No fresher VIX print sourced this cycle; carried at Monday's level pending an update.",
     "fpi": "September's net FPI equity outflow now confirmed at ₹35,861cr (newsonair, Oct 4, citing depository data) — split between ₹45,537cr sold on exchanges and ₹9,676cr bought in primary markets; debt outflows added roughly ₹10,431cr via the Fully Accessible Route. A separately reported, single-source cumulative FY27 (since April) outflow of ~₹2.70 lakh crore through Oct 1 does not precisely reconcile with the ~₹2.45 lakh crore YTD figure carried two cycles ago [VERIFY].",
     "fpiDelta": "September's outflow is attributed to geopolitical uncertainty, elevated US bond yields, and crude prices; a rotation toward Chinese equity valuations is also cited in one report. DIIs continue to absorb the selling.",
-    "wealth": "Brent firmed further to $104.43 per the auto-sync's own price level (real change +0.58% against Friday's confirmed $103.83, not the feed's self-reported +0.14% — see data-integrity note), a fourth straight session above $100. The rupee was roughly flat around 96.78.",
-    "analysis": "Today's most important correction is methodological, not news-driven: this page's 8:20 AM IST pre-market check captures the prior trading day's close, which meant yesterday's entry described Thursday's session as 'today's' move when Friday itself actually rallied. That's now flagged explicitly so future cycles read the lag correctly. On the data-integrity front, a fourth straight cycle of the auto-sync's change figures being wrong — three of four with the sign flipped entirely — moves this from a suspected bug to an effectively confirmed one; the raw price levels remain the reliable part of the feed. On the war, Saudi Arabia's own civil aviation authority putting a casualty figure on the airport strikes (3 killed, 36 wounded) is the first official confirmation this page has had for that story, even if the authority notably stopped short of naming the Houthis as responsible."
+    "wealth": "Brent ticked up to $104.72 per the auto-sync's own price level (real change +0.28% against Friday's confirmed $104.43, not the feed's self-reported +0.42% — a smaller but still real discrepancy), a fifth straight session above $100. The rupee was roughly flat around 96.73.",
+    "analysis": "With no new equity session to report, today's more consequential detail is the slow convergence of the Saudi airport-strike story toward a confirmed timeline: a Japanese diplomatic advisory now pins the earlier wave to Oct 6-7 specifically, while a separate, less-sourced Oct 10 report claims a renewed attack. This page is also catching what looks like a recycled claim this cycle — an IRGC 'naval mine' story that traces back to the already-known El Gaia incident rather than a new event — a reminder that aggregator live-blogs can resurface older claims without clearly dating them, and that this page's practice of cross-checking before adding new entries continues to catch that."
   },
   "hormuzStatus": {
-    "status": "Near total closure. A Sept 28 sitrep puts tracked transits at roughly 3% of pre-war levels (7-day average 3.1% overall, about 1% for tankers) — the tightest reading of the war. Trump separately claims more than 20 million barrels moved through the Strait over the weekend, calling it the largest flow since the war began; this is not reconciled with the sitrep figure and neither side has published a counting methodology. Explosions were reported near Qeshm Island on Sept 27, hours after Trump's rejection of Iran's reopening plan became public, with reports of multiple anti-ship missiles or drones fired at transiting vessels against Tehran's wishes (attribution unconfirmed). On Sept 28, US Energy Secretary Chris Wright and Treasury Secretary Bessent separately put Hormuz barrel flow at 13-22 million bpd — approaching the ~20 million bpd pre-war baseline — a figure that sits in tension with vessel-transit data (still near zero) rather than confirming either side's account. Iran's Deputy FM Gharibabadi said the Strait 'remains closed' and that any vessel passing through does so 'in coordination with Iran'; CENTCOM directly disputed this, saying 'Iran does not control the Strait of Hormuz.' Sept 29-30: Saudi Arabia's crude exports are now reported at their highest level since the war began despite a pipeline outage, and Middle East oil/LNG exports through Hormuz are picking up; Bloomberg describes Brent as holding losses on exports 'seen near pre-war level.' A CNN Business analysis argues Iran's Hormuz leverage has substantively eroded — in direct tension with vessel-count sitreps that still read near-total closure. Sept 30-Oct 1: Trump claimed the US has 'total control' of the Strait and that Iran's Navy and Air Force are 'gone' — his own statement, not independently verified. Oil price readings for Oct 1 conflict sharply across sources (spot Brent ~$97-98 vs. a reported futures spike to $103.50 vs. WTI easing toward $89-90), consistent with no single reconciled picture of current throughput or price. Oct 1: Brent settled at $96.76, resolving the prior day's conflicting oil-price readings toward the lower figure. No fresh Hormuz-specific vessel-count or barrel-volume sitrep sourced this cycle. Newly surfaced (reporting published Oct 1, describing Sept 29): UKMTO reported three vessels — a crude oil tanker, an LNG tanker and a third ship — struck by unknown projectiles in the Strait, with transponders reportedly off at the time; responsibility not attributed, an unconfirmed social media claim blames Iran. Oct 1-3: six tankers have now been struck in the Strait's southern channel near Oman within a week, the latest being the crude tanker Kazimah III on Oct 1. Defense Secretary Hegseth claimed the blockade is 'ironclad' and traffic is 'nearing pre-war levels,' but a sitrep found this cycle puts transits at just 3.1/day (vs. 97 pre-war) and 1.3 tankers/day (vs. 55 pre-war) — directly contradicting that characterization. Iran's parliament has separately advanced a bill asserting formal Iranian management of the Strait, including transit fees. Oct 4-5: Iran says the Strait will remain closed until the US meets its conditions. Unexplained explosions were heard from the sea near Qeshm Island and Sirik on Oct 4, with no confirmed impact on land; source unattributed. Oct 5-6: CENTCOM says the US has destroyed 13 commercial ships in the Strait over the past 12 weeks for blockade violations or IRGC ties. President Pezeshkian called US talks 'meaningless,' citing three attacks following prior talks. Oct 6-7: the US is urging commercial shipping toward a protected southern route hugging Oman's coastline; Iran rejects this as a violation of its own blockade terms and has attacked multiple ships attempting to use it — a direct explanation for the concentration of this week's strikes in that channel. Oct 7-8: at least seven tanker strikes were reported in the Strait during the first week of October, including the LIPSI and KAZIMAH III, still unattributed by UKMTO; Iran's self-styled 'Persian Gulf Strait Authority' claims the targeted vessels were on its own non-compliance list, with three reportedly UAE-controlled. A senior Iranian military figure separately claimed 'full control' of the Strait; Secretary of State Rubio directly disputed this, saying Tehran has lost control — both unconfirmed, consistent with the pattern of contradictory claims from each side. Oct 8-9: the Houthis claim a coordinated wave of strikes on Saudi Arabia rather than on Hormuz shipping directly — King Khalid International Airport in Riyadh, an Aramco refinery fire at Rabigh, and Abha International Airport plus nearby military sites — describing it as the third hit on Saudi's main airport this week; Saudi authorities have not confirmed damage or casualties. No fresh Hormuz-specific transit or barrel-volume sitrep was sourced this cycle. Oct 10: Saudi Arabia's General Authority of Civil Aviation confirms 3 killed (an Egyptian and an Algerian national at Abha, a Sudanese national at Riyadh) and 36 wounded across the Riyadh and Abha airport strikes covered in recent cycles, without specifying who is responsible despite the Houthis' own claim of the attacks. No fresh Hormuz-specific transit or barrel-volume sitrep was sourced this cycle.",
+    "status": "Near total closure. A Sept 28 sitrep puts tracked transits at roughly 3% of pre-war levels (7-day average 3.1% overall, about 1% for tankers) — the tightest reading of the war. Trump separately claims more than 20 million barrels moved through the Strait over the weekend, calling it the largest flow since the war began; this is not reconciled with the sitrep figure and neither side has published a counting methodology. Explosions were reported near Qeshm Island on Sept 27, hours after Trump's rejection of Iran's reopening plan became public, with reports of multiple anti-ship missiles or drones fired at transiting vessels against Tehran's wishes (attribution unconfirmed). On Sept 28, US Energy Secretary Chris Wright and Treasury Secretary Bessent separately put Hormuz barrel flow at 13-22 million bpd — approaching the ~20 million bpd pre-war baseline — a figure that sits in tension with vessel-transit data (still near zero) rather than confirming either side's account. Iran's Deputy FM Gharibabadi said the Strait 'remains closed' and that any vessel passing through does so 'in coordination with Iran'; CENTCOM directly disputed this, saying 'Iran does not control the Strait of Hormuz.' Sept 29-30: Saudi Arabia's crude exports are now reported at their highest level since the war began despite a pipeline outage, and Middle East oil/LNG exports through Hormuz are picking up; Bloomberg describes Brent as holding losses on exports 'seen near pre-war level.' A CNN Business analysis argues Iran's Hormuz leverage has substantively eroded — in direct tension with vessel-count sitreps that still read near-total closure. Sept 30-Oct 1: Trump claimed the US has 'total control' of the Strait and that Iran's Navy and Air Force are 'gone' — his own statement, not independently verified. Oil price readings for Oct 1 conflict sharply across sources (spot Brent ~$97-98 vs. a reported futures spike to $103.50 vs. WTI easing toward $89-90), consistent with no single reconciled picture of current throughput or price. Oct 1: Brent settled at $96.76, resolving the prior day's conflicting oil-price readings toward the lower figure. No fresh Hormuz-specific vessel-count or barrel-volume sitrep sourced this cycle. Newly surfaced (reporting published Oct 1, describing Sept 29): UKMTO reported three vessels — a crude oil tanker, an LNG tanker and a third ship — struck by unknown projectiles in the Strait, with transponders reportedly off at the time; responsibility not attributed, an unconfirmed social media claim blames Iran. Oct 1-3: six tankers have now been struck in the Strait's southern channel near Oman within a week, the latest being the crude tanker Kazimah III on Oct 1. Defense Secretary Hegseth claimed the blockade is 'ironclad' and traffic is 'nearing pre-war levels,' but a sitrep found this cycle puts transits at just 3.1/day (vs. 97 pre-war) and 1.3 tankers/day (vs. 55 pre-war) — directly contradicting that characterization. Iran's parliament has separately advanced a bill asserting formal Iranian management of the Strait, including transit fees. Oct 4-5: Iran says the Strait will remain closed until the US meets its conditions. Unexplained explosions were heard from the sea near Qeshm Island and Sirik on Oct 4, with no confirmed impact on land; source unattributed. Oct 5-6: CENTCOM says the US has destroyed 13 commercial ships in the Strait over the past 12 weeks for blockade violations or IRGC ties. President Pezeshkian called US talks 'meaningless,' citing three attacks following prior talks. Oct 6-7: the US is urging commercial shipping toward a protected southern route hugging Oman's coastline; Iran rejects this as a violation of its own blockade terms and has attacked multiple ships attempting to use it — a direct explanation for the concentration of this week's strikes in that channel. Oct 7-8: at least seven tanker strikes were reported in the Strait during the first week of October, including the LIPSI and KAZIMAH III, still unattributed by UKMTO; Iran's self-styled 'Persian Gulf Strait Authority' claims the targeted vessels were on its own non-compliance list, with three reportedly UAE-controlled. A senior Iranian military figure separately claimed 'full control' of the Strait; Secretary of State Rubio directly disputed this, saying Tehran has lost control — both unconfirmed, consistent with the pattern of contradictory claims from each side. Oct 8-9: the Houthis claim a coordinated wave of strikes on Saudi Arabia rather than on Hormuz shipping directly — King Khalid International Airport in Riyadh, an Aramco refinery fire at Rabigh, and Abha International Airport plus nearby military sites — describing it as the third hit on Saudi's main airport this week; Saudi authorities have not confirmed damage or casualties. No fresh Hormuz-specific transit or barrel-volume sitrep was sourced this cycle. Oct 10: Saudi Arabia's General Authority of Civil Aviation confirms 3 killed (an Egyptian and an Algerian national at Abha, a Sudanese national at Riyadh) and 36 wounded across the Riyadh and Abha airport strikes covered in recent cycles, without specifying who is responsible despite the Houthis' own claim of the attacks. No fresh Hormuz-specific transit or barrel-volume sitrep was sourced this cycle. Oct 10-11: Fox News reports a renewed Saudi airport attack with three planes damaged per officials, and that Japan has condemned the Houthi strikes on Saudi civilian facilities; a Japanese embassy advisory separately confirms the earlier Abha/Riyadh strikes occurred on Oct 6-7 specifically, with further explosions heard in Riyadh on Oct 8. A running tally from one aggregator puts 11 ships attacked near Hormuz since early October, not reconciled with the '7+ in the first week' figure carried earlier. A claimed naval-mine strike on a supertanker circulating this cycle appears to be a recycled reference to the already-known El Gaia incident rather than a new event.",
     "preWarFlow": "~90-140 ships/day",
     "currentFlow": "Sept 28 sitrep: ~3% of pre-war transits, 7-day average 3.1% (about 1% tankers). Trump's competing claim of 20M+ barrels moved over the weekend is carried separately, unreconciled. This sits on top of the already-unresolved Reuters/Windward/Wright transit-count conflicts carried since Sept 18. Bab el-Mandeb: no update sourced this cycle. IMF PortWatch recorded just 1 tracked transit on Sept 20 against an ~85/day pre-crisis baseline. Separately, US officials now cite barrel-volume flow of 13-22M bpd — a figure not reconciled with the vessel-count data above. A sitrep found this cycle gives a more precise reading: 3.1 total transits/day against a 97/day pre-war baseline, and 1.3 tankers/day against 55/day pre-war — roughly 3% on both counts, consistent with earlier percentage-only sitreps and directly contradicting Hegseth's 'nearing pre-war levels' claim.",
     "reduction": "Brent settled around $104.5 Friday (on Iran's call for the US to return to the summer's failed interim deal) before rising above $106 at Monday's open following Trump's rejection of Iran's seven-day plan. It remains roughly 63% above the pre-war $65. Goldman: $120 if attacks intensify, $80 if Gulf exports normalise.",
@@ -69,11 +74,15 @@
     "totalShipsWaiting": "42 tankers were waiting at Hormuz as of Sept 7, of which 18 were carrying oil — roughly 11.1 million barrels, about 11% of world daily demand (CENTCOM/wire-sourced sitrep). No update to this count sourced this cycle. CENTCOM separately says it has redirected 100+ commercial vessels since April, disabled 4, and permitted 26 humanitarian-cargo vessels through.",
     "lastTransit": "Tracked traffic is now reported at roughly 3% of the pre-war average, the lowest reading of the war; datasets conflict sharply, including with Trump's own barrel-volume claim. IMF PortWatch's own count shows just 1 transit on Sept 20 against an ~85/day baseline, consistent with the sitrep's near-total-closure reading even as barrel-volume estimates point the other way.",
     "indianNavyEscort": "Op Urja Suraksha: unchanged pending confirmation that either the US-cleared lane or the Iran-Oman corridor is operational for third-country shipping. DGMA's standing advisory against deploying Indian seafarers on Hormuz-transiting voyages remains in force following this week's death.",
-    "headline": "SAUDI CIVIL AVIATION CONFIRMS 3 KILLED, 36 WOUNDED IN THE RIYADH/ABHA AIRPORT STRIKES — BUT DOES NOT NAME WHO IS RESPONSIBLE DESPITE HOUTHI CLAIMS.",
+    "headline": "SAUDI ARABIA REPORTS A RENEWED AIRPORT ATTACK, 3 PLANES DAMAGED; JAPAN CONDEMNS THE HOUTHI STRIKES. EARLIER OCT 6-7 STRIKES NOW DATED PRECISELY VIA A JAPANESE EMBASSY ADVISORY.",
     "indianCasualties": 5,
     "indianCasualtyDetail": "5th confirmed Indian death of the war: Suraj Yadav, 26, a wiper from Deoria, Uttar Pradesh, died of head injuries after MV Cape Dao was struck by two projectiles near the Strait of Hormuz on Sept 23 (Forward Seamen's Union of India; Shipping Minister Sarbananda Sonowal). Government sources cite at least 13 Indian nationals killed in the Gulf region since February, a broader figure than this page's confirmed-death count. Earlier: a crew member aboard UAE tanker MOMBASA killed by an Iranian cruise missile in Omani waters (Jul 14); 3 Indian sailors killed on MT Settebello (Jun 8, US Navy strike). DGMA's standing advisory against deploying Indian seafarers on Hormuz-transiting voyages remains in force. ACTIVE, UNRESOLVED: the Panama-flagged tanker El Gaia discrepancy (23 crew evacuated/2 missing per Oman vs. '14 Indian crew, 1 missing' reported by Indian outlets) remains unreconciled and is not added to this page's confirmed count. For scale: the war's total merchant-marine toll (last sourced Sept 11) stood at 21+ seafarers killed across 75 attacked vessels."
   },
   "hormuzEvents": [
+    {
+      "d": "Oct 11",
+      "e": "Saudi Arabia reports a renewed airport attack with three planes damaged per officials (Fox News, Oct 10); Japan has condemned the Houthi strikes on Saudi civilian facilities. Separately, a Japanese embassy advisory confirms the Abha/Riyadh King Khalid airport strikes covered in recent cycles occurred specifically on October 6 and 7, with further loud explosions heard in Riyadh on the morning of October 8. A running aggregator tally now puts 11 ships attacked near Hormuz since early October. A circulating claim of an IRGC naval-mine strike on a supertanker appears, on closer check, to be a recycled reference to the already-known El Gaia incident rather than a new event."
+    },
     {
       "d": "Oct 10",
       "e": "Saudi Arabia's General Authority of Civil Aviation confirms 3 people were killed — an Egyptian and an Algerian national at Abha airport, a Sudanese national at Riyadh's King Khalid International Airport — and 36 wounded across both airports, in the wave of strikes this page covered as unconfirmed Houthi claims over the past two cycles. The Saudi statement notably did not specify who was responsible, despite the Houthis' own claim of the attacks. Separately, Brent firmed further to $104.43, a fourth straight session above $100, though the auto-sync feed's own change figure for this remains wrong (see data-integrity note)."
@@ -416,6 +425,12 @@
   ],
   "military": [
     {
+      "t": "Oct 10-11 — Saudi Arabia reports a renewed airport attack as earlier strikes are dated precisely to Oct 6-7",
+      "lv": "ACTIVE",
+      "color": "amber",
+      "d": "Officials report three planes damaged in a renewed Saudi airport attack (Fox News, Oct 10); Japan has condemned the Houthi strikes on Saudi civilian facilities. A Japanese embassy advisory confirms the Abha/Riyadh strikes covered over the past two cycles occurred on Oct 6-7 specifically, with further explosions heard in Riyadh on Oct 8. A running tally puts 11 ships attacked near Hormuz since early October, a different count from the '7+ in the first week' figure carried earlier. A circulating naval-mine claim traced back to the already-known El Gaia incident rather than a new event. For India: no new equity session (NSE/BSE closed the weekend); Brent ticked up to $104.72, a 5th straight session above $100, with the site's own auto-sync again slightly overstating the day's change."
+    },
+    {
       "t": "Oct 9-10 — Saudi Arabia confirms casualties from airport strikes; Friday's market rally corrects a prior-day misread",
       "lv": "ACTIVE",
       "color": "amber",
@@ -709,13 +724,13 @@
   "radar": [
     {
       "axis": "Oil Shock",
-      "w1": 87,
-      "now": 88,
+      "w1": 88,
+      "now": 89,
       "w4": 60
     },
     {
       "axis": "Market Crash",
-      "w1": 62,
+      "w1": 55,
       "now": 55,
       "w4": 45
     },
@@ -728,7 +743,7 @@
     {
       "axis": "Hormuz Closure",
       "w1": 92,
-      "now": 92,
+      "now": 93,
       "w4": 80
     },
     {
@@ -757,8 +772,8 @@
     }
   ],
   "assessment": {
-    "headline": "A correction: Friday's confirmed close shows Indian markets actually rallied, reversing the slide reported yesterday. Saudi Arabia confirms 3 killed, 36 wounded in the airport strikes covered in recent cycles. Markets are closed today.",
-    "body": "WHAT HAPPENED\nThis page corrects its own prior entry: Friday Oct 9's confirmed close was a rally (Sensex +1.23%, Nifty +1.30%), not a continuation of the slide reported yesterday, which was based on a pre-market snapshot that actually reflected Thursday's close. Saudi Arabia's civil aviation authority has now confirmed 3 deaths and 36 wounded in the Riyadh/Abha airport strikes this page covered as unconfirmed Houthi claims over the past two cycles, though the authority stopped short of naming who is responsible. No new equity session occurs today; NSE/BSE are closed Saturday.\n\nWHY IT MATTERS FOR INDIA\nThe correction matters for trust in this page as much as for the market read itself — getting the direction of a trading day wrong, even from a timing artifact rather than a reporting error, is worth being transparent about rather than letting it stand uncorrected. On the war, official Saudi confirmation of casualties (even without an attribution) is more solid ground than the Houthi-claims-only picture this page has been carrying, and is a reminder that initial claims in this conflict are eventually either confirmed or contradicted by official sources, usually within a few days.\n\nTHE THING TO WATCH\nWhether Friday's rally holds into next week's session, and whether Saudi authorities eventually attribute responsibility for the airport strikes. Confidence: high on the corrected market figures (internally consistent, arithmetic-verified) and the Saudi casualty figures (single but official-sourced); low on responsibility attribution, which remains unstated."
+    "headline": "Saudi Arabia reports a renewed airport attack as earlier strikes are dated precisely to Oct 6-7 via a Japanese embassy advisory. Markets are closed for the weekend; Brent firms modestly.",
+    "body": "WHAT HAPPENED\nSaudi Arabia reports a fresh airport attack with three planes damaged, and Japan has condemned the broader pattern of Houthi strikes on Saudi civilian facilities. A Japanese embassy advisory separately confirms the earlier Abha/Riyadh strikes this page covered as unconfirmed, then Saudi-confirmed, claims occurred on Oct 6-7 specifically. This page also caught and excluded what appears to be a recycled naval-mine claim circulating in aggregator coverage. No new Indian equity session occurs today or did yesterday; Brent firmed modestly.\n\nWHY IT MATTERS FOR INDIA\nWith markets closed, there's little new direct economic signal today, but the steady drumbeat of Saudi airport strikes and a growing, if unreconciled, tanker-strike tally (11 vs. 7+) both point to a Hormuz corridor that remains under sustained pressure heading into Monday's reopening session, with Brent now five straight sessions above $100.\n\nTHE THING TO WATCH\nWhether Monday's session confirms Friday's rally holds, and whether a second source emerges on the Oct 10 Saudi airport attack and specifies which airport and who is responsible. Confidence: high on the Oct 6-7 dating (official Saudi/diplomatic sourcing); low on the Oct 10 attack and the tanker-strike tally reconciliation, both single-sourced this cycle."
   },
   "featured": [
     {
@@ -1762,17 +1777,27 @@
       "rupee": 96.78,
       "tag": "(CORRECTED, CONFIRMED OCT 9 CLOSE): Sensex +879.09 (+1.23%) to 72,472.33, Nifty +288.65 (+1.30%) to 22,520.45 — a rally that reverses, not extends, the slide reported in yesterday's entry (a pre-market-snapshot misread of Thursday's close as 'today's'). Brent firmed to $104.43, a 4th straight session above $100. Saudi civil aviation confirms 3 killed, 36 wounded in the Riyadh/Abha airport strikes, without naming who's responsible despite Houthi claims. No new equity session today (Saturday). Site's own auto-sync wrong for a 4th straight cycle, 3 of 4 with the wrong sign — structural-bug theory now effectively confirmed.",
       "sev": 3
+    },
+    {
+      "d": 226,
+      "l": "Oct 11",
+      "deaths": 7199,
+      "brent": 104.72,
+      "nifty": 22520.45,
+      "rupee": 96.73,
+      "tag": "(NO NEW EQUITY SESSION, WEEKEND): Sensex/Nifty unchanged at Friday's confirmed close (72,472.33/22,520.45). Brent ticked up to $104.72, a 5th straight session above $100. Saudi Arabia reports a renewed airport attack, 3 planes damaged; Japan condemns Houthi strikes. Japanese embassy advisory dates the earlier Abha/Riyadh strikes to Oct 6-7 specifically. Aggregator tally puts 11 ships attacked near Hormuz since early October. A circulating naval-mine claim traced back to the already-known El Gaia incident, not a new event.",
+      "sev": 3
     }
   ],
   "exec": {
     "level": "SEVERE",
-    "phase": "Correction: Friday's confirmed close shows Indian markets rallied, reversing the slide reported yesterday. Saudi Arabia confirms 3 killed, 36 wounded in recent airport strikes, without naming who's responsible. No new equity session today (Saturday).",
-    "oilNote": "Brent firmed further to $104.43, a fourth straight session above $100 (real change +0.58% against Friday's confirmed close, not the feed's self-reported +0.14% — see data-integrity note).",
-    "shipping": "SAUDI CIVIL AVIATION CONFIRMS 3 KILLED, 36 WOUNDED IN RIYADH/ABHA AIRPORT STRIKES",
-    "shippingSub": "Official confirmation of casualties, but Saudi authorities have not named who is responsible despite Houthi claims. No fresh Hormuz transit sitrep sourced this cycle.",
-    "military": "CASUALTIES CONFIRMED FROM RECENT SAUDI AIRPORT STRIKES; RESPONSIBILITY STILL UNSTATED OFFICIALLY",
-    "militarySub": "3 killed, 36 wounded per Saudi civil aviation — the first official casualty figure this page has had for this story, though attribution remains unconfirmed by Riyadh.",
-    "indiaSub": "CORRECTED: Friday's confirmed close was Sensex +1.23% to 72,472.33, Nifty +1.30% to 22,520.45 — a rally, not the slide reported yesterday. No new session today. Site's own auto-sync wrong for a 4th straight cycle."
+    "phase": "Saudi Arabia reports a renewed airport attack as earlier strikes are dated precisely to Oct 6-7 via a Japanese embassy advisory. Markets closed for the weekend; Brent firms modestly to $104.72.",
+    "oilNote": "Brent ticked up to $104.72, a fifth straight session above $100 (real change +0.28% against Friday's confirmed close, not the feed's self-reported +0.42% — see data-integrity note).",
+    "shipping": "RUNNING TALLY PUTS 11 SHIPS ATTACKED NEAR HORMUZ SINCE EARLY OCTOBER",
+    "shippingSub": "Not reconciled with the '7+ in the first week' figure carried earlier. A circulating naval-mine claim traced back to the already-known El Gaia incident, not a new event.",
+    "military": "SAUDI ARABIA REPORTS A RENEWED AIRPORT ATTACK; EARLIER STRIKES DATED TO OCT 6-7",
+    "militarySub": "3 planes damaged per officials (single-sourced); Japan condemns the Houthi strikes. A Japanese embassy advisory confirms the Oct 6-7 timeline for the earlier, Saudi-confirmed strikes.",
+    "indiaSub": "No new equity session (NSE/BSE closed the weekend); Sensex/Nifty unchanged at Friday's confirmed close. Brent ticked up to $104.72, a 5th straight session above $100."
   },
   "hormuzPhases": [
     {
@@ -1826,7 +1851,7 @@
       "days": "Sep 26-"
     }
   ],
-  "_phaseBadge": "CORRECTION: Friday's confirmed close shows Indian markets rallied ~1.2-1.3%, reversing the slide reported yesterday · Saudi civil aviation confirms 3 killed, 36 wounded in recent airport strikes, doesn't name who's responsible · Brent firms to $104.43, a 4th straight session above $100 · Markets closed today (Saturday) · Data bug in site's own auto-sync now effectively confirmed after a 4th straight wrong day",
+  "_phaseBadge": "Saudi Arabia reports a renewed airport attack, 3 planes damaged · Japan condemns the Houthi strikes on Saudi civilian facilities · Japanese embassy advisory dates the earlier strikes to Oct 6-7 specifically · Aggregator tally: 11 ships attacked near Hormuz since early October · Markets closed for the weekend; Brent firms to $104.72, a 5th straight session above $100",
   "budget": {
     "petrolPre": 94.72,
     "petrolNow": 102.12,
@@ -1836,12 +1861,12 @@
     "lpgNow": 942.0
   },
   "brief": [
-    "Correction: Friday's confirmed close shows Indian markets actually rallied — Sensex +1.23% to 72,472.33, Nifty +1.30% to 22,520.45 — reversing, not extending, the slide reported in yesterday's entry (a pre-market-snapshot timing artifact).",
-    "Saudi Arabia's civil aviation authority confirms 3 killed and 36 wounded in the Riyadh/Abha airport strikes covered over the past two cycles, though it stops short of naming who is responsible despite Houthi claims.",
-    "Brent firmed further to $104.43, a fourth straight session above $100. No new Indian equity session today — NSE/BSE are closed Saturday, reopening Monday.",
-    "This page's own market-data auto-sync has now been wrong for a 4th straight cycle, three of four with the sign flipped entirely — the structural-bug theory is now treated as effectively confirmed."
+    "Saudi Arabia reports a renewed airport attack with three planes damaged per officials; Japan has condemned the broader pattern of Houthi strikes on Saudi civilian facilities.",
+    "A Japanese embassy advisory confirms the Abha/Riyadh airport strikes covered in recent cycles occurred specifically on October 6-7, with further explosions heard in Riyadh on Oct 8.",
+    "A running aggregator tally now puts 11 ships attacked near Hormuz since early October — a different count from the '7+ in the first week' figure carried earlier, not yet reconciled.",
+    "No new Indian equity session today — NSE/BSE are closed for the weekend, reopening Monday. Brent ticked up to $104.72, a fifth straight session above $100."
   ],
-  "shareLine": "Correction: Friday's Indian markets actually rallied, reversing the slide reported yesterday. Saudi Arabia confirms casualties from recent airport strikes. #IranWar #Hormuz #IndiaRiskDashboard",
+  "shareLine": "Saudi Arabia reports a renewed airport attack as earlier strikes are dated to Oct 6-7. Markets closed for the weekend; Brent firms to $104.72. #IranWar #Hormuz #IndiaRiskDashboard",
   "author": {
     "name": "Nithiyanandam Yogeswaran",
     "twitter": "https://x.com/prof_nithiya",
@@ -1892,7 +1917,7 @@
     }
   ],
   "geoint": {
-    "_updated": "2026-10-10",
+    "_updated": "2026-10-11",
     "_note": "Analyst-curated from public reporting; coordinates approximate to the named location. Not a live AIS/satellite feed — use the linked free sources to verify. Restored this cycle after being dropped from the file during Sept 22-24 manual edits.",
     "points": [
       {
@@ -2084,8 +2109,8 @@
         "t": "claimed strike",
         "lat": 24.96,
         "lon": 46.7,
-        "d": "Oct 5-10",
-        "i": "Saudi Arabia's civil aviation authority confirms a Sudanese national was killed at this airport (plus an Egyptian and an Algerian national at Abha) and 36 wounded across both, in strikes the Houthis claim but Saudi authorities have not formally attributed."
+        "d": "Oct 6-10",
+        "i": "Saudi civil aviation (via a Japanese embassy advisory) dates the earlier strikes to Oct 6-7, with further explosions heard in Riyadh on Oct 8; Fox News reports a renewed attack with 3 planes damaged on Oct 10, single-sourced pending a second confirmation."
       }
     ],
     "sources": [
