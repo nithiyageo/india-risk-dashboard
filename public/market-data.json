@@ -1,26 +1,26 @@
 {
-  "_updated": "2026-10-16 — 07:26: IST",
-  "_utc": "2026-10-16T01:56:15.025Z",
+  "_updated": "2026-10-16 — 14:03: IST",
+  "_utc": "2026-10-16T08:33:23.391Z",
   "_source": "Yahoo Finance + ExchangeRate API",
   "_note": "Auto-updated via GitHub Action every 4 hours. War content updated manually.",
   "brent": {
-    "price": 105.82,
-    "change": -0.1,
-    "changePct": -0.09
+    "price": 102.6,
+    "change": -0.57,
+    "changePct": -0.55
   },
   "nifty": {
-    "price": 22997.35,
-    "change": 275.45,
-    "changePct": 1.21
+    "price": 23114.05,
+    "change": 491.35,
+    "changePct": 2.17
   },
   "sensex": {
-    "price": 74315.61,
-    "change": 1281.81,
-    "changePct": 1.76
+    "price": 74661.38,
+    "change": 1879.48,
+    "changePct": 2.58
   },
   "rupee": {
-    "price": 95.05,
-    "change": -0.09,
-    "changePct": -0.1
+    "price": 94.97,
+    "change": -0.07,
+    "changePct": -0.08
   }
 }
